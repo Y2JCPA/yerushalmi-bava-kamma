@@ -1,0 +1,223 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 38,
+  "emoji": "🏛️",
+  "topics": [
+    "🪵 גזל מריש ובנאו בבירה — Beit Shammai vs. Beit Hillel",
+    "🌿 תקנת השבים and יישוב ארץ ישראל — why the policy bends for repenters",
+    "🐂 R' Meir on aged slaves: 'הרי שלך לפניך'",
+    "🪙 Coin invalidated by malkhut vs. medina",
+    "🔨 Artisans and builders who damage — when is the craftsman liable?"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Repentance, Transformation, and the Craftsman",
+    "label": "The sugya:",
+    "text": "Daf 38 surveys a series of cases where the gezeilah has changed since the theft. Beit Shammai vs. Beit Hillel famously dispute the stolen beam built into a building — Hillel rules in favor of תקנת שבים. R' Yaakov bar Acha grounds Hillel's position in יישוב ארץ ישראל. The amoraim then carve up the rules for aged animals and slaves, spoiled fruit, invalidated coins, leavened matter through Pesach, and artisans who break what they were hired to repair.",
+    "hebrewSource": "גָּזַל מָרִישׁ וּבְנָאוֹ בַבִּירָה. בֵּית שַׁמַּי אוֹמְרִים. יְקַעְקֵעַ כָּל הַבִּירָה כוּלָּהּ וְיִתְּנֶינּוּ לוֹ. וּבֵית הִלֵּל אוֹמְרִים. יִתֵּן לוֹ דָמָיו מִפְּנֵי תַקָּנַת שָׁבִים"
+  },
+  "slides": [
+    {
+      "type": "debate",
+      "title": "🏛️ The Stolen Beam Built into a Building",
+      "subtitle": "Beit Shammai and Beit Hillel split on what the penitent must restore.",
+      "lines": [
+        { "speaker": "BS", "side": "left", "speakerColor": "#e74c3c", "text": "<strong>Beit Shammai:</strong> <span class='hebrew'>יְקַעְקֵעַ כָּל הַבִּירָה כוּלָּהּ וְיִתְּנֶינּוּ לוֹ</span> — he must tear down the whole building and return the actual beam." },
+        { "speaker": "BH", "side": "right", "speakerColor": "#4a90d9", "text": "<strong>Beit Hillel:</strong> <span class='hebrew'>יִתֵּן לוֹ דָמָיו מִפְּנֵי תַקָּנַת שָׁבִים</span> — he just pays its value, to support the penitents." },
+        { "speaker": "RYbA", "side": "left", "speakerColor": "#9b59b6", "text": "<strong>R' Yaakov bar Acha</strong> in the name of R' Yehoshua ben Levi: the reason is also <span class='hebrew'>יִישׁוּב אֶרֶץ יִשְׂרָאֵל</span> — settlement of the Land." },
+        { "speaker": "RNbY", "side": "right", "speakerColor": "#c9a84c", "text": "<strong>Rav Nachman bar Yitzchak</strong>: would we really refuse a man who put his bundle in another's ruin temporarily? Once he heard the ארץ ישראל reason — that's the answer." }
+      ],
+      "callout": {
+        "label": "Why this matters:",
+        "text": "The halakhah is not pure restitution. It is calibrated by social policy: encourage teshuva, encourage building the land."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🌿 Building on Someone Else's Ruin",
+      "subtitle": "When can a builder recover his investment?",
+      "nodes": [
+        { "content": "<strong>ירד לחורבה ובנאה</strong><br>(rebuilt another's ruined property)", "class": "question" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Without permission", "content": "<span class='hebrew'>שָׁמִין לוֹ וְיָדוֹ עַל הַתַּחְתּוֹנָה</span><br>Lower hand", "class": "result-bad" },
+            { "label": "With permission", "content": "<span class='hebrew'>שָׁמִין לוֹ וְיָדוֹ עַל הָעֶלְיוֹנָה</span><br>Upper hand", "class": "result-good" },
+            { "label": "Wants stones/wood back", "content": "<span class='hebrew'>אֵין שׁוֹמְעִין לוֹ</span><br>Refused", "class": "result-partial" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Rav: even at unfit places, we estimate but employ <span class='hebrew'>מַעֲרִימִין</span> — letting him stay in summer and winter", "class": "action" },
+        { "type": "arrow" },
+        { "content": "All policy threads return to: <span class='hebrew'>יִישׁוּב אֶרֶץ יִשְׂרָאֵל</span>", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Key insight:",
+        "text": "The 'lower/upper hand' formula is the Yerushalmi's standard mechanism for permission-based fair valuation."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🐂 When Does 'הרי שלך לפניך' Apply?",
+      "subtitle": "R' Meir vs. the Tanna Kamma — and the amoraic refinements.",
+      "boxes": [
+        {
+          "title": "📜 Mishnah",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Animal aged → pays כשעת הגזילה",
+            "Slaves aged → pays כשעת הגזילה",
+            "<strong>R' Meir:</strong> for slaves only — 'הרי שלך לפניך'"
+          ]
+        },
+        {
+          "title": "🐄 Rav Huna",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "Stole calf → became bull = pays",
+            "Stole bull → it aged = 'הרי שלך לפניך'",
+            "Drawing the line at species-level change"
+          ]
+        },
+        {
+          "title": "🐂 Shmuel",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "Even calf → bull, says 'הרי שלך לפניך'",
+            "More lenient than Rav Huna",
+            "<strong>Halakhah</strong>: like R' Meir (Rav Yehudah)"
+          ]
+        },
+        {
+          "title": "✂️ Rav Karna",
+          "color": "#c9a84c",
+          "titleColor": "#c9a84c",
+          "items": [
+            "Stole calf → became bull → slaughtered/sold",
+            "Pays ד' or ה' of the <em>calf's</em> value",
+            "Penalty tracks the original gezeilah"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "R' Zeira & Rav Chisda:",
+        "text": "Stole fat → became thin: must replace the fat. Stole thin → fattened: returns it as is. The gazlan never benefits, never overpays."
+      }
+    },
+    {
+      "type": "table",
+      "title": "🪙 What Counts as 'Returnable as Is'?",
+      "subtitle": "Mishnah 9:3 — when the object is technically intact but its value has collapsed.",
+      "headers": ["Case", "Status", "Ruling"],
+      "rows": [
+        ["<span class='hebrew'>מַטְבֵּעַ וְנִסְדַּק</span>", "Coin physically split", "Pays כשעת הגזילה"],
+        ["<span class='hebrew'>פֵּירוֹת וְהִרְכִּיבוּ</span>", "Fruits rotted", "Pays כשעת הגזילה"],
+        ["<span class='hebrew'>יַיִן וְהֶחֱמִיץ</span>", "Wine spoiled", "Pays כשעת הגזילה"],
+        ["<span class='hebrew'>מַטְבֵּעַ וְנִפְסַל</span>", "Coin invalidated by government", "<span class='hebrew'>הֲרֵי שֶׁלָּךְ לְפָנֶיךָ</span>"],
+        ["<span class='hebrew'>תְּרוּמָה וְנִטְמֵאת</span>", "Heave became impure (by itself)", "<span class='hebrew'>הֲרֵי שֶׁלָּךְ לְפָנֶיךָ</span>"],
+        ["<span class='hebrew'>חָמֵץ וְעָבַר עָלָיו הַפֶּסַח</span>", "Leaven through Pesach", "<span class='hebrew'>הֲרֵי שֶׁלָּךְ לְפָנֶיךָ</span>"]
+      ],
+      "callout": {
+        "label": "Rav Huna vs. Shmuel:",
+        "text": "Rav Huna: only if <em>government</em> invalidated the coin. If a <em>province</em> did, he says 'הרי שלך לפניך'. Shmuel: even if government invalidated — 'הרי שלך לפניך'."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🔨 Artisans, Builders, and the Last Nail",
+      "subtitle": "Mishnah 9:4 — when does the craftsman become the responsible party?",
+      "steps": [
+        { "content": "1️⃣ Owner gives item to artisans <strong>to repair</strong> and they ruined it → liable to pay." },
+        { "content": "2️⃣ Carpenter receives chest/box/cupboard and breaks it → liable." },
+        { "content": "3️⃣ Builder hired to take down a wall and damages stones → liable." },
+        { "content": "4️⃣ Wall collapsed on the <em>other</em> side → exempt. <strong>But</strong> if from the pounding (<span class='hebrew'>מַחֲמַת הַמַּכָּה</span>) → liable." },
+        { "content": "5️⃣ <strong>Rav Huna</strong>: only if he drove in the last nail — <span class='hebrew'>קָבַע בּוֹ מַסְמֵר הָאַחֲרוֹן כְּדֵי לְזַכּוֹת לְכֵלָיו</span>.", "highlight": true }
+      ],
+      "callout": {
+        "label": "The principle:",
+        "text": "Liability transfers when the artisan acquires craftsman's rights in the object — symbolized by the final nail. Until then, his actions are framed as the owner's loss."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "When the gezeilah has changed, the law calibrates between strict restitution and social policies — תקנת שבים, יישוב ארץ ישראל, and protecting the integrity of artisans' work.",
+    "flowSteps": [
+      { "content": "<strong>גזל מריש ובנאו בבירה</strong>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Beit Hillel: pays דמיו <span class='hebrew'>מפני תקנת שבים</span>", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🌿 <strong>תקנת שבים</strong><br>+ יישוב א״י", "style": "border-color:#4caf50" },
+          { "content": "🐂 <strong>R' Meir</strong><br>'הרי שלך לפניך' for slaves", "style": "border-color:#4a90d9" },
+          { "content": "🪙 <strong>מטבע ונפסל</strong><br>government vs. medina", "style": "border-color:#c9a84c" },
+          { "content": "🔨 <strong>אומנים</strong><br>last-nail rule", "style": "border-color:#e74c3c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Restitution law is shaped not just by ownership but by policy — making space for repentance, settlement, and the working professions.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Why does Beit Hillel rule that the robber of the beam pays its value rather than tearing down the building?",
+      "o": [
+        "Because the building is too valuable",
+        "<span class='hebrew'>מִפְּנֵי תַקָּנַת שָׁבִים</span> — to support the penitents",
+        "Because Beit Shammai is in the minority",
+        "Because the original owner waived his rights"
+      ],
+      "c": 1,
+      "e": "Beit Hillel says: 'יתן לו דמיו מפני תקנת שבים' — to encourage repentance, the law accepts payment instead of demolition."
+    },
+    {
+      "q": "What additional reason does R' Yaakov bar Acha give in the name of R' Yehoshua ben Levi?",
+      "o": [
+        "<span class='hebrew'>פְּגַם מִשְׁפָּחָה</span>",
+        "<span class='hebrew'>יִישׁוּב אֶרֶץ יִשְׂרָאֵל</span>",
+        "<span class='hebrew'>תִּיקּוּן הָעוֹלָם</span>",
+        "<span class='hebrew'>קְנַס</span>"
+      ],
+      "c": 1,
+      "e": "R' Yaakov bar Acha grounds the lenient ruling in the policy of settling the Land of Israel."
+    },
+    {
+      "q": "According to R' Meir, what does the gazlan say about aged slaves?",
+      "o": [
+        "He pays double",
+        "<span class='hebrew'>הֲרֵי שֶׁלָּךְ לְפָנֶיךָ</span> — here is your property as is",
+        "He pays the value at the time of the robbery",
+        "He must replace them with younger slaves"
+      ],
+      "c": 1,
+      "e": "Mishnah: 'רבי מאיר אומר יאמר לו בעבדים הרי שלך לפניך.' Rav Yehudah ruled: halakhah follows R' Meir."
+    },
+    {
+      "q": "How do Rav Huna and Shmuel disagree about an invalidated coin?",
+      "o": [
+        "They agree completely",
+        "Rav Huna: only government invalidation = pays. Shmuel: even government invalidation → 'הרי שלך לפניך'",
+        "Rav Huna: he must replace it with gold; Shmuel: with silver",
+        "Both say it must be returned in pieces"
+      ],
+      "c": 1,
+      "e": "Rav Huna distinguishes malkhut from medina; Shmuel says even malkhut-invalidation lets the gazlan say 'הרי שלך לפניך'."
+    },
+    {
+      "q": "According to Rav Huna, when does an artisan become liable for damaging the item?",
+      "o": [
+        "Only after delivering the work",
+        "Only when he drove in the <strong>last nail</strong> (<span class='hebrew'>מַסְמֵר הָאַחֲרוֹן</span>) — acquiring his utensils' rights",
+        "Once payment is given",
+        "Never — only the owner is liable"
+      ],
+      "c": 1,
+      "e": "Rav Huna: 'והוא שקבע בו מסמר האחרון כדי לזכות לכליו.' Liability arrives with the artisan's acquisition of work-rights."
+    }
+  ]
+}

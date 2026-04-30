@@ -1,0 +1,221 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 42,
+  "emoji": "🛡️",
+  "topics": [
+    "📅 R' Ḥizqiah vs. R' Yose: 'two weeks' or 'one week' dispute on mishmar timing",
+    "💰 When can a watch's claim on a sacrifice be removed from their hand?",
+    "👨‍👦 Robbing to feed your children: heirs are exempt unless they inherited mortgageable property",
+    "🏛️ Defining 'דבר שיש בו אחריות': real estate vs. גוף הגזילה",
+    "👕 Robbed a tallit and gave it to another — can it be reclaimed from the second holder?"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Mishmar Disputes and Inheriting Stolen Goods",
+    "label": "The sugya:",
+    "text": "The first half of the daf parses the Mishnah's mishmar rule: R' Ḥizqiah holds the dispute is about two consecutive weeks, R' Yose holds it is about a single week. From this emerges a principle: a sacrifice given to a watch during their week stays with them, but a sacrifice given out of week — or sat on through laziness — can be removed. The daf then opens chapter 10 with the question of children who inherit stolen goods. Tannaim teach the heirs are exempt, but if they inherit a 'דבר שיש בו אחריות' they must pay. R' Yonatan, Reish Lakish, Rav, and Shmuel debate what that phrase covers — real estate, the actual stolen item, or both.",
+    "hebrewSource": "רִבִּי חִזְקִיָּה אָמַר. בִּשְׁתֵּי שַׁבָּתוֹת פְּלִיגִין. רִבִּי יוֹסֵי אָמַר. בְּשַׁבָּת אַחַת"
+  },
+  "slides": [
+    {
+      "type": "debate",
+      "title": "💬 R' Ḥizqiah vs. R' Yose on the Mishmar Mishnah",
+      "subtitle": "Are the parties disputing a two-week or one-week scenario?",
+      "lines": [
+        { "speaker": "RḤ", "side": "left", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>בִּשְׁתֵּי שַׁבָּתוֹת פְּלִיגִין</span> — money to Yehoiarib in Yedaiah's week, asham to Yedaiah in Yehoiarib's week: he <strong>has fulfilled</strong> his obligation." },
+        { "speaker": "RY", "side": "right", "speakerColor": "#9b59b6", "text": "<span class='hebrew'>בְּשַׁבָּת אַחַת</span> — same scenario, but he has <strong>not fulfilled</strong> his obligation." },
+        { "speaker": "Rebbi", "side": "left", "speakerColor": "#c9a84c", "text": "Following R' Yehudah: if Yehoiarib's men offered the asham, no atonement; the money must be transferred from Yedaiah to Yehoiarib so they offer it properly." },
+        { "speaker": "Y", "side": "right", "speakerColor": "#e74c3c", "text": "<span class='hebrew'>זֹאת אוֹמֶרֶת</span> — this implies: a sacrifice given to a watch <strong>not</strong> in their week can be removed from their hand." }
+      ],
+      "callout": {
+        "label": "The hidden principle:",
+        "text": "The two-week reading exposes a rule the one-week reading hides: ownership of a sacrifice depends on receiving it during one's own watch."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📅 The Mishmar Rule — When Does a Watch Keep the Sacrifice?",
+      "subtitle": "The Yerushalmi extracts three sub-rules.",
+      "headers": ["Scenario", "Outcome", "Source phrase"],
+      "rows": [
+        ["Sacrifice received <strong>during their week</strong>, offered properly", "It stays with them — cannot be removed", "<span class='hebrew'>אֵין מוֹצִיאִין אוֹתָן מִיָּדָן</span>"],
+        ["Sacrifice received <strong>not during their week</strong>", "It is removed from their hand", "<span class='hebrew'>מוֹצִיאִין אוֹתוֹ מִיָּדָן</span>"],
+        ["Received in their week but they were lazy (<span class='hebrew'>נִתְעַצְּלוּ</span>) and didn't offer", "It is removed from their hand", "<span class='hebrew'>מוֹצִיאִין אוֹתָן מִיָּדוֹ</span>"]
+      ],
+      "callout": {
+        "label": "Why it matters:",
+        "text": "These rules govern not only this gezel-ger case but the broader law of how priestly watches acquire and lose offerings."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "👨‍👦 Mishnah 10:1 — Robbing to Feed Children",
+      "subtitle": "When are the heirs liable, and when not?",
+      "nodes": [
+        { "content": "<strong>הַגּוֹזֵל וּמַאֲכִיל אֶת בָּנָיו</strong><br>Father robbed and fed it to his children", "class": "question" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Already consumed", "content": "<span class='hebrew'>פְּטוּרִין מִלְּשַׁלֵּם</span><br>Heirs exempt", "class": "result-good" },
+            { "label": "Mortgageable inheritance", "content": "<span class='hebrew'>חַיָיבִין לְשַׁלֵּם</span><br>Heirs must pay", "class": "result-bad" },
+            { "label": "Tax/customs chest", "content": "Don't take change<br>or charity from it", "class": "result-partial" },
+            { "label": "His house / market", "content": "May take from there<br>(unmixed money)", "class": "result-good" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Baraita parallel: a Jew who took ribit and died — if he left a cow or a tallit to his heirs, they must return it", "class": "action" },
+        { "type": "arrow" },
+        { "content": "<span class='hebrew'>אֲזַל תְּנַיָיהּ לִגְזֵילָיָיא</span> — the same rule was extended to robbery", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "The structural move:",
+        "text": "The Yerushalmi pulls in a ribit baraita to anchor the gezeilah halakhah. Two transgressions, one rule about heirs."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🏛️ What Counts as 'דבר שיש בו אחריות'?",
+      "subtitle": "Four Amoraic positions on which inherited assets trigger liability.",
+      "boxes": [
+        {
+          "title": "🌍 R' Yonatan",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "<span class='hebrew'>בְּשֶׁהִנִּיחַ לִפְנֵיהֶן קַרְקַע</span>",
+            "Liability only if heirs inherit real estate",
+            "Real estate is the classic 'אחריות' asset"
+          ]
+        },
+        {
+          "title": "👕 Reish Lakish",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "<span class='hebrew'>בְשֶׁהִנִּיחַ לִפְנֵיהֶן גּוּף הַגְּזֵילָה</span>",
+            "Only when the actual stolen item is in their hands",
+            "If the object exists, it must be returned"
+          ]
+        },
+        {
+          "title": "📜 Rav",
+          "color": "#c9a84c",
+          "titleColor": "#c9a84c",
+          "items": [
+            "<span class='hebrew'>יוֹרֵשׁ כִּמְשׁוּעְבָּד</span>",
+            "An heir is like a holder of encumbered property",
+            "Loan-by-witnesses cannot collect from him"
+          ]
+        },
+        {
+          "title": "⚖️ Shmuel",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<span class='hebrew'>דְּאִיקנֵי אֵינוֹ גוֹבֶה מִמְּשׁוּעְבָּדִין</span>",
+            "After-acquired collateral: not from encumbered, yes from בני חרי",
+            "Mishnah fits if heir got גוף הגזילה"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "The Yerushalmi's resolution:",
+        "text": "<span class='hebrew'>וְלֵית הִיא פְלִיגָא</span> — neither Rav nor Shmuel is contradicted by the Mishnah. Each fits a different inheritance scenario: Rav with real estate, Shmuel with the actual stolen item."
+      }
+    },
+    {
+      "type": "process",
+      "title": "👕 Robbed Tallit Passed to a Third Party",
+      "subtitle": "Can it be reclaimed from the second holder?",
+      "steps": [
+        { "content": "1️⃣ Setup: <span class='hebrew'>גָּזַל טַלִּית וּנְתָנָהּ לְאַחֵר</span> — A robs a tallit, gives it to B." },
+        { "content": "2️⃣ R' Eleazar in the name of R' Ḥiyya: <span class='hebrew'>מוֹצִיאִין מֵרִאשׁוֹן וְלֹא מִשֵּׁינִי</span> — recover from A, not from B." },
+        { "content": "3️⃣ R' Yoḥanan in the name of R' Yannai: <span class='hebrew'>מוֹצִיאִין אַף מִן הַשֵּׁינִי</span> — recover even from B." },
+        { "content": "4️⃣ R' Abba bar Mamal: even R' Ḥiyya himself agreed — he too holds מוציאין אף משיני." },
+        { "content": "5️⃣ Bottom line: the stolen tallit can be reclaimed from <strong>both</strong> the original robber and the recipient.", "highlight": true }
+      ],
+      "callout": {
+        "label": "The deeper question:",
+        "text": "This is the same machloket as inheriting גוף הגזילה — does the physical object still carry the original owner's claim once it has moved hands? The Yerushalmi leans toward: yes, it does."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Sacrifices belong to the watch only when received during their week and offered without delay; and stolen property follows the heir — or the second recipient — only when the actual object or mortgageable property is still there.",
+    "flowSteps": [
+      { "content": "<strong>Mishmar dispute</strong><br>Two weeks (R' Ḥizqiah) or one week (R' Yose)?", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Each reading exposes a different rule about when offerings can be removed from a watch", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "👨‍👦 <strong>Robbed to feed children</strong><br>heirs exempt unless...", "style": "border-color:#4a90d9" },
+          { "content": "🏛️ <strong>R' Yonatan</strong><br>קרקע", "style": "border-color:#9b59b6" },
+          { "content": "👕 <strong>Reish Lakish</strong><br>גוף הגזילה", "style": "border-color:#c9a84c" },
+          { "content": "⚖️ <strong>Rav / Shmuel</strong><br>encumbered-property logic", "style": "border-color:#e74c3c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>The stolen tallit can be reclaimed even from the second holder — <span class='hebrew'>מוֹצִיאִין אַף מִן הַשֵּׁינִי</span>.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "What is the dispute between R' Ḥizqiah and R' Yose about the mishmar Mishnah?",
+      "o": [
+        "Whether the case is across two weeks or within one week",
+        "Whether the asham is valid",
+        "Whether kohanim can switch shifts",
+        "Whether the chomesh is paid first"
+      ],
+      "c": 0,
+      "e": "<span class='hebrew'>בִּשְׁתֵּי שַׁבָּתוֹת פְּלִיגִין</span> vs. <span class='hebrew'>בְּשַׁבָּת אַחַת</span>. Each reading produces a different halakhic implication."
+    },
+    {
+      "q": "According to the Yerushalmi, when can a sacrifice be removed from the hands of a priestly watch?",
+      "o": [
+        "When it was received outside their week, or when they were lazy and didn't offer it in time",
+        "Only when the kohen sins",
+        "Only on Shabbat",
+        "Never — once received it always stays"
+      ],
+      "c": 0,
+      "e": "<span class='hebrew'>שֶׁזָּכוּ בַּמִּשְׁמָר שֶׁלֹּא בְשַׁבָּתָן</span> or <span class='hebrew'>נִתְעַצְּלוּ ולֹא הִקְרִיבוּהוּ — מוֹצִיאִין אוֹתָן מִיָּדוֹ</span>."
+    },
+    {
+      "q": "When are heirs of a robber required to pay back stolen property?",
+      "o": [
+        "When their father left them mortgageable property — <span class='hebrew'>דָבָר שֶׁיֵּשׁ בּוֹ אַחֵרָיוּת</span>",
+        "Never — heirs are always exempt",
+        "Only if the gezeilah is identifiable",
+        "Always — heirs are fully liable"
+      ],
+      "c": 0,
+      "e": "The Mishnah: <span class='hebrew'>אִם הָיָה דָבָר שֶׁיֵּשׁ בּוֹ אַחֵרָיוּת נְכָסִים חַיָיבִין לְשַׁלֵּם</span>."
+    },
+    {
+      "q": "What does Reish Lakish say about 'דבר שיש בו אחריות' in this Mishnah?",
+      "o": [
+        "It means the actual stolen item — גוף הגזילה — is in the heirs' hands",
+        "It means real estate only",
+        "It means a written contract",
+        "It means money in a chest"
+      ],
+      "c": 0,
+      "e": "<span class='hebrew'>בְשֶׁהִנִּיחַ לִפְנֵיהֶן גּוּף הַגְּזֵילָה</span>. R' Yonatan reads קרקע; Reish Lakish reads the physical stolen item."
+    },
+    {
+      "q": "If A robs a tallit and gives it to B, can the original owner reclaim it from B?",
+      "o": [
+        "Yes — <span class='hebrew'>מוֹצִיאִין אַף מִן הַשֵּׁינִי</span>",
+        "Never — only from A",
+        "Only if B paid for it",
+        "Only if A is dead"
+      ],
+      "c": 0,
+      "e": "R' Yoḥanan in the name of R' Yannai, and R' Abba bar Mamal even attributes this to R' Ḥiyya: the tallit can be recovered even from the second holder."
+    }
+  ]
+}

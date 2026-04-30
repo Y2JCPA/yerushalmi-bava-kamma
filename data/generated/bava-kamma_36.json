@@ -1,0 +1,213 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 36,
+  "emoji": "🤝",
+  "topics": [
+    "👂 חרש שוטה וקטן: 'פגיעתן רעה' — bad to encounter",
+    "👋 The fixed price list: סלע / מנה / מאתיים / ארבע מאות זוז",
+    "👑 R' Akiva: even the poorest are <span class='hebrew'>בני אברהם יצחק ויעקב</span>",
+    "💄 The flask trick — חובל בעצמו פטור, אחרים חייבים",
+    "🙏 Forgiveness: <span class='hebrew'>אינו נמחל לו עד שיבקש ממנו</span>"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Honor, Insult, and Forgiveness",
+    "label": "The sugya:",
+    "text": "Daf 36 spans three Mishnayot. First: vulnerable parties (deaf-mute, minor, woman, slave) — <span class='hebrew'>פגיעתן רעה</span>: dangerous to meet. Second: the famous fixed-price list for slaps and indignities, R' Akiva's ruling that all Jews are aristocrats, and the trickster who broke an oil flask to expose a woman's hair. Third: even after paying, the offender is not forgiven until he asks — and the wronged party may not be cruel.",
+    "hebrewSource": "אַף עַל פִּי שֶׁהוּא נוֹתֵן לוֹ אֵינוֹ נִמְחָל לוֹ עַד שֶׁיְּבַקֵּשׁ מִמֶּנּוּ שֶׁנֶּאֱמַר וְעַתָּה הָשֵׁב אֵשֶׁת הָאִישׁ כִּי נָבִיא הוּא"
+  },
+  "slides": [
+    {
+      "type": "table",
+      "title": "👋 The Fixed Price List for Indignities",
+      "subtitle": "The Mishnah quantifies each kind of public humiliation.",
+      "headers": ["Act", "Payment", "Note"],
+      "rows": [
+        ["<span class='hebrew'>תּוֹקֵעַ</span> — punch / slap", "<span class='hebrew'>סֶלַע</span> (R' Yehuda b'shem R' Yose haGalili: <span class='hebrew'>מָנֶה</span>)", "Baseline"],
+        ["<span class='hebrew'>סְתָרוֹ</span> — open-hand slap", "<span class='hebrew'>200 זוּז</span>", "More humiliating"],
+        ["<span class='hebrew'>לְאַחַר יָדוֹ</span> — backhand", "<span class='hebrew'>400 זוּז</span>", "The most contemptuous"],
+        ["Earlobe / hair / spit / removed garment / uncovered woman's hair", "<span class='hebrew'>400 זוּז</span>", "<span class='hebrew'>הַכֹּל לְפִי כְבוֹדוֹ</span>"],
+        ["Rav Karni's tariff", "kick=1, elbow=3, <span class='hebrew'>סקלונקית</span>=15", "Side baraita on smaller blows"]
+      ],
+      "callout": {
+        "label": "Key principle:",
+        "text": "<span class='hebrew'>הַכֹּל לְפִי כְבוֹדוֹ</span> — but R' Akiva pushes back: every Jew is an aristocrat by birth."
+      }
+    },
+    {
+      "type": "process",
+      "title": "💄 The Flask of Oil — A Famous Trick",
+      "subtitle": "How a defendant tried to prove a woman's 'honor' was already cheap.",
+      "steps": [
+        { "content": "1️⃣ A man uncovered a woman's hair; R' Akiva ruled <span class='hebrew'>אַרְבַּע מֵאוֹת זוּז</span>." },
+        { "content": "2️⃣ The defendant asks for time to pay — and gets it." },
+        { "content": "3️⃣ He waits at her courtyard and breaks a flask of oil (worth an <span class='hebrew'>אִיסָּר</span>) before her." },
+        { "content": "4️⃣ She uncovers her own hair to gather the oil — he plants witnesses." },
+        { "content": "5️⃣ He returns to R' Akiva: 'Should I really pay 400 זוז to <em>this</em> woman?'" },
+        { "content": "6️⃣ R' Akiva: <span class='hebrew'>הַחוֹבֵל בְּעַצְמוֹ אַף עַל פִּי שֶׁאֵינוֹ רַשַּׁאי פָּטוּר וַאֲחֵרִים שֶׁחָבְלוּ בוֹ חַיָיבִים</span> — self-injury exempt, others liable.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "Compare to <span class='hebrew'>הַקּוֹצֵץ אֶת נְטִיעוֹתָיו</span> — cutting your own trees: not allowed, but no liability. Others who cut them are liable. Honor works the same way."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🤐 בושת and Verbal Insult",
+      "subtitle": "Three sub-rulings the Yerushalmi attaches to the price list.",
+      "boxes": [
+        {
+          "title": "💧 Spit That Misses",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "Mishnah: <span class='hebrew'>רָקַק וְהִגִּיעַ בּוֹ הָרוֹק</span>",
+            "Question: how far must it reach? body? clothes?",
+            "<span class='hebrew'>הַמְבַיֵישׁ אֶת חֲבֵירוֹ בִּדְבָרִים פָּטוּר</span>"
+          ]
+        },
+        {
+          "title": "👴 Insulting a זקן",
+          "color": "#c9a84c",
+          "titleColor": "#c9a84c",
+          "items": [
+            "Reish Lakish: <span class='hebrew'>הַמְבַיֵישׁ אֶת הַזָּקֵן נוֹתֵן לוֹ דְמֵי בוֹשְׁתּוֹ מֻשְׁלַם</span>",
+            "Story: someone insulted R' Yehuda b. Chanina",
+            "Reish Lakish fined him a <span class='hebrew'>לִיטְרָא דִדְהַב</span> — pound of gold"
+          ]
+        },
+        {
+          "title": "❓ 'I Don't Know' Defense",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "<span class='hebrew'>הֲרָגַתָּה שׁוֹרִי קָצָצְתָּה נְטִיעוֹתַיי</span>",
+            "Defendant: <span class='hebrew'>אֵינִי יוֹדֵעַ</span>",
+            "R' Yochanan: still חייב — when witnesses testify"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Practical reading:",
+        "text": "The Yerushalmi inserts these halakhot inside the bigger Mishnah on indignities — verbal, gestural, and accusatorial all get separate treatment."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "👑 R' Akiva on the Dignity of Every Jew",
+      "subtitle": "The Mishnah's most quoted line — and its theological core.",
+      "lines": [
+        { "speaker": "M", "side": "left", "speakerColor": "#c9a84c", "text": "Anonymous Mishnah: <span class='hebrew'>הַכֹּל לְפִי כְבוֹדוֹ</span> — payment scales with the victim's status." },
+        { "speaker": "RA", "side": "right", "speakerColor": "#4a90d9", "text": "R' Akiva: <span class='hebrew'>אֲפִילוּ עָנִי שֶׁבְּיִשְׂרָאֵל רוֹאִין אוֹתָן כְּאִילּוּ הֵן בְּנֵי חוֹרִין שֶׁיָּרְדוּ מִנִּכְסֵיהֶן</span> — even the poorest is treated as a fallen aristocrat." },
+        { "speaker": "RA", "side": "right", "speakerColor": "#4a90d9", "text": "Reason: <span class='hebrew'>שֶׁהֵן בְּנֵי אַבְרָהָם יִצְחָק וְיַעֲקֹב</span>." },
+        { "speaker": "Y", "side": "left", "speakerColor": "#9b59b6", "text": "Application: in the woman's case, R' Akiva imposed the full 400 זוז regardless of her socioeconomic standing." }
+      ],
+      "callout": {
+        "label": "Why it matters:",
+        "text": "R' Akiva democratizes the price list. Honor is not aristocratic privilege but Israelite birthright."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🙏 The Mishnah on Forgiveness",
+      "subtitle": "Even after paying, the offender is not yet forgiven.",
+      "nodes": [
+        { "content": "<strong>Mishnah:</strong> <span class='hebrew'>אַף עַל פִּי שֶׁהוּא נוֹתֵן לוֹ אֵינוֹ נִמְחָל לוֹ</span>", "class": "question" },
+        { "type": "arrow" },
+        { "content": "Source 1: <span class='hebrew'>וְעַתָּה הָשֵׁב אֵשֶׁת הָאִישׁ כִּי נָבִיא הוּא</span> — Avimelech must ask Avraham", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Offender", "content": "Pay damages + ask forgiveness", "class": "result-partial" },
+            { "label": "If refused", "content": "Rav: <span class='hebrew'>יַעֲשֶׂה שׁוּרַת בְּנֵי אָדָם וִיפַיְיסֶנּוּ</span> — assemble a row to ask again", "class": "result-partial" },
+            { "label": "Wronged party", "content": "<span class='hebrew'>שֶׁלֹּא יְהֵא הַמּוֹחֵל אַכְזָרִי</span> — must not be cruel", "class": "result-good" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "R' Yose: <span class='hebrew'>הוֹצִיא לוֹ שֵׁם רַע אֵין לוֹ מְחִילָה עוֹלָמִית</span> — defamation has no eternal pardon", "class": "result-bad" }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "Job's friends model the cycle: prayer for the offender brings the prayer's own restoration — <span class='hebrew'>וַיי שָׁב אֶת שְׁבוּת אִיּוֹב בְּהִתְפַּלְּלוֹ בְּעַד רֵעֵהוּ</span>."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Bodily insult is governed by a fixed price list — but R' Akiva universalizes the dignity, the flask story limits it, and the chapter closes with the moral architecture of forgiveness.",
+    "flowSteps": [
+      { "content": "<strong>Vulnerable parties</strong><br>חרש, שוטה, קטן, אשה, עבד — <span class='hebrew'>פגיעתן רעה</span>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Then: the fixed price list for indignities", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "👋 <strong>Tariff</strong><br>סלע → 400 זוז", "style": "border-color:#4a90d9" },
+          { "content": "👑 <strong>R' Akiva</strong><br>all are <span class='hebrew'>בני אברהם</span>", "style": "border-color:#c9a84c" },
+          { "content": "💄 <strong>Flask story</strong><br>self-harm: פטור; others: חייב", "style": "border-color:#e74c3c" },
+          { "content": "🙏 <strong>Forgiveness</strong><br>must ask, must not be cruel", "style": "border-color:#9b59b6" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Money closes the legal claim; only words close the moral one. <span class='hebrew'>וְעַתָּה הָשֵׁב אֵשֶׁת הָאִישׁ</span>.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "What does the Mishnah mean by <span class='hebrew'>פְּגִיעָתָן רָעָה</span>?",
+      "o": [
+        "Their crops are bad",
+        "It is bad to encounter them — they can be injured but cannot pay if they injure",
+        "They are deemed evil people",
+        "They are exempt from the Torah"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>הַחוֹבֵל בָּהֶן חַיָיב וְהֵם שֶׁחָבְלוּ בַּאֲחֵרִים פְּטוּרִין</span> — anyone injuring them pays, but they themselves do not."
+    },
+    {
+      "q": "What does the Mishnah say is the payment for a backhand slap (<span class='hebrew'>לְאַחַר יָדוֹ</span>)?",
+      "o": [
+        "<span class='hebrew'>סֶלַע</span>",
+        "<span class='hebrew'>200 זוּז</span>",
+        "<span class='hebrew'>400 זוּז</span>",
+        "<span class='hebrew'>לִיטְרָא דִדְהַב</span>"
+      ],
+      "c": 2,
+      "e": "Mishnah: <span class='hebrew'>סְתָרוֹ נוֹתֵן לוֹ מָאתַיִם זוּז לְאַחַר יָדוֹ נוֹתֵן לוֹ אַרְבַּע מֵאוֹת זוּז</span>. Backhand is the most insulting."
+    },
+    {
+      "q": "What is R' Akiva's foundational principle for indignity payments?",
+      "o": [
+        "Only the rich receive the full 400 זוז",
+        "Even the poorest in Israel are treated as fallen aristocrats — <span class='hebrew'>בְּנֵי אַבְרָהָם יִצְחָק וְיַעֲקֹב</span>",
+        "All payments must be split with the court",
+        "Embarrassment is paid only when there is also physical injury"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>אֲפִילוּ עָנִי שֶׁבְּיִשְׂרָאֵל רוֹאִין אוֹתָן כְּאִילּוּ הֵן בְּנֵי חוֹרִין שֶׁיָּרְדוּ מִנִּכְסֵיהֶן</span>."
+    },
+    {
+      "q": "Why did R' Akiva reject the defendant's flask-of-oil ruse?",
+      "o": [
+        "Because the witnesses were not valid",
+        "Because <span class='hebrew'>הַחוֹבֵל בְּעַצְמוֹ פָּטוּר וַאֲחֵרִים שֶׁחָבְלוּ בוֹ חַיָיבִים</span> — self-injury exempts the actor, not others",
+        "Because he had already paid",
+        "Because R' Akiva had changed his ruling"
+      ],
+      "c": 1,
+      "e": "Just like cutting your own fruit trees: not permitted but not actionable; others who do the same are liable."
+    },
+    {
+      "q": "What does the closing Mishnah teach about forgiveness?",
+      "o": [
+        "Once you pay, you are automatically forgiven",
+        "<span class='hebrew'>אֵינוֹ נִמְחָל לוֹ עַד שֶׁיְּבַקֵּשׁ מִמֶּנּוּ</span> — you must also ask, and the wronged party must not be cruel",
+        "Forgiveness is impossible for any injury",
+        "Only Yom Kippur grants forgiveness"
+      ],
+      "c": 1,
+      "e": "Source: <span class='hebrew'>וְעַתָּה הָשֵׁב אֵשֶׁת הָאִישׁ כִּי נָבִיא הוּא</span>. R' Yose adds that defamation has no eternal pardon."
+    }
+  ]
+}

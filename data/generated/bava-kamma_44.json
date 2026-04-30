@@ -1,0 +1,191 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 44,
+  "emoji": "🧵",
+  "topics": [
+    "🌾 Robbed field seized by veterans: provincial plague vs. robber's fault",
+    "⚖️ 'I don't know if I returned' vs. 'I don't know if I robbed'",
+    "🐑 Returning a stolen lamb to the flock — must owners be notified?",
+    "🛒 Forbidden purchases from shepherds and orchard-watchmen",
+    "🧵 Tailor's leftover thread; washer's fibers; woodworker's chips"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — The Final Daf: Returns, Trust, and Tradesmen",
+    "label": "The sugya:",
+    "text": "The closing daf of the masechet ties together how a robber returns property, how courts adjudicate uncertain admissions, and how craftsmen handle the leftover materials of clients. The sugya moves from a robbed field seized by veterans, through the famous distinction between 'I don't know if I returned' (liable) and 'I don't know if I robbed' (exempt), through a stolen lamb that must be re-counted, to the small offcuts of tailors, washers, and woodworkers. The masechet ends with the precise measurements of a tailor's needle.",
+    "hebrewSource": "הָאוֹמֵר לַחֲבֵירוֹ גְּזַלְתִּיךָ וְהִלְוִיתַנִי הִפְקַדְתָּ אֶצְלִי וְאֵינוֹ יוֹדֵעַ אִם הֶחֱזַרְתִּי לָךְ וְאִם לֹא הֶחֱזַרְתִּי לָךְ חַיָיב לְשַׁלֵּם"
+  },
+  "slides": [
+    {
+      "type": "comparison",
+      "title": "🌾 Robbed Field Seized by Veterans",
+      "subtitle": "Three scenarios, three rulings.",
+      "boxes": [
+        {
+          "title": "🪖 Provincial Plague (מַכַּת מְדִינָה)",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "<span class='hebrew'>הֲרֵי שֶׁלָּךְ לְפָנֶיךָ</span>",
+            "Robber says: 'Here is your field'",
+            "Robber not liable for replacement"
+          ]
+        },
+        {
+          "title": "👤 Because of the Robber",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<span class='hebrew'>חַיָיב לְהַעֲמִיד לוֹ שָׂדֶה</span>",
+            "R' Yochanan: real estate cannot be 'robbed' — so why liable?",
+            "<span class='hebrew'>קְנָס קְנָסוּהוּ</span> — it is a fine"
+          ]
+        },
+        {
+          "title": "🌊 River Washed It Away",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "<span class='hebrew'>הֲרֵי שֶׁלָּךְ לְפָנֶיךָ</span>",
+            "Treated as natural disaster",
+            "No liability for replacement"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "R' Yehoshua b. Levi:",
+        "text": "<span class='hebrew'>אֵין אָדָם נִתְפָּשׂ עַל חֲבֵירוֹ</span> — one isn't held for another's debt, except annona and head-tax."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "⚖️ Two Kinds of 'I Don't Know'",
+      "subtitle": "The Mishnah distinguishes uncertainty about the return from uncertainty about the act.",
+      "lines": [
+        { "speaker": "M", "side": "left", "speakerColor": "#c9a84c", "text": "If he says <span class='hebrew'>גְּזַלְתִּיךָ ... וְאֵינוֹ יוֹדֵעַ אִם הֶחֱזַרְתִּי לָךְ</span> — he is liable to pay." },
+        { "speaker": "M", "side": "right", "speakerColor": "#9b59b6", "text": "But if he says <span class='hebrew'>אֵינִי יוֹדֵעַ אִם גְּזַלְתִּיךָ</span> — he is exempt." },
+        { "speaker": "RY", "side": "left", "speakerColor": "#4a90d9", "text": "R' Yochanan: this is for one who wants to clear himself <span class='hebrew'>לָצֵאת יְדֵי שָׁמַיִם</span> — before Heaven." },
+        { "speaker": "RJ", "side": "right", "speakerColor": "#4caf50", "text": "R' Jeremiah: he must pay as a matter of strict law." },
+        { "speaker": "RH", "side": "left", "speakerColor": "#e74c3c", "text": "Rav Huna: tell him — <span class='hebrew'>אַתְּ לֵית יְדַע אָהֵן יְדַע</span> — you don't know, but the other party does." }
+      ],
+      "callout": {
+        "label": "Rule of thumb:",
+        "text": "Certainty about the wrong + uncertainty about repair = liable. Uncertainty about the wrong itself = exempt."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🐑 Stolen Lamb Returned to the Flock",
+      "subtitle": "Must the owners be notified of the return?",
+      "nodes": [
+        { "content": "Thief stole a lamb and put it back", "class": "question" },
+        { "type": "arrow" },
+        { "content": "Did the owners know about the theft?", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "R' Yochanan: knew of theft", "content": "Must be told of return", "class": "result-partial" },
+            { "label": "R' Yochanan: did NOT know", "content": "No notification needed — count suffices", "class": "result-good" },
+            { "label": "Reish Lakish", "content": "Always need notification of return", "class": "result-partial" },
+            { "label": "R' Eleazar: like a בָּרְחָא (bell-wether/staff/pandura)", "content": "No notification needed", "class": "result-good" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Mishnah: if owners counted the flock and it was complete — exempt.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Curiosity:",
+        "text": "The Yerushalmi preserves three guesses for what 'בָּרְחָא' means: a shepherd's staff, a pandura (musical instrument), or the great he-goat that leads the flock."
+      }
+    },
+    {
+      "type": "table",
+      "title": "🛒 Where You May and May Not Buy",
+      "subtitle": "Mishnah 10:9 lists permitted and forbidden purchases from suspect sources.",
+      "headers": ["Category", "Ruling", "Reason / Detail"],
+      "rows": [
+        ["Wool, milk, lambs from shepherds", "<span class='hebrew'>אֵין לוֹקְחִין</span> — forbidden", "Likely stolen from owner of flock"],
+        ["Wood, fruits from orchard watchmen", "Forbidden", "Watchmen don't own the produce"],
+        ["Linen garments from Galilee women", "Permitted", "Women's recognized livelihood"],
+        ["Calves in the Sharon", "Permitted", "Local agricultural pattern"],
+        ["Anything 'told to hide'", "<span class='hebrew'>אָסוּר</span>", "Concealment proves theft"],
+        ["Eggs and chickens", "<span class='hebrew'>מִכָּל מָקוֹם</span> — anywhere", "Universal exception"],
+        ["Deposits from women, slaves, minors", "Not accepted (beraita)", "Returned to woman; if she dies — to her husband"]
+      ],
+      "callout": {
+        "label": "Underlying principle:",
+        "text": "Purchases are restricted from those whose access to goods does not normally include ownership."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🧵 Closing the Masechet — The Craftsmen's Offcuts",
+      "subtitle": "How precisely the law splits scraps between worker and client.",
+      "steps": [
+        { "content": "1️⃣ <strong>Washer:</strong> fibers he extracts are his; fibers the carder produces belong to the client. He may take three threads; black on white — he takes all." },
+        { "content": "2️⃣ <strong>Abba Hoshaia of Tireh</strong> was a washer; he made his tunic of a single kind of wool <span class='hebrew'>דְּלָא יְהַוּוֹן בִּרְיָיתָא אָמְרִין. מִדִּידָן לְבַשׁ</span> — so people wouldn't say 'he wears our property.'" },
+        { "content": "3️⃣ <strong>Tailor:</strong> if leftover thread is enough to sew with, or cloth is 3×3 fingerbreadths — return it to the client." },
+        { "content": "4️⃣ <strong>Woodworker:</strong> shavings from the small plane are his; from the large plane — the client's. If working at the client's home, even chips belong to the client." },
+        { "content": "5️⃣ <strong>R' Hiyya vs. Bar Qappara on the needle measure:</strong> 'a needle full' (R' Hiyya) vs. 'the stitching of a needle' (Bar Qappara) — explained as twice the basic measure. <strong>סליק מסכת בבא קמא.</strong>", "highlight": true }
+      ],
+      "callout": {
+        "label": "Final note:",
+        "text": "The masechet ends not with grand principles but with the smallest measurements — a needle's pull, a thread's length — because justice in commerce lives in the offcuts."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "The closing daf of Yerushalmi Bava Kamma teaches that returning property is more than handing it back: it requires acknowledgment, fair counting, the right place, and a careful settling of every offcut. Where the robber cannot fully restore, the court fines; where the robber can be uncertain, the law tracks his certainty.",
+    "flowSteps": [
+      { "content": "<strong>Restitution problem</strong><br>Field seized? Lamb returned? Lingering doubt?", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Identify what kind of uncertainty or loss it is", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🌾 <strong>Field</strong><br>Plague: 'before you'<br>Robber's fault: fine", "style": "border-color:#4caf50" },
+          { "content": "⚖️ <strong>Doubt</strong><br>About return: pay<br>About act: exempt", "style": "border-color:#9b59b6" },
+          { "content": "🐑 <strong>Lamb</strong><br>Owner unaware → count suffices", "style": "border-color:#4a90d9" },
+          { "content": "🧵 <strong>Offcuts</strong><br>Tailor / washer / חרש rules", "style": "border-color:#c9a84c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>סליק מסכת בבא קמא:</strong><br>Justice rests on precise restitution — from the size of a field to the length of a needle's pull.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Why is the robber who lost a robbed field 'because of the robber' liable to provide a replacement, despite אין הקרקע נגזלת?",
+      "o": ["The Torah explicitly says so", "<span class='hebrew'>קְנָס קְנָסוּהוּ</span> — it is a rabbinic fine", "Land is treated as movable here", "R' Yochanan holds land is robbable"],
+      "c": 1,
+      "e": "R' Yochanan: although real estate cannot strictly be 'robbed,' the rabbis fined him."
+    },
+    {
+      "q": "What is the difference between the Mishnah's two confessions?",
+      "o": ["Both make him liable", "Both exempt him", "'I don't know if I returned' = liable; 'I don't know if I robbed' = exempt", "Only the first reaches court"],
+      "c": 2,
+      "e": "Certainty of the wrong with uncertainty of the repayment makes him liable; uncertainty about the wrong itself does not."
+    },
+    {
+      "q": "According to R' Yochanan, when does the lamb-returner not need the owners to know of the return?",
+      "o": ["Always", "Only if the owners did not know of the theft to begin with", "Only on Shabbat", "Only if the lamb was famous"],
+      "c": 1,
+      "e": "If they didn't know of the theft, counting and finding the flock complete is enough; if they knew, they must be told."
+    },
+    {
+      "q": "Which item may be bought from anyone, anywhere, per the Mishnah?",
+      "o": ["Wool from shepherds", "Wood from orchard watchmen", "<span class='hebrew'>בֵּיצִים וְתַרְנוֹגַלִּין</span> — eggs and chickens", "Calves outside the Sharon"],
+      "c": 2,
+      "e": "<span class='hebrew'>וְלוֹקְחִין בֵּיצִים וְתַרְנוֹגַלִּין מִכָּל מָקוֹם</span>."
+    },
+    {
+      "q": "What was the disagreement between R' Hiyya and Bar Qappara about the tailor's leftover thread?",
+      "o": ["Whether any leftover must be returned", "<span class='hebrew'>מְלֹא מַחַט</span> (a needle full) vs. <span class='hebrew'>מְלֹא מְשִׁיכַת הַמַּחַט</span> (the stitching of a needle)", "Whether the thread belongs to the tailor at all", "Whether the rule applies on Shabbat"],
+      "c": 1,
+      "e": "R' Hiyya: a needle full. Bar Qappara: the stitching of a needle. The respective Houses each explained it as twice the basic measure."
+    }
+  ]
+}

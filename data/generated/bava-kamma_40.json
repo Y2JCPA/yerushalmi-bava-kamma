@@ -1,0 +1,213 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 40,
+  "emoji": "💍",
+  "topics": [
+    "👔 ערכין and the carve-out for clothing of wife and children",
+    "🚶 Robber-and-oath: יוליכנו אחריו אפילו למדי",
+    "💰 קרן + חומש + אשם — the three-part payment for false oath",
+    "🤝 Deposits from women, slaves, and minors — and what to do at death",
+    "💍 R' Abba bar Chana's wife: 'אין אדם מצוי לשקר בשעת מיתה'"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Reaching the Victim and Returning the Object",
+    "label": "The sugya:",
+    "text": "Daf 40 closes the ערכין discussion (R' Hoshaya teaches that foreclosure on movables for valuations is rabbinic, not biblical) and then opens Mishnah 9:6: the robber who took something worth a peruṭa and swore falsely must pursue the victim even to Media. The Yerushalmi works out the chain of payments (קרן, חומש, אשם), the rules for who counts as a valid pickup-agent, and the case of a deposit confessed at the moment of death — culminating in Rav's ruling on R' Abba bar Chana's wife: <span class='hebrew'>אֵין אָדָם מָצוּי לְשַׁקֵּר בִּשְׁעַת מִיתָה</span>.",
+    "hebrewSource": "הַגּוֹזֵל אֶת חֲבֵירוֹ שָׁוֶה פְרוּטָה וְנִשְׁבַּע לוֹ יוֹלִיכֶנּוּ אַחֲרָיו אֲפִילוּ לְמָדַי"
+  },
+  "slides": [
+    {
+      "type": "callout",
+      "title": "🏷️ Closing the ערכין Sugya — Movables Are Only Rabbinic",
+      "label": "R' Hoshaya in the name of Shmuel bar Abba:",
+      "text": "The Mishnah excludes the wife and children's clothing from valuation foreclosure. The Yerushalmi probes: what if someone said 'my valuation on me on condition that you not foreclose on my wife's and children's clothing'? R' Nasa: he can stipulate against any specific item. R' Hoshaya draws the inference: <span class='hebrew'>זֹאת אוֹמֶרֶת שֶׁאֵין שָׁמִין עֲרָכִין מִן הַמִּטַּלְטְלַין דְּבַר תּוֹרָה אֶלָּא מִדִּבְרֵיהֶן</span> — biblically, valuations are foreclosed only from real estate; movables are rabbinic.",
+      "hebrewSource": "זֹאת אוֹמֶרֶת שֶׁאֵין שָׁמִין עֲרָכִין מִן הַמִּטַּלְטְלַין דְּבַר תּוֹרָה אֶלָּא מִדִּבְרֵיהֶן"
+    },
+    {
+      "type": "process",
+      "title": "🚶 The Robber Who Swore Falsely — Pursuit to Media",
+      "subtitle": "Mishnah 9:6 and the chain of consequences.",
+      "steps": [
+        { "content": "1️⃣ Robber took something worth at least a <span class='hebrew'>פְּרוּטָה</span> and <strong>swore falsely</strong> denying it." },
+        { "content": "2️⃣ He must <strong>personally deliver</strong> the object to the victim — <span class='hebrew'>אֲפִילוּ לְמָדַי</span> (even to Media)." },
+        { "content": "3️⃣ He may <strong>not</strong> hand it to the victim's son or agent — only to <span class='hebrew'>שְׁלִיחַ בֵּית דִּין</span>." },
+        { "content": "4️⃣ If the victim has died, the robber <strong>repays the heirs</strong>." },
+        { "content": "5️⃣ He pays <strong>קרן + חומש + אשם</strong>; if the principal drops below a peruṭa via partial payment, the chase ends.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Why so strict:",
+        "text": "The false oath converted a civil debt into a personal religious obligation. The robber must literally place the object back in the victim's hand."
+      }
+    },
+    {
+      "type": "table",
+      "title": "💸 The חומש-on-חומש Cascade",
+      "subtitle": "What happens when the robber swears again on the fifth.",
+      "headers": ["Stage", "What happens", "Consequence"],
+      "rows": [
+        ["1. Initial robbery + false oath", "Pays <span class='hebrew'>קֶרֶן + חוֹמֶשׁ + אָשָׁם</span>", "Standard 9:6 setup"],
+        ["2. Pays principal but swears falsely on the fifth", "<span class='hebrew'>הֲרֵי זֶה מְשַׁלֵּם חוֹמֶשׁ עַל חוֹמֶשׁ</span>", "New chumash on the unpaid chumash"],
+        ["3. R' Yonatan's reading", "<span class='hebrew'>בִּנְתִינַת הַחוֹמֶשׁ נַעֲשֶׂה חוֹמֶשׁ קֶרֶן</span>", "Each unpaid fifth becomes a fresh principal"],
+        ["4. Cascade ends when…", "<span class='hebrew'>עַד שֶׁיִּתְמָעֵט חוֹמֶשׁ הָאַחֲרוֹן פָּחוֹת מִשָּׁוֶה פְרוּטָה</span>", "Below peruṭa = no obligation"]
+      ],
+      "callout": {
+        "label": "R' Yonatan's principle:",
+        "text": "Each unpaid חומש legally morphs into a new קרן the moment the robber swears falsely on it. The fifth piggybacks on its own fifth, recursively, until the residue dips below a peruṭa."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🤝 Deposits From Women, Slaves, and Minors",
+      "subtitle": "The Tannaitic rule on accepting deposits from those without independent legal standing.",
+      "boxes": [
+        {
+          "title": "👩 From a woman",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "Should not accept",
+            "If accepted: return to her",
+            "If she died: return <strong>to her husband</strong>"
+          ]
+        },
+        {
+          "title": "🧑 From a slave",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Should not accept",
+            "If accepted: return to him",
+            "If he died: return <strong>to his master</strong>"
+          ]
+        },
+        {
+          "title": "👶 From a minor",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "Should not accept",
+            "If accepted: return to him",
+            "If he died: return <strong>to his father</strong> as <span class='hebrew'>סְגוּלָּה</span> (safe investment)"
+          ]
+        },
+        {
+          "title": "💬 Deathbed declaration",
+          "color": "#c9a84c",
+          "titleColor": "#c9a84c",
+          "items": [
+            "If the depositor named someone at death: <span class='hebrew'>יַעֲשֶׂה פֵירוּשׁ לְפֵירוּשׁוֹ</span>",
+            "R' Zebida: <strong>only with witnesses</strong>",
+            "Living-out their stated intent"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Logic of the defaults:",
+        "text": "The presumption is that whatever each dependent class held actually belongs to the responsible party (husband, master, father). A deathbed naming overrides the default — but only if witnessed."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "💍 The Story: R' Abba bar Chana's Wife",
+      "subtitle": "Rav's ruling on dying-words testimony.",
+      "nodes": [
+        { "content": "R' Abba bar Chana's wife is dying", "class": "question" },
+        { "type": "arrow" },
+        { "content": "She declares: <span class='hebrew'>אָהֵן קִידּוּשָׁא דִבְרַתִּי</span><br>(these rings belong to my daughter)", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Husband's claim", "content": "<span class='hebrew'>לֵית הוּא אֶלָּא דִידִי</span><br>they're mine", "class": "result-bad" },
+            { "label": "Wife's claim", "content": "they belong to the daughter", "class": "result-partial" },
+            { "label": "Case before Rav", "content": "Rav rules for the wife's words", "class": "result-good" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "🎓 <span class='hebrew'>אֵין אָדָם מָצוּי לְשַׁקֵּר בִּשְׁעַת מִיתָה</span> — people do not lie at death.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Why this matters:",
+        "text": "Rav's principle becomes a foundational rule for halakhic deathbed testimony: a person at the threshold of death is presumed credible. The case-law is built right into the daf."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "A false oath transforms civil restitution into personal pursuit — the robber must reach the victim even to Media, paying קרן+חומש+אשם, with each unpaid fifth recursively becoming new principal. The daf closes with the parallel honesty-presumption: a person at death is not assumed to lie.",
+    "flowSteps": [
+      { "content": "<strong>End of ערכין:</strong> movables are foreclosed only מדבריהן", "class": "question" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🚶 <strong>9:6 robber</strong><br>pursuit to Media", "style": "border-color:#e74c3c" },
+          { "content": "💸 <strong>חומש cascade</strong><br>R' Yonatan's reading", "style": "border-color:#c9a84c" },
+          { "content": "🤝 <strong>9:7 deposit</strong><br>women, slaves, minors", "style": "border-color:#9b59b6" },
+          { "content": "💍 <strong>Rav's ruling</strong><br>dying words trusted", "style": "border-color:#4a90d9" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "Each sugya tracks <strong>who can speak for whom</strong>: the robber pursuing the victim, the depositor naming an heir, the wife claiming the rings.", "class": "action" },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Halakhah handles representation carefully — false oaths force personal pursuit, and a deathbed statement carries presumptive truth.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "What inference does Rav Hoshaya draw from the Mishnah's allowance to stipulate against foreclosing on a particular item?",
+      "o": [
+        "Valuations are not Torah law at all",
+        "Foreclosure of valuations from movables is rabbinic, not biblical",
+        "Movables are never foreclosed",
+        "Only women's clothing is exempt"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>זֹאת אוֹמֶרֶת שֶׁאֵין שָׁמִין עֲרָכִין מִן הַמִּטַּלְטְלַין דְּבַר תּוֹרָה אֶלָּא מִדִּבְרֵיהֶן</span>."
+    },
+    {
+      "q": "If a robber took at least a peruṭa's worth and swore falsely, where must he deliver the object?",
+      "o": [
+        "Only within his own city",
+        "To beit din",
+        "<span class='hebrew'>אֲפִילוּ לְמָדַי</span> — even to Media (he must follow the victim)",
+        "He may give it to the victim's son"
+      ],
+      "c": 2,
+      "e": "The Mishnah: <span class='hebrew'>יוֹלִיכֶנּוּ אַחֲרָיו אֲפִילוּ לְמָדַי</span>. He may not give it to the victim's son or agent — only שליח בית דין."
+    },
+    {
+      "q": "According to R' Yonatan, what happens when the robber swears falsely on the unpaid חומש?",
+      "o": [
+        "Nothing further — he already paid קרן",
+        "<span class='hebrew'>בִּנְתִינַת הַחוֹמֶשׁ נַעֲשֶׂה חוֹמֶשׁ קֶרֶן</span> — each unpaid fifth becomes a new principal",
+        "The case is dismissed",
+        "Only an additional אשם is due"
+      ],
+      "c": 1,
+      "e": "R' Yonatan reads the Mishnah's חומש-on-חומש cascade as: each unpaid fifth turns into fresh principal, generating its own fifth — until the residue is below a peruṭa."
+    },
+    {
+      "q": "If a deposit was accepted from a woman and she dies, to whom is it returned (per the Tannaitic rule cited)?",
+      "o": [
+        "To her father",
+        "To her husband",
+        "To beit din",
+        "To her oldest son"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>מֵתָה יַחֲזִיר לְבַעֲלָהּ</span>. The default is that her belongings revert to her husband's domain. A deathbed naming (with witnesses) can override this."
+    },
+    {
+      "q": "What did Rav rule in the case of R' Abba bar Chana's dying wife claiming the rings belonged to her daughter?",
+      "o": [
+        "The husband keeps the rings",
+        "The case is split between husband and daughter",
+        "The wife's words stand: <span class='hebrew'>אֵין אָדָם מָצוּי לְשַׁקֵּר בִּשְׁעַת מִיתָה</span>",
+        "The rings go to beit din until further proof"
+      ],
+      "c": 2,
+      "e": "Rav established the principle that a person at the moment of death is presumed truthful. The rings go to the daughter as the wife declared."
+    }
+  ]
+}

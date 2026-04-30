@@ -1,0 +1,210 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 37,
+  "emoji": "✂️",
+  "topics": [
+    "👁️ סמא את עיני — consent to bodily damage with 'on condition not to be liable'",
+    "🤔 R' Lazar vs. Reish Laqish — does 'yes' really mean 'no'?",
+    "💰 Coerced by Gentiles: handing over another's money",
+    "🪵 גזל עצים ועשאן כלים — change in the object and time of payment",
+    "🧼 Is bleaching wool considered a שינוי?"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Consent, Coercion, and the Robbed Object",
+    "label": "The sugya:",
+    "text": "The daf closes Chapter 8 with the laws of consenting to one's own injury (סמא את עיני) and being coerced by Gentiles to hand over a fellow's money. It then opens Chapter 9: the foundational principle that a robber pays the value of the object at the time of the gezeilah, even if it has since been transformed into utensils or garments. The amoraim debate whether bleaching wool counts as a שינוי that locks in the gazlan's payment.",
+    "hebrewSource": "הָאוֹמֵר סַמֵּא אֵת עֵינִי קְטַע אֶת יָדִי שַׁבֵּר אֶת רַגְלִי חַיָיב עַל מְנָת לִפְטוֹר חַיָיב"
+  },
+  "slides": [
+    {
+      "type": "comparison",
+      "title": "👁️ Body vs. Property — Consent Cuts Differently",
+      "subtitle": "The Mishnah distinguishes between damage to the body and damage to property.",
+      "boxes": [
+        {
+          "title": "🩸 'Blind my eye' (גופו)",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<span class='hebrew'>סַמֵּא אֵת עֵינִי</span> → liable",
+            "Even <span class='hebrew'>עַל מְנָת לִפְטוֹר</span> → still liable",
+            "A person cannot waive bodily damage"
+          ]
+        },
+        {
+          "title": "👕 'Tear my garment' (ממונו)",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "<span class='hebrew'>קְרַע אֶת כְּסוּתִי</span> → liable",
+            "But <span class='hebrew'>עַל מְנָת לִפְטוֹר</span> → exempt",
+            "Property rights can be waived"
+          ]
+        },
+        {
+          "title": "👥 To a third party",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "<span class='hebrew'>עֲשֵׂה כֵן לְאִישׁ פְּלוֹנִי</span>",
+            "Even on condition to be exempt → liable",
+            "Body and money — no waiver works"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Key move:",
+        "text": "Consent shifts liability for property but not for body. And no one can grant exemption on someone else's behalf."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 Does 'Yes' Mean 'Yes' or 'No'?",
+      "subtitle": "R' Lazar and Reish Laqish split on how to read the Mishnah's 'on condition'.",
+      "lines": [
+        { "speaker": "RL", "side": "left", "speakerColor": "#c9a84c", "text": "<strong>R' Lazar:</strong> The Mishnah is talking about a 'yes' that really means 'no' (<span class='hebrew'>בָּהֵן שֶׁהוּא כְלָאו</span>). But a sincere 'yes' that means 'yes' — exempt." },
+        { "speaker": "RŠ", "side": "right", "speakerColor": "#4a90d9", "text": "<strong>Reish Laqish:</strong> The Mishnah is the genuine 'yes' (<span class='hebrew'>בָּהֵן שֶׁהוּא כְהֵין</span>). But a 'yes' that means 'no' — even more so, liable." },
+        { "speaker": "Y", "side": "left", "speakerColor": "#9b59b6", "text": "Implication: R' Lazar is concerned with <span class='hebrew'>פְּגַם מִשְׁפָּחָה</span> — the family's loss of standing. Reish Laqish implies one assesses bushet for relatives." }
+      ],
+      "callout": {
+        "label": "Why it matters:",
+        "text": "The dispute decides whether a victim's permission can ever truly exempt the מזיק. R' Lazar reads consent narrowly; Reish Laqish reads it more literally."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🛡️ Coerced by Gentiles — When Are You Liable?",
+      "subtitle": "A baraita on a Jew forced to give over another's money.",
+      "steps": [
+        { "content": "1️⃣ Gentiles forcibly take a fellow's money <strong>in his presence</strong> → <span class='hebrew'>פָּטוּר</span>." },
+        { "content": "2️⃣ He actively <strong>handed it over</strong> (<span class='hebrew'>נָטַל וְנָתַן לָהֶם</span>) → <span class='hebrew'>חַיָיב</span>." },
+        { "content": "3️⃣ R' Yose qualifies: this is when they demanded 'money' generically (<span class='hebrew'>מָמוֹן סְתָם</span>)." },
+        { "content": "4️⃣ But if they specified a particular person's money (<span class='hebrew'>מָמוֹן פְּלוֹנִי</span>) — even if he handed it over, <strong>exempt</strong>." },
+        { "content": "5️⃣ Logic: when they targeted that specific money, his hand-over did not change the outcome.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Practical reading:",
+        "text": "Liability tracks how much <em>added</em> harm the actor caused. Specificity by the coercer breaks the chain of responsibility."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🪵 Mishnah 9:1 — The Robber Pays at Time of Theft",
+      "subtitle": "When the gazlan transforms the object, what does he pay?",
+      "nodes": [
+        { "content": "<strong>גָּזַל עֵצִים וַעֲשָׂאָן כֵּלִים</strong><br>(robbed wood, made utensils)", "class": "question" },
+        { "type": "arrow" },
+        { "content": "<span class='hebrew'>מְשַׁלֵּם כְּשָׁעַת הַגְּזֵילָה</span><br>Pays the value at the time of the robbery", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Pregnant cow → calved", "content": "Pays cow ready to calve", "class": "result-good" },
+            { "label": "Sheep with wool → shorn", "content": "Pays sheep ready to shear", "class": "result-good" },
+            { "label": "Became pregnant with him → calved", "content": "Pays value at time of gezeilah", "class": "result-partial" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "<span class='hebrew'>זֶה הַכְּלָל כָּל הַגַּזְלָנִין מְשַׁלְּמִין כְּשָׁעַת הַגְּזֵילָה</span>", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "The principle:",
+        "text": "Once שינוי kicks in, the original owner can no longer demand the transformed object. The gazlan pays the snapshot price from the moment of theft."
+      }
+    },
+    {
+      "type": "table",
+      "title": "🧼 Is Bleaching a שינוי?",
+      "subtitle": "The Yerushalmi reconciles two contradictory rulings.",
+      "headers": ["Position", "Case", "Result"],
+      "rows": [
+        ["<span class='hebrew'>לִיבּוּן כְּשִׁינּוּי</span>", "He turned it into צוּפִים (wool flakes)", "Bleaching counts as change"],
+        ["<span class='hebrew'>אֵין לִיבּוּן כְּשִׁינּוּי</span>", "He left it as-is (just bleached)", "Bleaching alone does not change ownership"],
+        ["R' Yudan", "Either way: <span class='hebrew'>קַל הוּא שֶׁהֵיקֵלוּ בְגַזְלָן</span>", "It is a leniency for the robber to pay כשעת הגזילה"],
+        ["שֶׁלַח (raw hide) cleaned", "Can you say it became 'flakes'?", "Yet again — leniency for the gazlan"]
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "The amoraim navigate between פְּגָם and שִׁינּוּי. R' Yudan steps back and says the entire framework is a leniency — protect the gazlan from ever-changing valuations by freezing the price at the gezeilah moment."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Consent waives property damage but not bodily harm; coercion liability depends on specificity; and the robber always pays the value at the time of the theft.",
+    "flowSteps": [
+      { "content": "<strong>End of Ch. 8</strong><br>Consent + coercion cases", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Body vs. property → only property accepts <span class='hebrew'>עַל מְנָת לִפְטוֹר</span>", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "👁️ <strong>גוף</strong><br>always liable", "style": "border-color:#e74c3c" },
+          { "content": "👕 <strong>ממון</strong><br>waiver works", "style": "border-color:#4a90d9" },
+          { "content": "💰 <strong>אונס</strong><br>specific vs. general", "style": "border-color:#9b59b6" },
+          { "content": "🪵 <strong>גזלן</strong><br>כשעת הגזילה", "style": "border-color:#c9a84c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Liability tracks the moment of damage or theft. After that, transformation, coercion, or consent are governed by carefully calibrated rules.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "What does the Mishnah hold about 'סמא את עיני על מנת לפטור'?",
+      "o": [
+        "He is exempt — consent works",
+        "He is liable — bodily damage cannot be waived",
+        "He pays only half",
+        "Only the victim's family can sue"
+      ],
+      "c": 1,
+      "e": "Bodily damage cannot be waived: 'על מנת לפטור חייב'. Property damage, however, can be waived."
+    },
+    {
+      "q": "How does R' Lazar read the Mishnah's 'on condition not to be liable'?",
+      "o": [
+        "A 'yes' that means 'yes' — sincere consent",
+        "A 'yes' that really means 'no' (בהן שהוא כלאו)",
+        "A formal court declaration",
+        "Only with witnesses"
+      ],
+      "c": 1,
+      "e": "R' Lazar: the Mishnah is dealing with a 'yes' which really means 'no'. Reish Laqish takes the opposite stance."
+    },
+    {
+      "q": "If Gentiles demand 'X's money specifically' and the Jew hands it over, what is his status?",
+      "o": [
+        "Liable — he handed it over",
+        "Liable for half",
+        "Exempt — even if he handed it over (R' Yose)",
+        "It depends on witnesses"
+      ],
+      "c": 2,
+      "e": "R' Yose: 'אבל ממון פלוני אפילו נטל ונתן ביד פטור.' Specificity by the coercer breaks the chain of responsibility."
+    },
+    {
+      "q": "What does 'משלם כשעת הגזילה' mean in the opening Mishnah of Chapter 9?",
+      "o": [
+        "He pays the current market price",
+        "He pays the value at the time of the robbery",
+        "He pays double",
+        "He pays whatever the victim demands"
+      ],
+      "c": 1,
+      "e": "The general principle: 'זה הכלל כל הגזלנין משלמין כשעת הגזילה.' Once שינוי occurs, the price is locked at the moment of theft."
+    },
+    {
+      "q": "What is R' Yudan's framing of the bleaching/שינוי dispute?",
+      "o": [
+        "Bleaching is always a שינוי",
+        "Bleaching is never a שינוי",
+        "It is a leniency for the gazlan that he pays כשעת הגזילה",
+        "It depends on the type of wool"
+      ],
+      "c": 2,
+      "e": "R' Yudan: 'קל הוא שהיקלו בגזלן שישלם כשעת הגזילה.' The whole framework is a calibrated leniency for the robber."
+    }
+  ]
+}

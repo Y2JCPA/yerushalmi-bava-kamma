@@ -1,0 +1,210 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 39,
+  "emoji": "🎨",
+  "topics": [
+    "🎨 צמר לצבע — wool given to a dyer and the vat burned it",
+    "🔥 הקדיחה יורה vs. הקדיחו סממנין — Rav Huna and Shmuel disagree",
+    "💰 שבח vs. הוצאה — paying the smaller of value-added or expenses",
+    "🏘️ Tiberias vs. Sepphoris — the agent who deviates loses",
+    "🌾 חיטים ושעורים — when an agent buys the wrong commodity"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — The Dyer, the Agent, and the Deviation",
+    "label": "The sugya:",
+    "text": "The Mishnah in Bava Kamma 9:5 handles three cases of a craftsman or agent who botches the job: the vat burns the wool, the wool comes out poorly dyed, or the wool is dyed the wrong color. The Yerushalmi sharpens the dispute between Rav Huna and Shmuel about whether 'הרי שלך לפניך' applies, calculates שבח-vs-הוצאה with concrete numbers, and ports the rule to a parallel agency case (Tiberias vs. Sepphoris wheat). It concludes by exploring R' Meir vs. R' Yehudah on profit-sharing when an agent buys the wrong grain.",
+    "hebrewSource": "נָתַן צֶמֶר לַצַּבָּע וְהִקְדִּיחֳהּ הַיּוֹרָה נוֹתֵן לוֹ דְּמֵי צַמְרוֹ"
+  },
+  "slides": [
+    {
+      "type": "comparison",
+      "title": "🎨 Three Mishnaic Cases of a Dyer Gone Wrong",
+      "subtitle": "The Mishnah of 9:5 sets up a tight ladder of fault.",
+      "boxes": [
+        {
+          "title": "🔥 הקדיחה היורה",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "The vat burned the wool entirely",
+            "Dyer pays <span class='hebrew'>דְּמֵי צַמְרוֹ</span>",
+            "Total loss — pure value of the wool"
+          ]
+        },
+        {
+          "title": "🟫 צבעו כאור (poorly dyed)",
+          "color": "#c9a84c",
+          "titleColor": "#c9a84c",
+          "items": [
+            "Wool exists but quality is reduced",
+            "If <span class='hebrew'>שבח > הוצאה</span> → pay the expenses",
+            "If <span class='hebrew'>הוצאה > שבח</span> → pay the smaller value-added"
+          ]
+        },
+        {
+          "title": "🎨 wrong color",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Asked for אדום, dyed שחור (or vice versa)",
+            "R' Meir: <span class='hebrew'>נוֹתֵן לוֹ דְּמֵי צַמְרוֹ</span>",
+            "R' Yehudah: same שבח/הוצאה calculation as case 2"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Key move:",
+        "text": "The Mishnah treats the three cases on a sliding scale: total destruction → defect → deviation. Only on case 3 do R' Meir and R' Yehudah split."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 Rav Huna vs. Shmuel — When Can the Dyer Say 'הרי שלך לפניך'?",
+      "subtitle": "The Halakhah opens with a sharp two-way split.",
+      "lines": [
+        { "speaker": "RH", "side": "left", "speakerColor": "#4a90d9", "text": "Rav Huna: the Mishnah's case is <span class='hebrew'>שֶׁהִקְדִּיחוּ סַמְמָנִין</span> — the chemicals burned the wool. But if <span class='hebrew'>הִקְדִּיחָה יוֹרָה</span>, the vat itself burned it, the dyer can simply say <span class='hebrew'>הֲרֵי שֶׁלָּךְ לְפָנֶיךָ</span>." },
+        { "speaker": "Sh", "side": "right", "speakerColor": "#9b59b6", "text": "Shmuel: <span class='hebrew'>אֲפִילוּ הִקְדִּיחוּ סַמְמָנִין</span> — even if the chemicals burned it, he says 'here is yours before you.' Either way, no cash payment for the wool itself." },
+        { "speaker": "Y", "side": "left", "speakerColor": "#c9a84c", "text": "The dispute is about how to read the Mishnah's <span class='hebrew'>נוֹתֵן לוֹ דְּמֵי צַמְרוֹ</span>: does it mean cash, or does it mean 'returns the burnt wool as-is'?" }
+      ],
+      "callout": {
+        "label": "Conceptual stakes:",
+        "text": "Rav Huna distinguishes between a defect in the dyer's tool (vat) and a defect in the materials (chemicals). Shmuel collapses both — the wool is what the wool is."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🧮 Working the Numbers — שבח vs. הוצאה",
+      "subtitle": "The Yerushalmi gives a concrete worked example.",
+      "steps": [
+        { "content": "1️⃣ Customer supplies <strong>5 lots of wool + 5 portions of dye</strong> and pays the dyer <strong>10 minas</strong> in wages." },
+        { "content": "2️⃣ Customer says: dye it red. Dyer dyes it black." },
+        { "content": "3️⃣ <strong>Hypothetical red value:</strong> <span class='hebrew'>הֲוָה טָב עֶשְׂרִין וַחֲמִשָּׁה מָנוֹי</span> — would have been worth 25 minas." },
+        { "content": "4️⃣ <strong>Actual black value:</strong> <span class='hebrew'>לֵית הוּא טָב אֶלָּא עֶשְׂרִין מָנוֹי</span> — worth only 20 minas." },
+        { "content": "5️⃣ Customer says: <span class='hebrew'>אַתְּ אוֹבַדְתְּ דִּידָךְ. אֲנָא לָא אוֹבֵד דִּידִי</span> — 'You lose yours, I do not lose mine.' Dyer eats the loss.", "highlight": true }
+      ],
+      "callout": {
+        "label": "The principle:",
+        "text": "The customer's wool was worth 15 (value of materials before work). It is now worth 20. The שבח is 5 minas, less than the 10 minas in wages. The dyer recovers only 5 — the smaller of שבח/הוצאה."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🏘️ R' Yonah's Ports — Tiberias vs. Sepphoris Wheat",
+      "subtitle": "The same logic applied to a buying agent who deviates.",
+      "nodes": [
+        { "content": "Customer gives agent <strong>8 dinars</strong>: buy wheat in <span class='hebrew'>טִיבֵּרִיָּא</span>", "class": "question" },
+        { "type": "arrow" },
+        { "content": "Agent buys in <span class='hebrew'>צִיפּוֹרִי</span> instead", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Tiberias (hypothetical)", "content": "Would have yielded<br><strong>25 modii</strong>", "class": "result-good" },
+            { "label": "Sepphoris (actual)", "content": "Yielded only<br><strong>20 modii</strong>", "class": "result-bad" },
+            { "label": "Customer's claim", "content": "<span class='hebrew'>אַתְּ אוֹבַדְתְּ דִּידָךְ</span><br>You lose yours", "class": "result-partial" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "🎓 The deviating agent absorbs the gap exactly as the deviating dyer does.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "R' Yonah's move:",
+        "text": "<span class='hebrew'>וְתִשְׁמַע מִינֵּהּ</span> — derive a general agency principle from the dyer Mishnah. Deviation = your loss is your loss."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📊 Wheat-for-Barley — R' Meir vs. R' Yehudah on Profit-Sharing",
+      "subtitle": "When the agent buys the wrong commodity, who pockets a price gain?",
+      "headers": ["Scenario", "R' Meir", "R' Yehudah"],
+      "rows": [
+        ["Price <strong>drops</strong>", "Loss falls on agent", "Loss falls on agent"],
+        ["Price <strong>rises</strong>", "Profit goes to agent alone", "Profit is <strong>split</strong> between agent and principal"],
+        ["Reasoning", "<span class='hebrew'>לֹא נִתְכַּוֵון הַמּוֹכֵר לְזַכּוֹת אֶלָּא לַלּוֹקֵחַ</span>", "<span class='hebrew'>לֹא נִתְכַּוֵון הַמּוֹכֵר לְזַכּוֹת אֶלָּא לְבַעַל הַמָּעוֹת</span>"],
+        ["Why split (R' Yehudah)", "—", "<span class='hebrew'>הוֹאִיל וּבָאָת לוֹ הֲנָיָיה מִתַּחַת יָדוֹ</span> — the agent benefited via the principal's money, so he shares"]
+      ],
+      "callout": {
+        "label": "R' Nasa's resolution:",
+        "text": "If the agent <strong>fulfilled his agency</strong>, the seller transferred ownership to the principal. If he <strong>deviated</strong>, ownership goes to the agent — but profit-sharing is required because <span class='hebrew'>אָסוּר לִיהֲנוֹת מֵחֲבֵירוֹ</span>."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "When a craftsman or agent deviates from instructions, he absorbs the gap between expected and actual value — but if a price gain accidentally arises, R' Yehudah requires him to share it with the principal whose money produced it.",
+    "flowSteps": [
+      { "content": "<strong>Mishnah 9:5</strong><br><span class='hebrew'>נָתַן צֶמֶר לַצַּבָּע</span>", "class": "question" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🔥 <strong>Total loss</strong><br>pay דמי צמרו", "style": "border-color:#e74c3c" },
+          { "content": "🟫 <strong>Poor dye job</strong><br>smaller of שבח / הוצאה", "style": "border-color:#c9a84c" },
+          { "content": "🎨 <strong>Wrong color</strong><br>R' Meir vs. R' Yehudah", "style": "border-color:#9b59b6" },
+          { "content": "🌾 <strong>Wrong grain</strong><br>profit-share dispute", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "R' Yonah ports the dyer logic to the Tiberias/Sepphoris agent: <span class='hebrew'>אַתְּ אוֹבַדְתְּ דִּידָךְ</span>", "class": "action" },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>The deviating agent absorbs his loss; the principal's money cannot quietly enrich him.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "According to Rav Huna, what is the Mishnah's case of <span class='hebrew'>נוֹתֵן לוֹ דְּמֵי צַמְרוֹ</span>?",
+      "o": [
+        "Specifically when chemicals (סממנין) burned the wool",
+        "When the vat itself burned it",
+        "Only when the dyer was negligent",
+        "When the customer changed his mind"
+      ],
+      "c": 0,
+      "e": "Rav Huna says: <span class='hebrew'>שֶׁהִקְדִּיחוּ סַמְמָנִין</span>, but if the vat burned it, the dyer can say הרי שלך לפניך. Shmuel disagrees and says even with chemicals he says הרי שלך לפניך."
+    },
+    {
+      "q": "In the worked example, the wool would have been worth 25 minas if dyed red, but only 20 minas dyed black. The dyer was paid 10 minas in wages. What does the dyer get?",
+      "o": [
+        "10 minas (full wages)",
+        "5 minas (the שבח, since it is less than הוצאה)",
+        "Nothing",
+        "25 minas"
+      ],
+      "c": 1,
+      "e": "The Mishnah says: when הוצאה (10) exceeds שבח (5), the dyer receives only the שבח. The customer says אַתְּ אוֹבַדְתְּ דִּידָךְ."
+    },
+    {
+      "q": "What is R' Yonah's case extending the dyer Mishnah?",
+      "o": [
+        "A shepherd who lost a sheep",
+        "An agent given 8 dinars to buy wheat in Tiberias who buys in Sepphoris instead",
+        "A worker who quit mid-job",
+        "A borrower who damaged a tool"
+      ],
+      "c": 1,
+      "e": "R' Yonah says <span class='hebrew'>וְתִשְׁמַע מִינֵּהּ</span> — derive from the dyer that the deviating agent absorbs the gap (25 modii expected, 20 actual)."
+    },
+    {
+      "q": "On the wheat-for-barley case where the agent bought the wrong grain and the price rose, what does R' Yehudah hold?",
+      "o": [
+        "Agent keeps all the profit",
+        "Principal keeps all the profit",
+        "Profit is split between agent and principal",
+        "The sale is void"
+      ],
+      "c": 2,
+      "e": "<span class='hebrew'>אִם הוֹתִירוּ הוֹתִירוּ לִשְׁנֵיהֶן</span> — R' Yehudah says they share. R' Nasa explains: <span class='hebrew'>הוֹאִיל וּבָאָת לוֹ הֲנָיָיה מִתַּחַת יָדוֹ</span>."
+    },
+    {
+      "q": "What does R' Meir say is the seller's intent when the agent deviates and buys barley instead of wheat?",
+      "o": [
+        "<span class='hebrew'>לֹא נִתְכַּוֵון הַמּוֹכֵר לְזַכּוֹת אֶלָּא לַלּוֹקֵחַ</span>",
+        "<span class='hebrew'>לֹא נִתְכַּוֵון הַמּוֹכֵר לְזַכּוֹת אֶלָּא לְבַעַל הַמָּעוֹת</span>",
+        "The sale is invalid",
+        "It depends on the price"
+      ],
+      "c": 0,
+      "e": "R' Meir: the seller transferred ownership only to the agent (the actual buyer in front of him), so any profit belongs to the agent. R' Yehudah inverts this — to בעל המעות."
+    }
+  ]
+}

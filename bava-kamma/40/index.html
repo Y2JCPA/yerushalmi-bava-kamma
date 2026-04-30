@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 40 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">💍</div>
+  <h1>Yerushalmi Bava Kamma 40</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא מ׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    👔 ערכין and the carve-out for clothing of wife and children<br>
+    🚶 Robber-and-oath: יוליכנו אחריו אפילו למדי<br>
+    💰 קרן + חומש + אשם — the three-part payment for false oath<br>
+    🤝 Deposits from women, slaves, and minors — and what to do at death<br>
+    💍 R' Abba bar Chana's wife: 'אין אדם מצוי לשקר בשעת מיתה'<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Reaching the Victim and Returning the Object</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">הַגּוֹזֵל אֶת חֲבֵירוֹ שָׁוֶה פְרוּטָה וְנִשְׁבַּע לוֹ יוֹלִיכֶנּוּ אַחֲרָיו אֲפִילוּ לְמָדַי</div><div class="callout"><strong>The sugya:</strong> Daf 40 closes the ערכין discussion (R' Hoshaya teaches that foreclosure on movables for valuations is rabbinic, not biblical) and then opens Mishnah 9:6: the robber who took something worth a peruṭa and swore falsely must pursue the victim even to Media. The Yerushalmi works out the chain of payments (קרן, חומש, אשם), the rules for who counts as a valid pickup-agent, and the case of a deposit confessed at the moment of death — culminating in Rav's ruling on R' Abba bar Chana's wife: <span class='hebrew'>אֵין אָדָם מָצוּי לְשַׁקֵּר בִּשְׁעַת מִיתָה</span>.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>🏷️ Closing the ערכין Sugya — Movables Are Only Rabbinic</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">זֹאת אוֹמֶרֶת שֶׁאֵין שָׁמִין עֲרָכִין מִן הַמִּטַּלְטְלַין דְּבַר תּוֹרָה אֶלָּא מִדִּבְרֵיהֶן</div><div class="callout"><strong>R' Hoshaya in the name of Shmuel bar Abba:</strong> The Mishnah excludes the wife and children's clothing from valuation foreclosure. The Yerushalmi probes: what if someone said 'my valuation on me on condition that you not foreclose on my wife's and children's clothing'? R' Nasa: he can stipulate against any specific item. R' Hoshaya draws the inference: <span class='hebrew'>זֹאת אוֹמֶרֶת שֶׁאֵין שָׁמִין עֲרָכִין מִן הַמִּטַּלְטְלַין דְּבַר תּוֹרָה אֶלָּא מִדִּבְרֵיהֶן</span> — biblically, valuations are foreclosed only from real estate; movables are rabbinic.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>🚶 The Robber Who Swore Falsely — Pursuit to Media</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Mishnah 9:6 and the chain of consequences.</div>
+  <div class="process-bar"><div class="process-step">1️⃣ Robber took something worth at least a <span class='hebrew'>פְּרוּטָה</span> and <strong>swore falsely</strong> denying it.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ He must <strong>personally deliver</strong> the object to the victim — <span class='hebrew'>אֲפִילוּ לְמָדַי</span> (even to Media).</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ He may <strong>not</strong> hand it to the victim's son or agent — only to <span class='hebrew'>שְׁלִיחַ בֵּית דִּין</span>.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ If the victim has died, the robber <strong>repays the heirs</strong>.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ He pays <strong>קרן + חומש + אשם</strong>; if the principal drops below a peruṭa via partial payment, the chase ends.</div></div><div class="callout" style="margin-top:20px"><strong>Why so strict:</strong> The false oath converted a civil debt into a personal religious obligation. The robber must literally place the object back in the victim's hand.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>💸 The חומש-on-חומש Cascade</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">What happens when the robber swears again on the fifth.</div>
+  <table><tr><th>Stage</th><th>What happens</th><th>Consequence</th></tr><tr><td>1. Initial robbery + false oath</td><td>Pays <span class='hebrew'>קֶרֶן + חוֹמֶשׁ + אָשָׁם</span></td><td>Standard 9:6 setup</td></tr><tr><td>2. Pays principal but swears falsely on the fifth</td><td><span class='hebrew'>הֲרֵי זֶה מְשַׁלֵּם חוֹמֶשׁ עַל חוֹמֶשׁ</span></td><td>New chumash on the unpaid chumash</td></tr><tr><td>3. R' Yonatan's reading</td><td><span class='hebrew'>בִּנְתִינַת הַחוֹמֶשׁ נַעֲשֶׂה חוֹמֶשׁ קֶרֶן</span></td><td>Each unpaid fifth becomes a fresh principal</td></tr><tr><td>4. Cascade ends when…</td><td><span class='hebrew'>עַד שֶׁיִּתְמָעֵט חוֹמֶשׁ הָאַחֲרוֹן פָּחוֹת מִשָּׁוֶה פְרוּטָה</span></td><td>Below peruṭa = no obligation</td></tr></table><div class="callout" style="margin-top:20px"><strong>R' Yonatan's principle:</strong> Each unpaid חומש legally morphs into a new קרן the moment the robber swears falsely on it. The fifth piggybacks on its own fifth, recursively, until the residue dips below a peruṭa.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>🤝 Deposits From Women, Slaves, and Minors</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The Tannaitic rule on accepting deposits from those without independent legal standing.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">👩 From a woman</h3><ul><li>Should not accept</li><li>If accepted: return to her</li><li>If she died: return <strong>to her husband</strong></li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">🧑 From a slave</h3><ul><li>Should not accept</li><li>If accepted: return to him</li><li>If he died: return <strong>to his master</strong></li></ul></div><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">👶 From a minor</h3><ul><li>Should not accept</li><li>If accepted: return to him</li><li>If he died: return <strong>to his father</strong> as <span class='hebrew'>סְגוּלָּה</span> (safe investment)</li></ul></div><div class="compare-box" style="border-top-color:#c9a84c"><h3 style="color:#c9a84c">💬 Deathbed declaration</h3><ul><li>If the depositor named someone at death: <span class='hebrew'>יַעֲשֶׂה פֵירוּשׁ לְפֵירוּשׁוֹ</span></li><li>R' Zebida: <strong>only with witnesses</strong></li><li>Living-out their stated intent</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>Logic of the defaults:</strong> The presumption is that whatever each dependent class held actually belongs to the responsible party (husband, master, father). A deathbed naming overrides the default — but only if witnessed.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>💍 The Story: R' Abba bar Chana's Wife</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Rav's ruling on dying-words testimony.</div>
+  <div class="flowchart"><div class="flow-box question">R' Abba bar Chana's wife is dying</div><div class="flow-arrow">↓</div><div class="flow-box action">She declares: <span class='hebrew'>אָהֵן קִידּוּשָׁא דִבְרַתִּי</span><br>(these rings belong to my daughter)</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Husband's claim</div><div class="flow-box result-bad"><span class='hebrew'>לֵית הוּא אֶלָּא דִידִי</span><br>they're mine</div></div><div class="flow-col"><div class="flow-label">Wife's claim</div><div class="flow-box result-partial">they belong to the daughter</div></div><div class="flow-col"><div class="flow-label">Case before Rav</div><div class="flow-box result-good">Rav rules for the wife's words</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good">🎓 <span class='hebrew'>אֵין אָדָם מָצוּי לְשַׁקֵּר בִּשְׁעַת מִיתָה</span> — people do not lie at death.</div></div><div class="callout" style="margin-top:20px"><strong>Why this matters:</strong> Rav's principle becomes a foundational rule for halakhic deathbed testimony: a person at the threshold of death is presumed credible. The case-law is built right into the daf.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 40 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>End of ערכין:</strong> movables are foreclosed only מדבריהן</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">🚶 <strong>9:6 robber</strong><br>pursuit to Media</div></div><div class="flow-col"><div class="flow-box" style="border-color:#c9a84c">💸 <strong>חומש cascade</strong><br>R' Yonatan's reading</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">🤝 <strong>9:7 deposit</strong><br>women, slaves, minors</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">💍 <strong>Rav's ruling</strong><br>dying words trusted</div></div></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Each sugya tracks <strong>who can speak for whom</strong>: the robber pursuing the victim, the depositor naming an heir, the wife claiming the rings.</div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Halakhah handles representation carefully — false oaths force personal pursuit, and a deathbed statement carries presumptive truth.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 40a-40b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 40a-40b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../39/">← Daf 39</a><a href="../41/">Daf 41 →</a></div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 44 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🧵</div>
+  <h1>Yerushalmi Bava Kamma 44</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא מד׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🌾 Robbed field seized by veterans: provincial plague vs. robber's fault<br>
+    ⚖️ 'I don't know if I returned' vs. 'I don't know if I robbed'<br>
+    🐑 Returning a stolen lamb to the flock — must owners be notified?<br>
+    🛒 Forbidden purchases from shepherds and orchard-watchmen<br>
+    🧵 Tailor's leftover thread; washer's fibers; woodworker's chips<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — The Final Daf: Returns, Trust, and Tradesmen</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">הָאוֹמֵר לַחֲבֵירוֹ גְּזַלְתִּיךָ וְהִלְוִיתַנִי הִפְקַדְתָּ אֶצְלִי וְאֵינוֹ יוֹדֵעַ אִם הֶחֱזַרְתִּי לָךְ וְאִם לֹא הֶחֱזַרְתִּי לָךְ חַיָיב לְשַׁלֵּם</div><div class="callout"><strong>The sugya:</strong> The closing daf of the masechet ties together how a robber returns property, how courts adjudicate uncertain admissions, and how craftsmen handle the leftover materials of clients. The sugya moves from a robbed field seized by veterans, through the famous distinction between 'I don't know if I returned' (liable) and 'I don't know if I robbed' (exempt), through a stolen lamb that must be re-counted, to the small offcuts of tailors, washers, and woodworkers. The masechet ends with the precise measurements of a tailor's needle.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>🌾 Robbed Field Seized by Veterans</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Three scenarios, three rulings.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">🪖 Provincial Plague (מַכַּת מְדִינָה)</h3><ul><li><span class='hebrew'>הֲרֵי שֶׁלָּךְ לְפָנֶיךָ</span></li><li>Robber says: 'Here is your field'</li><li>Robber not liable for replacement</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">👤 Because of the Robber</h3><ul><li><span class='hebrew'>חַיָיב לְהַעֲמִיד לוֹ שָׂדֶה</span></li><li>R' Yochanan: real estate cannot be 'robbed' — so why liable?</li><li><span class='hebrew'>קְנָס קְנָסוּהוּ</span> — it is a fine</li></ul></div><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">🌊 River Washed It Away</h3><ul><li><span class='hebrew'>הֲרֵי שֶׁלָּךְ לְפָנֶיךָ</span></li><li>Treated as natural disaster</li><li>No liability for replacement</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>R' Yehoshua b. Levi:</strong> <span class='hebrew'>אֵין אָדָם נִתְפָּשׂ עַל חֲבֵירוֹ</span> — one isn't held for another's debt, except annona and head-tax.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>⚖️ Two Kinds of 'I Don't Know'</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The Mishnah distinguishes uncertainty about the return from uncertainty about the act.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#c9a84c">M</div><div class="speech">If he says <span class='hebrew'>גְּזַלְתִּיךָ ... וְאֵינוֹ יוֹדֵעַ אִם הֶחֱזַרְתִּי לָךְ</span> — he is liable to pay.</div></div><div class="debate-line right"><div class="speaker" style="background:#9b59b6">M</div><div class="speech">But if he says <span class='hebrew'>אֵינִי יוֹדֵעַ אִם גְּזַלְתִּיךָ</span> — he is exempt.</div></div><div class="debate-line"><div class="speaker" style="background:#4a90d9">RY</div><div class="speech">R' Yochanan: this is for one who wants to clear himself <span class='hebrew'>לָצֵאת יְדֵי שָׁמַיִם</span> — before Heaven.</div></div><div class="debate-line right"><div class="speaker" style="background:#4caf50">RJ</div><div class="speech">R' Jeremiah: he must pay as a matter of strict law.</div></div><div class="debate-line"><div class="speaker" style="background:#e74c3c">RH</div><div class="speech">Rav Huna: tell him — <span class='hebrew'>אַתְּ לֵית יְדַע אָהֵן יְדַע</span> — you don't know, but the other party does.</div></div></div><div class="callout" style="margin-top:20px"><strong>Rule of thumb:</strong> Certainty about the wrong + uncertainty about repair = liable. Uncertainty about the wrong itself = exempt.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>🐑 Stolen Lamb Returned to the Flock</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Must the owners be notified of the return?</div>
+  <div class="flowchart"><div class="flow-box question">Thief stole a lamb and put it back</div><div class="flow-arrow">↓</div><div class="flow-box action">Did the owners know about the theft?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">R' Yochanan: knew of theft</div><div class="flow-box result-partial">Must be told of return</div></div><div class="flow-col"><div class="flow-label">R' Yochanan: did NOT know</div><div class="flow-box result-good">No notification needed — count suffices</div></div><div class="flow-col"><div class="flow-label">Reish Lakish</div><div class="flow-box result-partial">Always need notification of return</div></div><div class="flow-col"><div class="flow-label">R' Eleazar: like a בָּרְחָא (bell-wether/staff/pandura)</div><div class="flow-box result-good">No notification needed</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good">Mishnah: if owners counted the flock and it was complete — exempt.</div></div><div class="callout" style="margin-top:20px"><strong>Curiosity:</strong> The Yerushalmi preserves three guesses for what 'בָּרְחָא' means: a shepherd's staff, a pandura (musical instrument), or the great he-goat that leads the flock.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>🛒 Where You May and May Not Buy</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Mishnah 10:9 lists permitted and forbidden purchases from suspect sources.</div>
+  <table><tr><th>Category</th><th>Ruling</th><th>Reason / Detail</th></tr><tr><td>Wool, milk, lambs from shepherds</td><td><span class='hebrew'>אֵין לוֹקְחִין</span> — forbidden</td><td>Likely stolen from owner of flock</td></tr><tr><td>Wood, fruits from orchard watchmen</td><td>Forbidden</td><td>Watchmen don't own the produce</td></tr><tr><td>Linen garments from Galilee women</td><td>Permitted</td><td>Women's recognized livelihood</td></tr><tr><td>Calves in the Sharon</td><td>Permitted</td><td>Local agricultural pattern</td></tr><tr><td>Anything 'told to hide'</td><td><span class='hebrew'>אָסוּר</span></td><td>Concealment proves theft</td></tr><tr><td>Eggs and chickens</td><td><span class='hebrew'>מִכָּל מָקוֹם</span> — anywhere</td><td>Universal exception</td></tr><tr><td>Deposits from women, slaves, minors</td><td>Not accepted (beraita)</td><td>Returned to woman; if she dies — to her husband</td></tr></table><div class="callout" style="margin-top:20px"><strong>Underlying principle:</strong> Purchases are restricted from those whose access to goods does not normally include ownership.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🧵 Closing the Masechet — The Craftsmen's Offcuts</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">How precisely the law splits scraps between worker and client.</div>
+  <div class="process-bar"><div class="process-step">1️⃣ <strong>Washer:</strong> fibers he extracts are his; fibers the carder produces belong to the client. He may take three threads; black on white — he takes all.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ <strong>Abba Hoshaia of Tireh</strong> was a washer; he made his tunic of a single kind of wool <span class='hebrew'>דְּלָא יְהַוּוֹן בִּרְיָיתָא אָמְרִין. מִדִּידָן לְבַשׁ</span> — so people wouldn't say 'he wears our property.'</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ <strong>Tailor:</strong> if leftover thread is enough to sew with, or cloth is 3×3 fingerbreadths — return it to the client.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ <strong>Woodworker:</strong> shavings from the small plane are his; from the large plane — the client's. If working at the client's home, even chips belong to the client.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ <strong>R' Hiyya vs. Bar Qappara on the needle measure:</strong> 'a needle full' (R' Hiyya) vs. 'the stitching of a needle' (Bar Qappara) — explained as twice the basic measure. <strong>סליק מסכת בבא קמא.</strong></div></div><div class="callout" style="margin-top:20px"><strong>Final note:</strong> The masechet ends not with grand principles but with the smallest measurements — a needle's pull, a thread's length — because justice in commerce lives in the offcuts.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 44 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Restitution problem</strong><br>Field seized? Lamb returned? Lingering doubt?</div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Identify what kind of uncertainty or loss it is</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🌾 <strong>Field</strong><br>Plague: 'before you'<br>Robber's fault: fine</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">⚖️ <strong>Doubt</strong><br>About return: pay<br>About act: exempt</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🐑 <strong>Lamb</strong><br>Owner unaware → count suffices</div></div><div class="flow-col"><div class="flow-box" style="border-color:#c9a84c">🧵 <strong>Offcuts</strong><br>Tailor / washer / חרש rules</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>סליק מסכת בבא קמא:</strong><br>Justice rests on precise restitution — from the size of a field to the length of a needle's pull.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 44a-44b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 44a-44b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../43/">← Daf 43</a></div>
+</body>
+</html>

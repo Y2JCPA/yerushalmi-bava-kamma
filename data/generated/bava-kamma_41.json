@@ -1,0 +1,210 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 41,
+  "emoji": "🛐",
+  "topics": [
+    "🚫 Konam vows: 'בחיי ובמותי' — does the prohibition extend past death?",
+    "🏠 The 'בית זה' / 'נכסים אילו' rule: demonstrative words bind beyond life",
+    "👤 Robbing a ger who dies — keren and chomesh to kohanim, asham to the altar",
+    "📖 R' Yose HaGalili vs. R' Akiva: who is the verse 'אם אין לאיש גואל' speaking about?",
+    "⛪ Mishmar division: money to Yehoiarib, asham to Yedaiah"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Konam Vows and the Stolen Ger",
+    "label": "The sugya:",
+    "text": "The daf opens with a father's konam against his son's enjoyment, and asks how 'בחיי ובמותי' is different from saying each phrase alone. R' Yose answers with a parallel from Nedarim: a demonstrative word like 'בית זה' or 'נכסים אילו' binds the property both during life and after death. The sugya then turns to one who robbed a ger and swore falsely: when the ger dies with no relatives, the keren and chomesh go to the kohanim and the asham to the altar. The Amoraim debate whose Mishnah this follows — R' Yose HaGalili's reading or R' Akiva's.",
+    "hebrewSource": "הָאוֹמֵר לִבְנוֹ קוֹנָם שֶׁאַתָּה נֶהֱנֶה לִי אִם מֵת יוֹרִישֶׁנּוּ. בְּחַיָּי וּבְמוֹתִי אִם מֵת לֹא יוֹרִישֶׁנּוּ"
+  },
+  "slides": [
+    {
+      "type": "comparison",
+      "title": "🚫 Three Konam Phrasings — Three Outcomes",
+      "subtitle": "R' Jeremiah's puzzle: why does 'בחיי ובמותי' alone block inheritance?",
+      "boxes": [
+        {
+          "title": "🟢 בחיי alone",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "Konam binds only during the father's life",
+            "When father dies → son inherits",
+            "Death dissolves the prohibition"
+          ]
+        },
+        {
+          "title": "🟡 במותי alone",
+          "color": "#c9a84c",
+          "titleColor": "#c9a84c",
+          "items": [
+            "Phrasing bound to time of death",
+            "Still: <span class='hebrew'>אִם מֵת יִירָשֶׁנּוּ</span>",
+            "Inheritance is not 'הנאה' from the father"
+          ]
+        },
+        {
+          "title": "🔴 בחיי ובמותי",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "Combined phrase binds both periods",
+            "Son <strong>cannot</strong> inherit",
+            "Property goes to brothers/sons or to creditors"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "R' Jeremiah's question:",
+        "text": "<span class='hebrew'>מַה בֵין אָהֵן דָּמַר חָדָא חָדָא לָהֵן דָּמַר תַּרְתֵּי תַּרְתֵּי</span> — what is the difference between saying it one-by-one and saying it as a pair?"
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 R' Yose: Nedarim vs. Nezikin",
+      "subtitle": "The demonstrative word 'this' / 'these' is what binds beyond life.",
+      "lines": [
+        { "speaker": "RJ", "side": "left", "speakerColor": "#4a90d9", "text": "Rav Jeremiah and R' Yose ben Ḥanina: <span class='hebrew'>קוֹנָם לְבַיִת זֶה שֶׁאֵינִי נִכְנַס בְחַיַּי וּבְמוֹתִי</span> — once he said 'this house', he forbade it both in life and after death." },
+        { "speaker": "RY", "side": "right", "speakerColor": "#9b59b6", "text": "R' Yose: <span class='hebrew'>תַּנִּינָן בִּנְזָקִין מַה דְלֹא תַנִּינָן בִּנְדָרִין</span> — we taught in Neziqin what we didn't teach in Nedarim." },
+        { "speaker": "RY", "side": "right", "speakerColor": "#9b59b6", "text": "<span class='hebrew'>קוֹנָם הֲנָיַית נְכָסַיי אֵילּוּ עָלַי בְּחַיַּי וּבְמוֹתִי</span> — once he says 'these' my properties, he forbids them on himself in life and after death." },
+        { "speaker": "Y", "side": "left", "speakerColor": "#c9a84c", "text": "The trigger word is the demonstrative — <strong>זה / אילו</strong> — which fixes the prohibition onto the object itself rather than onto the time period." }
+      ],
+      "callout": {
+        "label": "Yerushalmi insight:",
+        "text": "Nezikin makes explicit a halakhah that Nedarim left implicit: words of demonstration bind property permanently."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "👤 The Stolen Ger Who Died",
+      "subtitle": "Mishnah 9:9 — what happens to the gezeilah when the ger has no heirs?",
+      "nodes": [
+        { "content": "<strong>הַגּוֹזֵל אֶת הַגֵּר וְנִשְׁבַּע לוֹ וָמֵת</strong><br>One robbed a ger, swore falsely, the ger died", "class": "question" },
+        { "type": "arrow" },
+        { "content": "Verse: <span class='hebrew'>וְאִם אֵין לָאִישׁ גּוֹאֵל לְהָשִׁיב הָאָשָׁם אֵלָיו</span>", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Keren + Chomesh", "content": "→ to the kohanim<br>(אנשי משמר)", "class": "result-good" },
+            { "label": "Asham", "content": "→ to the altar", "class": "result-good" },
+            { "label": "If money already given", "content": "→ heirs cannot reclaim<br><span class='hebrew'>אִישׁ אֲשֶׁר יִתֵּן לַכֹּהֶן לוֹ יִהְיֶה</span>", "class": "result-partial" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "If the robber dies en route, the asham grazes until blemished, is sold, and proceeds become nedavah", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Why this works only for a ger:",
+        "text": "Only a convert can lack relatives entirely. A born Jew always has some 'גואל' — a tribe relative who would inherit."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📜 R' Yose HaGalili vs. R' Akiva",
+      "subtitle": "Two Tannaitic readings of 'אם אין לאיש גואל'.",
+      "headers": ["Sage", "Reading", "Implication"],
+      "rows": [
+        ["<span class='hebrew'>רִבִּי יוֹסֵי הַגָּלִילִי</span>", "<span class='hebrew'>הַטָּעוּן כַּפָּרָה חַיָיב. יָצָא זֶה שֶׁאֵין טָעוּן כַּפָּרָה</span>", "Verse applies only when atonement is needed — i.e. theft + false oath"],
+        ["<span class='hebrew'>רִבִּי עֲקִיבָה</span> (when he came from Zephyrium)", "<span class='hebrew'>אֵין לָךְ אָדָם בְּיִשְׂרָאֵל שֶׁאֵין לוֹ גוֹאֵל אֶלָּא זֶה הַגֵּר</span>", "Only a ger fits 'אין גואל' — born Jews always have a relative"],
+        ["Rav + Reish Lakish on the Mishnah", "<span class='hebrew'>תּוּשָׁב אַשְׁמָה בְּכָל מָקוֹם</span>", "Aligns with R' Akiva: stolen property must be returned in any case"]
+      ],
+      "callout": {
+        "label": "The dispute:",
+        "text": "Ḥilfai and R' Yose bar Ḥanina trace the Mishnah to R' Yose HaGalili; Rav and Reish Lakish trace it to R' Akiva."
+      }
+    },
+    {
+      "type": "process",
+      "title": "⛪ Mishnah 9:10 — Mishmar Division of the Asham",
+      "subtitle": "Who gets the money, who gets the offering?",
+      "steps": [
+        { "content": "1️⃣ <strong>Money to Yehoiarib + asham to Yedaiah</strong> → he has fulfilled his obligation." },
+        { "content": "2️⃣ <strong>Asham to Yehoiarib + money to Yedaiah</strong> — if the offering is still alive, Yedaiah's people offer it." },
+        { "content": "3️⃣ Otherwise: he must bring another asham." },
+        { "content": "4️⃣ Rule: <span class='hebrew'>הַמֵּבִיא גְזֵילוֹ עַד שֶׁלֹּא הֵבִיא אֲשָׁמוֹ יָצָא</span> — bringing the stolen item before the asham works; the reverse does not." },
+        { "content": "5️⃣ <span class='hebrew'>נָתַן אֶת הַקֶּרֶן וְלֹא נָתַן אֶת הַחוֹמֶשׁ אֵין חוֹמֶשׁ מְעַכֵּב</span> — the chomesh is not me'akev.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "The robber must restore the principal before atonement; the chomesh is a side-payment that doesn't block kapparah."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Demonstrative words ('this', 'these') bind a vow beyond life; and a ger's stolen property goes to the kohanim and altar — provided the principal is returned before the asham is offered.",
+    "flowSteps": [
+      { "content": "<strong>Opening puzzle</strong><br><span class='hebrew'>בְּחַיַּי וּבְמוֹתִי</span> blocks inheritance — why?", "class": "question" },
+      { "type": "arrow" },
+      { "content": "R' Yose: the demonstrative word ('בית זה' / 'נכסים אילו') is what binds beyond life", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "👤 <strong>Stolen ger</strong><br>keren+חומש to kohanim", "style": "border-color:#4a90d9" },
+          { "content": "🐑 <strong>אשם</strong><br>to the altar", "style": "border-color:#e74c3c" },
+          { "content": "📜 <strong>Tannaitic dispute</strong><br>R' Yose HaGalili / R' Akiva", "style": "border-color:#9b59b6" },
+          { "content": "⛪ <strong>Mishmar split</strong><br>money + asham order matters", "style": "border-color:#c9a84c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Restitution comes before atonement; the principal must reach the right hand before the offering reaches the altar.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Why does 'בחיי ובמותי' block the son from inheriting, while 'בחיי' or 'במותי' alone does not?",
+      "o": [
+        "Because saying both phrases together creates a continuous prohibition spanning life and death",
+        "Because it doubles the konam's strength",
+        "Because death automatically dissolves all vows",
+        "Because the son becomes a creditor, not an heir"
+      ],
+      "c": 0,
+      "e": "R' Jeremiah notes that combining 'בחיי' + 'במותי' uniquely binds both periods. R' Yose explains the mechanism: only with a demonstrative anchor (this/these) does the prohibition extend post-mortem."
+    },
+    {
+      "q": "According to R' Yose's Nezikin teaching, what triggers a konam to bind property after death?",
+      "o": [
+        "Saying 'אילו' / 'זה' — a demonstrative word fixing the vow on the object itself",
+        "Saying the vow at sunset",
+        "Naming three witnesses",
+        "Repeating the vow three times"
+      ],
+      "c": 0,
+      "e": "<span class='hebrew'>קוֹנָם לְבַיִת זֶה</span> / <span class='hebrew'>נְכָסַיי אֵילּוּ</span> — the demonstrative anchors the prohibition to the object permanently."
+    },
+    {
+      "q": "When a robber stole from a ger who then died with no relatives, what does the verse 'אם אין לאיש גואל' require?",
+      "o": [
+        "Keren and chomesh to the kohanim, asham to the altar",
+        "Everything to the king's treasury",
+        "Everything to the local court",
+        "He keeps it as ownerless"
+      ],
+      "c": 0,
+      "e": "The Mishnah: <span class='hebrew'>מְשַׁלֵּם קֶרֶן וָחוֹמֶשׁ לַכֹּהֲנִים וְאָשָׁם לַמִּזְבֵּחַ</span>."
+    },
+    {
+      "q": "What is R' Akiva's reading of 'אם אין לאיש גואל'?",
+      "o": [
+        "Only a ger has no relative — every born Jew has a גואל somewhere",
+        "Only a kohen has no relative",
+        "It refers to one who needs atonement",
+        "It refers to a deathbed gift"
+      ],
+      "c": 0,
+      "e": "<span class='hebrew'>אֵין לָךְ אָדָם בְּיִשְׂרָאֵל שֶׁאֵין לוֹ גוֹאֵל אֶלָּא זֶה הַגֵּר</span> — only the convert truly has no relative."
+    },
+    {
+      "q": "What is the rule about bringing the stolen item versus the asham?",
+      "o": [
+        "Bringing the gezeilah before the asham works; bringing the asham first does not",
+        "Either order is fine",
+        "Asham must always come first",
+        "Both must be brought simultaneously"
+      ],
+      "c": 0,
+      "e": "<span class='hebrew'>הַמֵּבִיא גְזֵילוֹ עַד שֶׁלֹּא הֵבִיא אֲשָׁמוֹ יָצָא. אֲשָׁמוֹ עַד שֶׁלֹּא הֵבִיא גְזֵילוֹ לֹא יָצָא</span>. Restitution must precede atonement."
+    }
+  ]
+}

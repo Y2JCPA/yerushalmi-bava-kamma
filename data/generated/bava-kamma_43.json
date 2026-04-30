@@ -1,0 +1,188 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 43,
+  "emoji": "🐝",
+  "topics": [
+    "🔄 Switched vessels at the artisan vs. mourner's house",
+    "🐴 Publicans, robbers, and yi'ush (despair) transferring ownership",
+    "🐝 Swarm of bees: pursuit into another's field, cutting branches",
+    "📚 Recognizing stolen vessels/books — when the buyer swears",
+    "💧 Saving honey vs. wine, water vs. honey in the desert"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Yi'ush, Rescue, and Switched Property",
+    "label": "The sugya:",
+    "text": "Daf 43 covers the second half of Chapter 10's mishnayot on rescue and recovery. The sugya develops yi'ush (the owner's despair) as the legal mechanism that transfers ownership when publicans seize a donkey, robbers take a garment, or a swarm of bees flies away. It then turns to recognizing stolen vessels in another's hand, and the moral economy of pouring out one's own wine to save another's honey — and water vs. honey in the desert.",
+    "hebrewSource": "נָטְלוּ מוֹכְסִין אֶת חֲמוֹרוֹ וְנָתְנוּ לוֹ חֲמוֹר אַחֵר... הֲרֵי אֵילּוּ שֶׁלּוֹ מִפְּנֵי שֶׁהַבְּעָלִין מִתְיָיאֲשִׁין מֵהֶן"
+  },
+  "slides": [
+    {
+      "type": "comparison",
+      "title": "🔄 Where Were the Vessels Switched?",
+      "subtitle": "The Mishnah distinguishes between an artisan's shop and a public gathering.",
+      "boxes": [
+        {
+          "title": "🛠️ At the Artisan",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "<span class='hebrew'>יִשְׁתַּמֵּשׁ בָּהֶן</span> — may use them",
+            "Then go out and search for his own",
+            "Artisan implicitly authorizes use"
+          ]
+        },
+        {
+          "title": "🕯️ Mourner's House / Wedding",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<span class='hebrew'>אַל יִשְׁתַּמֵּשׁ בָּהֶן</span> — may NOT use",
+            "Just go out and search for his own",
+            "No authorization implied in such gatherings"
+          ]
+        },
+        {
+          "title": "🏪 Bar Qora's Shop",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "R' Hiyya's example via R' Abba bar Hanan",
+            "<span class='hebrew'>כָּל הַנּוֹטֵל מֵאֶצְלוֹ נוֹטֵל בִּרְשׁוּת</span>",
+            "Every taking and depositing is by permission"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Logic:",
+        "text": "Use is permitted only where the holder of the items has implicit authority to grant it."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🐴 Yi'ush — The Engine of Ownership Transfer",
+      "subtitle": "The Mishnah at 10:2 lays out the principle and then applies it.",
+      "nodes": [
+        { "content": "Item taken by force or lost", "class": "question" },
+        { "type": "arrow" },
+        { "content": "<span class='hebrew'>הַבְּעָלִין מִתְיָיאֲשִׁין מֵהֶן</span> — owners despair", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Publicans gave another donkey", "content": "<span class='hebrew'>הֲרֵי אֵילּוּ שֶׁלּוֹ</span>", "class": "result-good" },
+            { "label": "Saved from flood/robbers", "content": "After yi'ush, his", "class": "result-good" },
+            { "label": "Swarm of bees", "content": "After yi'ush, his", "class": "result-good" },
+            { "label": "Crying 'I did not despair'", "content": "Reish Lakish: not yet his", "class": "result-partial" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Yi'ush + change of hand = the finder/taker becomes owner.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Beraita extension:",
+        "text": "Saved from an army, a fire, a sea-whirlpool, or a river-whirlpool — also his."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "🐝 The Swarm of Bees and Joshua's Stipulation",
+      "subtitle": "May the beekeeper enter another's field to retrieve his swarm?",
+      "lines": [
+        { "speaker": "M", "side": "left", "speakerColor": "#c9a84c", "text": "Mishnah: he may enter the field and take his swarm. If he caused damage, he pays — <span class='hebrew'>אֲבָל לֹא יָקוֹץ אֶת הַסּוֹכָה</span>, but he may not cut a branch on condition to pay." },
+        { "speaker": "RY", "side": "right", "speakerColor": "#4a90d9", "text": "R' Yishmael b. R' Yochanan b. Beroka: he may even cut and pay." },
+        { "speaker": "Y", "side": "left", "speakerColor": "#9b59b6", "text": "It is a stipulation of the court — <span class='hebrew'>שֶׁעַל מְנָת כֵּן הִנְחִיל יְהוֹשֻׁעַ לְיִשְׂרָאֵל אֶת הָאָרֶץ</span> — Joshua distributed the Land on this very condition." },
+        { "speaker": "RH", "side": "right", "speakerColor": "#4caf50", "text": "R' Hinena b. Pappos in R' Yochanan's name: only when taken in flight, and only immediately. If it left and returned, it was said only out of fear or seduction." }
+      ],
+      "callout": {
+        "label": "Big idea:",
+        "text": "Some property rules are not biblical — they are a stipulation built into the original distribution of the Land."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📚 Recognizing One's Own Vessels in Another's Hand",
+      "subtitle": "When can you reclaim books or vessels you recognize?",
+      "headers": ["Position", "Speaker", "Requirement"],
+      "rows": [
+        ["Why do we make him swear?", "<span class='hebrew'>רִבִּי בָּא בַּר מָמָל</span>", "<span class='hebrew'>שֶׁלֹּא יְהוּ בַעֲלֵי בָתִּים נִטְפָּלִין לַגַּנָּבִים</span> — so householders won't fence stolen goods"],
+        ["Need a public reputation", "<span class='hebrew'>רִבִּי יְהוֹשֻׁעַ בֶּן לֵוִי</span>", "Only if it is known the books were stolen"],
+        ["Need overnight proof", "Rav", "Must bring proof he stayed there that very night"],
+        ["Self-claim suffices", "Assi", "If he says 'I bought from So-and-so' — believed"],
+        ["Case denied", "<span class='hebrew'>רִבִּי נָסָא</span>", "<span class='hebrew'>בַּר נַשׁ דָּעַקִּין</span> — known troublemaker; suspect"]
+      ],
+      "callout": {
+        "label": "Tension:",
+        "text": "Protect the original owner — but don't turn every honest buyer into a presumed thief."
+      }
+    },
+    {
+      "type": "process",
+      "title": "💧 Saving the Other's Cargo — Wages or Sale?",
+      "subtitle": "Two travelers on the road. The honey leaks. The water leaks in the desert.",
+      "steps": [
+        { "content": "1️⃣ Default: if he silently pours out his wine to save the honey, <span class='hebrew'>אֵין לוֹ אֶלָּא שְׂכָרוֹ</span> — he gets only wages." },
+        { "content": "2️⃣ But if he says <span class='hebrew'>אַצִּיל אֶת שֶׁלָּךְ וְאַתָּה נוֹתֵן לִי דְמֵי שֶׁלִּי</span> — he gets the full value." },
+        { "content": "3️⃣ In the desert, water beats honey: <span class='hebrew'>תְּנַיי בֵּית דִּין הוּא שֶׁיִּשְׁפּוֹךְ זֶה דִבְשׁוֹ</span> — court stipulation forces the honey-holder to pour out for the water." },
+        { "content": "4️⃣ A river sweeps two donkeys; if one abandons his to save the more valuable other's, only wages — unless he stipulates first." },
+        { "content": "5️⃣ <strong>Yi'ush dispute:</strong> If he was crying 'I did not despair' — Reish Lakish says no yi'ush; R' Yochanan says <span class='hebrew'>חֲזָקָה מְיָיאֵשׁ הוּא</span> — presumption of despair stands.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Principle:",
+        "text": "Words matter. Saving without a stipulation is volunteer work; saving with a stipulation is a contract."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Daf 43 unifies switched-property, theft-by-force, lost swarms, and rescue cases under one engine: yi'ush plus a clear declaration determines who owns what — and Joshua's stipulation, the court's stipulation, and the desert's hierarchy override pure property right when life is at stake.",
+    "flowSteps": [
+      { "content": "<strong>Owner separated from item</strong><br>switched, taken, lost, or in danger", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Examine: did the owner give up hope?", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🐴 <strong>Publicans/robbers</strong><br>presumed yi'ush — finder's", "style": "border-color:#4a90d9" },
+          { "content": "🐝 <strong>Swarm</strong><br>only if in flight + immediate", "style": "border-color:#c9a84c" },
+          { "content": "📚 <strong>Recognized vessels</strong><br>oath if theft was public", "style": "border-color:#9b59b6" },
+          { "content": "💧 <strong>Rescue</strong><br>wages, unless stipulated", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Result:</strong><br>Ownership shifts only when the law recognizes despair plus a change of hand — and rescuers must speak before they spill.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Why may one use mistakenly switched vessels at the artisan but not at a wedding?",
+      "o": ["The artisan owns them anyway", "The artisan implicitly authorizes use of the switched item; a wedding/mourner's house does not", "Weddings are exempt from monetary rules", "Artisans are presumed to be thieves"],
+      "c": 1,
+      "e": "R' Hiyya's example of Bar Qora: every taking and depositing in such a shop is <span class='hebrew'>בִּרְשׁוּת</span>."
+    },
+    {
+      "q": "What legal mechanism transfers ownership when publicans seize a donkey?",
+      "o": ["Kinyan chatzer", "Yi'ush — owner's despair", "Public sale", "Court decree"],
+      "c": 1,
+      "e": "<span class='hebrew'>מִפְּנֵי שֶׁהַבְּעָלִין מִתְיָיאֲשִׁין מֵהֶן</span> — the owners give up hope."
+    },
+    {
+      "q": "According to R' Yishmael b. R' Yochanan b. Beroka, on what basis may one cut a branch to retrieve a swarm?",
+      "o": ["Rabbinic decree of the Sanhedrin", "A court stipulation rooted in Joshua's distribution of the Land", "An explicit Torah verse", "Local custom in the Galilee"],
+      "c": 1,
+      "e": "<span class='hebrew'>שֶׁעַל מְנָת כֵּן הִנְחִיל יְהוֹשֻׁעַ לְיִשְׂרָאֵל אֶת הָאָרֶץ</span>."
+    },
+    {
+      "q": "Why does the Mishnah require the holder of recognized stolen books to swear at all (per R' Abba bar Mamal)?",
+      "o": ["Because oaths always accompany returns", "So that householders will not become fences for thieves", "Because books are especially holy", "To embarrass the buyer"],
+      "c": 1,
+      "e": "<span class='hebrew'>שֶׁלֹּא יְהוּ בַעֲלֵי בָתִּים נִטְפָּלִין לַגַּנָּבִים</span>."
+    },
+    {
+      "q": "If a man's donkey is being swept away and he cries 'I did not despair!', what does R' Yochanan rule?",
+      "o": ["He is automatically believed", "<span class='hebrew'>חֲזָקָה מְיָיאֵשׁ הוּא</span> — presumption stands that he despaired", "Reish Lakish's view that crying proves no yi'ush is followed", "The donkey returns automatically"],
+      "c": 1,
+      "e": "R' Yochanan holds the presumption of yi'ush stands even against the cry; Reish Lakish disagrees."
+    }
+  ]
+}
