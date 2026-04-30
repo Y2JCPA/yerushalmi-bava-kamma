@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 22 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">⚖️</div>
+  <h1>Yerushalmi Bava Kamma 22</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא כב׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🐂 ובעל השור נקי — what the owner is exempt from<br>
+    👶 Slave damages and miscarriage payments<br>
+    🪨 Bull rubbing on a wall — intent vs accident in capital cases<br>
+    🏛️ Bulls without owners: women, orphans, hekdesh, ger<br>
+    💀 Dedicating a bull condemned to stoning<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Killer Oxen, Slaves, and Owner-less Bulls</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">וּבַעַל הַשּׁוֹר נָקִי. נָקִי מִדְּמֵי עֶבֶד. נָקִי מִדְּמֵי וְולָדוֹת.</div><div class="callout"><strong>The sugya:</strong> Daf 22 sweeps through three Mishnayot at the seam between Chapter 4 and Chapter 5. It works out what the owner is 'free' from when his bull kills, when intent matters, who counts as an 'owner' for liability, and what happens to a bull condemned to stoning whose verdict is reversed.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>🧱 What 'ובעל השור נקי' Excludes</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The Yerushalmi maps competing readings of the exemption clause.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">👤 נקי מדמי עבד</h3><ul><li>Owner is exempt from paying for a slave</li><li>Even though a slave normally has 30 sela liability</li><li>Verse derives from 'כי ינצו אנשים' — people, not bulls</li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">👶 נקי מדמי ולדות</h3><ul><li>Owner is exempt from paying for fetuses</li><li>Bulls that act unintentionally are exempt</li><li>Even if intentional — still no fetus payment</li></ul></div><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">📜 Slave damages source</h3><ul><li>או בן יגח או בת יגח</li><li>ואם עבד — derives slave damages</li><li>Two opinions on extent of payment</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">💭 The dispute</h3><ul><li>R' Chiyya bar Va: addition can't exceed core</li><li>Other view: pays the entire damage</li><li>R' Yasa heard a teaching from R' Shmuel bar Yitzhak but forgot</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>Key move:</strong> The same three words 'ובעל השור נקי' generate two distinct exemptions depending on which baraita you follow.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>🪨 Bull Rubbing on a Wall</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When the death looks accidental, when does liability still attach?</div>
+  <div class="flowchart"><div class="flow-box question">משנה: שור שהיה מתחכך בכותל ונפל על האדם</div><div class="flow-arrow">↓</div><div class="flow-box action">ואיש כי יכה כל נפש אדם — to include lethal blow</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Intended bull, hit man</div><div class="flow-box result-bad">פטור — no liability</div></div><div class="flow-col"><div class="flow-label">Hit a Gentile, killed Jew</div><div class="flow-box result-bad">פטור</div></div><div class="flow-col"><div class="flow-label">Hit stillbirth, killed viable</div><div class="flow-box result-bad">פטור</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good">Reish Lakish: R' Hoshaia explained — Mishnah is about כופר after death.</div></div><div class="callout" style="margin-top:20px"><strong>Yerushalmi twist:</strong> Resh Lakish reframes the Mishnah: it isn't about court execution at all — it's about the kofer payment owed once the victim has died.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>💬 Bulls Without Owners — Who Pays?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The Mishnah lists six 'ownerless' bulls. R' Yehudah carves out three.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#c9a84c">M</div><div class="speech">Mishnah: <span class='hebrew'>שור האשה, שור היתומים, שור אפיטרופוס, שור המדבר, שור ההקדש, שור הגר שמת</span> — all subject to death penalty.</div></div><div class="debate-line right"><div class="speaker" style="background:#4a90d9">RY</div><div class="speech">R' Yehudah: the wild bull, the hekdesh bull, and the heir-less ger's bull are <em>exempt</em> — <span class='hebrew'>מפני שאין להם בעלים</span>.</div></div><div class="debate-line"><div class="speaker" style="background:#9b59b6">RH</div><div class="speech">R' Hoshaia: for damages R' Meir holds liable, R' Yehudah exempt; but everyone agrees on כופר — liable.</div></div><div class="debate-line right"><div class="speaker" style="background:#e74c3c">RY2</div><div class="speech">Some say (R' Yochanan in the name of R' Yannai): just as they argue about damages, they argue about kofer too.</div></div></div><div class="callout" style="margin-top:20px"><strong>Practical ruling:</strong> R' Zeira tells R' Yirmiyah: follow R' Hoshaia — disputed in damages, agreed in kofer.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>📊 The Sale and the Reversed Verdict</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Two adjacent cases on a goring ox: bad sale and reversed sentencing.</div>
+  <table><tr><th>Case</th><th>Rav</th><th>Shmuel / R' Yochanan vs Reish Lakish</th></tr><tr><td>Sold a bull, turns out to be a gorer</td><td><span class='hebrew'>מקח טעות</span> — sale is voided</td><td>Shmuel: seller can say 'I sold it for slaughter'</td></tr><tr><td>Bull goes out to be stoned, witnesses are zomemim</td><td>—</td><td>R' Yochanan: first to grab acquires it</td></tr><tr><td>Same scenario</td><td>—</td><td>Reish Lakish: <span class='hebrew'>ייאוש טעות</span> — false despair, doesn't transfer ownership</td></tr><tr><td>Slave going to execution, witnesses zomemim</td><td>—</td><td>R' Yochanan: he acquires himself; R' Lakish: false despair</td></tr></table><div class="callout" style="margin-top:20px"><strong>Important:</strong> R' Yochanan and Reish Lakish disagree about whether despair based on a false premise still effects ownership transfer.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🧠 Dedicating a Stoned Bull</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When does hekdesh take effect on a bull condemned to die?</div>
+  <div class="process-bar"><div class="process-step">1️⃣ Bull rubs on a wall and kills — sentence not yet pronounced.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ <strong>Before</strong> sentencing: dedication is valid; if slaughtered, meat is permitted.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ <strong>After</strong> sentencing: dedication invalid; if slaughtered, meat is forbidden.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ Sentence creates a status of <span class='hebrew'>איסור הנאה</span> that blocks normal acquisition.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ If verdict is reversed: R' Yochanan vs Reish Lakish on whether ownership reverts.</div></div><div class="callout" style="margin-top:20px"><strong>Bottom line:</strong> The legal effect of a death-sentence is so strong that even hekdesh cannot override it once the verdict is final.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 22 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Killer ox cases</strong><br><span class='hebrew'>ובעל השור נקי</span></div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">👤 <strong>נקי מדמי עבד</strong><br>no slave payment</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">👶 <strong>נקי מדמי ולדות</strong><br>no fetus payment</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🏛️ <strong>אין בעלים</strong><br>R' Yehudah carve-out</div></div><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">💀 <strong>יוצא ליסקל</strong><br>hekdesh blocked</div></div></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Each derashah shapes a different facet of bull-owner liability.</div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Owner liability is bounded by both verse and ownership status — and the death-sentence locks ownership in place.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 22a-22b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 22a-22b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../21/">← Daf 21</a><a href="../23/">Daf 23 →</a></div>
+</body>
+</html>

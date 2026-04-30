@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 38 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🏛️</div>
+  <h1>Yerushalmi Bava Kamma 38</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא לח׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🪵 גזל מריש ובנאו בבירה — Beit Shammai vs. Beit Hillel<br>
+    🌿 תקנת השבים and יישוב ארץ ישראל — why the policy bends for repenters<br>
+    🐂 R' Meir on aged slaves: 'הרי שלך לפניך'<br>
+    🪙 Coin invalidated by malkhut vs. medina<br>
+    🔨 Artisans and builders who damage — when is the craftsman liable?<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Repentance, Transformation, and the Craftsman</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">גָּזַל מָרִישׁ וּבְנָאוֹ בַבִּירָה. בֵּית שַׁמַּי אוֹמְרִים. יְקַעְקֵעַ כָּל הַבִּירָה כוּלָּהּ וְיִתְּנֶינּוּ לוֹ. וּבֵית הִלֵּל אוֹמְרִים. יִתֵּן לוֹ דָמָיו מִפְּנֵי תַקָּנַת שָׁבִים</div><div class="callout"><strong>The sugya:</strong> Daf 38 surveys a series of cases where the gezeilah has changed since the theft. Beit Shammai vs. Beit Hillel famously dispute the stolen beam built into a building — Hillel rules in favor of תקנת שבים. R' Yaakov bar Acha grounds Hillel's position in יישוב ארץ ישראל. The amoraim then carve up the rules for aged animals and slaves, spoiled fruit, invalidated coins, leavened matter through Pesach, and artisans who break what they were hired to repair.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>🏛️ The Stolen Beam Built into a Building</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Beit Shammai and Beit Hillel split on what the penitent must restore.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#e74c3c">BS</div><div class="speech"><strong>Beit Shammai:</strong> <span class='hebrew'>יְקַעְקֵעַ כָּל הַבִּירָה כוּלָּהּ וְיִתְּנֶינּוּ לוֹ</span> — he must tear down the whole building and return the actual beam.</div></div><div class="debate-line right"><div class="speaker" style="background:#4a90d9">BH</div><div class="speech"><strong>Beit Hillel:</strong> <span class='hebrew'>יִתֵּן לוֹ דָמָיו מִפְּנֵי תַקָּנַת שָׁבִים</span> — he just pays its value, to support the penitents.</div></div><div class="debate-line"><div class="speaker" style="background:#9b59b6">RYbA</div><div class="speech"><strong>R' Yaakov bar Acha</strong> in the name of R' Yehoshua ben Levi: the reason is also <span class='hebrew'>יִישׁוּב אֶרֶץ יִשְׂרָאֵל</span> — settlement of the Land.</div></div><div class="debate-line right"><div class="speaker" style="background:#c9a84c">RNbY</div><div class="speech"><strong>Rav Nachman bar Yitzchak</strong>: would we really refuse a man who put his bundle in another's ruin temporarily? Once he heard the ארץ ישראל reason — that's the answer.</div></div></div><div class="callout" style="margin-top:20px"><strong>Why this matters:</strong> The halakhah is not pure restitution. It is calibrated by social policy: encourage teshuva, encourage building the land.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>🌿 Building on Someone Else's Ruin</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When can a builder recover his investment?</div>
+  <div class="flowchart"><div class="flow-box question"><strong>ירד לחורבה ובנאה</strong><br>(rebuilt another's ruined property)</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Without permission</div><div class="flow-box result-bad"><span class='hebrew'>שָׁמִין לוֹ וְיָדוֹ עַל הַתַּחְתּוֹנָה</span><br>Lower hand</div></div><div class="flow-col"><div class="flow-label">With permission</div><div class="flow-box result-good"><span class='hebrew'>שָׁמִין לוֹ וְיָדוֹ עַל הָעֶלְיוֹנָה</span><br>Upper hand</div></div><div class="flow-col"><div class="flow-label">Wants stones/wood back</div><div class="flow-box result-partial"><span class='hebrew'>אֵין שׁוֹמְעִין לוֹ</span><br>Refused</div></div></div><div class="flow-arrow">↓</div><div class="flow-box action">Rav: even at unfit places, we estimate but employ <span class='hebrew'>מַעֲרִימִין</span> — letting him stay in summer and winter</div><div class="flow-arrow">↓</div><div class="flow-box result-good">All policy threads return to: <span class='hebrew'>יִישׁוּב אֶרֶץ יִשְׂרָאֵל</span></div></div><div class="callout" style="margin-top:20px"><strong>Key insight:</strong> The 'lower/upper hand' formula is the Yerushalmi's standard mechanism for permission-based fair valuation.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>🐂 When Does 'הרי שלך לפניך' Apply?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Meir vs. the Tanna Kamma — and the amoraic refinements.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">📜 Mishnah</h3><ul><li>Animal aged → pays כשעת הגזילה</li><li>Slaves aged → pays כשעת הגזילה</li><li><strong>R' Meir:</strong> for slaves only — 'הרי שלך לפניך'</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">🐄 Rav Huna</h3><ul><li>Stole calf → became bull = pays</li><li>Stole bull → it aged = 'הרי שלך לפניך'</li><li>Drawing the line at species-level change</li></ul></div><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">🐂 Shmuel</h3><ul><li>Even calf → bull, says 'הרי שלך לפניך'</li><li>More lenient than Rav Huna</li><li><strong>Halakhah</strong>: like R' Meir (Rav Yehudah)</li></ul></div><div class="compare-box" style="border-top-color:#c9a84c"><h3 style="color:#c9a84c">✂️ Rav Karna</h3><ul><li>Stole calf → became bull → slaughtered/sold</li><li>Pays ד' or ה' of the <em>calf's</em> value</li><li>Penalty tracks the original gezeilah</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>R' Zeira & Rav Chisda:</strong> Stole fat → became thin: must replace the fat. Stole thin → fattened: returns it as is. The gazlan never benefits, never overpays.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>🪙 What Counts as 'Returnable as Is'?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Mishnah 9:3 — when the object is technically intact but its value has collapsed.</div>
+  <table><tr><th>Case</th><th>Status</th><th>Ruling</th></tr><tr><td><span class='hebrew'>מַטְבֵּעַ וְנִסְדַּק</span></td><td>Coin physically split</td><td>Pays כשעת הגזילה</td></tr><tr><td><span class='hebrew'>פֵּירוֹת וְהִרְכִּיבוּ</span></td><td>Fruits rotted</td><td>Pays כשעת הגזילה</td></tr><tr><td><span class='hebrew'>יַיִן וְהֶחֱמִיץ</span></td><td>Wine spoiled</td><td>Pays כשעת הגזילה</td></tr><tr><td><span class='hebrew'>מַטְבֵּעַ וְנִפְסַל</span></td><td>Coin invalidated by government</td><td><span class='hebrew'>הֲרֵי שֶׁלָּךְ לְפָנֶיךָ</span></td></tr><tr><td><span class='hebrew'>תְּרוּמָה וְנִטְמֵאת</span></td><td>Heave became impure (by itself)</td><td><span class='hebrew'>הֲרֵי שֶׁלָּךְ לְפָנֶיךָ</span></td></tr><tr><td><span class='hebrew'>חָמֵץ וְעָבַר עָלָיו הַפֶּסַח</span></td><td>Leaven through Pesach</td><td><span class='hebrew'>הֲרֵי שֶׁלָּךְ לְפָנֶיךָ</span></td></tr></table><div class="callout" style="margin-top:20px"><strong>Rav Huna vs. Shmuel:</strong> Rav Huna: only if <em>government</em> invalidated the coin. If a <em>province</em> did, he says 'הרי שלך לפניך'. Shmuel: even if government invalidated — 'הרי שלך לפניך'.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🔨 Artisans, Builders, and the Last Nail</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Mishnah 9:4 — when does the craftsman become the responsible party?</div>
+  <div class="process-bar"><div class="process-step">1️⃣ Owner gives item to artisans <strong>to repair</strong> and they ruined it → liable to pay.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ Carpenter receives chest/box/cupboard and breaks it → liable.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ Builder hired to take down a wall and damages stones → liable.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ Wall collapsed on the <em>other</em> side → exempt. <strong>But</strong> if from the pounding (<span class='hebrew'>מַחֲמַת הַמַּכָּה</span>) → liable.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ <strong>Rav Huna</strong>: only if he drove in the last nail — <span class='hebrew'>קָבַע בּוֹ מַסְמֵר הָאַחֲרוֹן כְּדֵי לְזַכּוֹת לְכֵלָיו</span>.</div></div><div class="callout" style="margin-top:20px"><strong>The principle:</strong> Liability transfers when the artisan acquires craftsman's rights in the object — symbolized by the final nail. Until then, his actions are framed as the owner's loss.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 38 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>גזל מריש ובנאו בבירה</strong></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Beit Hillel: pays דמיו <span class='hebrew'>מפני תקנת שבים</span></div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🌿 <strong>תקנת שבים</strong><br>+ יישוב א״י</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🐂 <strong>R' Meir</strong><br>'הרי שלך לפניך' for slaves</div></div><div class="flow-col"><div class="flow-box" style="border-color:#c9a84c">🪙 <strong>מטבע ונפסל</strong><br>government vs. medina</div></div><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">🔨 <strong>אומנים</strong><br>last-nail rule</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Restitution law is shaped not just by ownership but by policy — making space for repentance, settlement, and the working professions.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 38a-38b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 38a-38b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../37/">← Daf 37</a><a href="../39/">Daf 39 →</a></div>
+</body>
+</html>

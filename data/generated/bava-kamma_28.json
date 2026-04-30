@@ -1,0 +1,209 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 28,
+  "emoji": "🔥",
+  "topics": [
+    "📐 Estimating field damage — bet kor too big, bet kav too small",
+    "🍇 R' Akiva's refinements: ripe vs. unripe, trees vs. produce",
+    "🌾 Mishnah 6:3 — stacking sheaves with vs. without permission",
+    "🔥 Mishnah 6:4 — sending fire through a deaf-mute / minor",
+    "💨 Wind as the fire-spreader — pikadon vs. force majeure"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Damage Math, Sheaves, and Fire",
+    "label": "The sugya:",
+    "text": "The daf finishes the grazing-damages math (why you don't measure by an unfair-large or unfair-small parcel), surveys R' Akiva's adjustments for unripe vs. mature produce, and pivots to Mishnah 6:3's neat reversal: stack sheaves <em>without</em> permission and the field-owner's animal eats them — you swallow the loss; stack <em>with</em> permission and the owner has to pay if his animal damages them. Then comes perek 6:4 — fire. The Mishnah builds a chain of liability through deaf-mutes, agents, woodcarriers, and finally the wind itself.",
+    "hebrewSource": "אֵין שָׁמִין בֵּית כּוֹר מִפְּנֵי שֶׁהוּא פוֹגֵם. וְלֹא בֵית קַב מִפְּנֵי שֶׁמַּשְׁבִּיחַ. אֶלָּא שָׁמִין בֵּית סְאָה"
+  },
+  "slides": [
+    {
+      "type": "table",
+      "title": "📐 Why a Bet Se'ah Is the Right Yardstick",
+      "subtitle": "The Tanna's middle path between fairness extremes.",
+      "headers": ["Parcel Size", "Problem", "Verdict"],
+      "rows": [
+        ["<span class='hebrew'>בֵּית כּוֹר</span>", "Too big — averages out the damage, victim under-compensated", "<span class='cross'>✗</span> פוגם"],
+        ["<span class='hebrew'>בֵּית קַב</span>", "Too small — local damage looks worse than it is", "<span class='cross'>✗</span> משביח"],
+        ["<span class='hebrew'>בֵּית סְאָה</span>", "Right balance — represents the surrounding field fairly", "<span class='check'>✓</span> שָׁמִין"]
+      ],
+      "callout": {
+        "label": "Yannai variations:",
+        "text": "Beit Yannai: <span class='hebrew'>שָׁמִין תַּרְקָב בְּשִׁשִׁים תַּרְקַבִּים</span> — three-kav unit in 60 of them. R' Yose ben Chanina: <span class='hebrew'>קֶלַח בְּשִׁשִּׁים קְלָחִים</span> — even one stalk in 60. Different scales of the same averaging principle."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🍇 R' Akiva's Tiers — Pricing the Damage",
+      "subtitle": "Different produce stages get different valuations.",
+      "boxes": [
+        {
+          "title": "🌱 Shoots / לולבי גפנים",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "Ate fig shoots or vine shoots",
+            "Estimated by current shoot value",
+            "R' Yehudah: this is the bet-se'ah case"
+          ]
+        },
+        {
+          "title": "🍇 Unripe / בוסר ופגין",
+          "color": "#f39c12",
+          "titleColor": "#f39c12",
+          "items": [
+            "Ate unripe fruit",
+            "Estimated as <strong>fully ripe</strong>",
+            "Loss is the harvest the owner would have had"
+          ]
+        },
+        {
+          "title": "🌳 Mature trees / נטיעות",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "R' Yehudah b/n R' Akiva: damage by saplings",
+            "<span class='hebrew'>נְטִיעוֹת שָׁמִין לוֹ נְטִיעוֹת</span>",
+            "Trees valued by tree, not by produce"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Sharper rule:",
+        "text": "R' Shimon ben Yehudah: <span class='hebrew'>תְּבוּאָה שֶׁלֹּא הֵבִיאָה שְׁלִישׁ נִידּוֹנֶת כִּנְטִיעוֹת</span> — grain that hasn't reached one-third growth is treated like saplings, not produce."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🌾 The Sheaves Mishnah — Permission Reverses Liability",
+      "subtitle": "Same physical situation, opposite legal results.",
+      "nodes": [
+        { "content": "<strong>You stacked sheaves on someone else's field</strong>", "class": "question" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Without permission", "content": "Field-owner's animal ate them → <strong>he is פטור</strong>. Your sheaves were the trespass.", "class": "result-bad" },
+            { "label": "With permission", "content": "Field-owner's animal ate them → <strong>he is חייב</strong>. He invited the sheaves; he owes shemira.", "class": "result-good" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "<strong>R' Yitzchak's question:</strong> Are sheaves on a field treated like vessels in a house?", "class": "action" },
+        { "type": "arrow" },
+        { "content": "R' Yose b. R' Bun: only when the field <span class='hebrew'>אִית לֵיהּ מִסְגָּר</span> — has a closure/fence", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Symbolic pivot:",
+        "text": "Permission isn't a polite formality — it's the moment legal responsibility shifts. Without it you're a trespasser; with it the owner becomes the shomer."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🔥 The Fire Mishnah — Chain of Causation",
+      "subtitle": "Each link in the chain shifts liability to whoever made it dangerous.",
+      "steps": [
+        { "content": "1️⃣ Sent through a <span class='hebrew'>חרש שוטה וקטן</span> → exempt בדיני אדם, חייב בדיני שמים." },
+        { "content": "2️⃣ Sent through a competent person → that person is liable." },
+        { "content": "3️⃣ One brought the fire, another the wood → <strong>whoever brought the wood</strong> is liable." },
+        { "content": "4️⃣ One brought wood, another the fire → <strong>whoever brought the fire</strong> is liable." },
+        { "content": "5️⃣ A third person fanned the flames → that person is liable. <strong>The wind fanned it → all are exempt.</strong>", "highlight": true }
+      ],
+      "callout": {
+        "label": "The principle:",
+        "text": "Liability follows the active completing cause — whoever turns potential into damage takes the loss. Once nature (the wind) takes over, the chain breaks."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💨 What Kind of Wind Breaks the Chain?",
+      "subtitle": "Catastrophic vs. ordinary, and the implications.",
+      "lines": [
+        { "speaker": "Tamman", "side": "left", "speakerColor": "#4a90d9", "text": "The Mishnah's exemption is for <span class='hebrew'>רוּחַ שֶׁלְּאוֹנְסִין</span> — catastrophic wind. Normal wind keeps you liable." },
+        { "speaker": "R' Y / RL", "side": "right", "speakerColor": "#c9a84c", "text": "Even normal wind: <span class='hebrew'>אֲפִילוּ רוּחַ שֶׁהָעוֹלָם מִתְנָהֵג בּוֹ פָּטוּר</span>. Why? <span class='hebrew'>שֶׁפְּעָמִים בָּא פְּעָמִים לֹא בָא</span> — wind isn't predictable enough to count as your direct extension." },
+        { "speaker": "Chizkiyah", "side": "left", "speakerColor": "#9b59b6", "text": "Sub-debate: Did you hand him a גחלת (coal) or a שלהבת (flame)? A coal can fizzle out — flame is unstoppable." },
+        { "speaker": "R' Yochanan", "side": "right", "speakerColor": "#e74c3c", "text": "<span class='hebrew'>הִיא גַחֶלֶת הִיא שַׁלְהֶבֶת</span> — same thing." }
+      ],
+      "callout": {
+        "label": "What's at stake:",
+        "text": "How predictable does the spread mechanism need to be for it to count as <em>your</em> fire? The stricter view (Tamman) treats normal weather as your tool. The lenient view treats unpredictability as a break in the chain."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Damage valuation needs the right yardstick (bet se'ah, not too big or too small). Liability follows the active cause through chains of agency — and breaks when nature (wind) or unpredictability takes over.",
+    "flowSteps": [
+      { "content": "<strong>Mishnah 6:2 end → 6:4 fire</strong>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "How do we measure damage, and where does liability stop?", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "📐 <strong>Bet se'ah</strong><br>fair averaging", "style": "border-color:#4caf50" },
+          { "content": "🍇 <strong>R' Akiva tiers</strong><br>ripe / unripe / trees", "style": "border-color:#f39c12" },
+          { "content": "🌾 <strong>Permission</strong><br>flips liability", "style": "border-color:#9b59b6" },
+          { "content": "🔥 <strong>Fire chain</strong><br>active cause pays", "style": "border-color:#e74c3c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Halakhic damage tracks fair measurement and active causation — never average abstraction or passive proximity.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Why doesn't the Mishnah measure damage by a bet kor or bet kav?",
+      "o": [
+        "Because they are uneven sizes",
+        "Bet kor is too big (פוגם), bet kav too small (משביח) — bet se'ah balances",
+        "Because of a takanah of Beit Hillel",
+        "Only fields are measured, not orchards"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>אֵין שָׁמִין בֵּית כּוֹר מִפְּנֵי שֶׁהוּא פוֹגֵם וְלֹא בֵית קַב מִפְּנֵי שֶׁמַּשְׁבִּיחַ</span> — bet se'ah is the fair midpoint."
+    },
+    {
+      "q": "When is the field-owner liable for his animal eating sheaves?",
+      "o": [
+        "Always",
+        "Only with permission to stack",
+        "Only without permission to stack",
+        "Only on Shabbat"
+      ],
+      "c": 1,
+      "e": "Permission flips liability: with permission, the owner becomes the shomer and pays; without permission, the stacker is the trespasser."
+    },
+    {
+      "q": "What is the rule when fire is sent via a חרש, שוטה, or קטן?",
+      "o": [
+        "Sender fully liable in court",
+        "Exempt בדיני אדם, חייב בדיני שמים",
+        "Both exempt",
+        "Only the deaf-mute is liable"
+      ],
+      "c": 1,
+      "e": "Beit din can't compel, but heaven holds the sender accountable for using an irresponsible agent."
+    },
+    {
+      "q": "When the wind fans the flames, what does the Mishnah say?",
+      "o": [
+        "All are liable",
+        "<span class='hebrew'>הֲרֵי כוּלָּן פְּטוּרִין</span> — all are exempt",
+        "Only the fire-bringer is liable",
+        "Only the wood-bringer is liable"
+      ],
+      "c": 1,
+      "e": "Once the wind takes over, the chain of human causation breaks — even according to R' Yochanan and Reish Lakish, regardless of how routine the wind."
+    },
+    {
+      "q": "What is R' Yochanan and Reish Lakish's reasoning to exempt even ordinary wind?",
+      "o": [
+        "Wind is always considered ones",
+        "<span class='hebrew'>פְּעָמִים בָּא פְּעָמִים לֹא בָא</span> — wind is unpredictable",
+        "It's a takanat chachamim",
+        "Only fire ignited by a person counts"
+      ],
+      "c": 1,
+      "e": "Unpredictability breaks the causal chain even with everyday wind, since you can't reliably anticipate it as your tool."
+    }
+  ]
+}

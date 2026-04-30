@@ -1,0 +1,211 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 21,
+  "emoji": "⚖️",
+  "topics": [
+    "🐂 שׁוֹר שֶׁנָּגַח אֶת הָאָדָם — the goring bull and what its owner pays",
+    "💬 R' Eliezer vs. R' Akiva: what does <span class='hebrew'>וּבַעַל הַשּׁוֹר נָקִי</span> exempt?",
+    "🪦 R' Akiva's challenge: is the owner not 'destined for the stoning place'?",
+    "📖 R' Eliezer's narrowing: only when the bull intended to kill an animal",
+    "🔁 Gezerah shavah: <span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span> — does it learn from <span class='hebrew'>סָקוֹל יִסָּקֵל</span> or from itself?"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — What 'The Owner Is Free' Really Means",
+    "label": "The sugya:",
+    "text": "Exodus 21:28 says that when an ox gores a person to death, the ox is stoned and 'the owner of the bull is free' (וּבַעַל הַשּׁוֹר נָקִי). R' Eliezer reads this as freeing him from half the kofer (weregilt). R' Akiva pushes back: the owner is already destined for the stoning place — how can the verse be talking about him? The Yerushalmi tracks both opinions through five distinct moves: a frontal challenge, a narrowing, an internal critique, alternative readings of the exemption, and a closing gezerah shavah about which version of 'the bull shall be stoned' anchors the law.",
+    "hebrewSource": "וּבַעַל הַשּׁוֹר נָקִי. נָקִי מֵחֲצִי כוֹפֶר. דִּבְרֵי רִבִּי אֱלִיעֶזֶר. אָמַר לוֹ רִבִּי עֲקִיבָה. רִבִּי. וַהֲלֹא מוּקְדָּם הוּא לְבֵית הַסְקִילָה חֲמוּרָה"
+  },
+  "slides": [
+    {
+      "type": "debate",
+      "title": "💬 R' Eliezer vs. R' Akiva — Round One",
+      "subtitle": "What does the Torah free the owner from?",
+      "lines": [
+        { "speaker": "RE", "side": "left", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>וּבַעַל הַשּׁוֹר נָקִי</span> — free from half the kofer. When the bull is a tam that kills a person, the owner is exempt from paying half-weregilt." },
+        { "speaker": "RA", "side": "right", "speakerColor": "#e74c3c", "text": "<span class='hebrew'>רִבִּי, וַהֲלֹא מוּקְדָּם הוּא לְבֵית הַסְקִילָה חֲמוּרָה?</span> — Rabbi, isn't he already destined for the severity of the stoning place? How can the verse even discuss money?" },
+        { "speaker": "RE", "side": "left", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>לֹא אָמַרְתִּי אֶלָּא בְּנִתְכַּוֵון לַהֲרוֹג אֶת הַבְּהֵמָה וְהָרַג אֶת הָאָדָם</span> — I only spoke about a case where the bull intended to kill an animal but ended up killing a person. Then there is no death penalty for the owner, and the kofer-exemption is meaningful." }
+      ],
+      "callout": {
+        "label": "Key move:",
+        "text": "R' Akiva is not denying the exemption. He is pointing out that for a typical murderous-bull case, the owner faces capital liability anyway — so the verse can't be his concern. R' Eliezer answers by carving out the unintended-killing case where the owner avoids the stoning court."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🔎 The Yerushalmi's Internal Critique",
+      "subtitle": "Should R' Akiva's question apply just as much to himself?",
+      "nodes": [
+        { "content": "<strong>R' Akiva attacks R' Eliezer:</strong><br>The owner is already going to בית הסקילה.", "class": "question" },
+        { "type": "arrow" },
+        { "content": "<span class='hebrew'>עַד דּוּ מַקְשֵׁי לָהּ עַל דְּרִבִּי לִעֶזֶר יַקְשֶׁינָּהּ עַל דִּידֵיהּ</span><br>Before he objects to R' Eliezer, shouldn't he object to himself?", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "R' Miasha", "content": "<span class='hebrew'>תִּיפְתָּר בְּשֶׁעָבַר וּשְׁחָטוֹ</span><br>Read it about a case where he transgressed and slaughtered the bull — so no stoning court for the owner here either.", "class": "result-partial" },
+            { "label": "Alternative reading", "content": "R' Akiva himself uses the same narrowing as R' Eliezer: the case is when the bull intended to kill an animal, or a Gentile, or a stillbirth.", "class": "result-partial" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Either way, R' Akiva's exemption — like R' Eliezer's — only operates outside the standard capital case.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Yerushalmi style:",
+        "text": "The Yerushalmi will not let an Amora score points cheaply. If R' Akiva's question would also undermine his own reading, the Yerushalmi forces him to live with the same answer."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🆚 Two Readings of <span class='hebrew'>וּבַעַל הַשּׁוֹר נָקִי</span>",
+      "subtitle": "Each Tanna assigns the exemption to a different liability.",
+      "boxes": [
+        {
+          "title": "🐂 R' Eliezer",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "<span class='hebrew'>נָקִי מֵחֲצִי כוֹפֶר</span> — free from half the weregilt",
+            "Operative case: tam that intended an animal but killed a person",
+            "Verse <span class='hebrew'>אִם כּוֹפֶר יוּשַׁת עָלָיו</span> speaks of the mu'ad — full kofer there",
+            "So 'נקי' here must address the tam — exempt from half"
+          ]
+        },
+        {
+          "title": "📜 R' Akiva",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<span class='hebrew'>נָקִי מִדְּמֵי עֶבֶד</span> — free from paying for a slave",
+            "Worried about the stoning court collision",
+            "Reads the exemption against the slave-payment rule of Ex. 21:32",
+            "Forces the case into the same narrow scenarios R' Eliezer used"
+          ]
+        },
+        {
+          "title": "🤝 Common ground",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Both agree the verse cannot mean a standard murderous-bull case",
+            "Both narrow it to where the owner is not capitally liable",
+            "They differ only on which monetary payment the verse waives"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Why the dispute matters:",
+        "text": "It's not a vague hermeneutic preference. R' Eliezer needs <span class='hebrew'>נָקִי</span> for half-kofer because the verse <span class='hebrew'>אִם כּוֹפֶר יוּשַׁת</span> already covers the mu'ad's full kofer. R' Akiva reroutes the exemption to the slave-payment because in his system the half-kofer is handled differently."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📊 Where Does Each Side Get Its Other Exemption?",
+      "subtitle": "Each Tanna must source the exemption the other reads into נקי.",
+      "headers": ["Question", "R' Eliezer", "R' Akiva"],
+      "rows": [
+        ["Free from half-kofer?", "Yes — directly from <span class='hebrew'>וּבַעַל הַשּׁוֹר נָקִי</span>", "Yes — derived via gezerah shavah of <span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span> from <span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span>"],
+        ["Free from paying for a slave?", "Yes — derived from <span class='hebrew'>אִם כּוֹפֶר יוּשַׁת עָלָיו</span> (mu'ad context)", "Yes — directly from <span class='hebrew'>וּבַעַל הַשּׁוֹר נָקִי</span>"],
+        ["Why each pasuk works", "The kofer-imposition verse speaks of mu'ad, leaving נקי for the tam's half-kofer", "The two phrasings of 'the bull shall be stoned' link tam to mu'ad's law"],
+        ["Who uses gezerah shavah", "Not for this point", "<span class='hebrew'>נֶאֱמַר כָּאן הַשּׁוֹר יִסָּקֵל וְנֶאֱמַר לְהַלָּן הַשּׁוֹר יִסָּקֵל</span>"]
+      ],
+      "callout": {
+        "label": "Important:",
+        "text": "Both Tannaim arrive at all the same exemptions. Their dispute is purely about which words of Torah carry which job."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🧠 The Closing Gezerah Shavah",
+      "subtitle": "Which 'the bull shall be stoned' is the source — and which is the recipient?",
+      "steps": [
+        { "content": "1️⃣ The Torah twice uses similar phrases: <span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span> (in our parsha, on tam) and <span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span> (later, on mu'ad)." },
+        { "content": "2️⃣ R' Akiva: just as 'the bull shall be stoned' there speaks of the mu'ad, so 'the bull shall be stoned' here also gets read in the mu'ad's framework — yielding the half-kofer exemption for the tam." },
+        { "content": "3️⃣ Objection: but elsewhere the Torah writes <span class='hebrew'>סָקוֹל יִסָּקֵל הַשּׁוֹר</span> — wouldn't that be the better link? Doubled language is usually weightier." },
+        { "content": "4️⃣ Resolution: <span class='hebrew'>מוּטָּב יִלָּמֵד הַשּׁוֹר יִסָּקֵל מִשּׁוֹר יִסָּקֵל</span> — better that 'the bull shall be stoned' learn from a phrase that matches it exactly." },
+        { "content": "5️⃣ Principle: a gezerah shavah prefers identical phrasing over a near-identical doubled phrasing.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "The daf, which on the surface is a short three-line dispute, actually contains: a frontal Tannaitic clash, a self-objection move (<span class='hebrew'>יַקְשֶׁינָּהּ עַל דִּידֵיהּ</span>), two parallel exemption-mappings, and a meta-rule about how to choose between competing gezerot shavot."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Both R' Eliezer and R' Akiva agree that an owner whose bull kills a person can owe money — but only in narrow non-capital scenarios. They split on which payment the words <span class='hebrew'>וּבַעַל הַשּׁוֹר נָקִי</span> exempt, and the Yerushalmi maps each side's verse-by-verse logic.",
+    "flowSteps": [
+      { "content": "<strong>Verse:</strong><br><span class='hebrew'>וּבַעַל הַשּׁוֹר נָקִי</span><br>(Ex. 21:28)", "class": "question" },
+      { "type": "arrow" },
+      { "content": "What is the owner free from?", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🔵 <strong>R' Eliezer</strong><br>Free from half-kofer (tam case)", "style": "border-color:#4a90d9" },
+          { "content": "🔴 <strong>R' Akiva</strong><br>Free from paying for a slave", "style": "border-color:#e74c3c" },
+          { "content": "🟣 <strong>Both</strong><br>Only outside the capital case (intended animal, etc.)", "style": "border-color:#9b59b6" },
+          { "content": "🟡 <strong>Gezerah shavah</strong><br><span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span> ↔ <span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span>", "style": "border-color:#c9a84c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Two Tannaim, two assignments of <span class='hebrew'>נָקִי</span>, but the same monetary outcomes — because each side imports the other's exemption through a different pasuk.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "According to R' Eliezer, what does <span class='hebrew'>וּבַעַל הַשּׁוֹר נָקִי</span> exempt the owner from?",
+      "o": [
+        "From paying full damages",
+        "From half the kofer (weregilt)",
+        "From the death penalty itself",
+        "From watching his bull"
+      ],
+      "c": 1,
+      "e": "R' Eliezer says: <span class='hebrew'>נָקִי מֵחֲצִי כוֹפֶר</span>. He reads the verse as exempting the tam-owner from half-weregilt."
+    },
+    {
+      "q": "What is R' Akiva's challenge to R' Eliezer?",
+      "o": [
+        "The verse is about a fire, not a bull",
+        "<span class='hebrew'>וַהֲלֹא מוּקְדָּם הוּא לְבֵית הַסְקִילָה חֲמוּרָה</span> — the owner is already going to the stoning court",
+        "Half-kofer doesn't exist as a category",
+        "The owner of a tam never pays anything"
+      ],
+      "c": 1,
+      "e": "R' Akiva argues that in the standard case the owner faces capital prosecution, so the verse cannot be focused on his money payments."
+    },
+    {
+      "q": "How does R' Eliezer narrow the case to make his reading work?",
+      "o": [
+        "Only when the bull is hekdesh",
+        "Only in cases where the owner declared the bull ownerless",
+        "Only when the bull intended to kill an animal but ended up killing a person",
+        "Only on Shabbat"
+      ],
+      "c": 2,
+      "e": "<span class='hebrew'>לֹא אָמַרְתִּי אֶלָּא בְּנִתְכַּוֵון לַהֲרוֹג אֶת הַבְּהֵמָה וְהָרַג אֶת הָאָדָם</span> — only in non-capital scenarios. R' Akiva ends up using the same narrowing."
+    },
+    {
+      "q": "What is the meaning of the Yerushalmi's pushback <span class='hebrew'>יַקְשֶׁינָּהּ עַל דִּידֵיהּ</span>?",
+      "o": [
+        "He should ask his own teacher first",
+        "Before objecting to R' Eliezer, R' Akiva should ask the same question against his own position",
+        "He should learn it as a Mishnah rather than a beraita",
+        "He should let R' Miasha decide"
+      ],
+      "c": 1,
+      "e": "The Yerushalmi notes that R' Akiva's challenge would equally undermine his own reading, so he must accept the same narrowing — either via R' Miasha's solution (<span class='hebrew'>בְּשֶׁעָבַר וּשְׁחָטוֹ</span>) or by adopting R' Eliezer's qualification."
+    },
+    {
+      "q": "Why does the Yerushalmi prefer learning <span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span> from <span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span> rather than from <span class='hebrew'>סָקוֹל יִסָּקֵל הַשּׁוֹר</span>?",
+      "o": [
+        "Doubled verbs are always weaker",
+        "<span class='hebrew'>מוּטָּב יִלָּמֵד הַשּׁוֹר יִסָּקֵל מִשּׁוֹר יִסָּקֵל</span> — exact phrasing match is preferred over a near-match",
+        "The doubled form is in a different sefer",
+        "R' Akiva rejects all gezerot shavot"
+      ],
+      "c": 1,
+      "e": "The Yerushalmi establishes a meta-principle: when choosing between two possible source-phrases for a gezerah shavah, the one with identical phrasing wins over the doubled-language version."
+    }
+  ]
+}

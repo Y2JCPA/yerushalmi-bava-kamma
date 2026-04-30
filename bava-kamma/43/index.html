@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 43 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🐝</div>
+  <h1>Yerushalmi Bava Kamma 43</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא מג׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🔄 Switched vessels at the artisan vs. mourner's house<br>
+    🐴 Publicans, robbers, and yi'ush (despair) transferring ownership<br>
+    🐝 Swarm of bees: pursuit into another's field, cutting branches<br>
+    📚 Recognizing stolen vessels/books — when the buyer swears<br>
+    💧 Saving honey vs. wine, water vs. honey in the desert<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Yi'ush, Rescue, and Switched Property</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">נָטְלוּ מוֹכְסִין אֶת חֲמוֹרוֹ וְנָתְנוּ לוֹ חֲמוֹר אַחֵר... הֲרֵי אֵילּוּ שֶׁלּוֹ מִפְּנֵי שֶׁהַבְּעָלִין מִתְיָיאֲשִׁין מֵהֶן</div><div class="callout"><strong>The sugya:</strong> Daf 43 covers the second half of Chapter 10's mishnayot on rescue and recovery. The sugya develops yi'ush (the owner's despair) as the legal mechanism that transfers ownership when publicans seize a donkey, robbers take a garment, or a swarm of bees flies away. It then turns to recognizing stolen vessels in another's hand, and the moral economy of pouring out one's own wine to save another's honey — and water vs. honey in the desert.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>🔄 Where Were the Vessels Switched?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The Mishnah distinguishes between an artisan's shop and a public gathering.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">🛠️ At the Artisan</h3><ul><li><span class='hebrew'>יִשְׁתַּמֵּשׁ בָּהֶן</span> — may use them</li><li>Then go out and search for his own</li><li>Artisan implicitly authorizes use</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">🕯️ Mourner's House / Wedding</h3><ul><li><span class='hebrew'>אַל יִשְׁתַּמֵּשׁ בָּהֶן</span> — may NOT use</li><li>Just go out and search for his own</li><li>No authorization implied in such gatherings</li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">🏪 Bar Qora's Shop</h3><ul><li>R' Hiyya's example via R' Abba bar Hanan</li><li><span class='hebrew'>כָּל הַנּוֹטֵל מֵאֶצְלוֹ נוֹטֵל בִּרְשׁוּת</span></li><li>Every taking and depositing is by permission</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>Logic:</strong> Use is permitted only where the holder of the items has implicit authority to grant it.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>🐴 Yi'ush — The Engine of Ownership Transfer</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The Mishnah at 10:2 lays out the principle and then applies it.</div>
+  <div class="flowchart"><div class="flow-box question">Item taken by force or lost</div><div class="flow-arrow">↓</div><div class="flow-box action"><span class='hebrew'>הַבְּעָלִין מִתְיָיאֲשִׁין מֵהֶן</span> — owners despair</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Publicans gave another donkey</div><div class="flow-box result-good"><span class='hebrew'>הֲרֵי אֵילּוּ שֶׁלּוֹ</span></div></div><div class="flow-col"><div class="flow-label">Saved from flood/robbers</div><div class="flow-box result-good">After yi'ush, his</div></div><div class="flow-col"><div class="flow-label">Swarm of bees</div><div class="flow-box result-good">After yi'ush, his</div></div><div class="flow-col"><div class="flow-label">Crying 'I did not despair'</div><div class="flow-box result-partial">Reish Lakish: not yet his</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good">Yi'ush + change of hand = the finder/taker becomes owner.</div></div><div class="callout" style="margin-top:20px"><strong>Beraita extension:</strong> Saved from an army, a fire, a sea-whirlpool, or a river-whirlpool — also his.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>🐝 The Swarm of Bees and Joshua's Stipulation</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">May the beekeeper enter another's field to retrieve his swarm?</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#c9a84c">M</div><div class="speech">Mishnah: he may enter the field and take his swarm. If he caused damage, he pays — <span class='hebrew'>אֲבָל לֹא יָקוֹץ אֶת הַסּוֹכָה</span>, but he may not cut a branch on condition to pay.</div></div><div class="debate-line right"><div class="speaker" style="background:#4a90d9">RY</div><div class="speech">R' Yishmael b. R' Yochanan b. Beroka: he may even cut and pay.</div></div><div class="debate-line"><div class="speaker" style="background:#9b59b6">Y</div><div class="speech">It is a stipulation of the court — <span class='hebrew'>שֶׁעַל מְנָת כֵּן הִנְחִיל יְהוֹשֻׁעַ לְיִשְׂרָאֵל אֶת הָאָרֶץ</span> — Joshua distributed the Land on this very condition.</div></div><div class="debate-line right"><div class="speaker" style="background:#4caf50">RH</div><div class="speech">R' Hinena b. Pappos in R' Yochanan's name: only when taken in flight, and only immediately. If it left and returned, it was said only out of fear or seduction.</div></div></div><div class="callout" style="margin-top:20px"><strong>Big idea:</strong> Some property rules are not biblical — they are a stipulation built into the original distribution of the Land.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>📚 Recognizing One's Own Vessels in Another's Hand</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When can you reclaim books or vessels you recognize?</div>
+  <table><tr><th>Position</th><th>Speaker</th><th>Requirement</th></tr><tr><td>Why do we make him swear?</td><td><span class='hebrew'>רִבִּי בָּא בַּר מָמָל</span></td><td><span class='hebrew'>שֶׁלֹּא יְהוּ בַעֲלֵי בָתִּים נִטְפָּלִין לַגַּנָּבִים</span> — so householders won't fence stolen goods</td></tr><tr><td>Need a public reputation</td><td><span class='hebrew'>רִבִּי יְהוֹשֻׁעַ בֶּן לֵוִי</span></td><td>Only if it is known the books were stolen</td></tr><tr><td>Need overnight proof</td><td>Rav</td><td>Must bring proof he stayed there that very night</td></tr><tr><td>Self-claim suffices</td><td>Assi</td><td>If he says 'I bought from So-and-so' — believed</td></tr><tr><td>Case denied</td><td><span class='hebrew'>רִבִּי נָסָא</span></td><td><span class='hebrew'>בַּר נַשׁ דָּעַקִּין</span> — known troublemaker; suspect</td></tr></table><div class="callout" style="margin-top:20px"><strong>Tension:</strong> Protect the original owner — but don't turn every honest buyer into a presumed thief.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>💧 Saving the Other's Cargo — Wages or Sale?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Two travelers on the road. The honey leaks. The water leaks in the desert.</div>
+  <div class="process-bar"><div class="process-step">1️⃣ Default: if he silently pours out his wine to save the honey, <span class='hebrew'>אֵין לוֹ אֶלָּא שְׂכָרוֹ</span> — he gets only wages.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ But if he says <span class='hebrew'>אַצִּיל אֶת שֶׁלָּךְ וְאַתָּה נוֹתֵן לִי דְמֵי שֶׁלִּי</span> — he gets the full value.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ In the desert, water beats honey: <span class='hebrew'>תְּנַיי בֵּית דִּין הוּא שֶׁיִּשְׁפּוֹךְ זֶה דִבְשׁוֹ</span> — court stipulation forces the honey-holder to pour out for the water.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ A river sweeps two donkeys; if one abandons his to save the more valuable other's, only wages — unless he stipulates first.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ <strong>Yi'ush dispute:</strong> If he was crying 'I did not despair' — Reish Lakish says no yi'ush; R' Yochanan says <span class='hebrew'>חֲזָקָה מְיָיאֵשׁ הוּא</span> — presumption of despair stands.</div></div><div class="callout" style="margin-top:20px"><strong>Principle:</strong> Words matter. Saving without a stipulation is volunteer work; saving with a stipulation is a contract.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 43 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Owner separated from item</strong><br>switched, taken, lost, or in danger</div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Examine: did the owner give up hope?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🐴 <strong>Publicans/robbers</strong><br>presumed yi'ush — finder's</div></div><div class="flow-col"><div class="flow-box" style="border-color:#c9a84c">🐝 <strong>Swarm</strong><br>only if in flight + immediate</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">📚 <strong>Recognized vessels</strong><br>oath if theft was public</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">💧 <strong>Rescue</strong><br>wages, unless stipulated</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Result:</strong><br>Ownership shifts only when the law recognizes despair plus a change of hand — and rescuers must speak before they spill.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 43a-43b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 43a-43b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../42/">← Daf 42</a><a href="../44/">Daf 44 →</a></div>
+</body>
+</html>

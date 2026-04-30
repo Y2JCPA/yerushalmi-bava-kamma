@@ -1,0 +1,196 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 23,
+  "emoji": "🛡️",
+  "topics": [
+    "🛡️ Handing the bull to a שומר — who steps into the owner's place",
+    "🔒 Tying it down 'כראוי' — does a tame and notorious bull share guarding standards?",
+    "🐂 R' Eliezer: the only שמירה for a notorious is the knife",
+    "🐄 The pregnant cow puzzle — who pays for the calf when timing is unknown",
+    "🎲 Following majority in monetary cases — the camel-in-heat baraita"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Watchmen, Levels of Guarding, and the Cow's Calf",
+    "label": "The sugya:",
+    "text": "Daf 23 closes Chapter 4 with the topic of handing the bull to a guardian and the level of שמירה required, then opens Chapter 5 with the famous mystery of the gored cow and her calf — a sugya that probes whether monetary law follows majority probability.",
+    "hebrewSource": "מְסָרוֹ לְשׁוֹמֵר חִנָּם וְלַשּׁוֹאֵל וְלַנּוֹשֵׂא שָׂכָר וְהַשּׂוֹכֵר נִכְנְסוּ תַחַת הַבְּעָלִים."
+  },
+  "slides": [
+    {
+      "type": "comparison",
+      "title": "🛡️ Levels of Guarding",
+      "subtitle": "R' Eleazar maps the dispute between R' Meir and R' Yehudah onto the שומרים grid.",
+      "boxes": [
+        {
+          "title": "🆓 R' Meir",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "<span class='hebrew'>שמירת נזקין כשמירת שומר חינם</span>",
+            "Unpaid trustee level guarding suffices",
+            "Looser standard — easier to be patur"
+          ]
+        },
+        {
+          "title": "💰 R' Yehudah",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "<span class='hebrew'>שמירת נזקין כשומר שכר</span>",
+            "Paid trustee level guarding required",
+            "Stricter — harder to escape liability"
+          ]
+        },
+        {
+          "title": "🔪 R' Eliezer",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "A muad has only one שמירה",
+            "<span class='hebrew'>אין לו שמירה אלא סכין</span>",
+            "Slaughter is the only adequate guard"
+          ]
+        },
+        {
+          "title": "⚖️ Practical test",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "Even iron walls aren't enough alone",
+            "<span class='hebrew'>אין משערין אלא בגופו</span>",
+            "Personal capacity to watch is decisive"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Key move:",
+        "text": "The Yerushalmi reads the Mishnah's dispute about a tied-down ox as a fight over which שומר category sets the bar for damage-prevention."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📊 R' Meir vs R' Yehudah — Bull Damaged or Bull Killed",
+      "subtitle": "Once the bull is handed over, four scenarios shake out differently.",
+      "headers": ["Scenario", "R' Meir (שומר חינם)", "R' Yehudah (שומר שכר)"],
+      "rows": [
+        ["Unpaid: bull broke out and damaged", "פטור", "חייב (mu'ad)"],
+        ["Unpaid: bull broke out and was killed/torn", "פטור", "פטור"],
+        ["Paid: bull broke out and damaged", "חייב", "חייב"],
+        ["Paid: bull broke out and was killed/torn", "פטור", "חייב"]
+      ],
+      "callout": {
+        "label": "Note:",
+        "text": "R' Eleazar's astonishment: 'But it was guarded — and the Torah still made him liable!' Resolution: every שמירה in the Torah is measured against the watchman himself, not the wall."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🐄 The Cow With Her Calf",
+      "subtitle": "A bull gored a cow; her fetus is found beside her.",
+      "nodes": [
+        { "content": "משנה: שור שנגח את הפרה ונמצא עוברה בצידה", "class": "question" },
+        { "type": "arrow" },
+        { "content": "Was the calf already born — or did the goring cause the miscarriage?", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "If known", "content": "Pay full half-damage", "class": "result-good" },
+            { "label": "If doubtful", "content": "Half נזק for cow + רביע for calf", "class": "result-partial" },
+            { "label": "Yerushalmi probe", "content": "Why not follow רוב — most cows don't miscarry?", "class": "result-bad" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Conclusion: monetary law generally <em>doesn't</em> follow majority — but R' Yose cites R' Acha's camel-in-heat case as a counter-example.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Yerushalmi tension:",
+        "text": "<span class='hebrew'>זאת אומרת שלא הילכו במידת הדין בממון אחר הרוב</span> — but R' Acha's camel baraita shows they sometimes did."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 R' Yannai vs R' Yose — How Does the Half + Quarter Work?",
+      "subtitle": "Two structural readings of the Mishnah's split payment.",
+      "lines": [
+        { "speaker": "RY", "side": "left", "speakerColor": "#4a90d9", "text": "R' Yannai: <span class='hebrew'>משלם חצי נזק מן הפרה ובעל הוולדות עולה לבעל הפרה רביע</span> — owner pays half from the cow value, and the calf-owner kicks back a quarter to the cow-owner." },
+        { "speaker": "RY2", "side": "right", "speakerColor": "#9b59b6", "text": "R' Yose: each pays half — half for the cow, half for the calf, treated as separate damage events." },
+        { "speaker": "Q", "side": "left", "speakerColor": "#c9a84c", "text": "What's the practical difference? <span class='hebrew'>מתו הוולדות</span> — if the calves died after the goring." },
+        { "speaker": "A", "side": "right", "speakerColor": "#e74c3c", "text": "On R' Yannai's reading the cow-owner can say 'I didn't want them — take them as they are.' On the other reading, each pays his own share regardless." }
+      ],
+      "callout": {
+        "label": "Levi's traditions:",
+        "text": "Reish Lakish concludes: <span class='hebrew'>כל אילין שמועתא דלוי אינון</span> — all these readings come from Levi's school."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🐪 The Camel-in-Heat — Following the Rov",
+      "subtitle": "R' Yose's counter-example to the cow-and-calf principle.",
+      "steps": [
+        { "content": "1️⃣ A camel in heat (<span class='hebrew'>גמל האוחר</span>) wandered among other camels." },
+        { "content": "2️⃣ One of them is found dead." },
+        { "content": "3️⃣ Ruling: the camel-in-heat is liable — <span class='hebrew'>בידוע שזה הרגו</span>." },
+        { "content": "4️⃣ Reasoning: the overwhelming probability is that the agitated camel did it." },
+        { "content": "5️⃣ Therefore: <strong>monetary law sometimes does follow רוב</strong> — the cow case is the exception, not the rule.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "R' Avun bar Cahana asks: if it were certain, would each pay half? R' Immi answers: yes — the Mishnah deals with a muad, and the half is a sale-of-foot logic."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "When ownership is delegated, the level of שמירה demanded matches the watchman's category — and where ownership of the damaged thing is split (cow + calf), so is the payment.",
+    "flowSteps": [
+      { "content": "<strong>Watchmen and split-ownership</strong><br>Who pays when the cow loses her calf?", "class": "question" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🛡️ <strong>R' Meir</strong><br>שומר חינם standard", "style": "border-color:#4a90d9" },
+          { "content": "💰 <strong>R' Yehudah</strong><br>שומר שכר standard", "style": "border-color:#9b59b6" },
+          { "content": "🔪 <strong>R' Eliezer</strong><br>only the knife", "style": "border-color:#e74c3c" },
+          { "content": "🐄 <strong>R' Yannai vs R' Yose</strong><br>half+quarter split", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "Doubt about timing produces split payment — but probability arguments are fragile in monetary law.", "class": "action" },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Liability is shaped both by who was watching and by who owned the damaged property.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "According to R' Eleazar, what guarding level does R' Meir require for damages?",
+      "o": ["שומר שכר", "שומר חינם", "שואל", "שוכר"],
+      "c": 1,
+      "e": "R' Eleazar: R' Meir's standard is the שומר חינם level; R' Yehudah requires the שומר שכר level."
+    },
+    {
+      "q": "How does R' Eliezer say one guards a notorious bull?",
+      "o": ["With an iron wall", "Only with the knife — slaughter", "By chaining it to the ground", "By selling it"],
+      "c": 1,
+      "e": "<span class='hebrew'>אין לו שמירה אלא סכין</span> — the only adequate guarding for a muad is to slaughter it."
+    },
+    {
+      "q": "In the cow-and-calf case, why doesn't the Mishnah pay full damages for the calf?",
+      "o": ["The calf is exempt", "It's uncertain whether the goring caused the miscarriage", "Calves aren't real damages", "The cow died first"],
+      "c": 1,
+      "e": "Because of the doubt about timing, the Mishnah pays only a רביע for the calf — half the half-damage."
+    },
+    {
+      "q": "What does R' Acha's camel-in-heat baraita prove?",
+      "o": ["Camels are not liable", "Monetary law sometimes does follow רוב", "Heat is an exempt force majeure", "Witnesses are required"],
+      "c": 1,
+      "e": "R' Yose cites it to show that in some monetary cases the law does apply majority probability."
+    },
+    {
+      "q": "What is the practical difference between R' Yannai and R' Yose's readings of the Mishnah?",
+      "o": ["The amount of damages", "Whether witnesses are needed", "What happens if the calves die after the goring", "Whether the cow is muad or tam"],
+      "c": 2,
+      "e": "On R' Yannai's reading the cow-owner can refuse the dead calves; on R' Yose's, each pays his share regardless."
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 20,
+  "emoji": "👨‍⚖️",
+  "topics": [
+    "🐂 שור של חרש שוטה וקטן — bulls of those without legal capacity",
+    "👨‍⚖️ אפיטרופוס: when testimony is taken before a guardian",
+    "💸 Borrowed ox that turns out to be מועד — half/half liability",
+    "🏚️ Are guardians liable from יתומים' property or their own?",
+    "🐃 שור שנגח את האדם — kofer for mu'ad, no kofer for tam"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Capacity, Custodians, and the Bull That Killed",
+    "label": "The sugya:",
+    "text": "The daf works through the Mishnah of an ox owned by a חרש, שוטה, or קטן — people without halakhic agency. A guardian (אפיטרופוס) is appointed so testimony can establish notoriety. The Yerushalmi presses: what if the ox was warned in front of the guardian and then returned to the owner? What about a borrowed ox that turns out to be mu'ad? It then asks the deeper question of whether guardians ever take on personal liability, and closes with the Mishnah of an ox that gored and killed a person — kofer for mu'ad, none for tam, but execution either way.",
+    "hebrewSource": "שׁוֹר שֶׁל חֵרֵשׁ שׁוֹטֶה וְקָטָן שֶׁנָּגחוּ מַעֲמִידִין לָהֶן אֶפִּיטְרוֹפּוֹס וּמְעִידִין בָּהֶן בִּפְנֵי אֶפִּיטְרוֹפּוֹס"
+    },
+  "slides": [
+    {
+      "type": "flowchart",
+      "title": "👨‍⚖️ Testimony Before the Guardian",
+      "subtitle": "Two directions of the question, one tannaitic answer.",
+      "nodes": [
+        { "content": "<strong>Mishnah:</strong> Bull of חרש/שוטה/קטן gored<br>Appoint guardian; take testimony before him", "class": "question" },
+        { "type": "arrow" },
+        { "content": "Yerushalmi pushes the case: what if the testimony was taken before the guardian and the bull then returned to the owner?", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Borrowed as תם, was מועד", "content": "Owner pays חצי, borrower pays חצי", "class": "result-partial" },
+            { "label": "R' Eleazar reads R' Yose", "content": "<span class='hebrew'>הֲרֵי הוּא בְּחֶזְקָתוֹ</span> — stays in its prior state", "class": "result-good" },
+            { "label": "If borrower knew it was a goring ox", "content": "Borrower bears full liability", "class": "result-bad" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "<strong>Killed at borrower's, returned to owner</strong>:<br>before judgment → exempt; after judgment → liable<br>R' Yaakov: even after judgment but before stoning → exempt", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "The pivot:",
+        "text": "The whole sugya hinges on whether the legal status (תם/מועד, condemned/uncondemned) follows the ox like a chazakah, or shifts each time custody changes hands."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 Do We Appoint Guardians To Their Detriment?",
+      "subtitle": "R' Yochanan vs. R' Yose b. Chaninah on guardian liability.",
+      "lines": [
+        { "speaker": "RY", "side": "left", "speakerColor": "#4a90d9", "text": "R' Yochanan: <span class='hebrew'>בַּתְּחִילָּה אֵין מְמַנִּין אֶפִּיטְרוֹפִּין עַל מְנָת לַחוֹב לָהֶן אֶלָּא לְזַכּוֹת לָהֶן</span> — guardians are appointed only to benefit, but if their actions hurt, they hurt." },
+        { "speaker": "RYC", "side": "right", "speakerColor": "#e74c3c", "text": "R' Yose b. Chaninah: never — neither initially nor afterward. Guardians can neither help nor harm the orphans' rights." },
+        { "speaker": "Q", "side": "left", "speakerColor": "#9b59b6", "text": "But our Mishnah appoints a guardian — that very appointment harms (it sets up testimony that will impose liability)?" },
+        { "speaker": "A", "side": "right", "speakerColor": "#c9a84c", "text": "Answer: <span class='hebrew'>שַׁנְיָיא הִיא בְּשׁוֹר שֶׁלֹּא יֵצֵא וְיַזִּיק</span> — an ox is different; left alone it will keep damaging, so the appointment is unavoidable." }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "Guardian appointment is normally restricted to benefit. The dangerous-ox case is a public-safety exception that overrides the rule."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🏚️ Whose Pocket Pays?",
+      "subtitle": "If the orphans' bull damages, who absorbs the loss?",
+      "boxes": [
+        {
+          "title": "👤 R' Yochanan",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "Pay from the <strong>orphans'</strong> property",
+            "Reasoning: if the guardian had to pay, <span class='hebrew'>לֹא נַעֲשֶׂה אָדָם מֵעוֹלָם אֶפִּיטְרוֹפּוֹס</span>",
+            "Aligns with the Rabbis: court-appointed guardian swears (court already vetted him)"
+          ]
+        },
+        {
+          "title": "👥 R' Yose b. Chaninah",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "Pay from the <strong>guardian's</strong> property",
+            "Aligns with Abba Shaul",
+            "Logic: a person will sacrifice much to be called נאמן (trustworthy)"
+          ]
+        },
+        {
+          "title": "🪙 The תוספת",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Abba bar Rav Huna: one who hits another's animal that then damages — liable",
+            "Strengthens the chain: indirect causation still attaches",
+            "Reinforces the case for guardian-side liability"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Practical concern:",
+        "text": "R' Yochanan worries about the supply of guardians — if liability is too steep, no one will serve. R' Yose b. Chaninah worries about deterrence and incentives — guardians must guard."
+      }
+    },
+    {
+      "type": "table",
+      "title": "🐃 Mishnah 4:5 — Killing a Person",
+      "subtitle": "What does the owner of the goring ox owe when a person dies?",
+      "headers": ["Case", "Kofer (ransom)", "Ox itself"],
+      "rows": [
+        ["שור מועד גores a person → dies", "<span class='hebrew'>מְשַׁלֵּם אֶת הַכּוֹפֶר</span>", "Stoned"],
+        ["שור תם gores a person → dies", "Exempt from kofer", "Stoned"],
+        ["Same applies to a בן or בת", "Same as above", "Same as above"],
+        ["Gored an עבד or שפחה", "<strong>30 sela'im</strong> regardless of value", "Stoned"]
+      ],
+      "callout": {
+        "label": "Two layers:",
+        "text": "Kofer is a monetary atonement triggered by mu'ad status. The ox's execution, by contrast, follows from the act of killing itself — <span class='hebrew'>זֶה וָזֶה חַיָּיבִין מִיתָה</span>."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🔁 The Borrowed-Ox Liability Split",
+      "subtitle": "An elegant case-by-case ruling embedded in the sugya.",
+      "steps": [
+        { "content": "1️⃣ A borrows an ox from B believing it is <strong>תם</strong>." },
+        { "content": "2️⃣ The ox damages — turns out it was already <strong>מועד</strong>." },
+        { "content": "3️⃣ Default ruling: <span class='hebrew'>הַבְּעָלִין מְשַׁלְּמִין חֲצִי נֶזֶק וְהַשּׁוֹאֵל חֲצִי נֶזֶק</span>." },
+        { "content": "4️⃣ R' Eleazar: this can only be R' Yose's view, since R' Yose says <span class='hebrew'>הֲרֵי הוּא בְּחֶזְקָתוֹ</span>." },
+        { "content": "5️⃣ Refinement: if the borrower knew the ox was a גocer, full liability falls on him.", "highlight": true }
+      ],
+      "callout": {
+        "label": "The elegance:",
+        "text": "The sugya splits liability cleanly: half from the original mu'ad status (owner), half from the act of borrowing it (borrower). Knowledge of the truth shifts everything onto the knowing party."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "When a bull of a person without halakhic capacity damages, a guardian must be appointed despite the usual rule that guardians cannot act to the orphans' detriment — public safety overrides. Liability rules then split case by case, and the chapter closes with the kofer regime for an ox that kills a person.",
+    "flowSteps": [
+      { "content": "<strong>Mishnah</strong><br><span class='hebrew'>שור של חרש שוטה וקטן שנגחו</span>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Appoint guardian; take testimony before him<br>Even if normally guardians can't act לחוב — שור is different", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "👨‍⚖️ <strong>Testimony</strong><br>before owner or guardian", "style": "border-color:#4a90d9" },
+          { "content": "🤝 <strong>Borrowed ox</strong><br>half/half liability", "style": "border-color:#9b59b6" },
+          { "content": "🏚️ <strong>Whose pocket</strong><br>orphans or guardian", "style": "border-color:#4caf50" },
+          { "content": "🐃 <strong>Killed a person</strong><br>kofer for mu'ad only", "style": "border-color:#e74c3c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Halakhic capacity, custody, and knowledge each carve up liability differently. The Yerushalmi maps every combination cleanly.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Why does the Mishnah require appointing an אפיטרופוס for a goring ox of a חרש שוטה or קטן?",
+      "o": [
+        "So that testimony of mu'ad status can be taken in his presence",
+        "Because the orphans cannot own property",
+        "To sell the ox immediately",
+        "Because hekdesh requires a guardian"
+      ],
+      "c": 0,
+      "e": "<span class='hebrew'>מַעֲמִידִין לָהֶן אֶפִּיטְרוֹפּוֹס וּמְעִידִין בָּהֶן בִּפְנֵי אֶפִּיטְרוֹפּוֹס</span> — without legal capacity, valid testimony requires a representative."
+    },
+    {
+      "q": "If someone borrowed an ox believing it was תם but it turned out to be מועד, how is liability split?",
+      "o": [
+        "Owner pays everything",
+        "Borrower pays everything",
+        "<span class='hebrew'>הבעלים משלמין חצי נזק והשואל חצי נזק</span> — half each",
+        "Both are exempt"
+      ],
+      "c": 2,
+      "e": "Owner pays half because of mu'ad status; borrower pays half because he had the ox in his possession."
+    },
+    {
+      "q": "What does R' Yochanan rule about general guardian appointments?",
+      "o": [
+        "Guardians can always act to the detriment of orphans",
+        "Guardians are appointed only to benefit; if their actions cause harm, the harm stands but is not the goal",
+        "Guardians can never be appointed for orphans",
+        "Only courts can appoint guardians"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>אֵין מְמַנִּין אֶפִּיטְרוֹפִּין עַל מְנָת לַחוֹב לָהֶן אֶלָּא לְזַכּוֹת לָהֶן. וְאִם חָבוּ חָבוּ</span>."
+    },
+    {
+      "q": "According to R' Yochanan, if the orphans' bull damages, from whose property is payment taken?",
+      "o": [
+        "The guardian's, to deter negligence",
+        "The orphans' property — otherwise <span class='hebrew'>לֹא נַעֲשֶׂה אָדָם מֵעוֹלָם אֶפִּיטְרוֹפּוֹס</span>, no one would serve as guardian",
+        "Hekdesh covers the loss",
+        "The court's treasury"
+      ],
+      "c": 1,
+      "e": "R' Yochanan worries about the practical supply of guardians and rules they cannot be personally liable; R' Yose b. Chaninah disagrees."
+    },
+    {
+      "q": "What is the rule when a שור (tam vs. mu'ad) gores a person to death?",
+      "o": [
+        "Both pay kofer; only mu'ad ox is stoned",
+        "Mu'ad pays kofer, tam is exempt from kofer; <strong>both</strong> oxen are stoned",
+        "Tam pays kofer, mu'ad is exempt",
+        "Only the ox is killed; never any payment"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>מועד משלם את הכופר ותם פטור מן הכופר וזה וזה חייבין מיתה</span>."
+    }
+  ]
+}

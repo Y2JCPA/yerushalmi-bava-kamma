@@ -1,0 +1,213 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 15,
+  "emoji": "🏺",
+  "topics": [
+    "🏺 Two potters in single file: when a fall makes the first liable for the second",
+    "🚶 Right of way — beam vs. amphora vs. donkeys vs. ships",
+    "⏸️ R' Yochanan's question: do we give the fallen one time to stand?",
+    "💥 R' Ze'ira: what if they shifted course (שִׁנּוּ) and damaged?",
+    "🚪 Who yields — entering vs. leaving the bathhouse and toilet"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Collisions in the Public Domain",
+    "label": "The sugya:",
+    "text": "The Mishnah opens a new sub-topic: damage between two people both legitimately walking in רשות הרבים. The Yerushalmi pushes on the timing edges (does the first get a moment to stand?), extends the case to three, four, even a hundred, and then maps a hierarchy of right-of-way rules — loaded vs. empty, ships vs. carts, even bathhouse vs. toilet etiquette.",
+    "hebrewSource": "שְׁנֵי קַדָּרִין שֶׁהָיוּ מְהַלְּכִין זֶה אַחַר זֶה וְנִתְקַל הָרִאשׁוֹן וְנָפַל וְנִתְקַל הַשֵּׁנִי בָּרִאשׁוֹן הָרִאשׁוֹן חַיָיב בְּנִזְקֵי הַשֵּׁנִי"
+  },
+  "slides": [
+    {
+      "type": "comparison",
+      "title": "🏺 Two Potters Walking in File",
+      "subtitle": "The base case the Mishnah opens with.",
+      "boxes": [
+        {
+          "title": "1️⃣ First Stumbles",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "<span class='hebrew'>נִתְקַל הָרִאשׁוֹן וְנָפַל</span>",
+            "Becomes a hazard in the path",
+            "Effectively a בור the second can't avoid"
+          ]
+        },
+        {
+          "title": "2️⃣ Second Falls Over Him",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "<span class='hebrew'>נִתְקַל הַשֵּׁנִי בָּרִאשׁוֹן</span>",
+            "His pots break on the first one's body",
+            "Mishnah: <span class='hebrew'>הָרִאשׁוֹן חַיָיב בְּנִזְקֵי הַשֵּׁנִי</span>"
+          ]
+        },
+        {
+          "title": "🚧 Why Liable?",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "Once down, he should warn or move",
+            "The Yerushalmi treats him like a stationary obstacle",
+            "Compare 16a: standing in the road = <span class='hebrew'>קֶרֶן זָוִית</span>"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Key move:",
+        "text": "The first potter is no longer just a walker. After he falls, he becomes a hazard — and ownership of the hazard means liability for what trips on it."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 R' Yochanan's Question — A Moment to Stand?",
+      "subtitle": "How long after the fall does liability attach?",
+      "lines": [
+        { "speaker": "RY", "side": "left", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>מַהוּ שֶׁיִּתֵּן לָרִאשׁוֹן שָׁהוּת כְּדֵי עֲמִידָה?</span> — Do we give the first potter time to get up before holding him liable?" },
+        { "speaker": "R' Yose", "side": "right", "speakerColor": "#c9a84c", "text": "<span class='hebrew'>פְּשִׁיטָא לְרִבִּי יוֹחָנָן לִיתֵּן לָרִאשׁוֹן שָׁהוּת</span> — for R' Yochanan it is obvious we grant him time to stand." },
+        { "speaker": "Y", "side": "left", "speakerColor": "#9b59b6", "text": "But what about the next one in line — does he get the same grace period? Probably not: from the second onwards, you saw the chain reaction and should know to stop." },
+        { "speaker": "Beraita", "side": "right", "speakerColor": "#e74c3c", "text": "Three, four, a hundred fall in a chain — first pays second, second pays third. <span class='hebrew'>וְאִם מַחֲמַת הָרִאשׁוֹן נָפְלוּ כוּלָּן הוּא מְשַׁלֵּם עַל יְדֵי כוּלָּן</span>." }
+      ],
+      "callout": {
+        "label": "Important caveat:",
+        "text": "Liability is for damage to people; for damage to vessels in the chain, all are exempt — the Torah only obligates an animal/person who actively damaged, not a passive victim turned obstacle."
+      }
+    },
+    {
+      "type": "table",
+      "title": "🛣️ Right-of-Way Hierarchy",
+      "subtitle": "Who yields to whom — the Yerushalmi's practical road code.",
+      "headers": ["Scenario", "Who Yields", "Reasoning"],
+      "rows": [
+        ["Empty animal vs. loaded animal", "Empty yields to loaded", "Loaded one is harder to maneuver"],
+        ["Unloaded vs. loaded", "Unloaded yields to loaded", "Same logic — protect the encumbered party"],
+        ["Both loaded / both unloaded", "<span class='hebrew'>יַעֲשׂוּ פְשָׁרָה בֵּינֵיהֶן</span>", "Equal status — work it out"],
+        ["Two ships, one loaded", "Empty yields to loaded", "Same rule on water"],
+        ["Bathhouse — entering vs. leaving", "Entering yields to leaver", "Hot inside; let the wet/hot one out first"],
+        ["Toilet — leaving vs. entering", "Leaver yields to enterer", "Privacy and urgency of the one going in"]
+      ],
+      "callout": {
+        "label": "Yerushalmi style:",
+        "text": "The sugya doesn't just decide damages — it scripts the etiquette that prevents damages. Halakhic ergonomics for the public domain."
+      }
+    },
+    {
+      "type": "process",
+      "title": "💥 R' Ze'ira — When They Veered (שִׁנּוּ)",
+      "subtitle": "The amphora vs. beam case opens an edge question.",
+      "steps": [
+        { "content": "1️⃣ Mishnah: one walks with a jug, one with a beam — neither liable, both have <span class='hebrew'>רְשׁוּת לְהַלֵּךְ</span>." },
+        { "content": "2️⃣ R' Ze'ira asks: <span class='hebrew'>שִׁנּוּ וְהִזִּיקוּ מַהוּ?</span> — what if one veered out of his lane and damaged?" },
+        { "content": "3️⃣ Compare: five sat on a bench; a sixth sat down and it broke." },
+        { "content": "4️⃣ The sixth alone pays — he is the one who changed the equilibrium." },
+        { "content": "5️⃣ But if it broke <span class='hebrew'>מֵחֲמַת כּוּלָּן</span>, all are liable together.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "Permission to walk does not include permission to deviate. Once you change your trajectory and that change causes damage, the exemption of <span class='hebrew'>רְשׁוּת לְהַלֵּךְ</span> evaporates."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🏗️ Beam-Carrier vs. Jug-Carrier (3:6:1)",
+      "subtitle": "The decisive variable: who is in front, and did anyone stop?",
+      "nodes": [
+        { "content": "<strong>Beam first, jug last</strong><br>Jug breaks on beam", "class": "question" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Beam keeps walking", "content": "<span class='hebrew'>פָּטוּר</span><br>Both had רשות", "class": "result-good" },
+            { "label": "Beam-carrier stopped", "content": "<span class='hebrew'>חַיָיב</span><br>he is now an obstacle", "class": "result-bad" },
+            { "label": "Beam stopped + warned", "content": "<span class='hebrew'>פָּטוּר</span><br>he said \"stop!\" first", "class": "result-good" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Same logic flips when the jug-carrier is in front — the front one bears liability if he stops without warning.", "class": "action" },
+        { "type": "arrow" },
+        { "content": "<span class='hebrew'>וְכֵן זֶה בָּא בְנֵירוֹ וְזֶה בָּא בְפִשְׁתָּנוֹ</span> — same rules for fire-bearer and flax-bearer.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "The principle:",
+        "text": "Walking is licensed; stopping silently is not. A sudden halt converts a walker into a hazard, and warning shifts the responsibility to the one behind."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Walkers in the public domain are mutually exempt — until one falls, stops, or veers. The moment someone becomes a static hazard or changes course, liability snaps onto him.",
+    "flowSteps": [
+      { "content": "<strong>Two people walking, one falls or stops</strong><br><span class='hebrew'>נִתְקַל הָרִאשׁוֹן וְנָפַל</span>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Did the fallen/stopped person have time to recover or warn?", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🏺 <strong>Chain fall</strong><br>first pays each next", "style": "border-color:#4a90d9" },
+          { "content": "⏸️ <strong>Stopped silently</strong><br>liable — like a corner", "style": "border-color:#9b59b6" },
+          { "content": "📢 <strong>Stopped + warned</strong><br>shifts liability back", "style": "border-color:#4caf50" },
+          { "content": "🛣️ <strong>Yielding rules</strong><br>loaded > empty", "style": "border-color:#e74c3c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>The right to walk is not a blanket immunity. Liability tracks who became the hazard — and whether warning was given.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "In the opening Mishnah of two potters, why is the first liable for the second's damages?",
+      "o": [
+        "Because he was walking faster",
+        "Because once he fell, he became a hazard the second couldn't avoid",
+        "Because the public domain belongs to him",
+        "Because his pot was bigger"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>נִתְקַל הָרִאשׁוֹן וְנָפַל</span> — once down, he is effectively a stationary obstacle, like a בור in the road."
+    },
+    {
+      "q": "What was R' Yochanan's specific question about the fallen first potter?",
+      "o": [
+        "Whether he must compensate for his own broken jug",
+        "<span class='hebrew'>מַהוּ שֶׁיִּתֵּן לָרִאשׁוֹן שָׁהוּת כְּדֵי עֲמִידָה</span> — do we give him time to stand before liability attaches?",
+        "Whether the second potter must pay him for embarrassment",
+        "Whether women can also be liable in this case"
+      ],
+      "c": 1,
+      "e": "R' Yose answers that for R' Yochanan it is obvious — yes, the first gets a grace period."
+    },
+    {
+      "q": "When two animals meet on the road, one loaded and one empty, who has the right of way?",
+      "o": [
+        "The empty one",
+        "Whoever is faster",
+        "The loaded one",
+        "Whoever started walking first"
+      ],
+      "c": 2,
+      "e": "<span class='hebrew'>מַעֲבִירִין אֶת הָרֵיקָן מִפְּנֵי הַטָּעוּן</span> — the loaded one has priority since maneuvering it is harder."
+    },
+    {
+      "q": "In the Mishnah of beam-carrier and jug-carrier, when is the beam-carrier (in front) liable?",
+      "o": [
+        "Always",
+        "Never — both have permission to walk",
+        "Only if he stopped walking without warning",
+        "Only if the jug-carrier asked him to stop"
+      ],
+      "c": 2,
+      "e": "<span class='hebrew'>וְאִם עָמַד בַּעַל הַקּוֹרָה חַיָיב</span> — but if he warned the jug-carrier to stop, he is exempt."
+    },
+    {
+      "q": "What does the bench example (5+1 sitters) teach about R' Ze'ira's question?",
+      "o": [
+        "Damages are split equally always",
+        "If the bench breaks because of the new arrival alone, only he pays; if all caused it, all pay",
+        "Sitting is never liable",
+        "Wood vessels are exempt"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>הוּא מְשַׁלֵּם עַל יְדֵי כוּלָּן. וְאִם מִחְמַת כּוּלָּן נִשְׁבַּר כּוּלָּן חַיָיבִין</span> — liability follows the cause."
+    }
+  ]
+}

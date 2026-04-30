@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 24 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🏠</div>
+  <h1>Yerushalmi Bava Kamma 24</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא כד׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🏺 The potter who left pots in someone else's courtyard without permission<br>
+    🌾 Pots, produce, and bulls — the rule of the joint courtyard<br>
+    🐂 With permission vs without permission — who absorbs the loss<br>
+    🤝 Rebbi: only liable if he explicitly accepted to watch<br>
+    🤰 Bull intending to gore — but a pregnant woman miscarries<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — The Courtyard, the Pots, and the Pregnant Woman</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">הִכְנִיס פֵּירוֹתָיו לַחֲצַר בַּעַל הַבַּיִת שֶׁלֹּא בִּרְשׁוּת... וְאִם הוּזְּקָה בָהֶן בַּעַל הַפֵּירוֹת חַיָיב.</div><div class="callout"><strong>The sugya:</strong> Daf 24 walks through three Mishnayot of Chapter 5 that share a single structural test: was it brought in with permission? The answer flips liability between the courtyard-owner and the item-owner. The daf closes by pivoting to the unintentional miscarriage — and to the question of whether a fetus can be freed by 'tooth and eye'.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>📊 The Three Items in the Courtyard</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Same logic, three different items.</div>
+  <table><tr><th>Item</th><th>Without permission — animal damaged it</th><th>Without permission — animal hurt by it</th><th>With permission</th></tr><tr><td>🏺 Pots (קדרות)</td><td>Owner of bayit — פטור</td><td>Owner of pots — חייב</td><td>Owner of bayit — חייב</td></tr><tr><td>🌾 Produce (פירות)</td><td>Owner of bayit — פטור</td><td>Owner of produce — חייב</td><td>Owner of bayit — חייב</td></tr><tr><td>🐂 Bull (שור)</td><td>Owner of bayit — פטור (gored), חייב (his bull gored)</td><td>Owner of bull — חייב for damages caused</td><td>Owner of bayit — חייב</td></tr></table><div class="callout" style="margin-top:20px"><strong>Yerushalmi conclusion:</strong> When neither party owns the courtyard, even קרן and שן damages don't apply: <span class='hebrew'>הקרן פטורה בחצר שאינה לשניהם</span>.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>🤝 Rebbi vs the Sages — What 'With Permission' Means</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Yirmiyah maps where everyone agrees and where they fight.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">🏠 House</h3><ul><li>Everyone agrees</li><li>'הכנס' implies 'and I will watch it'</li><li>Owner of bayit fully liable</li></ul></div><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">🌾 Field</h3><ul><li>Everyone agrees</li><li>'הכנס' implies 'and you watch it'</li><li>Owner of items watches himself</li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">🏡 Courtyard</h3><ul><li>Where they fight!</li><li>Rebbi: courtyard is like a field</li><li>Sages: courtyard is like a house</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">🔒 Special case</h3><ul><li>R' Yose b' R' Bun: courtyard with a lock</li><li>Treat as field for sheaves</li><li>Lock implies guarding is on the owner</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>Halakhah:</strong> Rav Yehuda in Shmuel's name and Rav Ze'ira: הלכה כרבי. But Rebbi himself adds: 'in all of these — only if he explicitly accepted to watch.'</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>🐂 The Bull Gored a Bull or Bit a Person</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Five scenarios when his bull is in the host's courtyard without permission.</div>
+  <div class="flowchart"><div class="flow-box question">הכניס שורו לחצר בעל הבית שלא ברשות</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Owner's bull gores it</div><div class="flow-box result-bad">פטור</div></div><div class="flow-col"><div class="flow-label">Owner's dog bites it</div><div class="flow-box result-bad">פטור</div></div><div class="flow-col"><div class="flow-label">Bull gores owner's bull</div><div class="flow-box result-good">חייב</div></div><div class="flow-col"><div class="flow-label">Falls into pit, fouls water</div><div class="flow-box result-good">חייב</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-partial">Father or son was inside? — משלם את הכופר</div><div class="flow-arrow">↓</div><div class="flow-box result-good">With permission: bayit owner liable. Rebbi: only if he explicitly accepted to watch.</div></div><div class="callout" style="margin-top:20px"><strong>Sages dispute:</strong> R' Meir: even from a third bull, full damages. Sages: only שן and רגל are full; קרן/נגיפה/etc. are tam-half or muad-full from עלייה.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>💬 The Pregnant Woman Caught in the Crossfire</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">A bull or a man intends to hit someone — and a pregnant woman miscarries.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#c9a84c">M</div><div class="speech">Mishnah: a bull aiming at another bull, hit a woman, fetus lost — <span class='hebrew'>פטור מדמי וולדות</span>.</div></div><div class="debate-line right"><div class="speaker" style="background:#4a90d9">M2</div><div class="speech">But: a man aiming at a friend, hit a pregnant woman — <span class='hebrew'>משלם דמי וולדות</span> to the husband.</div></div><div class="debate-line"><div class="speaker" style="background:#9b59b6">AB</div><div class="speech">Abba bar Rav Hana: the bull case is taught only as setup for the human case — bulls never pay fetus damages either way.</div></div><div class="debate-line right"><div class="speaker" style="background:#e74c3c">ABY</div><div class="speech">Abba Yose ben Hanan: 'הרה' teaches he must hit the place of pregnancy. If he hit hand or foot — פטור.</div></div><div class="debate-line"><div class="speaker" style="background:#4caf50">RU</div><div class="speech">R' Uqba: what if it's incest — is the perpetrator a 'בעל'? The verse says 'בעל' — only one who could be called husband.</div></div></div><div class="callout" style="margin-top:20px"><strong>Drasha:</strong> From <span class='hebrew'>כי ינצו אנשים</span> — humans not bulls. The Yerushalmi reads each word of Exodus 21:22 to filter who pays whom.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>👁️ Fetuses and 'Tooth and Eye'</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Yasa's rule about freeing a Canaanite slave's fetus.</div>
+  <div class="process-bar"><div class="process-step">1️⃣ Canaanite slave goes free if owner knocks out his tooth or eye.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ R' Yasa in R' Yochanan's name: <span class='hebrew'>עוברין אין יוצאין בשן ועין</span>.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ Question: ניחא בשן — but how does an unborn fetus have an 'eye' to lose?</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ R' Yose b' R' Bun: the baraita means — fetuses don't go free by their <em>mother's</em> tooth and eye.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ Therefore: damage to the mother does not propagate freedom to the fetus.</div></div><div class="callout" style="margin-top:20px"><strong>Bottom line:</strong> Daf 24 closes one principle and opens another: ownership and intention determine liability — but separate persons (mother / fetus) follow separate emancipation rules.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 24 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Item placed in another's courtyard</strong></div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">🚫 <strong>Without permission</strong><br>intruder absorbs loss</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">✅ <strong>With permission</strong><br>host liable (Rebbi: if accepted)</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🐂 <strong>His own animal</strong><br>still pays for damage caused</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">🤰 <strong>Pregnant woman</strong><br>only humans pay vlados</div></div></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">The Yerushalmi tracks the inversion: same scenario, opposite liability based on permission.</div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>The verbal grant 'come in' is a transfer of guarding duty — and intent determines who pays for fetuses.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 24a-24b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 24a-24b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../23/">← Daf 23</a><a href="../25/">Daf 25 →</a></div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 32 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">👥</div>
+  <h1>Yerushalmi Bava Kamma 32</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא לב׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🧑‍⚖️ R' Ze'ira: a zomem witness disqualifies himself, not by court ruling<br>
+    📅 R' Yose: one testimony with one warning — partial nullification = total nullification<br>
+    🗓️ The Nisan timeline: ten days of testimony retroactively void<br>
+    🔁 Witnesses for theft and slaughter arriving separately — and being 'reactivated'<br>
+    📜 New Mishnah: עד אחד or עצמו for slaughter ⇒ only כפל, not ד׳ וה׳<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — When and How Testimony Falls Apart</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">אָמַר רִבִּי זְעִירָא. הָדָא אָמְרָה. עָד זוֹמֵם אֵין נִפְסָל בְּבֵית דִּין אֶלָּא מֵעַצְמוֹ נִפְסָל</div><div class="callout"><strong>The sugya:</strong> The Halakhah probes when perjured witnesses are disqualified — at the moment of being exposed, or only by court ruling? R' Ze'ira holds it is automatic. R' Yose distinguishes between one testimony with one warning (where partial = total nullification) and two separate testimonies. Two scenarios show 'sequential' witnesses: a previously rejected pair can be retroactively accepted on the strength of the second pair. The new Mishnah (7:4) closes the page: one witness or self-confession on the slaughter side ⇒ כפל only.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>💬 When is a Zomem Disqualified?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Ze'ira reads the Mishnah's rule about partial perjury.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#4a90d9">RZ</div><div class="speech"><span class='hebrew'>עָד זוֹמֵם אֵין נִפְסָל בְּבֵית דִּין אֶלָּא מֵעַצְמוֹ נִפְסָל</span> — a perjured witness disqualifies himself; the court does not need to act.</div></div><div class="debate-line right"><div class="speaker" style="background:#9b59b6">Q</div><div class="speech">Then how does the Mishnah's case (one of the second pair zomem ⇒ second testimony falls) work? If self-disqualification is automatic, no testimony was ever valid.</div></div><div class="debate-line"><div class="speaker" style="background:#c9a84c">A</div><div class="speech">Read it as a case of <strong>warning</strong> (<span class='hebrew'>הַתְרָיָיה</span>) — and bring R' Yose's brayta: one testimony + one warning = partial nullification triggers full nullification.</div></div></div><div class="callout" style="margin-top:20px"><strong>Why this matters:</strong> If perjury is self-executing, the moment a witness becomes disqualified is the moment of his act — not the court's verdict. This shapes how earlier testimonies he gave are treated.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>📅 The Nisan Timeline</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Yose's principle in action: any testimony given between act and exposure is void.</div>
+  <div class="process-bar"><div class="process-step">1️⃣ <strong>1 Nisan</strong>: defendant allegedly steals an ox.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ <strong>10 Nisan</strong>: witnesses come to court and testify he stole on 1 Nisan, and slaughtered/sold on 10 Nisan.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ <strong>10–15 Nisan</strong>: those same witnesses testify in other cases.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ <strong>15 Nisan</strong>: they are <strong>הוזמו</strong> — proven to be perjurers.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ Result: <span class='hebrew'>כָּל עֵדוּת שֶׁהֵעִידוּ מֵעֲשָׂרָה בְנִיסָן עַד חֲמִשָּׁה עָשָׂר בְּנִיסָן לְמַפְרֵיעָהּ הֲרֵי אֵילּוּ פְסוּלוֹת</span> — every testimony in that 5-day window is <strong>retroactively</strong> disqualified.</div></div><div class="callout" style="margin-top:20px"><strong>The teaching:</strong> Once a witness is exposed, the court treats him as having been disqualified from the moment of his perjury — not the moment of his exposure. R' Abba bar Mamal narrows this to cases where they testified together in one group.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>🔁 Sequential Witnesses Reactivated</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Two scenarios where a previously rejected testimony is accepted because of a second pair.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">📥 Scenario A</h3><ul><li>Theft witnesses arrive — court does not accept</li><li>Slaughter witnesses arrive later</li><li>Court tells them: we'll accept the theft testimony <strong>על ידיכם</strong></li><li>If slaughter witnesses are zomemim → they pay על יד עידי גניבה</li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">📤 Scenario B (R' Chizkiyah)</h3><ul><li>Slaughter witnesses arrive first — not accepted</li><li>Theft witnesses arrive later</li><li>Court tells them: slaughter testimony is now accepted <strong>על ידיכם</strong></li><li>If theft witnesses are zomemim → they pay על יד עידי טביחה</li></ul></div><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">🔗 Common Move</h3><ul><li>A pair's testimony can sit dormant</li><li>The next pair 'activates' it</li><li>Liability flows backward through that activation</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>Why both versions matter:</strong> The sugya isn't sure which pair has the activating role. Either ordering shows the same logical structure: testimony only counts once joined to a corroborating pair.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>📜 Mishnah 7:4 — Lone Witness on Slaughter</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When the second leg of the case rests on weaker evidence, ד׳ וה׳ falls away.</div>
+  <table><tr><th>Theft proven by</th><th>Slaughter/sale proven by</th><th>Penalty</th></tr><tr><td>Two witnesses</td><td>Two witnesses</td><td><strong>ד׳ וה׳</strong></td></tr><tr><td>Two witnesses</td><td><strong>One</strong> witness</td><td><strong>כפל only</strong></td></tr><tr><td>Two witnesses</td><td>Defendant's <strong>own confession</strong></td><td><strong>כפל only</strong></td></tr><tr><td>Two witnesses (Shabbat / ע״ז / father died / הקדיש)</td><td>Two witnesses but the act has another issue</td><td><strong>כפל only</strong></td></tr></table><div class="callout" style="margin-top:20px"><strong>The structural rule:</strong> The penalty climbs in proportion to the strength of the proof. Without two valid witnesses to the slaughter/sale, you keep the theft penalty (כפל) but lose the multiplier.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🐄 R' Shimon's Position on Hekdesh</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When the stolen animal is consecrated, does it still trigger ד׳ וה׳?</div>
+  <div class="flowchart"><div class="flow-box question"><strong>Tanna kamma:</strong><br>גנב והקדיש ואחר כך טבח<br>⇒ כפל only</div><div class="flow-arrow">↓</div><div class="flow-box action">R' Shimon refines:</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">קדשים שחייב באחריותן</div><div class="flow-box result-good">He still bears the responsibility<br>⇒ <strong>ד׳ וה׳</strong></div></div><div class="flow-col"><div class="flow-label">קדשים שאינו חייב באחריותן</div><div class="flow-box result-bad">Not 'his' anymore<br>⇒ <strong>פטור</strong></div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good">R' Shimon links the penalty to the thief's continuing ownership-stake in the animal.</div></div><div class="callout" style="margin-top:20px"><strong>The Yerushalmi's question:</strong> Who taught the rule that 'one penalty before court excludes another'? R' Shimon — because his version of the rule for hekdesh tracks ownership-responsibility, the same logic that limits ד׳ וה׳ here.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 32 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Halakhah on Mishnah 7:3</strong><br>when does a zomem fall?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🧑‍⚖️ <strong>R' Ze'ira</strong><br>self-disqualification</div></div><div class="flow-col"><div class="flow-box" style="border-color:#c9a84c">📅 <strong>R' Yose</strong><br>retroactive nullification</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">🔁 <strong>Sequential pairs</strong><br>activated על ידיכם</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">📜 <strong>Mishnah 7:4</strong><br>weaker proof = כפל only</div></div></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Testimony is treated as a structural object: it depends on the witnesses' standing at every moment, and each piece of proof carries exactly the weight needed to support its penalty.</div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Penalty matches proof; perjury collapses backward in time; and R' Shimon ties הקדש liability to who really owns the animal.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 32a-32b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 32a-32b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../31/">← Daf 31</a><a href="../33/">Daf 33 →</a></div>
+</body>
+</html>

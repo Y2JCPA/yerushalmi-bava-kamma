@@ -1,0 +1,214 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 19,
+  "emoji": "⚠️",
+  "topics": [
+    "💰 Theft of partnership investment — סלעים גסות vs. אבנים דקות",
+    "🐂 Mu'ad to its kind / to humans / to small ones — selective notoriety",
+    "📅 R' Yehudah: a bull can be מועד only on Shabbatot",
+    "🩸 Niddah parallel: when intermittent goring counts (Rav Ada vs. Rav Huna)",
+    "🛕 שור ישראל / שור הקדש / שור נכרי — gentile and Temple oxen",
+    "👑 Rabban Gamliel and the two Roman officials — חילול השם"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Selective Notoriety and Whose Ox Is Liable",
+    "label": "The sugya:",
+    "text": "Daf 19 covers a rich stretch. It opens with a partnership-loss puzzle — when investment items are stolen, do all partners share the loss equally or proportionally? It then moves to the Mishnah of selective mu'ad: an ox notorious for goring its own kind but not other species, humans but not animals, small ones but not large ones, weekdays vs. Shabbat. The Yerushalmi links this to a parallel niddah debate about non-continuous bleeding. Finally the daf turns to oxen of hekdesh and of gentiles, ending with the dramatic story of the two Roman officials sent to study Torah with Rabban Gamliel.",
+    "hebrewSource": "שׁוֹר שֶׁהוּא מוּעָד לְמִינוֹ וְאֵינוֹ מוּעָד לְשֶׁאֵינוֹ מִינוֹ... אֵימָתַי הוּא תָּם מִשֶּׁיַּחֲזוֹר בּוֹ שְׁלֹשֶׁת יְמֵי שַׁבָּתוֹת"
+  },
+  "slides": [
+    {
+      "type": "comparison",
+      "title": "🪙 Stolen Coins vs. Stolen Stones",
+      "subtitle": "How a partnership absorbs theft depends on what was stolen.",
+      "boxes": [
+        {
+          "title": "🟡 סְלָעִים גַּסּוֹת (large coins)",
+          "color": "#c9a84c",
+          "titleColor": "#c9a84c",
+          "items": [
+            "Identifiable, divisible units",
+            "<span class='hebrew'>אֶיפְשַׁר לִבְלוֹל לָצֵאת יְדֵי כוּלָּן</span> — possible to subdivide exactly",
+            "Loss can be split cleanly proportional to investment"
+          ]
+        },
+        {
+          "title": "💎 אֲבָנִים דַּקּוֹת (small stones)",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Indistinguishable individual units",
+            "<span class='hebrew'>לֵית יְדַע אִי מִן הָדֵין נְסַב אִי מִן הָדֵין נְסַב</span>",
+            "Doubt → each takes <strong>by his purse</strong>"
+          ]
+        },
+        {
+          "title": "⚖️ R' Yose b. R' Bun's worry",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "If 50 stolen out of 50+150…",
+            "Equal-loss rule lets the small investor lose nothing",
+            "<span class='hebrew'>נִמְצֵאת מִידַּת הַדִּין לוֹקָה</span> — equity is hurt"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "The technical move:",
+        "text": "R' Shammai distinguishes objects that can be re-tallied (coins) from objects that can't (small stones). Where re-tallying fails, the doubt itself reshapes the rule."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🐂 Selective Mu'ad — The Mishnah's Categories",
+      "subtitle": "An ox can be notorious for one target and tame for another.",
+      "nodes": [
+        { "content": "<strong>שור שהוא מועד למינו ואינו מועד לשאינו מינו</strong>", "class": "question" },
+        { "type": "arrow" },
+        { "content": "Damage to the target it is מועד for → <strong>נזק שלם</strong><br>Damage to a different target → <strong>חצי נזק</strong>", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "By species", "content": "מועד לְמינו vs. שאינו מינו", "class": "result-partial" },
+            { "label": "By victim type", "content": "מועד לאדם vs. בהמה", "class": "result-partial" },
+            { "label": "By size", "content": "מועד לקטנים vs. גדולים", "class": "result-partial" },
+            { "label": "By day (R' Yehudah)", "content": "מועד בשבתות vs. ימות החול", "class": "result-good" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Reverts to תם only after <span class='hebrew'>שְׁלֹשֶׁת יְמֵי שַׁבָּתוֹת</span> of changed behavior", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Yerushalmi's question:",
+        "text": "Why would Shabbat make a difference? <span class='hebrew'>מִכֵּיוָן דּוּ חֲמִי לוֹן לְבִישִׁין נְקִיִין עוֹד הוּא מְשַׁנֶּה דַּעְתֵּיהּ</span> — when the ox sees people in clean clothes, it changes its behavior."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "🩸 The Niddah Parallel — Rav Ada vs. Rav Huna",
+      "subtitle": "Can three goring incidents on three different days make one mu'ad?",
+      "lines": [
+        { "speaker": "Q", "side": "left", "speakerColor": "#9b59b6", "text": "What if the ox gored on day 1, was kept in on day 2, and gored on day 3? Does the unattested middle day break the chazakah?" },
+        { "speaker": "RA", "side": "right", "speakerColor": "#4a90d9", "text": "Rav Ada b. Achwa quoting Rav: parallel to the niddah who checked, found tamei, skipped a day, then found tamei again — <span class='hebrew'>נִדָּה וַדַּאי</span>. Definitely a niddah." },
+        { "speaker": "RH", "side": "left", "speakerColor": "#e74c3c", "text": "Rav Huna quoting Rav: <span class='hebrew'>נִדָּה סָפֵק</span>. Doubtful. The gap matters." },
+        { "speaker": "RH+", "side": "right", "speakerColor": "#c9a84c", "text": "Rav Huna explains: I was there at the beginning, middle, and end of the conversation. Rav first said certain, reversed himself, ended with safek. Rav Ada only heard the first answer." }
+      ],
+      "callout": {
+        "label": "Why the parallel works:",
+        "text": "Both cases ask the same structural question: does an unattested middle day break a presumptive chazakah? The Yerushalmi imports the niddah debate to illuminate the goring case."
+      }
+    },
+    {
+      "type": "table",
+      "title": "🛕 Whose Ox Triggers Liability",
+      "subtitle": "The Mishnah's third halakhah maps liability across owner categories.",
+      "headers": ["Goring ox belongs to…", "Damaged ox belongs to…", "Liability"],
+      "rows": [
+        ["Israel", "Hekdesh", "Exempt — <span class='hebrew'>שׁוֹר רֵעֵהוּ</span>, not Temple"],
+        ["Hekdesh", "Israel", "Exempt — same derashah"],
+        ["Israel", "Non-Jew", "Exempt"],
+        ["Non-Jew", "Israel", "<strong>Full damages — tam or mu'ad</strong>"],
+        ["Non-Jew", "Non-Jew (judged by Israel's law)", "Full damages — <span class='hebrew'>כְּדִינֵיהֶן</span>"]
+      ],
+      "callout": {
+        "label": "The aggadot behind the law:",
+        "text": "Rav: <span class='hebrew'>רָאָה וַיַּתֵּר גּוֹיִם</span> — He saw and 'permitted' the gentiles, i.e., released their property to those they oppressed. R' Yose b. Chaninah: He impoverished them. R' Yochanan (via R' Abbahu): כְּדִינֵיהֶן — by their own laws."
+      }
+    },
+    {
+      "type": "process",
+      "title": "👑 The Two Roman Officials and Rabban Gamliel",
+      "subtitle": "A daf-ending story with serious halakhic teeth.",
+      "steps": [
+        { "content": "1️⃣ The Roman government sent two <em>איסרטיוטות</em> (officials) to study Torah with Rabban Gamliel." },
+        { "content": "2️⃣ They learned <strong>Mikra, Mishnah, Talmud, halakhot, and aggadot</strong>." },
+        { "content": "3️⃣ At the end they objected to three rulings: midwifery, nursing, and stolen property of a non-Jew." },
+        { "content": "4️⃣ Specifically the rule that <span class='hebrew'>שׁוֹר שֶׁלְּיִשְׂרָאֵל שֶׁנָּגַח לְשׁוֹר שֶׁלַּנָּכְרִי פָּטוּר</span>." },
+        { "content": "5️⃣ Rabban Gamliel <strong>decreed that gezel akum is forbidden</strong> מִפְּנֵי חִילּוּל הָשֵׁם — to prevent desecration of God's Name. Yet by the time the officials reached the Tyrian ladder, they had forgotten everything.", "highlight": true }
+      ],
+      "callout": {
+        "label": "The story's punch:",
+        "text": "Halakhah is reshaped under the gaze of outsiders. Rabban Gamliel does not deny what is taught; he tightens the practical rule so the Torah will not be desecrated. The miraculous forgetting then preserves the original Mishnaic letter."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "An ox can be selectively notorious — by species, person, size, or day — and the rules of how a chazakah forms or breaks parallel the niddah debate. Liability also depends on whose ox is involved, and the daf closes by softening the gentile-ox rule for the sake of God's Name.",
+    "flowSteps": [
+      { "content": "<strong>Selective mu'ad</strong><br><span class='hebrew'>שור מועד למינו ואינו מועד לשאינו מינו</span>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Three goring incidents establish the chazakah — but what about a gap day?<br>Niddah parallel: ודאי or ספק?", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "📅 <strong>R' Yehudah</strong><br>Shabbat-only mu'ad", "style": "border-color:#4a90d9" },
+          { "content": "🩸 <strong>Rav Ada / Rav Huna</strong><br>certain vs. doubtful", "style": "border-color:#9b59b6" },
+          { "content": "🛕 <strong>הקדש / נכרי</strong><br>שור רעהו limits", "style": "border-color:#4caf50" },
+          { "content": "👑 <strong>R' Gamliel</strong><br>גזל גוי אסור מפני חילול השם", "style": "border-color:#e74c3c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Notoriety is target-specific, chazakah depends on continuity, and even halakhot anchored in pesukim get reshaped to prevent חילול השם.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Why does the Yerushalmi distinguish stolen סלעים גסות from stolen אבנים דקות?",
+      "o": [
+        "Because coins are mu'ad and stones are tam",
+        "Because large coins can be subdivided exactly while small stones cannot, so doubt requires each partner to take by his purse",
+        "Because stones are forbidden as collateral",
+        "Because R' Eleazar disqualifies stones"
+      ],
+      "c": 1,
+      "e": "R' Shammai: סלעים are large enough to subdivide exactly. With small stones, <span class='hebrew'>לֵית יְדַע אִי מִן הָדֵין נְסַב</span>, so each takes proportional to his investment."
+    },
+    {
+      "q": "What does R' Yehudah rule about a bull mu'ad on Shabbatot but not weekdays?",
+      "o": [
+        "Always pays full damage",
+        "Always pays half damage",
+        "Pays full damage on Shabbat, half on weekdays — and reverts to תם only after three Shabbat days of changed behavior",
+        "Such a category does not exist"
+      ],
+      "c": 2,
+      "e": "<span class='hebrew'>בַּשַּׁבָּתוֹת מְשַׁלֵּם נֶזֶק שָׁלֵם וּבִימוֹת הַחוֹל מְשַׁלֵּם חֲצִי נֶזֶק</span>, and reverting requires שלשת ימי שבתות."
+    },
+    {
+      "q": "What is the Yerushalmi's tentative reason for R' Yehudah's Shabbat-only rule?",
+      "o": [
+        "Shabbat law overrides nezikin",
+        "<span class='hebrew'>מִכֵּיוָן דּוּ חֲמִי לוֹן לְבִישִׁין נְקִיִין עוֹד הוּא מְשַׁנֶּה דַּעְתֵּיהּ</span> — seeing people in clean clothes, the ox changes its behavior",
+        "Sabbaths have shorter days",
+        "The owner is more careful on Shabbat"
+      ],
+      "c": 1,
+      "e": "The Yerushalmi suggests the ox is reacting to the visual cue of clean Shabbat clothing."
+    },
+    {
+      "q": "What does Rav Huna report about the niddah-with-a-gap question?",
+      "o": [
+        "Rav definitely said וודאי",
+        "Rav definitely said ספק",
+        "Rav first said וודאי, reversed himself, and finally said ספק; Rav Ada only heard the first answer",
+        "It was never decided"
+      ],
+      "c": 2,
+      "e": "Rav Huna says he was at the entire conversation: ברישא, באמצעיתא, ובסיפא, and Rav landed on ספק."
+    },
+    {
+      "q": "Why did Rabban Gamliel decree that robbing a non-Jew is forbidden, given the Mishnah's exemption rule?",
+      "o": [
+        "He rejected the Mishnah",
+        "Because of <span class='hebrew'>חִילּוּל הָשֵׁם</span> after the two Roman officials objected",
+        "Because of a kal va-chomer from שור הקדש",
+        "Because the Romans paid him to change it"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>בְּאוֹתָהּ שָׁעָה גָּזַר רַבָּן גַּמְלִיאֵל עַל גְּזֵילוֹת נָכְרִי שֶׁיְּהֵא אָסוּר מִפְּנֵי חִילּוּל הָשֵׁם</span>. The rule was tightened so Torah would not be desecrated."
+    }
+  ]
+}

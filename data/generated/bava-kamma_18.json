@@ -1,0 +1,196 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 18,
+  "emoji": "🐂",
+  "topics": [
+    "🐂 שור שנגח ארבעה וחמשה שוורים — how the gored owners get paid",
+    "⚖️ R' Meir vs. R' Yehudah: did the נזק acquire the goring ox or only get a pledge?",
+    "💍 הקדש, הוקיר, שכר, השביח — four practical tests of the dispute",
+    "👥 R' Yehudah vs. R' Shimon: 'קנה' for living and dead, or only the dead",
+    "💰 שלשה שהטילו לכיס — how partners with unequal investments split gains and losses"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Who Owns the Goring Ox?",
+    "label": "The sugya:",
+    "text": "The Mishnah pictures a tam ox that gores several other oxen and is now owed to many victims. R' Yehudah and R' Meir disagree about whether the damaged party becomes a partial owner of the goring ox or only holds it as a pledge. The Yerushalmi runs the dispute through four practical scenarios — dedication, price-rise, rental, and improvement — to show what is at stake. The sugya then shifts to a related partnership Mishnah: when three put unequal amounts into a common purse, how do they share gains and losses?",
+    "hebrewSource": "שׁוֹר שֶׁנָּגַח אַרְבָּעָה וַחֲמִשָּׁה שְׁוָורִין... שְׁמִירַת נְזָקִין כִּשְׁמִירַת קִנְיָין"
+  },
+  "slides": [
+    {
+      "type": "debate",
+      "title": "💬 R' Meir's Two-Sided Attack",
+      "subtitle": "R' Yannai sets up R' Meir's dilemma against the goring ox's owner.",
+      "lines": [
+        { "speaker": "RY", "side": "left", "speakerColor": "#c9a84c", "text": "R' Yannai: <span class='hebrew'>בָּא עָלָיו רִבִּי מֵאִיר מִשְּׁנֵי צְדָדִין</span> — R' Meir comes at him from two sides." },
+        { "speaker": "RM", "side": "right", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>מַה נַפְשָׁךְ</span>: if the ox is yours — give it to me as payment! If it isn't yours — give it to me so I can collect from it!" },
+        { "speaker": "Q", "side": "left", "speakerColor": "#9b59b6", "text": "But didn't R' Eleazar say <span class='hebrew'>שְׁמִירַת נְזָקִין כִּשְׁמִירַת קִנְיָין</span> — guarding for damages is like guarding ownership?" },
+        { "speaker": "RJ", "side": "right", "speakerColor": "#e74c3c", "text": "R' Yudan: it was handed over to him for his damages, but it remains <span class='hebrew'>כְּמַשְׁכּוֹן בְּיָדוֹ</span> — like a pledge in his hand, not full ownership." }
+      ],
+      "callout": {
+        "label": "The fault line:",
+        "text": "Is the goring ox transferred to the נזק as payment (R' Meir: shared ownership) or held only as collateral until value is recovered (R' Yehudah: pledge)?"
+      }
+    },
+    {
+      "type": "table",
+      "title": "📐 Four Test Cases — R' Yehudah vs. R' Meir",
+      "subtitle": "R' Yochanan: the dispute plays out in four real-life scenarios.",
+      "headers": ["Scenario", "R' Yehudah (pledge)", "R' Meir (joint ownership)"],
+      "rows": [
+        ["<span class='hebrew'>הֶקְדֵּשׁ</span> — dedicating it", "First (original) owner alone may dedicate", "Both must dedicate together"],
+        ["<span class='hebrew'>הוֹקִיר</span> — went up in value", "Increase belongs to the first", "Increase belongs to the second (the נזק)"],
+        ["<span class='hebrew'>עָשָׂה שָׂכָר</span> — rented it out", "Rent goes to the first", "Rent goes to both"],
+        ["<span class='hebrew'>הִשְׁבִּיחַ</span> — improved", "Improvement to the first", "Improvement to both"]
+      ],
+      "callout": {
+        "label": "Why this matters:",
+        "text": "R' Yochanan does not abstractly resolve the dispute. He shows us what hangs on it: every benefit and burden of the ox sorts itself differently depending on whether the נזק is a partner or just a pledge-holder."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🤝 R' Yehudah and R' Shimon — Same Word, Different Scope",
+      "subtitle": "R' Yochanan's second observation: both Tannaim use 'קנה', but mean different things.",
+      "boxes": [
+        {
+          "title": "🟢 R' Yehudah",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "<span class='hebrew'>קָנָה</span> — he acquired",
+            "Acquired both <strong>the living</strong> and <strong>the dead</strong>",
+            "Strong form: he is a real partner in the ox itself"
+          ]
+        },
+        {
+          "title": "🔴 R' Shimon",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<span class='hebrew'>קָנָה</span> — he acquired",
+            "Acquired only <strong>the dead</strong> (the carcass of the gored)",
+            "Weaker form: not a partner in the living goring ox"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "R' Yochanan's nuance:",
+        "text": "<span class='hebrew'>שְׁנֵיהֶן אָמְרוּ דָבָר אֶחָד</span> — they agree on the word but not its reach. Halakhic vocabulary is precise: the same verb can mean very different things in different mouths."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "💼 Three Partners Throw Into a Purse",
+      "subtitle": "The sugya turns to a parallel partnership case.",
+      "nodes": [
+        { "content": "<strong>שלשה שהטילו לכיס</strong><br>Three put different amounts into a shared purse", "class": "question" },
+        { "type": "arrow" },
+        { "content": "They gain or lose — how do they split?", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "מרגלית (precious stone)", "content": "R' Bun: split <strong>by investment</strong> — without your 10 dinarim it could not be bought", "class": "result-good" },
+            { "label": "Standard goods", "content": "Default: pool and split <strong>proportionally</strong>", "class": "result-partial" },
+            { "label": "R' Eleazar's challenge", "content": "Even ordinary goods → split <strong>evenly</strong>: small inventory turns over fast", "class": "result-bad" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "R' Eleazar's market reality: <span class='hebrew'>אֲנָא הֲפַךְ וּמִתְהַפֵּךְ בְּדִידִי וּמַטִּי בָךְ</span> — I turn mine over and catch up to you", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Conceptual link:",
+        "text": "Just as the goring-ox sugya asks 'how does the נזק's claim translate into ownership?', this Mishnah asks 'how does each partner's investment translate into a share of the profit?' Both turn on what is being divided — capital, labor, or risk."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🌍 The Rome Hypothetical",
+      "subtitle": "R' Eleazar pushes the case across the Mediterranean.",
+      "steps": [
+        { "content": "1️⃣ Two partners: one with much merchandise, one with little." },
+        { "content": "2️⃣ Both have stock <strong>in the same market</strong> — small partner turns over goods quickly and catches up." },
+        { "content": "3️⃣ But what if one partner's goods are <strong>in Rome</strong>?" },
+        { "content": "4️⃣ Small partner: <span class='hebrew'>עַד דְּאַתְּ סְלִיק לְרוֹמֵי אֲנַא הֲפַךְ וּמִתְהַפֵּךְ בְּדִידִי</span> — by the time you travel to Rome, I've already flipped my stock." },
+        { "content": "5️⃣ Even with absent inventory, the local partner has earned an equal share through speed of trade.", "highlight": true }
+      ],
+      "callout": {
+        "label": "The principle:",
+        "text": "Capital is not the only kind of contribution. Time, motion, and the ability to keep money working in the market are themselves a form of investment that the halakhah recognizes."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "When a tam ox damages, the Tannaim disagree whether the נזק becomes a co-owner or holds the ox as a pledge — and the same disagreement structure governs how partners share when they invest unequally.",
+    "flowSteps": [
+      { "content": "<strong>Mishnah</strong><br><span class='hebrew'>שׁוֹר שֶׁנָּגַח אַרְבָּעָה וַחֲמִשָּׁה שְׁוָורִין</span>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "R' Meir attacks from two sides — yours or his?<br>R' Yudan: it is only a pledge", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "💍 <strong>הקדש</strong><br>who can dedicate", "style": "border-color:#4a90d9" },
+          { "content": "📈 <strong>הוקיר</strong><br>who keeps the rise", "style": "border-color:#9b59b6" },
+          { "content": "💰 <strong>שכר/השביח</strong><br>rent and improvement", "style": "border-color:#4caf50" },
+          { "content": "💼 <strong>שלשה שהטילו לכיס</strong><br>partner shares", "style": "border-color:#e74c3c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Whether you call the נזק's hold on the ox <em>ownership</em> or <em>pledge</em> reshapes every consequence — and parallel partnership rules show that 'equity' depends on what you are dividing.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "What two-sided argument does R' Yannai attribute to R' Meir?",
+      "o": [
+        "Either the ox is yours and you give it as payment, or it isn't and you let me collect from it",
+        "Either you pay full damage or no damage",
+        "Either you accept the kal va-chomer or reject the Mishnah",
+        "Either the ox is mu'ad or it is tam"
+      ],
+      "c": 0,
+      "e": "<span class='hebrew'>שֶׁלָּךְ הוּא תְּנֵיהוּ לוֹ. אֵינוֹ שֶׁלָּךְ תְּנֵיהוּ לִי שֶׁאַגְבֶּנּוּ</span> — R' Meir's מה נפשך leaves the owner no way out."
+    },
+    {
+      "q": "What does R' Yudan answer in defense of R' Yehudah's view?",
+      "o": [
+        "The ox truly belongs to the נזק",
+        "The ox was given over for damages but remains כְּמַשְׁכּוֹן בְּיָדוֹ — only a pledge",
+        "There is no liability at all",
+        "The ox is hekdesh"
+      ],
+      "c": 1,
+      "e": "R' Yudan re-reads R' Eleazar: שמירת נזיקין כשמירת קניין means a pledge-like custody, not full ownership."
+    },
+    {
+      "q": "According to R' Meir, who keeps the increase if the goring ox rises in value (הוקיר)?",
+      "o": ["The first owner alone", "The נזק (second owner) alone", "Both, since they are partners", "Hekdesh"],
+      "c": 2,
+      "e": "R' Yochanan lists this as one of four test cases. R' Meir treats them as joint owners, so הוקרה לשניהם."
+    },
+    {
+      "q": "How does R' Yochanan describe R' Yehudah and R' Shimon on 'קנה'?",
+      "o": [
+        "They flatly disagree",
+        "Both say קנה, but R' Yehudah means living and dead, R' Shimon means only the dead",
+        "Both say he did not acquire",
+        "Only R' Shimon says קנה"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>שְׁנֵיהֶן אָמְרוּ דָבָר אֶחָד</span> — same word, different scope. R' Yehudah: לחי וגם למת; R' Shimon: למת בלבד."
+    },
+    {
+      "q": "In R' Eleazar's analysis of שלשה שהטילו לכיס, why might the partner with less capital still get an equal share?",
+      "o": [
+        "Because the small investor turns inventory over quickly while the big investor is slow to sell",
+        "Because R' Bun says so explicitly",
+        "Because precious stones cannot be divided",
+        "Because of גזירה שווה"
+      ],
+      "c": 0,
+      "e": "<span class='hebrew'>אֲנָא פְּרַגְמָטַּיָּא דִידִי קָלִיל וַאֲנַא הֲפַךְ וּמִתְהַפֵּךְ בְּדִידִי וּמַטִּי בָךְ</span> — small inventory means fast turnover, which earns an equal share."
+    }
+  ]
+}

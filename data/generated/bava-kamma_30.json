@@ -1,0 +1,210 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 30,
+  "emoji": "🔥",
+  "topics": [
+    "🪙 Bar Ziza's sharecropper: can a court argue claims the litigant himself never raised?",
+    "🔥 Mishnah on fire damage: spark, camel-with-flax, storekeeper's lamp",
+    "🕎 R' Yehudah: a Hanukkah light placed outside is פטור — מפני שהוא רשות",
+    "📜 New chapter: כפל is broader than ארבעה וחמשה — living and inanimate",
+    "🚫 גונב אחר הגנב, real estate, slaves, and documents are all excluded"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — From Trustees to Thieves",
+    "label": "The sugya:",
+    "text": "The daf opens with R' Yochanan's question — can a beit din advance an argument the party did not make? — illustrated by the strange Bar Ziza estate case. It then turns to the Mishnah of fire damage (spark, camel, storekeeper) and R' Yehudah's Hanukkah-light exemption. The page closes by opening a new chapter on theft: כפל covers everything alive or inanimate, while ארבעה וחמשה apply only to ox and sheep.",
+    "hebrewSource": "מְרוּבָּה מִידַּת תַּשְׁלוּמֵי כֶפֶל מִמִּידַּת תַּשְׁלוּמֵי אַרְבָּעָה וַחֲמִשָּׁה"
+  },
+  "slides": [
+    {
+      "type": "process",
+      "title": "🪙 The Bar Ziza Case",
+      "subtitle": "A sharecropper's deposit becomes a courtroom puzzle.",
+      "steps": [
+        { "content": "1️⃣ Bar Ziza's sharecropper deposits a <strong>pound of gold</strong> (<span class='hebrew'>לִיטְרָא דְהַב</span>) with a third party." },
+        { "content": "2️⃣ Both Bar Ziza <strong>and</strong> the sharecropper die." },
+        { "content": "3️⃣ R' Yishmael b. R' Yose: everyone knows a sharecropper has nothing of his own — give it to <strong>Bar Ziza's sons</strong>; older sons take half now, younger half when they grow up." },
+        { "content": "4️⃣ R' Chiyya overrules: that argument <span class='hebrew'>לֵית שְׁמַע מִינָּהּ כְּלוּם</span> — give it instead to the <strong>sharecropper's sons</strong>." },
+        { "content": "5️⃣ R' Yitzchak's framing: between older and younger sons it is <span class='hebrew'>כְּמִי שֶׁנִּיתַּן לָהֶן מַתָּנָה</span> — treated as a gift, not a claim.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Why this story is here:",
+        "text": "R' Yochanan asked whether a court can volunteer arguments the litigants themselves did not raise. The Bar Ziza incident is the test case — and it shows that what a beit din ruled stands, even after the next court rules differently."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🔥 Mishnah: Three Cases of Fire",
+      "subtitle": "Each scenario shifts liability based on whose action triggered the spread.",
+      "boxes": [
+        {
+          "title": "🔨 הפטיש",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<span class='hebrew'>גֵּץ שֶׁיָּצָא מִתַּחַת הַפַּטִּישׁ</span>",
+            "Spark flies from a hammer and damages",
+            "Worker is liable — his act caused the spark"
+          ]
+        },
+        {
+          "title": "🐪 הגמל",
+          "color": "#c9a84c",
+          "titleColor": "#c9a84c",
+          "items": [
+            "Camel loaded with flax in רשות הרבים",
+            "Flax enters a shop and ignites on the lamp",
+            "<strong>Camel owner</strong> is liable — he overloaded into the shop"
+          ]
+        },
+        {
+          "title": "🪔 החנווני",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "If the storekeeper put his lamp <strong>outside</strong>",
+            "He is the one liable",
+            "R' Yehudah: בְּנֵר חֲנוּכָּה פָטוּר"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Pivot point:",
+        "text": "The Mishnah moves liability case by case based on whose normal-use act exposed the property to fire. R' Yehudah's exemption for a Hanukkah light raises the harder question: can a mitzvah excuse you from damage liability?"
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 Hanukkah Light: Permission or Liability?",
+      "subtitle": "R' Yehudah and the Sages disagree on whether רשות frees you from damages.",
+      "lines": [
+        { "speaker": "RY", "side": "left", "speakerColor": "#c9a84c", "text": "<span class='hebrew'>בְּנֵר חֲנוּכָּה פָטוּר מִפְּנֵי שֶׁהוּא רְשׁוּת</span> — he placed it outside with permission of the mitzvah, so he is exempt." },
+        { "speaker": "Ḥ", "side": "right", "speakerColor": "#4a90d9", "text": "The Sages: <span class='hebrew'>בֵּין כָּךְ וּבֵין כָּךְ חַיָיב</span> — even when permitted, you remain liable for resulting damage." },
+        { "speaker": "Y", "side": "left", "speakerColor": "#9b59b6", "text": "Parallel: people build sukkot in front of their stores on חג — that too is permitted, yet if a passerby is hurt, the builder pays." }
+      ],
+      "callout": {
+        "label": "The principle:",
+        "text": "Permission to perform an act (mitzvah or commercial) does not transfer the risk of damage onto the public. The actor still owns the consequences — except, per R' Yehudah, where the mitzvah itself authorizes the exposure."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "📜 New Mishnah — Why כפל is Broader",
+      "subtitle": "The opening of chapter 7 contrasts the two penalty categories.",
+      "nodes": [
+        { "content": "<strong>Mishnah:</strong> מְרוּבָּה מִידַּת תַּשְׁלוּמֵי כֶפֶל", "class": "question" },
+        { "type": "arrow" },
+        { "content": "Why is כפל more frequent?", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "כפל (double)", "content": "Living <strong>and</strong> inanimate<br>any movable", "class": "result-good" },
+            { "label": "ד׳ וה׳", "content": "Only שור ושה<br><span class='hebrew'>כִּי יִגְנֹב אִישׁ שׁוֹר אוֹ שֶׂה</span>", "class": "result-partial" },
+            { "label": "Excluded", "content": "Land, slaves, documents,<br>גונב אחר הגנב", "class": "result-bad" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "כפל is the default penalty for theft; ארבעה וחמשה is the narrow add-on for slaughter or sale of an ox or sheep.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Source-driven move:",
+        "text": "The Yerushalmi derives the breadth of כפל from <span class='hebrew'>אִם הִמָּצֵא תִמָּצֵא... חַיִּים</span> — 'alive' includes all living things, 'the stolen goods' includes all movables."
+      }
+    },
+    {
+      "type": "table",
+      "title": "🚫 What is Excluded from כפל",
+      "subtitle": "R' Yishmael's three exclusions.",
+      "headers": ["Excluded item", "Reason", "Phrase"],
+      "rows": [
+        ["<span class='hebrew'>קַרְקָעוֹת</span> — land", "Not movable", "<span class='hebrew'>שֶׁאֵין מִיטַּלְטְלִין</span>"],
+        ["<span class='hebrew'>עֲבָדִים</span> — slaves", "Only useful for service", "<span class='hebrew'>אֵין לָךְ בָּהֶן אֶלָּא תַשְׁמִישׁ</span>"],
+        ["<span class='hebrew'>שְׁטָרוֹת</span> — documents", "Only carry proof, not value", "<span class='hebrew'>אֵין לָךְ בָּהֶן אֶלָּא רְאָיָיה</span>"],
+        ["<span class='hebrew'>גוֹנֵב אַחַר הַגַּנָּב</span>", "The first thief already 'owns' the loss", "Not paid כפל"]
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "The Torah's gnevah penalty fastens onto a movable, valuable, ownerless-once-stolen object. Anything that fails one of those tests drops out of the כפל system."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "The daf bridges three sugyot: a court can sometimes act on arguments not raised; fire liability tracks whose action exposed the property; and theft's penalty system distinguishes broad (כפל) from narrow (ארבעה וחמשה).",
+    "flowSteps": [
+      { "content": "<strong>Three sugyot, one daf</strong><br>trustee → fire → theft", "class": "question" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🪙 <strong>Bar Ziza</strong><br>court argues for the silent party", "style": "border-color:#c9a84c" },
+          { "content": "🔥 <strong>Fire</strong><br>spark, camel, storekeeper", "style": "border-color:#e74c3c" },
+          { "content": "🪔 <strong>Hanukkah</strong><br>R' Yehudah: רשות פטור", "style": "border-color:#9b59b6" },
+          { "content": "📜 <strong>כפל vs. ד׳ וה׳</strong><br>broad vs. narrow penalty", "style": "border-color:#4a90d9" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "Each move shows the Yerushalmi anchoring liability — and exemption — in source verses and prior court rulings.", "class": "action" },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>What a beit din ruled stands; permitted acts do not erase damage liability; and the Torah's penalty scope is exactly what the verses specify.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "In the Bar Ziza incident, why did R' Yishmael b. R' Yose order the gold given to Bar Ziza's sons?",
+      "o": [
+        "Because the sharecropper had no children",
+        "Because everyone knows a sharecropper's property belongs to his master",
+        "Because the trustee had already disbursed half",
+        "Because gold cannot be inherited"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>מָאן הוּא דְלָא יְדַע דְּכָל מַאי דְאִית לָאֲרִיסֵיהּ דְּבַר זִיזָא לְבַר זִיזָא אִינּוּן</span> — a sharecropper holds his master's property."
+    },
+    {
+      "q": "When R' Chiyya later overruled R' Yishmael b. R' Yose, what did he say about the half already disbursed?",
+      "o": [
+        "It must be returned",
+        "<span class='hebrew'>מַה שֶׁנָּתַתָּה עַל פִּי בֵּית דִּין נָתַתָּה</span> — what you gave by court order stands",
+        "It is treated as a loan",
+        "It must be split between both families"
+      ],
+      "c": 1,
+      "e": "A court ruling, even one later overturned, protects what was disbursed. The remaining half goes by the new ruling."
+    },
+    {
+      "q": "Whom does the Mishnah hold liable when a camel's flax catches fire on a storekeeper's lamp?",
+      "o": [
+        "The storekeeper, always",
+        "Nobody — both acted with permission",
+        "The camel's owner, since his flax entered the shop",
+        "The municipality"
+      ],
+      "c": 2,
+      "e": "<span class='hebrew'>בַּעַל הַגָּמָל חַיָיב</span> — the camel owner overloaded into the shop. (Only if the storekeeper put his lamp <em>outside</em> does liability shift to him.)"
+    },
+    {
+      "q": "What is R' Yehudah's reason for exempting damage from a Hanukkah light placed outside?",
+      "o": [
+        "It is too small to cause real damage",
+        "<span class='hebrew'>מִפְּנֵי שֶׁהוּא רְשׁוּת</span> — the mitzvah authorizes its placement",
+        "Hanukkah is biblical and overrides נזיקין",
+        "Insurance covers it"
+      ],
+      "c": 1,
+      "e": "R' Yehudah holds that mitzvah-authorized placement removes liability. The Sages disagree and use the example of sukkah-stalls in front of stores to refute him."
+    },
+    {
+      "q": "Which of the following is NOT excluded by R' Yishmael from the law of כפל?",
+      "o": [
+        "Real estate (קרקעות)",
+        "Slaves (עבדים)",
+        "Documents (שטרות)",
+        "A donkey (חמור)"
+      ],
+      "c": 3,
+      "e": "Land, slaves, and documents are excluded; a donkey is movable and alive, so it is included in כפל. The Torah even mentions <span class='hebrew'>שׁוֹר וַחֲמוֹר וָשֶׂה</span>."
+    }
+  ]
+}

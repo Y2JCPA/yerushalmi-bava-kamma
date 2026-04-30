@@ -1,0 +1,210 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 33,
+  "emoji": "🐃",
+  "topics": [
+    "🐂 Slaughtering a black ox in the forest as a חזקה of theft",
+    "🔪 Differences between טובח and מוכר — Shabbat liability",
+    "🧩 Selling 'except for' a part: when does ד״ה or ארבעה וחמישה apply",
+    "🚪 Drawing the animal out vs. lifting it — kinyan and liability for ד׳ וה׳",
+    "🐑 Bans on raising small livestock, chickens, pigs, and dogs in Eretz Yisrael"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Stolen Sales, Sneaky Slaughters, and the Settlement",
+    "label": "The sugya:",
+    "text": "The daf closes out perek 7 of Bava Kamma. It refines the Mishnah's rules on ארבעה וחמישה: what counts as a complete sale, what counts as a complete slaughter, and exactly when the thief's act becomes binding. From there the Yerushalmi turns to the very different — but related — world of where animals may be raised: the bans on small livestock, chickens, pigs, and unchained dogs in Eretz Yisrael, and where one may set pigeon traps.",
+    "hebrewSource": "אָמַר רִבִּי לָעְזָר. רָאוּ אוֹתוֹ שׁוֹחֵט שׁוֹר שָׁחוֹר בַּיַּעַר חֲזָקָה גָּנוּב הוּא"
+  },
+  "slides": [
+    {
+      "type": "debate",
+      "title": "🌲 The Black Ox in the Forest",
+      "subtitle": "R' Lazar's chazakah of theft and the Yerushalmi's challenge.",
+      "lines": [
+        { "speaker": "RL", "side": "left", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>רָאוּ אוֹתוֹ שׁוֹחֵט שׁוֹר שָׁחוֹר בַּיַּעַר חֲזָקָה גָּנוּב הוּא</span> — slaughtering a black ox in the forest is presumptive evidence of theft." },
+        { "speaker": "Q", "side": "right", "speakerColor": "#9b59b6", "text": "But maybe the ox was already lying down? A passerby could simply slaughter an animal he found resting." },
+        { "speaker": "A", "side": "left", "speakerColor": "#c9a84c", "text": "<span class='hebrew'>תִּיפְתָּר בְּשֶׁרָאוּהוּ מוֹשֵׁךְ</span> — the ruling speaks of a case where they saw him dragging it. Then the chazakah of theft holds." }
+      ],
+      "callout": {
+        "label": "Reading the move:",
+        "text": "The Yerushalmi tightens R' Lazar's principle by adding a behavioral fingerprint: a thief drags the animal out of sight before slaughtering. The pasture context plus the dragging is what triggers the chazakah."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🔪 Slaughterer vs. Seller",
+      "subtitle": "Each act has a feature the other lacks.",
+      "boxes": [
+        {
+          "title": "🔪 הטובח",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<span class='hebrew'>הַטּוֹבֵחַ בַּשַׁבָּת חַיָיב</span>",
+            "Slaughtering is a melachah on Shabbat",
+            "Carries criminal liability"
+          ]
+        },
+        {
+          "title": "💰 המוכר",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "<span class='hebrew'>וְהַמּוֹכֵר בַּשַׁבָּת פָּטוּר</span>",
+            "Sale is not in itself a melachah",
+            "But still completes the kinyan for ד׳ וה׳"
+          ]
+        },
+        {
+          "title": "🌱 R' Yannai's edge case",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "‘<span class='hebrew'>תְּלוֹשׁ מִן הַקַּרְקַע הַזֶּה וּקְנֵה אוֹתוֹ</span>’",
+            "Sale + tearing from the ground",
+            "R' Yose b. R' Bun: it's the tearing, not the sale, that creates the criminal liability"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Why the comparison:",
+        "text": "The Yerushalmi is mapping the unique halakhic profile of each act so neither can simply be derived from the other — the same logical move it made earlier between שור and בור."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📊 Selling 'Except For…' — Three Tannaitic Positions",
+      "subtitle": "When does an incomplete sale still trigger ארבעה וחמישה?",
+      "headers": ["Excluded part", "Tanna kamma", "R' Lazar b. R' Shimon", "Rebbi"],
+      "rows": [
+        ["<span class='hebrew'>חוּץ מִיָּדָהּ</span> / רגלה", "ד׳ וה׳", "ד׳ וה׳", "ד׳ וה׳ (vital organ involved)"],
+        ["<span class='hebrew'>חוּץ מִקַּרְנָהּ</span>", "ד׳ וה׳", "כפל only", "פטור (non-vital organ)"],
+        ["<span class='hebrew'>חוּץ מִגִּיזָתָהּ</span>", "ד׳ וה׳", "ד׳ וה׳", "פטור (non-vital)"],
+        ["Vital organ excluded", "ד׳ וה׳", "—", "<span class='hebrew'>חוּץ מִדָּבָר שֶׁהַנְשָׁמָה תְלוּיָה בּוֹ — ד׳ וה׳</span>"]
+      ],
+      "callout": {
+        "label": "R' Ze'ira's question:",
+        "text": "<span class='hebrew'>מָכַר חֶצְיָיהּ לָזֶה וְחֶצְיָיהּ לָזֶה מָהוּ?</span> — what about selling halves to two different people? The Yerushalmi answers from the beraita: any retained share normally still leaves the seller liable for ד׳ וה׳, unless Rebbi's vital-organ test fails."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🚪 When Does the Thief Become Liable for ד׳ וה׳?",
+      "subtitle": "The Mishnah of <span class='hebrew'>הָיָה מוֹשְׁכוֹ וְיוֹצֵא</span>.",
+      "nodes": [
+        { "content": "Thief is moving the stolen animal — and it dies en route", "class": "question" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Drawing it (still on owner's property)", "content": "<span class='hebrew'>פָּטוּר</span><br>Kinyan not yet complete", "class": "result-bad" },
+            { "label": "Lifted it (הגביהו)", "content": "<span class='hebrew'>חַיָיב</span><br>הגבהה is universal kinyan", "class": "result-good" },
+            { "label": "Got it off the property", "content": "<span class='hebrew'>חַיָיב</span><br>Removal completes the theft", "class": "result-good" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "R' Mana's question: does <span class='hebrew'>פָּטוּר</span> here mean exempt from ד׳ וה׳ — or exempt even from the basic theft itself?", "class": "action" },
+        { "type": "arrow" },
+        { "content": "The Mishnah reaches the same result whether the thief acts personally or hands it to a שומר / לוקח / שואל — the kinyan-act is what counts.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Key insight:",
+        "text": "ד׳ וה׳ is gated by a completed kinyan of theft. הגבהה or removal seal it; mere drawing on the owner's premises does not."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🐑 The Final Mishnah: Where Animals May Be Raised",
+      "subtitle": "A sharp pivot from theft into community-protective halakhot.",
+      "steps": [
+        { "content": "1️⃣ <strong>בהמה דקה</strong>: forbidden in Eretz Yisrael — but permitted in Syria and in <span class='hebrew'>מדברות שבארץ ישראל</span> (R' Abba: e.g. Mahir, 16×16 mil)." },
+        { "content": "2️⃣ <strong>תרנגולין in Yerushalayim</strong>: forbidden because of the קדשים they would defile by digging up impure things." },
+        { "content": "3️⃣ <strong>Cohanim anywhere in EY</strong>: forbidden, because of the טהרות they handle." },
+        { "content": "4️⃣ <strong>חזירים</strong>: a Jew may not raise pigs anywhere — full stop." },
+        { "content": "5️⃣ <strong>כלב</strong>: only permitted if <span class='hebrew'>קָשׁוּר בַּשַׁלְשֶׁלֶת</span>; <strong>נשבים ליונים</strong> only 30 ris from any settlement.", "highlight": true }
+      ],
+      "callout": {
+        "label": "R' Yehoshua b. Levi's lens:",
+        "text": "He ties the chicken ban to <span class='hebrew'>יְרוּשָׁלַ͏ִם הַבְּנוּיָה — עִיר שֶׁמְחַבֶּרֶת יִשְׂרָאֵל זֶה לָזֶה</span>. Yerushalayim is a city built around shared sanctity, so its rules protect that fabric."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Perek 7 closes by tightening when ד׳ וה׳ applies — completed sale, completed slaughter, completed kinyan — and then turns to the social geography of which animals may be raised where in Eretz Yisrael.",
+    "flowSteps": [
+      { "content": "<strong>Open question:</strong><br>When does a thief's act become a complete <span class='hebrew'>טביחה ומכירה</span>?", "class": "question" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🌲 <strong>Public chazakah</strong><br>Dragging an ox in the forest = stolen", "style": "border-color:#4a90d9" },
+          { "content": "🔪 <strong>Slaughter vs. sale</strong><br>Different Shabbat profiles", "style": "border-color:#e74c3c" },
+          { "content": "🧩 <strong>'חוץ מ…' sales</strong><br>Vital organ test (Rebbi)", "style": "border-color:#9b59b6" },
+          { "content": "🚪 <strong>הגבהה / removal</strong><br>Drawing alone is not enough", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "Pivot: Mishnah of livestock bans, chickens in Yerushalayim, pigs anywhere, dogs only on a chain.", "class": "action" },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Liability follows completed acts; community halakhot guard the agricultural and sacral fabric of Eretz Yisrael.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "What does R' Lazar say about someone seen slaughtering a black ox in the forest?",
+      "o": [
+        "He is exempt because the forest is הפקר",
+        "<span class='hebrew'>חֲזָקָה גָּנוּב הוּא</span> — there is a presumption it was stolen",
+        "He must bring two witnesses",
+        "He pays only כפל"
+      ],
+      "c": 1,
+      "e": "R' Lazar establishes a chazakah of theft, and the Yerushalmi clarifies that this applies specifically when he was seen dragging it — <span class='hebrew'>בְּשֶׁרָאוּהוּ מוֹשֵׁךְ</span>."
+    },
+    {
+      "q": "What unique liability does a slaughterer have that a seller does not?",
+      "o": [
+        "He pays double",
+        "He is criminally liable on Shabbat (slaughter is a melachah)",
+        "He cannot be a שליח",
+        "He must reimburse the מוכר"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>הַטּוֹבֵחַ בַּשַׁבָּת חַיָיב וְהַמּוֹכֵר בַּשַׁבָּת פָּטוּר</span>. R' Yose b. R' Bun explains the apparent counter-case: it's the tearing from the ground, not the sale itself, that creates Shabbat liability."
+    },
+    {
+      "q": "According to Rebbi, when does selling 'except for X' still trigger ד׳ וה׳?",
+      "o": [
+        "Only if X is the horn",
+        "Only if X is the wool",
+        "When X is a vital organ — <span class='hebrew'>דָּבָר שֶׁהַנְשָׁמָה תְלוּיָה בּוֹ</span>",
+        "Only when X is sold to a third party"
+      ],
+      "c": 2,
+      "e": "Rebbi's test: if the retained part is a vital organ, the buyer's purchase is meaningful and ד׳ וה׳ applies; if not (e.g. wool, horn), the seller is exempt."
+    },
+    {
+      "q": "If a thief was drawing the animal out but it died while still on the owner's property, what is the law?",
+      "o": [
+        "Liable for ד׳ וה׳",
+        "<span class='hebrew'>פָּטוּר</span> — the kinyan of theft is not yet complete",
+        "Liable for double only",
+        "Liable only if there were witnesses"
+      ],
+      "c": 1,
+      "e": "The Mishnah teaches that drawing alone, while still on the owner's premises, does not complete the theft. The thief is liable only after הגבהה or once it leaves the property — and R' Mana even asks whether the exemption extends to basic theft as well."
+    },
+    {
+      "q": "Which is NOT one of the Mishnah's restrictions on raising animals?",
+      "o": [
+        "<span class='hebrew'>אֵין מְגַדְּלִין בְּהֵמָה דַקָּה בְּאֶרֶץ יִשְׂרָאֵל</span>",
+        "<span class='hebrew'>אֵין מְגַדְּלִין תַּרְנְגוֹלִין בִּירוּשָׁלַיִם</span>",
+        "<span class='hebrew'>לֹא יְגַדֵּל אָדָם אֶת הַכֶּלֶב אֶלָּא אִם כֵּן הָיָה קָשׁוּר בַּשַׁלְשֶׁלֶת</span>",
+        "<span class='hebrew'>אֵין מְגַדְּלִין סוּסִים בְּסוּרְיָא</span>"
+      ],
+      "c": 3,
+      "e": "The Mishnah bans small livestock in EY (permitted in Syria and the מדברות), chickens in Yerushalayim and for kohanim anywhere, pigs everywhere for a Jew, and unchained dogs. It says nothing about horses in Syria."
+    }
+  ]
+}

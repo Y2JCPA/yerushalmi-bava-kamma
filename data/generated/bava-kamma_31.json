@@ -1,0 +1,213 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 31,
+  "emoji": "⚖️",
+  "topics": [
+    "🐂 Mishnah: ד׳ וה׳ even when stolen item was slaughtered/sold by other witnesses",
+    "🕎 Stolen and sold on Shabbat / for ע״ז / on Yom Kippur — still pay ד׳ וה׳",
+    "💀 R' Shimon's exemption: שוחט טריפה and שוחט חולין בעזרה",
+    "📜 Principle: <span class='hebrew'>כְּדֵי רִשְׁעָתוֹ</span> — court chooses one of two penalties",
+    "👥 Zomemim Mishnah: when first or second witness pair is perjured"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Composite Acts and Composite Witnesses",
+    "label": "The sugya:",
+    "text": "The daf has two Mishnayot. The first lists acts that still incur ד׳ וה׳ even when other complicating factors are present — Shabbat, idolatry, Yom Kippur, the father's death, even slaughter for dogs. R' Shimon dissents on two cases. The Halakhah introduces R' Bun bar Chiyya's principle of <span class='hebrew'>כְּדֵי רִשְׁעָתוֹ</span>: when two penalties are due, the court selects one. The second Mishnah turns to perjured witnesses — מה משלמין when one or both pairs are zomemim.",
+    "hebrewSource": "גָּנַב עַל פִּי שְׁנַיִם וְטָבַח וּמָכַר עַל פִּיהֶם אוֹ עַל פִּי שְׁנַיִם אֲחֵרִים מְשַׁלֵּם תַּשְׁלוּמֵי אַרְבָּעָה וַחֲמִשָּׁה"
+  },
+  "slides": [
+    {
+      "type": "table",
+      "title": "🧾 Mishnah 7:2 — Cases That Still Pay ד׳ וה׳",
+      "subtitle": "The Mishnah piles up complications and rules each one in.",
+      "headers": ["Scenario", "Hebrew", "Outcome"],
+      "rows": [
+        ["Sold on Shabbat", "<span class='hebrew'>גָּנַב וּמָכַר בַּשַּׁבָּת</span>", "Pays ד׳ וה׳"],
+        ["Sold for ע״ז", "<span class='hebrew'>גָּנַב וּמָכַר לַעֲבוֹדָה זָרָה</span>", "Pays ד׳ וה׳"],
+        ["Slaughtered on Yom Kippur", "<span class='hebrew'>גָּנַב וְטָבַח בְּיוֹם הַכִּיפּוּרִים</span>", "Pays ד׳ וה׳"],
+        ["Stole from father, then father died", "<span class='hebrew'>גָּנַב מִשֶּׁל אָבִיו... וְאַחַר כָּךְ מֵת אָבִיו</span>", "Pays ד׳ וה׳"],
+        ["Slaughtered, then dedicated to Temple", "<span class='hebrew'>גָּנַב וְטָבַח וְאַחַר כָּךְ הִקְדִּישׁ</span>", "Pays ד׳ וה׳"],
+        ["Slaughtered for medicine or dogs", "<span class='hebrew'>לִרְפוּאָה אוֹ לַכְּלָבִים</span>", "Pays (R' Shimon: פטור)"],
+        ["Slaughtered → טריפה", "<span class='hebrew'>הַשּׁוֹחֵט וְנִמְצָא טְרֵפָה</span>", "Pays (R' Shimon: פטור)"],
+        ["שחט חולין בעזרה", "<span class='hebrew'>הַשּׁוֹחֵט חוּלִין בָּעֲזָרָה</span>", "Pays ד׳ וה׳"]
+      ],
+      "callout": {
+        "label": "The pattern:",
+        "text": "Even when the slaughter or sale is itself a sin (Shabbat, idolatry, Yom Kippur), the Mishnah still imposes ד׳ וה׳. The act is criminally complete for theft purposes."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 Why Shouldn't These Cases Be Exempt?",
+      "subtitle": "The Yerushalmi raises the principle of <span class='hebrew'>כְּדֵי רִשְׁעָתוֹ</span>.",
+      "lines": [
+        { "speaker": "Q", "side": "left", "speakerColor": "#9b59b6", "text": "Did not R' Abbahu say in the name of R' Yochanan: <span class='hebrew'>הֵזִיד בְּחֵלֶב וְשָׁגַג בְּקָרְבָּן</span> — he is warned, lashed, <strong>and</strong> brings a sacrifice? So why not double penalty here too?" },
+        { "speaker": "RB", "side": "right", "speakerColor": "#4a90d9", "text": "R' Bun bar Chiyya in the name of R' Shmuel bar R' Yitzchak: <span class='hebrew'>כְּדֵי רִשְׁעָתוֹ</span> (Deut. 25:2). Two penalties before the court — pick one." },
+        { "speaker": "Y", "side": "left", "speakerColor": "#c9a84c", "text": "But heavenly penalties (like a קרבן) are not 'before the court' — so the principle of one-penalty-only does not exclude them." }
+      ],
+      "callout": {
+        "label": "The exegetical move:",
+        "text": "<span class='hebrew'>שְׁנֵי דְבָרִים מְסוּרִין לְבֵית דִּין הַתּוֹפֵס אֶחָד מֵהֶן</span>. When two court-penalties collide, you take one; but a court-penalty + a heavenly-penalty can both stand."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🔪 R' Shimon's Two Exemptions",
+      "subtitle": "Two slaughters that, for him, do not count as 'slaughter' for ד׳ וה׳.",
+      "boxes": [
+        {
+          "title": "🐕 לרפואה / לכלבים",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "Slaughter for medicine or dog-food",
+            "R' Shimon: not the normal purpose",
+            "Doesn't trigger ד׳ וה׳"
+          ]
+        },
+        {
+          "title": "🩸 שחט ונמצא טריפה",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "Animal turns out non-kosher post-slaughter",
+            "R' Shimon: a treif slaughter doesn't count",
+            "Doesn't trigger ד׳ וה׳"
+          ]
+        },
+        {
+          "title": "✅ Tanna kamma",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "The act of שחיטה is the trigger, regardless of purpose",
+            "Even שוחט חולין בעזרה pays",
+            "<strong>R' Shimon פוטר בשני אילו</strong>"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "What divides them:",
+        "text": "The Tanna kamma views שחיטה as a discrete act of disposing of the stolen animal. R' Shimon requires that the slaughter actually achieve its halakhic point (kosher meat, normal use)."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "👥 Mishnah 7:3 — Zomemim Witnesses",
+      "subtitle": "Who pays whom, and how much, when witnesses are exposed as perjurers.",
+      "nodes": [
+        { "content": "<strong>Two pairs of witnesses:</strong><br>גניבה + טביחה/מכירה", "class": "question" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Both pairs zomemim", "content": "First pair pays <strong>כפל</strong><br>Second pair pays <strong>תשלומי שלושה</strong>", "class": "result-partial" },
+            { "label": "Only second pair zomemim", "content": "He still pays כפל;<br>they pay תשלומי שלושה", "class": "result-partial" },
+            { "label": "One of second pair zomem", "content": "<span class='hebrew'>בָּטְלָה עֵדוּת שְׁנִיָיה</span><br>second testimony nullified", "class": "result-bad" },
+            { "label": "One of first pair zomem", "content": "<span class='hebrew'>בָּטְלָה כָל הָעֵדוּת</span><br>everything falls — אם אין גניבה אין טביחה", "class": "result-bad" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "The structure mirrors the act: theft is the foundation; without it, slaughter and sale collapse.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Logical anchor:",
+        "text": "<span class='hebrew'>שֶׁאִם אֵין גְּנֵיבָה אֵין טְבִיחָה וְאֵין מְכִירָה</span> — slaughter/sale presuppose theft. Knock out theft, knock out everything."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🧮 The Math of Triple Restitution",
+      "subtitle": "Why do the second-pair zomemim pay 'תשלומי שלושה'?",
+      "steps": [
+        { "content": "1️⃣ Total liability for stealing + slaughtering an ox = <strong>5×</strong>." },
+        { "content": "2️⃣ Of that, <strong>2×</strong> is for the theft alone." },
+        { "content": "3️⃣ The slaughter/sale witnesses tried to impose the additional <strong>3×</strong>." },
+        { "content": "4️⃣ Therefore when only the second pair is perjured, they pay the 3× they tried to inflict." },
+        { "content": "5️⃣ <strong>תשלומי שלושה</strong> = the increment from 2× to 5×.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "כאשר עשו — what they tried to do to him is what they pay. Each pair is liable only for the slice of damage their false testimony was attempting to add."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Even compounded acts (Shabbat, ע״ז, Yom Kippur) still pay ד׳ וה׳ — but two court-penalties cannot stack. When witnesses are perjured, each pair pays exactly the slice they tried to impose.",
+    "flowSteps": [
+      { "content": "<strong>Composite cases of theft + something else</strong>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Mishnah: still pays ד׳ וה׳", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🕎 <strong>Shabbat / ע״ז / יוה״כ</strong><br>still ד׳ וה׳", "style": "border-color:#c9a84c" },
+          { "content": "🔪 <strong>R' Shimon</strong><br>פוטר on טריפה + לכלבים", "style": "border-color:#e74c3c" },
+          { "content": "⚖️ <strong>כְּדֵי רִשְׁעָתוֹ</strong><br>court takes only one penalty", "style": "border-color:#9b59b6" },
+          { "content": "👥 <strong>Zomemim</strong><br>each pair pays its slice", "style": "border-color:#4a90d9" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Theft is the foundation; if false witnesses are exposed, the structure collapses from the bottom up.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Which of the following does the Mishnah say still incurs ד׳ וה׳?",
+      "o": [
+        "Stealing and slaughtering on Shabbat",
+        "Stealing land",
+        "Stealing a document",
+        "Stealing from a thief"
+      ],
+      "c": 0,
+      "e": "<span class='hebrew'>גָּנַב וְטָבַח בְּיוֹם הַכִּיפּוּרִים</span>, on Shabbat, or for ע״ז — all still trigger ד׳ וה׳ per the Mishnah."
+    },
+    {
+      "q": "What two cases does R' Shimon exempt from ד׳ וה׳?",
+      "o": [
+        "Stealing on Shabbat and stealing on Yom Kippur",
+        "Slaughter for medicine/dogs and slaughter that turned out טריפה",
+        "Stealing from one's father and dedicating to the Temple",
+        "Theft of an ox and theft of a sheep"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>רִבִּי שִׁמְעוֹן פּוֹטֵר בִּשְׁנֵי אֵילּוּ</span> — לרפואה/לכלבים, and שוחט ונמצא טריפה."
+    },
+    {
+      "q": "What principle does R' Bun bar Chiyya derive from <span class='hebrew'>כְּדֵי רִשְׁעָתוֹ</span>?",
+      "o": [
+        "The court only imposes one of two penalties when both are court-penalties",
+        "All sinners are punished twice",
+        "Only the wicked are liable for ד׳ וה׳",
+        "Penalties are halved on Yom Kippur"
+      ],
+      "c": 0,
+      "e": "<span class='hebrew'>שְׁנֵי דְבָרִים מְסוּרִין לְבֵית דִּין הַתּוֹפֵס אֶחָד מֵהֶן</span>. A court-penalty + a heavenly penalty can stack; two court-penalties cannot."
+    },
+    {
+      "q": "If only the second pair (slaughter/sale witnesses) is shown to be perjured, what do they pay?",
+      "o": [
+        "כפל",
+        "תשלומי ארבעה",
+        "תשלומי שלושה — the increment from 2× to 5×",
+        "Nothing"
+      ],
+      "c": 2,
+      "e": "He still pays כפל for the theft; the second pair pays the תשלומי שלושה they tried falsely to impose."
+    },
+    {
+      "q": "Why does perjury in the FIRST pair (theft witnesses) collapse the entire case?",
+      "o": [
+        "Because the first pair are senior witnesses",
+        "<span class='hebrew'>שֶׁאִם אֵין גְּנֵיבָה אֵין טְבִיחָה וְאֵין מְכִירָה</span> — without theft there is nothing to slaughter or sell",
+        "Because two pairs cannot testify together",
+        "Because of <span class='hebrew'>כְּדֵי רִשְׁעָתוֹ</span>"
+      ],
+      "c": 1,
+      "e": "Theft is the foundation. Knock that out and slaughter/sale lose their object — both testimonies are nullified."
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 35,
+  "emoji": "🩹",
+  "topics": [
+    "🩹 ריפוי: complications from a wound — when does the מזיק still pay?",
+    "🥒 שבת: 'as if he were a שומר קישואין' — two kinds of שבת",
+    "😳 בושת: only when intentional — וְשָׁלְחָה יָדָהּ",
+    "👁️ Two simultaneous injuries to a slave — does he go free?",
+    "🤲 R' Yochanan's mercy: rule of law vs. rule of compassion"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Working Through the Five Payments",
+    "label": "The sugya:",
+    "text": "The daf continues the chapter on bodily damage, walking through ריפוי (medical costs), שבת (loss of earnings), and בושת (embarrassment). R' Yirmiyah asks about complications from a wound, R' Yitzchak distinguishes two types of שבת, and the sugya explores intent in בושת via the pasuk וְשָׁלְחָה יָדָהּ. The chapter then turns to slaves, contrasting the strict halakhic rule with R' Yochanan's personal practice of feeding his slave from his own meat and wine.",
+    "hebrewSource": "רִבִּי יִרְמְיָה בָעֵי. עָלוּ בוֹ צְמָחִין סְבִיבוֹת הַמַּכָּה וְנִסְתְּרָה מַחֲמַת הַמַּכָּה מָהוּ. מִן מַה דִכְתִיב וְרַפֹּא יְרַפֵּא"
+  },
+  "slides": [
+    {
+      "type": "flowchart",
+      "title": "🩹 R' Yirmiyah's Question About Complications",
+      "subtitle": "What if growths form around the wound and complications follow?",
+      "nodes": [
+        { "content": "<span class='hebrew'>עָלוּ בוֹ צְמָחִין סְבִיבוֹת הַמַּכָּה</span><br>Growths form around the wound", "class": "question" },
+        { "type": "arrow" },
+        { "content": "Source: <span class='hebrew'>וְרַפֹּא יְרַפֵּא</span> — and surely heal", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Patient ignored doctor", "content": "<span class='hebrew'>עָבַר עַל דְּבַר רוֹפֵא</span><br>מזיק is פטור", "class": "result-bad" },
+            { "label": "Wound covered with scab", "content": "<span class='hebrew'>עָלַת גַּרְגּוּתְנִי</span><br>still חייב לרפותו", "class": "result-good" },
+            { "label": "R' Yose b. R' Yehuda", "content": "Pays ריפוי but not שבת", "class": "result-partial" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "R' Shimon: <span class='hebrew'>חִידּוּשׁ חִידֵּשׁ הַכָּתוּב</span> — Torah innovated that שבת and ריפוי go together", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Key move:",
+        "text": "The Yerushalmi reads רק שבתו יתן ורפא ירפא as a single legislative gesture: שבת and ריפוי are paired."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🥒 Two Kinds of שבת",
+      "subtitle": "R' Yitzchak resolves a tension in our Mishnah.",
+      "boxes": [
+        {
+          "title": "🥒 Permanent loss",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "Hand cut off — already paid נזק for the limb",
+            "<span class='hebrew'>רוֹאִין אוֹתוֹ כִּילּוּ חִיגֵּר יוֹשֵׁב וְשׁוֹמֵר קִישּׁוּאִין</span>",
+            "Calculated only at the watchman wage"
+          ]
+        },
+        {
+          "title": "💼 Temporary disability",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "Burn, swelling, exposure to snow / cold water",
+            "Was earning a מנה? pays a מנה. סלע? pays a סלע",
+            "Real-time loss of full earnings"
+          ]
+        },
+        {
+          "title": "🩹 ריפוי still applies",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<span class='hebrew'>בְּמָקוֹם שֶׁאֵינוֹ נִרְאֶה</span> — even hidden injury",
+            "Snow / cold water count as injury",
+            "Independent of the שבת calculation"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "R' Yitzchak's resolution:",
+        "text": "<span class='hebrew'>תְּרֵין שִׁבְתִּין אִינּוּן</span> — there are two distinct שבת frameworks: one for permanent loss already compensated, one for temporary disability still earning a wage."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 בושת and Intent",
+      "subtitle": "וְשָׁלְחָה יָדָהּ — does the wife of the בית דין marshal count?",
+      "lines": [
+        { "speaker": "M", "side": "left", "speakerColor": "#c9a84c", "text": "Mishnah: <span class='hebrew'>נָפַל מִן הַגַּג וְהִזִּיק וּבִיֵישׁ — חַיָיב עַל הַנֶּזֶק וּפָטוּר עַל הַבּוֹשֶׁת</span> — בושת requires intent." },
+        { "speaker": "T1", "side": "right", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>וְשָׁלְחָה יָדָהּ</span> — but not the wife of a בית דין marshal (excluded)." },
+        { "speaker": "T2", "side": "left", "speakerColor": "#9b59b6", "text": "Another tanna: <span class='hebrew'>לְרַבּוֹת אֵשֶׁת שְׁלִיחַ בֵּית דִּין</span> — including her!" },
+        { "speaker": "Y", "side": "right", "speakerColor": "#e74c3c", "text": "Resolution: excluded when he whipped <strong>with permission</strong>; included when he whipped <strong>without permission</strong>." }
+      ],
+      "callout": {
+        "label": "Practical reading:",
+        "text": "Authorized court-ordered injury creates no claim for the marshal's wife; rogue violence does. The same pasuk is read both ways depending on context."
+      }
+    },
+    {
+      "type": "table",
+      "title": "👁️ Witnesses Testifying About Two Injuries to a Slave",
+      "subtitle": "The baraita on simultaneous vs. sequential blinding/tooth-knocking.",
+      "headers": ["Scenario", "Outcome for slave", "What the מזיק pays"],
+      "rows": [
+        ["<span class='hebrew'>שְׁתֵּי עֵינָיו כְּאַחַת</span> — both eyes simultaneously", "Goes free (per Torah law for an eye)", "<span class='hebrew'>אֵינוֹ נוֹתֵן לוֹ כְּלוּם</span> — pays nothing"],
+        ["Eye 1, then eye 2 — sequentially", "Free already after the first", "Pays full <span class='hebrew'>דְּמֵי שְׁנִיָיה</span> for the second"],
+        ["R' Abahu (b'shem R' Yochanan)", "<span class='hebrew'>שָׁמִין לַעֲבָדִים בּוֹשֶׁת</span> — slaves do get embarrassment", "Against R' Yehuda's view in the Mishnah"]
+      ],
+      "callout": {
+        "label": "Why it matters:",
+        "text": "Once the slave has gone free, the second injury is to a free person — so it must be paid in full to him, not to the former master."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🤲 R' Yochanan: Law vs. Mercy",
+      "subtitle": "A halakhic ruling and a personal practice in tension.",
+      "steps": [
+        { "content": "1️⃣ Halakhah: <span class='hebrew'>הַקּוֹטֵעַ יְדֵי עֶבֶד חֲבֵירוֹ</span> — master collects all five payments." },
+        { "content": "2️⃣ The amputated slave is supported <span class='hebrew'>מִן הַצְּדָקָה</span> — by communal welfare." },
+        { "content": "3️⃣ R' Acha: Israel is more obligated to support free people than slaves." },
+        { "content": "4️⃣ But: <span class='hebrew'>רִבִּי יוֹחָנָן אֲכִיל קוֹפַּד וִיהִיב לְעַבְדֵּיהּ</span> — R' Yochanan ate meat and gave to his slave." },
+        { "content": "5️⃣ Resolution: <span class='hebrew'>תַּמָּן בְּמִידַּת הַדִּין. בְּרַם הָכָא בְּמִידַּת רַחֲמִים</span> — there a rule of law, here a rule of mercy.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "R' Yochanan recited <span class='hebrew'>הֲלֹא בְּבֶטֶן עוֹשֵׂינִי עֹשֵׂהוּ</span> — 'did not the same Maker form us in the womb?' Halakhah sets a floor; piety builds higher."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "The five payments unfold case by case: ריפוי includes complications, שבת comes in two flavors, בושת requires intent, and slave-injury splits the strict law from the merciful practice.",
+    "flowSteps": [
+      { "content": "<strong>Mishnah continues</strong><br>ריפוי, שבת, בושת — and the slave cases", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Yerushalmi presses each payment for its limits", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🩹 <strong>ריפוי</strong><br>covers complications — unless patient ignored doctor", "style": "border-color:#e74c3c" },
+          { "content": "🥒 <strong>שבת</strong><br>two kinds: שומר קישואין or full wage", "style": "border-color:#4a90d9" },
+          { "content": "😳 <strong>בושת</strong><br>only intentional — וְשָׁלְחָה יָדָהּ", "style": "border-color:#9b59b6" },
+          { "content": "👤 <strong>עבדים</strong><br>law vs. mercy", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Each payment has its own contour. R' Yochanan's life shows the gap between what the law demands and what mercy invites.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "What does R' Yirmiyah ask regarding complications from a wound?",
+      "o": [
+        "Whether the מזיק must pay if the patient dies",
+        "Whether growths around the wound (<span class='hebrew'>צְמָחִין סְבִיבוֹת הַמַּכָּה</span>) keep the מזיק liable",
+        "Whether bandages count as ריפוי",
+        "Whether the doctor must be paid in advance"
+      ],
+      "c": 1,
+      "e": "R' Yirmiyah asks about <span class='hebrew'>עָלוּ בוֹ צְמָחִין סְבִיבוֹת הַמַּכָּה וְנִסְתְּרָה מַחֲמַת הַמַּכָּה מָהוּ</span> — the source וְרַפֹּא יְרַפֵּא is invoked."
+    },
+    {
+      "q": "What does R' Yitzchak mean by <span class='hebrew'>תְּרֵין שִׁבְתִּין אִינּוּן</span>?",
+      "o": [
+        "There are two days of work each week",
+        "There are two distinct frameworks of שבת — permanent (שומר קישואין) and temporary (full wage)",
+        "There are two witnesses required for שבת",
+        "Two coins must be paid for each day of שבת"
+      ],
+      "c": 1,
+      "e": "He distinguishes the case of an amputated limb (already paid) from temporary disability where one pays the actual lost wage."
+    },
+    {
+      "q": "Why does the Mishnah exempt one who fell from the roof from בושת?",
+      "o": [
+        "Because falling is unavoidable",
+        "Because <span class='hebrew'>אֵינוֹ חַיָיב עַל הַבּוֹשֶׁת עַד שֶׁיְּהֵא מִתְכַּוֵין</span> — בושת requires intent",
+        "Because there were no witnesses",
+        "Because the falling person is exempt from all damages"
+      ],
+      "c": 1,
+      "e": "The Mishnah derives intent for בושת from <span class='hebrew'>וְשָׁלְחָה יָדָהּ וְהֶחֱזִיקָה בִּמְבוּשָׁיו</span>."
+    },
+    {
+      "q": "If witnesses testify that someone blinded both of a slave's eyes simultaneously, what is the law?",
+      "o": [
+        "The slave goes free and is paid for one eye",
+        "The slave goes free and is paid for both eyes",
+        "The slave goes free, but the מזיק pays nothing",
+        "The slave does not go free"
+      ],
+      "c": 2,
+      "e": "<span class='hebrew'>סִימָּא שְׁתֵּי עֵינָיו כְּאַחַת... אֵינוֹ נוֹתֵן לוֹ כְּלוּם</span>. Sequential blinding is different — first eye frees him, second eye must be paid in full."
+    },
+    {
+      "q": "How does the Yerushalmi reconcile R' Yochanan's halakhic ruling with his personal generosity to his slave?",
+      "o": [
+        "R' Yochanan changed his mind",
+        "<span class='hebrew'>תַּמָּן בְּמִידַּת הַדִּין. בְּרַם הָכָא בְּמִידַּת רַחֲמִים</span> — strict law there, mercy here",
+        "His slave was actually a free man",
+        "He was wealthy and could afford it"
+      ],
+      "c": 1,
+      "e": "R' Yochanan recited <span class='hebrew'>הֲלֹא בְּבֶטֶן עוֹשֵׂינִי עֹשֵׂהוּ</span>. The halakhah sets a floor; the rule of mercy goes beyond it."
+    }
+  ]
+}

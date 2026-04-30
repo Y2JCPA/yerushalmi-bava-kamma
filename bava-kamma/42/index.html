@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 42 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🛡️</div>
+  <h1>Yerushalmi Bava Kamma 42</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא מב׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    📅 R' Ḥizqiah vs. R' Yose: 'two weeks' or 'one week' dispute on mishmar timing<br>
+    💰 When can a watch's claim on a sacrifice be removed from their hand?<br>
+    👨‍👦 Robbing to feed your children: heirs are exempt unless they inherited mortgageable property<br>
+    🏛️ Defining 'דבר שיש בו אחריות': real estate vs. גוף הגזילה<br>
+    👕 Robbed a tallit and gave it to another — can it be reclaimed from the second holder?<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Mishmar Disputes and Inheriting Stolen Goods</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">רִבִּי חִזְקִיָּה אָמַר. בִּשְׁתֵּי שַׁבָּתוֹת פְּלִיגִין. רִבִּי יוֹסֵי אָמַר. בְּשַׁבָּת אַחַת</div><div class="callout"><strong>The sugya:</strong> The first half of the daf parses the Mishnah's mishmar rule: R' Ḥizqiah holds the dispute is about two consecutive weeks, R' Yose holds it is about a single week. From this emerges a principle: a sacrifice given to a watch during their week stays with them, but a sacrifice given out of week — or sat on through laziness — can be removed. The daf then opens chapter 10 with the question of children who inherit stolen goods. Tannaim teach the heirs are exempt, but if they inherit a 'דבר שיש בו אחריות' they must pay. R' Yonatan, Reish Lakish, Rav, and Shmuel debate what that phrase covers — real estate, the actual stolen item, or both.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>💬 R' Ḥizqiah vs. R' Yose on the Mishmar Mishnah</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Are the parties disputing a two-week or one-week scenario?</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#4a90d9">RḤ</div><div class="speech"><span class='hebrew'>בִּשְׁתֵּי שַׁבָּתוֹת פְּלִיגִין</span> — money to Yehoiarib in Yedaiah's week, asham to Yedaiah in Yehoiarib's week: he <strong>has fulfilled</strong> his obligation.</div></div><div class="debate-line right"><div class="speaker" style="background:#9b59b6">RY</div><div class="speech"><span class='hebrew'>בְּשַׁבָּת אַחַת</span> — same scenario, but he has <strong>not fulfilled</strong> his obligation.</div></div><div class="debate-line"><div class="speaker" style="background:#c9a84c">Rebbi</div><div class="speech">Following R' Yehudah: if Yehoiarib's men offered the asham, no atonement; the money must be transferred from Yedaiah to Yehoiarib so they offer it properly.</div></div><div class="debate-line right"><div class="speaker" style="background:#e74c3c">Y</div><div class="speech"><span class='hebrew'>זֹאת אוֹמֶרֶת</span> — this implies: a sacrifice given to a watch <strong>not</strong> in their week can be removed from their hand.</div></div></div><div class="callout" style="margin-top:20px"><strong>The hidden principle:</strong> The two-week reading exposes a rule the one-week reading hides: ownership of a sacrifice depends on receiving it during one's own watch.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>📅 The Mishmar Rule — When Does a Watch Keep the Sacrifice?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The Yerushalmi extracts three sub-rules.</div>
+  <table><tr><th>Scenario</th><th>Outcome</th><th>Source phrase</th></tr><tr><td>Sacrifice received <strong>during their week</strong>, offered properly</td><td>It stays with them — cannot be removed</td><td><span class='hebrew'>אֵין מוֹצִיאִין אוֹתָן מִיָּדָן</span></td></tr><tr><td>Sacrifice received <strong>not during their week</strong></td><td>It is removed from their hand</td><td><span class='hebrew'>מוֹצִיאִין אוֹתוֹ מִיָּדָן</span></td></tr><tr><td>Received in their week but they were lazy (<span class='hebrew'>נִתְעַצְּלוּ</span>) and didn't offer</td><td>It is removed from their hand</td><td><span class='hebrew'>מוֹצִיאִין אוֹתָן מִיָּדוֹ</span></td></tr></table><div class="callout" style="margin-top:20px"><strong>Why it matters:</strong> These rules govern not only this gezel-ger case but the broader law of how priestly watches acquire and lose offerings.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>👨‍👦 Mishnah 10:1 — Robbing to Feed Children</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When are the heirs liable, and when not?</div>
+  <div class="flowchart"><div class="flow-box question"><strong>הַגּוֹזֵל וּמַאֲכִיל אֶת בָּנָיו</strong><br>Father robbed and fed it to his children</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Already consumed</div><div class="flow-box result-good"><span class='hebrew'>פְּטוּרִין מִלְּשַׁלֵּם</span><br>Heirs exempt</div></div><div class="flow-col"><div class="flow-label">Mortgageable inheritance</div><div class="flow-box result-bad"><span class='hebrew'>חַיָיבִין לְשַׁלֵּם</span><br>Heirs must pay</div></div><div class="flow-col"><div class="flow-label">Tax/customs chest</div><div class="flow-box result-partial">Don't take change<br>or charity from it</div></div><div class="flow-col"><div class="flow-label">His house / market</div><div class="flow-box result-good">May take from there<br>(unmixed money)</div></div></div><div class="flow-arrow">↓</div><div class="flow-box action">Baraita parallel: a Jew who took ribit and died — if he left a cow or a tallit to his heirs, they must return it</div><div class="flow-arrow">↓</div><div class="flow-box result-good"><span class='hebrew'>אֲזַל תְּנַיָיהּ לִגְזֵילָיָיא</span> — the same rule was extended to robbery</div></div><div class="callout" style="margin-top:20px"><strong>The structural move:</strong> The Yerushalmi pulls in a ribit baraita to anchor the gezeilah halakhah. Two transgressions, one rule about heirs.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>🏛️ What Counts as 'דבר שיש בו אחריות'?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Four Amoraic positions on which inherited assets trigger liability.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">🌍 R' Yonatan</h3><ul><li><span class='hebrew'>בְּשֶׁהִנִּיחַ לִפְנֵיהֶן קַרְקַע</span></li><li>Liability only if heirs inherit real estate</li><li>Real estate is the classic 'אחריות' asset</li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">👕 Reish Lakish</h3><ul><li><span class='hebrew'>בְשֶׁהִנִּיחַ לִפְנֵיהֶן גּוּף הַגְּזֵילָה</span></li><li>Only when the actual stolen item is in their hands</li><li>If the object exists, it must be returned</li></ul></div><div class="compare-box" style="border-top-color:#c9a84c"><h3 style="color:#c9a84c">📜 Rav</h3><ul><li><span class='hebrew'>יוֹרֵשׁ כִּמְשׁוּעְבָּד</span></li><li>An heir is like a holder of encumbered property</li><li>Loan-by-witnesses cannot collect from him</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">⚖️ Shmuel</h3><ul><li><span class='hebrew'>דְּאִיקנֵי אֵינוֹ גוֹבֶה מִמְּשׁוּעְבָּדִין</span></li><li>After-acquired collateral: not from encumbered, yes from בני חרי</li><li>Mishnah fits if heir got גוף הגזילה</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>The Yerushalmi's resolution:</strong> <span class='hebrew'>וְלֵית הִיא פְלִיגָא</span> — neither Rav nor Shmuel is contradicted by the Mishnah. Each fits a different inheritance scenario: Rav with real estate, Shmuel with the actual stolen item.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>👕 Robbed Tallit Passed to a Third Party</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Can it be reclaimed from the second holder?</div>
+  <div class="process-bar"><div class="process-step">1️⃣ Setup: <span class='hebrew'>גָּזַל טַלִּית וּנְתָנָהּ לְאַחֵר</span> — A robs a tallit, gives it to B.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ R' Eleazar in the name of R' Ḥiyya: <span class='hebrew'>מוֹצִיאִין מֵרִאשׁוֹן וְלֹא מִשֵּׁינִי</span> — recover from A, not from B.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ R' Yoḥanan in the name of R' Yannai: <span class='hebrew'>מוֹצִיאִין אַף מִן הַשֵּׁינִי</span> — recover even from B.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ R' Abba bar Mamal: even R' Ḥiyya himself agreed — he too holds מוציאין אף משיני.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ Bottom line: the stolen tallit can be reclaimed from <strong>both</strong> the original robber and the recipient.</div></div><div class="callout" style="margin-top:20px"><strong>The deeper question:</strong> This is the same machloket as inheriting גוף הגזילה — does the physical object still carry the original owner's claim once it has moved hands? The Yerushalmi leans toward: yes, it does.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 42 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Mishmar dispute</strong><br>Two weeks (R' Ḥizqiah) or one week (R' Yose)?</div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Each reading exposes a different rule about when offerings can be removed from a watch</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">👨‍👦 <strong>Robbed to feed children</strong><br>heirs exempt unless...</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">🏛️ <strong>R' Yonatan</strong><br>קרקע</div></div><div class="flow-col"><div class="flow-box" style="border-color:#c9a84c">👕 <strong>Reish Lakish</strong><br>גוף הגזילה</div></div><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">⚖️ <strong>Rav / Shmuel</strong><br>encumbered-property logic</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>The stolen tallit can be reclaimed even from the second holder — <span class='hebrew'>מוֹצִיאִין אַף מִן הַשֵּׁינִי</span>.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 42a-42b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 42a-42b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../41/">← Daf 41</a><a href="../43/">Daf 43 →</a></div>
+</body>
+</html>

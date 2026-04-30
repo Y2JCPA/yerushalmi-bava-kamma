@@ -1,0 +1,214 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 34,
+  "emoji": "🤕",
+  "topics": [
+    "🚫 Trade in forbidden items: Torah-prohibited vs. rabbinically-prohibited",
+    "🐕 R' Yose b. R' Chanina on the spiritual cost of raising a vicious dog",
+    "🕊️ Pigeon-trap distances: 30 ריס vs. 50 אמה — feeding vs. flying ranges",
+    "✋ The Mishnah's five categories: נזק, צער, ריפוי, שבת, בושת",
+    "👁️ Why עין תחת עין must mean money — and the limit case of the blind/amputee"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Five Categories of Bodily Damage",
+    "label": "The sugya:",
+    "text": "The daf finishes the perek-7 cleanup (forbidden trade, the dangerous dog, pigeon-trap distances) and then opens perek 8 — the framework of bodily damage. The famous Mishnah lists five categories: נזק, צער, ריפוי, שבת, בושת. The Yerushalmi shows how they stack (5/4/3/2/1 depending on the injury), and confronts the eye-for-an-eye verses head-on, proving that the Torah requires monetary payment, not literal mutilation.",
+    "hebrewSource": "הַחוֹבֵל בַּחֲבֵירוֹ חַיָיב עָלָיו מִשּׁוּם חֲמִשָּׁה דְבָרִים בְּנֶזֶק בְּצַעַר בְּרִיפּוּי בְּשֶׁבֶת וּבְבוֹשֶׁת"
+  },
+  "slides": [
+    {
+      "type": "comparison",
+      "title": "🚫 Trade in Forbidden Items",
+      "subtitle": "Two pesukim, two prohibitions — and a key distinction.",
+      "boxes": [
+        {
+          "title": "📜 The doubling of pesukim",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "<span class='hebrew'>טְמֵאִים הֵם לָכֶם</span>",
+            "<span class='hebrew'>וּטְמֵאֵים יִהְיוּ לָכֶם</span>",
+            "Yerushalmi: one for אכילה, one for הנאה / סחורה"
+          ]
+        },
+        {
+          "title": "✅ Rabbinically forbidden",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "<span class='hebrew'>מוּתָּר לַעֲשׂוֹת בּוֹ סְחוֹרָה</span>",
+            "Trade is permitted",
+            "Used for non-eating purposes"
+          ]
+        },
+        {
+          "title": "❌ Torah-forbidden",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<span class='hebrew'>אָסוּר לַעֲשׂוֹת בּוֹ סְחוֹרָה</span>",
+            "But: the donkey and the camel?",
+            "Answer: <span class='hebrew'>לִמְלַאכְתּוֹ הוּא גָדֵל</span> — they are raised for work, not as merchandise"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "How the rule is salvaged:",
+        "text": "The donkey and camel seem to disprove the rule, but the Yerushalmi answers that they are raised for labor, not as goods to be traded — so the principle still stands."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "🕊️🐕 Settlement Animals — Dogs and Pigeons",
+      "subtitle": "Two final perek-7 cases sharpen what 'protecting the public' means.",
+      "lines": [
+        { "speaker": "M", "side": "left", "speakerColor": "#c9a84c", "text": "<span class='hebrew'>לֹא יְגַדֵּל אָדָם אֶת הַכֶּלֶב אֶלָּא אִם כֵּן קָשׁוּר בְּשַׁלְשֶׁלֶת</span> — no dog without a chain." },
+        { "speaker": "RY", "side": "right", "speakerColor": "#e74c3c", "text": "R' Yose b. R' Chanina: about anyone who raises a vicious dog the verse says <span class='hebrew'>לַמָּס מֵרֵעֵהוּ חָסֶד</span> — he withholds kindness from his neighbor." },
+        { "speaker": "Q", "side": "left", "speakerColor": "#9b59b6", "text": "Pigeons: here we say 30 ריס from a settlement, but elsewhere only 50 אמה. Which is it?" },
+        { "speaker": "RY", "side": "right", "speakerColor": "#4a90d9", "text": "R' Yose b. R' Bun: <span class='hebrew'>לִרְעוֹת מְרֵיעָה נֹ אַמָּה. לִפְרוֹחַ פּוֹרַחַת אֲפִילוּ אַרְבָּעַת מִילִין</span> — they feed within 50 amah but fly up to four mil. The two distances measure two different ranges." }
+      ],
+      "callout": {
+        "label": "Reading principle:",
+        "text": "Apparent contradictions in shiurim usually point to two different physical realities. Feeding range and flying range need different protection radii."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📊 The Five Categories of Damage — and How They Stack",
+      "subtitle": "From the beraita: 5 / 4 / 3 / 2 / 1 — based on the type of blow.",
+      "headers": ["Type of Blow", "Categories Owed", "Specific Heads"],
+      "rows": [
+        ["Hit on the hand and severed it", "5", "<span class='hebrew'>נֶזֶק, צַעַר, רִיפּוּי, שֶׁבֶת, בּוֹשֶׁת</span>"],
+        ["Hit on the hand and it swelled", "4", "צער, ריפוי, שבת, בושת (no permanent נזק)"],
+        ["Hit on the head, swelled (visible)", "3", "צער, ריפוי, שבת"],
+        ["Place not visible", "2", "צער, ריפוי"],
+        ["With a tome (folder/papers) in his hand", "1", "<span class='hebrew'>בּוֹשֶׁת</span> only"]
+      ],
+      "callout": {
+        "label": "What the gradation shows:",
+        "text": "Each category has its own trigger. נזק requires a permanent loss of capacity (assessed as if he were sold as a slave). בושת can be triggered even without any physical contact at all — a humiliating gesture is enough."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "👁️ Why עין תחת עין Must Mean Money",
+      "subtitle": "The Yerushalmi's tight derivation from the doubling of שוגג and מזיד.",
+      "nodes": [
+        { "content": "Two verses: <span class='hebrew'>עַיִן תַּחַת עַיִן</span> + <span class='hebrew'>לֹא תָחוֹס עֵינֶךָ</span>", "class": "question" },
+        { "type": "arrow" },
+        { "content": "One refers to <strong>שוגג</strong>, one refers to <strong>מזיד</strong> — both must be stated", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Only שוגג stated?", "content": "Then I'd say מזיד actually has his hand cut off", "class": "result-bad" },
+            { "label": "Only מזיד stated?", "content": "Then I'd say שוגג pays nothing", "class": "result-bad" },
+            { "label": "Both stated", "content": "Both pay <span class='hebrew'>מָמוֹן</span>", "class": "result-good" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Limit case: a blind man who blinded another, an amputee who severed an arm — <span class='hebrew'>הֵיאַךְ זֶה מִתְקַיֵים וַעֲשִׂיתֶם לוֹ כַּאֲשֶׁר זָמַם</span>?", "class": "action" },
+        { "type": "arrow" },
+        { "content": "<span class='hebrew'>מַגִּיד שֶׁאֵינוֹ מְשַׁלֵּם אֶלָּא מָמוֹן</span> — therefore the Torah's measure must be money.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "The clincher:",
+        "text": "If the Torah's penalty were literal mutilation, it would fail in cases where the perpetrator has nothing to lose (a blind man, an amputee). The Torah's principle of measure-for-measure only works if the payment is monetary."
+      }
+    },
+    {
+      "type": "process",
+      "title": "💸 How to Assess צער and ריפוי",
+      "subtitle": "Three voices on appraising pain — and an aside on a Roman.",
+      "steps": [
+        { "content": "1️⃣ <strong>R' Ze'ira</strong>: ask the victim — how much would you pay to avoid this pain? That's the figure." },
+        { "content": "2️⃣ <strong>Mar Ukva</strong>: the Mishnah's wording is <span class='hebrew'>כַּמָּה אָדָם רוֹצֶה לִיטּוֹל</span> — how much would he take to accept this pain? The roles are flipped, but the number is similar." },
+        { "content": "3️⃣ <strong>Ben Azai</strong>: include <span class='hebrew'>נִכְאֵי מָזוֹן</span> — convalescent food. Before, lentils sufficed; now only eggs and chicken. The mazik pays the upgrade." },
+        { "content": "4️⃣ <strong>R' Yose b. Yaakov's vignette</strong>: a Roman soldier wouldn't go to battle until he had eaten back the days he'd missed. Pain restitution mirrors the body's own recovery economy." },
+        { "content": "5️⃣ <strong>ריפוי</strong> from the next Mishnah: includes complications (<span class='hebrew'>צמחים</span>) and re-injuries (<span class='hebrew'>חָיְיתָה וְנִסְתְּרָה</span>) caused by the original blow.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "The Yerushalmi treats damages as a recovery package, not a flat fee. Pain assessment, food upgrades, and ongoing medical care all flow from the original act of injury."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Perek 8 opens with the five categories of bodily damage. The Yerushalmi shows how they stack by type of blow, and proves rigorously that עין תחת עין must mean monetary compensation.",
+    "flowSteps": [
+      { "content": "<strong>Mishnah opens perek 8:</strong><br><span class='hebrew'>חֲמִשָּׁה דְבָרִים: נֶזֶק, צַעַר, רִיפּוּי, שֶׁבֶת, בּוֹשֶׁת</span>", "class": "question" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "✋ <strong>5/4/3/2/1</strong><br>Categories owed depend on the type of blow", "style": "border-color:#4a90d9" },
+          { "content": "👁️ <strong>עין תחת עין</strong><br>Must mean מָמוֹן (the blind/amputee proof)", "style": "border-color:#9b59b6" },
+          { "content": "💸 <strong>Assessing צער</strong><br>Pay-to-avoid OR receive-to-accept", "style": "border-color:#e74c3c" },
+          { "content": "🩺 <strong>ריפוי</strong><br>Includes complications and relapses", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "Earlier on the daf: forbidden trade, vicious dogs, pigeon-trap distances — communal-protection halakhot.", "class": "action" },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Bodily damage compensation is a layered, monetary package — calibrated to the injury's enduring effects on body, livelihood, and dignity.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Why does the Yerushalmi say the Torah doubled <span class='hebrew'>טְמֵאִים הֵם לָכֶם</span> with <span class='hebrew'>וּטְמֵאֵים יִהְיוּ לָכֶם</span>?",
+      "o": [
+        "To repeat for emphasis",
+        "One forbids eating, one forbids הנאה (and so trade)",
+        "One refers to live animals, one to carcasses",
+        "To exclude rabbinically-forbidden items"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>אֶחָד אִיסּוּר אֲכִילָה וְאֶחָד אִיסּוּר הֲנָיָיה</span>. Anything Torah-forbidden is also forbidden for trade; rabbinic prohibitions allow trade. The donkey/camel objection is answered by 'they are raised for work, not as merchandise.'"
+    },
+    {
+      "q": "According to R' Yose b. R' Bun, why does one Mishnah say 30 ריס for pigeon traps and another 50 אמה?",
+      "o": [
+        "The numbers are alternative texts",
+        "50 אמה is the feeding range, 30 ריס (or 4 mil) is the flight range",
+        "30 ריס applies to Eretz Yisrael only",
+        "The 50 אמה refers to the dovecote itself"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>לִרְעוֹת מְרֵיעָה נֹ אַמָּה. לִפְרוֹחַ פּוֹרַחַת אֲפִילוּ אַרְבָּעַת מִילִין</span> — feeding range vs. flight range explain the two figures."
+    },
+    {
+      "q": "If someone hits another on the head and it swells visibly, how many categories of payment apply?",
+      "o": [
+        "Five",
+        "Four",
+        "Three: צער, ריפוי, שבת",
+        "One: בושת"
+      ],
+      "c": 2,
+      "e": "Per the beraita: head + swelling visible = 3 (no נזק because there's no permanent loss of capacity assessed כעבד נמכר; no בושת unless there's an embarrassment context). Five only when a limb is severed."
+    },
+    {
+      "q": "What is the Yerushalmi's strongest proof that <span class='hebrew'>עַיִן תַּחַת עַיִן</span> means money?",
+      "o": [
+        "A gezerah shavah from <span class='hebrew'>שבת</span>",
+        "The case of a blind man who blinds another, or an amputee who severs an arm — literal mutilation can't be applied uniformly",
+        "Because the Torah always means money",
+        "Because the Sanhedrin abolished bodily punishments"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>אִם הָיָה סוּמֶא וְסִימָּא אֵת עֵינוֹ... הֵיאַךְ זֶה מִתְקַיֵים וַעֲשִׂיתֶם לוֹ כַּאֲשֶׁר זָמַם</span>. The principle of measure-for-measure breaks down unless the payment is monetary — <span class='hebrew'>מַגִּיד שֶׁאֵינוֹ מְשַׁלֵּם אֶלָּא מָמוֹן</span>."
+    },
+    {
+      "q": "Ben Azai's <span class='hebrew'>נִכְאֵי מָזוֹן</span> refers to what?",
+      "o": [
+        "A fine for delayed payment",
+        "Convalescent food upgrades — e.g., previously lentils sufficed, now only eggs and chicken",
+        "A discount for partial healing",
+        "Compensation for missed work only"
+      ],
+      "c": 1,
+      "e": "Ben Azai adds that the mazik pays for the dietary upgrades the victim now needs — <span class='hebrew'>בְּקַדְמִיתָא הֲוִינָא אֲכִיל טְלוֹפְחִין וְיָרָק. וּכְדוֹן לֵית בִּי מֵיכַל אֶלָּא בֵּיעִין וְתַרְנוֹגַלִּין</span>."
+    }
+  ]
+}

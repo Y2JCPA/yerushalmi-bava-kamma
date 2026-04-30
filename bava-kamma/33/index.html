@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 33 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🐃</div>
+  <h1>Yerushalmi Bava Kamma 33</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא לג׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🐂 Slaughtering a black ox in the forest as a חזקה of theft<br>
+    🔪 Differences between טובח and מוכר — Shabbat liability<br>
+    🧩 Selling 'except for' a part: when does ד״ה or ארבעה וחמישה apply<br>
+    🚪 Drawing the animal out vs. lifting it — kinyan and liability for ד׳ וה׳<br>
+    🐑 Bans on raising small livestock, chickens, pigs, and dogs in Eretz Yisrael<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Stolen Sales, Sneaky Slaughters, and the Settlement</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">אָמַר רִבִּי לָעְזָר. רָאוּ אוֹתוֹ שׁוֹחֵט שׁוֹר שָׁחוֹר בַּיַּעַר חֲזָקָה גָּנוּב הוּא</div><div class="callout"><strong>The sugya:</strong> The daf closes out perek 7 of Bava Kamma. It refines the Mishnah's rules on ארבעה וחמישה: what counts as a complete sale, what counts as a complete slaughter, and exactly when the thief's act becomes binding. From there the Yerushalmi turns to the very different — but related — world of where animals may be raised: the bans on small livestock, chickens, pigs, and unchained dogs in Eretz Yisrael, and where one may set pigeon traps.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>🌲 The Black Ox in the Forest</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Lazar's chazakah of theft and the Yerushalmi's challenge.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#4a90d9">RL</div><div class="speech"><span class='hebrew'>רָאוּ אוֹתוֹ שׁוֹחֵט שׁוֹר שָׁחוֹר בַּיַּעַר חֲזָקָה גָּנוּב הוּא</span> — slaughtering a black ox in the forest is presumptive evidence of theft.</div></div><div class="debate-line right"><div class="speaker" style="background:#9b59b6">Q</div><div class="speech">But maybe the ox was already lying down? A passerby could simply slaughter an animal he found resting.</div></div><div class="debate-line"><div class="speaker" style="background:#c9a84c">A</div><div class="speech"><span class='hebrew'>תִּיפְתָּר בְּשֶׁרָאוּהוּ מוֹשֵׁךְ</span> — the ruling speaks of a case where they saw him dragging it. Then the chazakah of theft holds.</div></div></div><div class="callout" style="margin-top:20px"><strong>Reading the move:</strong> The Yerushalmi tightens R' Lazar's principle by adding a behavioral fingerprint: a thief drags the animal out of sight before slaughtering. The pasture context plus the dragging is what triggers the chazakah.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>🔪 Slaughterer vs. Seller</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Each act has a feature the other lacks.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">🔪 הטובח</h3><ul><li><span class='hebrew'>הַטּוֹבֵחַ בַּשַׁבָּת חַיָיב</span></li><li>Slaughtering is a melachah on Shabbat</li><li>Carries criminal liability</li></ul></div><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">💰 המוכר</h3><ul><li><span class='hebrew'>וְהַמּוֹכֵר בַּשַׁבָּת פָּטוּר</span></li><li>Sale is not in itself a melachah</li><li>But still completes the kinyan for ד׳ וה׳</li></ul></div><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">🌱 R' Yannai's edge case</h3><ul><li>‘<span class='hebrew'>תְּלוֹשׁ מִן הַקַּרְקַע הַזֶּה וּקְנֵה אוֹתוֹ</span>’</li><li>Sale + tearing from the ground</li><li>R' Yose b. R' Bun: it's the tearing, not the sale, that creates the criminal liability</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>Why the comparison:</strong> The Yerushalmi is mapping the unique halakhic profile of each act so neither can simply be derived from the other — the same logical move it made earlier between שור and בור.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>📊 Selling 'Except For…' — Three Tannaitic Positions</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When does an incomplete sale still trigger ארבעה וחמישה?</div>
+  <table><tr><th>Excluded part</th><th>Tanna kamma</th><th>R' Lazar b. R' Shimon</th><th>Rebbi</th></tr><tr><td><span class='hebrew'>חוּץ מִיָּדָהּ</span> / רגלה</td><td>ד׳ וה׳</td><td>ד׳ וה׳</td><td>ד׳ וה׳ (vital organ involved)</td></tr><tr><td><span class='hebrew'>חוּץ מִקַּרְנָהּ</span></td><td>ד׳ וה׳</td><td>כפל only</td><td>פטור (non-vital organ)</td></tr><tr><td><span class='hebrew'>חוּץ מִגִּיזָתָהּ</span></td><td>ד׳ וה׳</td><td>ד׳ וה׳</td><td>פטור (non-vital)</td></tr><tr><td>Vital organ excluded</td><td>ד׳ וה׳</td><td>—</td><td><span class='hebrew'>חוּץ מִדָּבָר שֶׁהַנְשָׁמָה תְלוּיָה בּוֹ — ד׳ וה׳</span></td></tr></table><div class="callout" style="margin-top:20px"><strong>R' Ze'ira's question:</strong> <span class='hebrew'>מָכַר חֶצְיָיהּ לָזֶה וְחֶצְיָיהּ לָזֶה מָהוּ?</span> — what about selling halves to two different people? The Yerushalmi answers from the beraita: any retained share normally still leaves the seller liable for ד׳ וה׳, unless Rebbi's vital-organ test fails.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>🚪 When Does the Thief Become Liable for ד׳ וה׳?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The Mishnah of <span class='hebrew'>הָיָה מוֹשְׁכוֹ וְיוֹצֵא</span>.</div>
+  <div class="flowchart"><div class="flow-box question">Thief is moving the stolen animal — and it dies en route</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Drawing it (still on owner's property)</div><div class="flow-box result-bad"><span class='hebrew'>פָּטוּר</span><br>Kinyan not yet complete</div></div><div class="flow-col"><div class="flow-label">Lifted it (הגביהו)</div><div class="flow-box result-good"><span class='hebrew'>חַיָיב</span><br>הגבהה is universal kinyan</div></div><div class="flow-col"><div class="flow-label">Got it off the property</div><div class="flow-box result-good"><span class='hebrew'>חַיָיב</span><br>Removal completes the theft</div></div></div><div class="flow-arrow">↓</div><div class="flow-box action">R' Mana's question: does <span class='hebrew'>פָּטוּר</span> here mean exempt from ד׳ וה׳ — or exempt even from the basic theft itself?</div><div class="flow-arrow">↓</div><div class="flow-box result-good">The Mishnah reaches the same result whether the thief acts personally or hands it to a שומר / לוקח / שואל — the kinyan-act is what counts.</div></div><div class="callout" style="margin-top:20px"><strong>Key insight:</strong> ד׳ וה׳ is gated by a completed kinyan of theft. הגבהה or removal seal it; mere drawing on the owner's premises does not.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🐑 The Final Mishnah: Where Animals May Be Raised</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">A sharp pivot from theft into community-protective halakhot.</div>
+  <div class="process-bar"><div class="process-step">1️⃣ <strong>בהמה דקה</strong>: forbidden in Eretz Yisrael — but permitted in Syria and in <span class='hebrew'>מדברות שבארץ ישראל</span> (R' Abba: e.g. Mahir, 16×16 mil).</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ <strong>תרנגולין in Yerushalayim</strong>: forbidden because of the קדשים they would defile by digging up impure things.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ <strong>Cohanim anywhere in EY</strong>: forbidden, because of the טהרות they handle.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ <strong>חזירים</strong>: a Jew may not raise pigs anywhere — full stop.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ <strong>כלב</strong>: only permitted if <span class='hebrew'>קָשׁוּר בַּשַׁלְשֶׁלֶת</span>; <strong>נשבים ליונים</strong> only 30 ris from any settlement.</div></div><div class="callout" style="margin-top:20px"><strong>R' Yehoshua b. Levi's lens:</strong> He ties the chicken ban to <span class='hebrew'>יְרוּשָׁלַ͏ִם הַבְּנוּיָה — עִיר שֶׁמְחַבֶּרֶת יִשְׂרָאֵל זֶה לָזֶה</span>. Yerushalayim is a city built around shared sanctity, so its rules protect that fabric.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 33 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Open question:</strong><br>When does a thief's act become a complete <span class='hebrew'>טביחה ומכירה</span>?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🌲 <strong>Public chazakah</strong><br>Dragging an ox in the forest = stolen</div></div><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">🔪 <strong>Slaughter vs. sale</strong><br>Different Shabbat profiles</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">🧩 <strong>'חוץ מ…' sales</strong><br>Vital organ test (Rebbi)</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🚪 <strong>הגבהה / removal</strong><br>Drawing alone is not enough</div></div></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Pivot: Mishnah of livestock bans, chickens in Yerushalayim, pigs anywhere, dogs only on a chain.</div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Liability follows completed acts; community halakhot guard the agricultural and sacral fabric of Eretz Yisrael.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 33a-33b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 33a-33b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../32/">← Daf 32</a><a href="../34/">Daf 34 →</a></div>
+</body>
+</html>

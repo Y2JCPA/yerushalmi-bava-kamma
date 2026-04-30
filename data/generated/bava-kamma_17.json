@@ -1,0 +1,215 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 17,
+  "emoji": "🐂",
+  "topics": [
+    "⚖️ The split list: liable for his ox, exempt for himself — and vice versa",
+    "👨‍👩‍👦 Striking parents: bull liable, person exempt (capital crime)",
+    "🔥 Setting fire on Shabbat: <span class='hebrew'>נִידּוֹן בְּנַפְשׁוֹ</span> exempts from money",
+    "💸 Ben Pedaya: <span class='hebrew'>כָּל הַמְקַלְקְלִין פְּטוּרִין</span> — destroyers are exempt except מבעיר and one who wounds",
+    "🐂 Serial gorer: the last victim is paid first (<span class='hebrew'>הָאַחֲרוֹן אַחֲרוֹן נִשְׂכָּר</span>)"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Asymmetry Between Person and Ox",
+    "label": "The sugya:",
+    "text": "The Mishnah teases out cases where a person and his ox produce opposite liabilities — sometimes the ox triggers payment while the owner himself is exempt, and sometimes the reverse. The unifying principle behind the exemption pattern is <span class='hebrew'>קַם לֵיהּ בְּדְרַבָּה מִינֵּיהּ</span> — when the act carries a capital penalty, monetary liability falls away. Ben Pedaya then frames the broader principle: spoilers (<span class='hebrew'>מְקַלְקְלִין</span>) on Shabbat are exempt except the מבעיר and the one who wounds. The chapter then turns to the serial gorer.",
+    "hebrewSource": "יֵשׁ חַיָיב עַל מַעֲשֵׂה שׁוֹרוֹ וּפָטוּר עַל מַעֲשֵׂה עַצְמוֹ. פָּטוּר עַל מַעֲשֵׂה שׁוֹרוֹ וּחַיָיב עַל מַעֲשֵׂה עַצְמוֹ"
+  },
+  "slides": [
+    {
+      "type": "table",
+      "title": "⚖️ Owner Liable / Owner Exempt — The Mishnah's Inversions",
+      "subtitle": "Five paired scenarios revealing the asymmetry.",
+      "headers": ["Action", "Ox does it", "Person does it"],
+      "rows": [
+        ["Shames (<span class='hebrew'>בִּיֵּישׁ</span>)", "Exempt — no בושת for animal damage", "Liable — full בושת"],
+        ["Blinds slave's eye / knocks tooth", "Exempt — no manumission via ox", "Liable — slave goes free (Ex. 21:26-27)"],
+        ["Wounds father/mother", "Liable — money damages", "Exempt — capital offense subsumes the money"],
+        ["Burns stack on Shabbat", "Liable — money damages", "Exempt — <span class='hebrew'>נִידּוֹן בְּנַפְשׁוֹ</span>, capital"],
+        ["Underlying logic", "Pure tort framework", "<span class='hebrew'>קַם לֵיהּ בְּדְרַבָּה מִינֵּיהּ</span> blocks the money"]
+      ],
+      "callout": {
+        "label": "The pattern:",
+        "text": "An animal cannot be tried capitally as a moral agent in these cases. So pure damages still apply. A human, however, when the same act carries death or other supreme penalty, escapes the lesser monetary obligation."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🔥 Why Person Is Exempt Where Ox Is Liable",
+      "subtitle": "Three different exemption mechanisms working in parallel.",
+      "boxes": [
+        {
+          "title": "👨‍👩‍👦 Striking Parent",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "<span class='hebrew'>וּמַכֵּה אָבִיו וְאִמּוֹ מוֹת יוּמָת</span>",
+            "Capital crime if blood is drawn",
+            "Money obligation absorbed by death penalty",
+            "Bull, not subject to that law, just pays"
+          ]
+        },
+        {
+          "title": "🔥 Burning on Shabbat",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "Hav'arah is one of 39 melakhot",
+            "Capital (with witnesses & warning)",
+            "<span class='hebrew'>פָּטוּר מִפְּנֵי שֶׁנִּידּוֹן בְּנַפְשׁוֹ</span>",
+            "Bull has no Shabbat liability → still pays"
+          ]
+        },
+        {
+          "title": "👁️ Slave's Eye / Tooth",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Person liable: slave goes free",
+            "But this is the Torah's special remedy",
+            "Bull cannot trigger manumission",
+            "So bull is exempt, owner-by-self is liable"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Sharp insight:",
+        "text": "The Mishnah's mirror-cases are not arbitrary curiosities — they map the precise gap between human moral agency (capital, manumission) and the bull as mere mazik."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 Ben Pedaya — Spoilers Are Exempt",
+      "subtitle": "Generalizing the Shabbat exemption.",
+      "lines": [
+        { "speaker": "Ben P", "side": "left", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>כָּל הַמְקַלְקְלִין פְּטוּרִין חוּץ מִן הַמַּבְעִיר וְהָעוֹשֶׂה חַבּוּרָה</span> — destructive Shabbat acts don't generate Shabbat liability, except kindling fire and wounding." },
+        { "speaker": "RY", "side": "right", "speakerColor": "#9b59b6", "text": "R' Yochanan refines: the מבעיר is liable only <span class='hebrew'>עַד שֶׁיְּהֵא צָרִיךְ לָאֶפֶר</span> — when he needs the ash. The wounder is liable only when he needs the blood." },
+        { "speaker": "Q", "side": "left", "speakerColor": "#c9a84c", "text": "Difficulty: but the Mishnah said the bull who burned the stack is liable! Did it need the ash?" },
+        { "speaker": "A", "side": "right", "speakerColor": "#e74c3c", "text": "<span class='hebrew'>שׁוֹרוֹ צָרִיךְ אֶת הָאֶפֶר</span> — yes, his bull needs the ash. The Mishnah's case fits the requirement, so the owner pays for tort even though the burning occurred on Shabbat." }
+      ],
+      "callout": {
+        "label": "The chain:",
+        "text": "Shabbat capital liability requires a constructive act — <span class='hebrew'>מְלֶאכֶת מַחְשֶׁבֶת</span>. Pure destruction is exempt unless it serves a productive end (ash, blood)."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🐂 The Serial Gorer — R' Meir's Rule",
+      "subtitle": "How a bull's value gets distributed across multiple victims.",
+      "nodes": [
+        { "content": "<strong>One bull gores 4 or 5 bulls in sequence</strong>", "class": "question" },
+        { "type": "arrow" },
+        { "content": "<span class='hebrew'>יְשַׁלֵּם לָאַחֲרוֹן שֶׁבָּהֶן</span> — pay the last victim first.", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Leftover after last", "content": "Reverts to penultimate", "class": "result-partial" },
+            { "label": "Still leftover", "content": "Reverts to the one before that", "class": "result-partial" },
+            { "label": "R' Meir's rule", "content": "<span class='hebrew'>הָאַחֲרוֹן אַחֲרוֹן נִשְׂכָּר</span><br>last victim wins", "class": "result-good" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "<strong>R' Shimon disputes:</strong> with two equal bulls and worthless carcass, each owner takes a מנה — value-based split, not seniority.", "class": "action" }
+      ],
+      "callout": {
+        "label": "Logic of seniority:",
+        "text": "By the time the bull gored the second victim, the first victim already had a lien on the bull's value. R' Meir reverses the intuition: each new attack creates a fresh lien, and the most recent claim collects from a now-encumbered asset."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🧠 Putting the Daf Together",
+      "subtitle": "Why the Mishnah's mirror-list opens onto Ben Pedaya and the serial gorer.",
+      "steps": [
+        { "content": "1️⃣ Mishnah lists asymmetric liability cases: ox vs. person." },
+        { "content": "2️⃣ Underlying engine: capital/special penalties exempt the human from money." },
+        { "content": "3️⃣ Shabbat case prompts Ben Pedaya's broader principle on מקלקלין." },
+        { "content": "4️⃣ R' Yochanan refines: מבעיר and חובל only count if there's a constructive purpose." },
+        { "content": "5️⃣ The chapter pivots to multi-victim damages → R' Meir's <span class='hebrew'>הָאַחֲרוֹן אַחֲרוֹן נִשְׂכָּר</span>.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "The daf maps the seams in liability — between agent and animal, between destruction and creation, between earlier and later claimants on the same damaged asset."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "An animal owner pays simple tort whenever his bull damages. A human pays only when no greater penalty (capital, manumission, Shabbat melakhah) absorbs the act. When a single bull damages many, the last victim collects first.",
+    "flowSteps": [
+      { "content": "<strong>Damage occurs</strong><br>by ox or by person", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Is the actor a person, and does the act carry a greater penalty?", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🐂 <strong>Ox damaged</strong><br>simple tort always applies", "style": "border-color:#4a90d9" },
+          { "content": "💀 <strong>Person, capital act</strong><br>exempt from money", "style": "border-color:#e74c3c" },
+          { "content": "🛠️ <strong>מקלקל without need</strong><br>exempt", "style": "border-color:#9b59b6" },
+          { "content": "🐂🐂 <strong>Serial gorer</strong><br><span class='hebrew'>הָאַחֲרוֹן אַחֲרוֹן נִשְׂכָּר</span>", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Tort liability is structural — it tracks the agent, the act, and the priority of claims on the damaging asset.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Why is the owner exempt when his ox shames someone?",
+      "o": [
+        "Because the ox didn't mean it",
+        "Because there is no <span class='hebrew'>בּוֹשֶׁת</span> for damage caused by an animal",
+        "Because shaming is not a real damage",
+        "Because the Mishnah forgot that case"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>שׁוֹרוֹ שֶׁבִּיֵּישׁ פָּטוּר</span> — the תשלומי בושת payment requires a human agent."
+    },
+    {
+      "q": "Why is a person exempt for setting fire to a stack on Shabbat?",
+      "o": [
+        "Because fire damage is always exempt",
+        "<span class='hebrew'>מִפְּנֵי שֶׁנִּידּוֹן בְּנַפְשׁוֹ</span> — the act is capital, so the money obligation is absorbed",
+        "Because Shabbat overrides damages",
+        "Because he didn't intend the fire"
+      ],
+      "c": 1,
+      "e": "Capital liability blocks monetary liability — <span class='hebrew'>קַם לֵיהּ בְּדְרַבָּה מִינֵּיהּ</span>."
+    },
+    {
+      "q": "What is Ben Pedaya's general principle about destruction on Shabbat?",
+      "o": [
+        "All destruction is liable",
+        "<span class='hebrew'>כָּל הַמְקַלְקְלִין פְּטוּרִין חוּץ מִן הַמַּבְעִיר וְהָעוֹשֶׂה חַבּוּרָה</span>",
+        "Only burning is exempt",
+        "Wounding is always exempt"
+      ],
+      "c": 1,
+      "e": "Pure destruction does not constitute melakhah, except kindling and wounding — both of which the Yerushalmi requires to have a productive purpose."
+    },
+    {
+      "q": "How does R' Yochanan resolve the Mishnah's bull-burning-stack case with his rule?",
+      "o": [
+        "He rejects the Mishnah",
+        "He says fire damage is special",
+        "<span class='hebrew'>שׁוֹרוֹ צָרִיךְ אֶת הָאֶפֶר</span> — the bull's owner needed the ash, satisfying R' Yochanan's condition",
+        "He says the case isn't really on Shabbat"
+      ],
+      "c": 2,
+      "e": "R' Yochanan's stipulation that the מבעיר must need the ash is met because the bull's owner did need it."
+    },
+    {
+      "q": "What is R' Meir's rule for a bull that gores multiple bulls in sequence?",
+      "o": [
+        "Pay all victims equally",
+        "<span class='hebrew'>הָאַחֲרוֹן אַחֲרוֹן נִשְׂכָּר</span> — the last victim collects first, then leftovers revert backward",
+        "Only the first victim is paid",
+        "All victims must sue together in one trial"
+      ],
+      "c": 1,
+      "e": "R' Meir reads the Torah as giving the most recent victim priority, with surplus reverting to earlier victims."
+    }
+  ]
+}

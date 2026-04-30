@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 18 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🐂</div>
+  <h1>Yerushalmi Bava Kamma 18</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא יח׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🐂 שור שנגח ארבעה וחמשה שוורים — how the gored owners get paid<br>
+    ⚖️ R' Meir vs. R' Yehudah: did the נזק acquire the goring ox or only get a pledge?<br>
+    💍 הקדש, הוקיר, שכר, השביח — four practical tests of the dispute<br>
+    👥 R' Yehudah vs. R' Shimon: 'קנה' for living and dead, or only the dead<br>
+    💰 שלשה שהטילו לכיס — how partners with unequal investments split gains and losses<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Who Owns the Goring Ox?</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">שׁוֹר שֶׁנָּגַח אַרְבָּעָה וַחֲמִשָּׁה שְׁוָורִין... שְׁמִירַת נְזָקִין כִּשְׁמִירַת קִנְיָין</div><div class="callout"><strong>The sugya:</strong> The Mishnah pictures a tam ox that gores several other oxen and is now owed to many victims. R' Yehudah and R' Meir disagree about whether the damaged party becomes a partial owner of the goring ox or only holds it as a pledge. The Yerushalmi runs the dispute through four practical scenarios — dedication, price-rise, rental, and improvement — to show what is at stake. The sugya then shifts to a related partnership Mishnah: when three put unequal amounts into a common purse, how do they share gains and losses?</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>💬 R' Meir's Two-Sided Attack</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Yannai sets up R' Meir's dilemma against the goring ox's owner.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#c9a84c">RY</div><div class="speech">R' Yannai: <span class='hebrew'>בָּא עָלָיו רִבִּי מֵאִיר מִשְּׁנֵי צְדָדִין</span> — R' Meir comes at him from two sides.</div></div><div class="debate-line right"><div class="speaker" style="background:#4a90d9">RM</div><div class="speech"><span class='hebrew'>מַה נַפְשָׁךְ</span>: if the ox is yours — give it to me as payment! If it isn't yours — give it to me so I can collect from it!</div></div><div class="debate-line"><div class="speaker" style="background:#9b59b6">Q</div><div class="speech">But didn't R' Eleazar say <span class='hebrew'>שְׁמִירַת נְזָקִין כִּשְׁמִירַת קִנְיָין</span> — guarding for damages is like guarding ownership?</div></div><div class="debate-line right"><div class="speaker" style="background:#e74c3c">RJ</div><div class="speech">R' Yudan: it was handed over to him for his damages, but it remains <span class='hebrew'>כְּמַשְׁכּוֹן בְּיָדוֹ</span> — like a pledge in his hand, not full ownership.</div></div></div><div class="callout" style="margin-top:20px"><strong>The fault line:</strong> Is the goring ox transferred to the נזק as payment (R' Meir: shared ownership) or held only as collateral until value is recovered (R' Yehudah: pledge)?</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>📐 Four Test Cases — R' Yehudah vs. R' Meir</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Yochanan: the dispute plays out in four real-life scenarios.</div>
+  <table><tr><th>Scenario</th><th>R' Yehudah (pledge)</th><th>R' Meir (joint ownership)</th></tr><tr><td><span class='hebrew'>הֶקְדֵּשׁ</span> — dedicating it</td><td>First (original) owner alone may dedicate</td><td>Both must dedicate together</td></tr><tr><td><span class='hebrew'>הוֹקִיר</span> — went up in value</td><td>Increase belongs to the first</td><td>Increase belongs to the second (the נזק)</td></tr><tr><td><span class='hebrew'>עָשָׂה שָׂכָר</span> — rented it out</td><td>Rent goes to the first</td><td>Rent goes to both</td></tr><tr><td><span class='hebrew'>הִשְׁבִּיחַ</span> — improved</td><td>Improvement to the first</td><td>Improvement to both</td></tr></table><div class="callout" style="margin-top:20px"><strong>Why this matters:</strong> R' Yochanan does not abstractly resolve the dispute. He shows us what hangs on it: every benefit and burden of the ox sorts itself differently depending on whether the נזק is a partner or just a pledge-holder.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>🤝 R' Yehudah and R' Shimon — Same Word, Different Scope</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Yochanan's second observation: both Tannaim use 'קנה', but mean different things.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">🟢 R' Yehudah</h3><ul><li><span class='hebrew'>קָנָה</span> — he acquired</li><li>Acquired both <strong>the living</strong> and <strong>the dead</strong></li><li>Strong form: he is a real partner in the ox itself</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">🔴 R' Shimon</h3><ul><li><span class='hebrew'>קָנָה</span> — he acquired</li><li>Acquired only <strong>the dead</strong> (the carcass of the gored)</li><li>Weaker form: not a partner in the living goring ox</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>R' Yochanan's nuance:</strong> <span class='hebrew'>שְׁנֵיהֶן אָמְרוּ דָבָר אֶחָד</span> — they agree on the word but not its reach. Halakhic vocabulary is precise: the same verb can mean very different things in different mouths.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>💼 Three Partners Throw Into a Purse</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The sugya turns to a parallel partnership case.</div>
+  <div class="flowchart"><div class="flow-box question"><strong>שלשה שהטילו לכיס</strong><br>Three put different amounts into a shared purse</div><div class="flow-arrow">↓</div><div class="flow-box action">They gain or lose — how do they split?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">מרגלית (precious stone)</div><div class="flow-box result-good">R' Bun: split <strong>by investment</strong> — without your 10 dinarim it could not be bought</div></div><div class="flow-col"><div class="flow-label">Standard goods</div><div class="flow-box result-partial">Default: pool and split <strong>proportionally</strong></div></div><div class="flow-col"><div class="flow-label">R' Eleazar's challenge</div><div class="flow-box result-bad">Even ordinary goods → split <strong>evenly</strong>: small inventory turns over fast</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good">R' Eleazar's market reality: <span class='hebrew'>אֲנָא הֲפַךְ וּמִתְהַפֵּךְ בְּדִידִי וּמַטִּי בָךְ</span> — I turn mine over and catch up to you</div></div><div class="callout" style="margin-top:20px"><strong>Conceptual link:</strong> Just as the goring-ox sugya asks 'how does the נזק's claim translate into ownership?', this Mishnah asks 'how does each partner's investment translate into a share of the profit?' Both turn on what is being divided — capital, labor, or risk.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🌍 The Rome Hypothetical</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Eleazar pushes the case across the Mediterranean.</div>
+  <div class="process-bar"><div class="process-step">1️⃣ Two partners: one with much merchandise, one with little.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ Both have stock <strong>in the same market</strong> — small partner turns over goods quickly and catches up.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ But what if one partner's goods are <strong>in Rome</strong>?</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ Small partner: <span class='hebrew'>עַד דְּאַתְּ סְלִיק לְרוֹמֵי אֲנַא הֲפַךְ וּמִתְהַפֵּךְ בְּדִידִי</span> — by the time you travel to Rome, I've already flipped my stock.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ Even with absent inventory, the local partner has earned an equal share through speed of trade.</div></div><div class="callout" style="margin-top:20px"><strong>The principle:</strong> Capital is not the only kind of contribution. Time, motion, and the ability to keep money working in the market are themselves a form of investment that the halakhah recognizes.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 18 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Mishnah</strong><br><span class='hebrew'>שׁוֹר שֶׁנָּגַח אַרְבָּעָה וַחֲמִשָּׁה שְׁוָורִין</span></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">R' Meir attacks from two sides — yours or his?<br>R' Yudan: it is only a pledge</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">💍 <strong>הקדש</strong><br>who can dedicate</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">📈 <strong>הוקיר</strong><br>who keeps the rise</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">💰 <strong>שכר/השביח</strong><br>rent and improvement</div></div><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">💼 <strong>שלשה שהטילו לכיס</strong><br>partner shares</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Whether you call the נזק's hold on the ox <em>ownership</em> or <em>pledge</em> reshapes every consequence — and parallel partnership rules show that 'equity' depends on what you are dividing.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 18a-18b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 18a-18b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../17/">← Daf 17</a><a href="../19/">Daf 19 →</a></div>
+</body>
+</html>

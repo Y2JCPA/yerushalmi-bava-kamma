@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 28 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🔥</div>
+  <h1>Yerushalmi Bava Kamma 28</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא כח׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    📐 Estimating field damage — bet kor too big, bet kav too small<br>
+    🍇 R' Akiva's refinements: ripe vs. unripe, trees vs. produce<br>
+    🌾 Mishnah 6:3 — stacking sheaves with vs. without permission<br>
+    🔥 Mishnah 6:4 — sending fire through a deaf-mute / minor<br>
+    💨 Wind as the fire-spreader — pikadon vs. force majeure<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Damage Math, Sheaves, and Fire</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">אֵין שָׁמִין בֵּית כּוֹר מִפְּנֵי שֶׁהוּא פוֹגֵם. וְלֹא בֵית קַב מִפְּנֵי שֶׁמַּשְׁבִּיחַ. אֶלָּא שָׁמִין בֵּית סְאָה</div><div class="callout"><strong>The sugya:</strong> The daf finishes the grazing-damages math (why you don't measure by an unfair-large or unfair-small parcel), surveys R' Akiva's adjustments for unripe vs. mature produce, and pivots to Mishnah 6:3's neat reversal: stack sheaves <em>without</em> permission and the field-owner's animal eats them — you swallow the loss; stack <em>with</em> permission and the owner has to pay if his animal damages them. Then comes perek 6:4 — fire. The Mishnah builds a chain of liability through deaf-mutes, agents, woodcarriers, and finally the wind itself.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>📐 Why a Bet Se'ah Is the Right Yardstick</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The Tanna's middle path between fairness extremes.</div>
+  <table><tr><th>Parcel Size</th><th>Problem</th><th>Verdict</th></tr><tr><td><span class='hebrew'>בֵּית כּוֹר</span></td><td>Too big — averages out the damage, victim under-compensated</td><td><span class='cross'>✗</span> פוגם</td></tr><tr><td><span class='hebrew'>בֵּית קַב</span></td><td>Too small — local damage looks worse than it is</td><td><span class='cross'>✗</span> משביח</td></tr><tr><td><span class='hebrew'>בֵּית סְאָה</span></td><td>Right balance — represents the surrounding field fairly</td><td><span class='check'>✓</span> שָׁמִין</td></tr></table><div class="callout" style="margin-top:20px"><strong>Yannai variations:</strong> Beit Yannai: <span class='hebrew'>שָׁמִין תַּרְקָב בְּשִׁשִׁים תַּרְקַבִּים</span> — three-kav unit in 60 of them. R' Yose ben Chanina: <span class='hebrew'>קֶלַח בְּשִׁשִּׁים קְלָחִים</span> — even one stalk in 60. Different scales of the same averaging principle.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>🍇 R' Akiva's Tiers — Pricing the Damage</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Different produce stages get different valuations.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">🌱 Shoots / לולבי גפנים</h3><ul><li>Ate fig shoots or vine shoots</li><li>Estimated by current shoot value</li><li>R' Yehudah: this is the bet-se'ah case</li></ul></div><div class="compare-box" style="border-top-color:#f39c12"><h3 style="color:#f39c12">🍇 Unripe / בוסר ופגין</h3><ul><li>Ate unripe fruit</li><li>Estimated as <strong>fully ripe</strong></li><li>Loss is the harvest the owner would have had</li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">🌳 Mature trees / נטיעות</h3><ul><li>R' Yehudah b/n R' Akiva: damage by saplings</li><li><span class='hebrew'>נְטִיעוֹת שָׁמִין לוֹ נְטִיעוֹת</span></li><li>Trees valued by tree, not by produce</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>Sharper rule:</strong> R' Shimon ben Yehudah: <span class='hebrew'>תְּבוּאָה שֶׁלֹּא הֵבִיאָה שְׁלִישׁ נִידּוֹנֶת כִּנְטִיעוֹת</span> — grain that hasn't reached one-third growth is treated like saplings, not produce.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>🌾 The Sheaves Mishnah — Permission Reverses Liability</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Same physical situation, opposite legal results.</div>
+  <div class="flowchart"><div class="flow-box question"><strong>You stacked sheaves on someone else's field</strong></div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Without permission</div><div class="flow-box result-bad">Field-owner's animal ate them → <strong>he is פטור</strong>. Your sheaves were the trespass.</div></div><div class="flow-col"><div class="flow-label">With permission</div><div class="flow-box result-good">Field-owner's animal ate them → <strong>he is חייב</strong>. He invited the sheaves; he owes shemira.</div></div></div><div class="flow-arrow">↓</div><div class="flow-box action"><strong>R' Yitzchak's question:</strong> Are sheaves on a field treated like vessels in a house?</div><div class="flow-arrow">↓</div><div class="flow-box result-good">R' Yose b. R' Bun: only when the field <span class='hebrew'>אִית לֵיהּ מִסְגָּר</span> — has a closure/fence</div></div><div class="callout" style="margin-top:20px"><strong>Symbolic pivot:</strong> Permission isn't a polite formality — it's the moment legal responsibility shifts. Without it you're a trespasser; with it the owner becomes the shomer.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>🔥 The Fire Mishnah — Chain of Causation</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Each link in the chain shifts liability to whoever made it dangerous.</div>
+  <div class="process-bar"><div class="process-step">1️⃣ Sent through a <span class='hebrew'>חרש שוטה וקטן</span> → exempt בדיני אדם, חייב בדיני שמים.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ Sent through a competent person → that person is liable.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ One brought the fire, another the wood → <strong>whoever brought the wood</strong> is liable.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ One brought wood, another the fire → <strong>whoever brought the fire</strong> is liable.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ A third person fanned the flames → that person is liable. <strong>The wind fanned it → all are exempt.</strong></div></div><div class="callout" style="margin-top:20px"><strong>The principle:</strong> Liability follows the active completing cause — whoever turns potential into damage takes the loss. Once nature (the wind) takes over, the chain breaks.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>💨 What Kind of Wind Breaks the Chain?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Catastrophic vs. ordinary, and the implications.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#4a90d9">Tamman</div><div class="speech">The Mishnah's exemption is for <span class='hebrew'>רוּחַ שֶׁלְּאוֹנְסִין</span> — catastrophic wind. Normal wind keeps you liable.</div></div><div class="debate-line right"><div class="speaker" style="background:#c9a84c">R' Y / RL</div><div class="speech">Even normal wind: <span class='hebrew'>אֲפִילוּ רוּחַ שֶׁהָעוֹלָם מִתְנָהֵג בּוֹ פָּטוּר</span>. Why? <span class='hebrew'>שֶׁפְּעָמִים בָּא פְּעָמִים לֹא בָא</span> — wind isn't predictable enough to count as your direct extension.</div></div><div class="debate-line"><div class="speaker" style="background:#9b59b6">Chizkiyah</div><div class="speech">Sub-debate: Did you hand him a גחלת (coal) or a שלהבת (flame)? A coal can fizzle out — flame is unstoppable.</div></div><div class="debate-line right"><div class="speaker" style="background:#e74c3c">R' Yochanan</div><div class="speech"><span class='hebrew'>הִיא גַחֶלֶת הִיא שַׁלְהֶבֶת</span> — same thing.</div></div></div><div class="callout" style="margin-top:20px"><strong>What's at stake:</strong> How predictable does the spread mechanism need to be for it to count as <em>your</em> fire? The stricter view (Tamman) treats normal weather as your tool. The lenient view treats unpredictability as a break in the chain.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 28 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Mishnah 6:2 end → 6:4 fire</strong></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">How do we measure damage, and where does liability stop?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">📐 <strong>Bet se'ah</strong><br>fair averaging</div></div><div class="flow-col"><div class="flow-box" style="border-color:#f39c12">🍇 <strong>R' Akiva tiers</strong><br>ripe / unripe / trees</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">🌾 <strong>Permission</strong><br>flips liability</div></div><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">🔥 <strong>Fire chain</strong><br>active cause pays</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Halakhic damage tracks fair measurement and active causation — never average abstraction or passive proximity.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 28a-28b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 28a-28b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../27/">← Daf 27</a><a href="../29/">Daf 29 →</a></div>
+</body>
+</html>
