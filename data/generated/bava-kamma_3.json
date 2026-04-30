@@ -1,0 +1,207 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 3,
+  "emoji": "⚖️",
+  "topics": [
+    "🐂🕳️ Kal va-chomer between שור and בור — why Torah writes both",
+    "📜 Each av needs its own pasuk because each carries unique halakhot",
+    "🛏️ Parallel example: משכב and מושב in the laws of zav",
+    "🔥 Parallel: parshat neirot vs. parshat shiluach tmeyim",
+    "🤕 R' Yose: one who injures another still pays even after he himself becomes injured"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Why Each Av Gets Its Own Pasuk",
+    "label": "The sugya:",
+    "text": "R' Bun bar Chiyya, in the name of R' Shmuel bar Rav Yitzchak, runs a kal va-chomer between שור and בור and shows that either could have been derived from the other. The Yerushalmi answers: דְּאִית לֵיהּ מִילִּין סַגִּין — the Torah states each one explicitly because each category carries its own unique halakhot that a derivation could not generate. The sugya then brings two parallel cases — משכב/מושב and the parshiyot of נירות / שילוח טמאין — to show that this hermeneutic move is a general principle.",
+    "hebrewSource": "אִילּוּ לֹא נֶאֱמַר שׁוֹר הָיִיתִי לָמֵד שׁוֹר מִן הַבּוֹר... וְלָמָּה תְנִינָתָהּ הָכָא. דְּאִית לֵיהּ מִילִּין סַגִּין"
+  },
+  "slides": [
+    {
+      "type": "flowchart",
+      "title": "🔁 R' Bun bar Chiyya's Kal Va-chomer",
+      "subtitle": "Try to derive the bull from the pit (and the pit from the bull).",
+      "nodes": [
+        { "content": "<strong>If 'שור' had not been written</strong><br>I would learn it from בור", "class": "question" },
+        { "type": "arrow" },
+        { "content": "מָה אִם הַבּוֹר שֶׁאֵין דַּרְכּוֹ לֵילֵךְ וּלְהַזִּיק חַיָּיב לְשַׁלֵּם<br>שׁוֹר שֶׁדַּרְכּוֹ לֵילֵךְ וּלְהַזִּיק לֹא כָּל שֶׁכֵּן", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Direction A", "content": "Bor pays full damage<br>→ so should shor", "class": "result-good" },
+            { "label": "Direction B (פרכא)", "content": "Shor (tam) pays half damage<br>→ maybe bor should also pay only half?", "class": "result-bad" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Same kal va-chomer runs in both directions — neither category is fully provable from the other", "class": "result-partial" }
+      ],
+      "callout": {
+        "label": "Why this matters:",
+        "text": "The Yerushalmi is not really trying to eliminate one of the avot. It uses the kal va-chomer to ask the deeper question: why does the Torah waste words by writing both?"
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 So Why Does the Torah Write Both?",
+      "subtitle": "The Yerushalmi's quick, sharp answer.",
+      "lines": [
+        { "speaker": "Q", "side": "left", "speakerColor": "#9b59b6", "text": "If shor and bor can each be derived from the other, <span class='hebrew'>וְלָמָּה תְנִינָתָהּ הָכָא?</span> — why does the Torah write both?" },
+        { "speaker": "A", "side": "right", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>דְּאִית לֵיהּ מִילִּין סַגִּין</span> — because each av carries many unique halakhot a derivation could never generate." },
+        { "speaker": "Y", "side": "left", "speakerColor": "#c9a84c", "text": "This is a hermeneutical principle: a kal va-chomer is overruled when each side has independent details the other side lacks." }
+      ],
+      "callout": {
+        "label": "Yerushalmi style:",
+        "text": "Not every kal va-chomer needs to win. Sometimes the Torah writes both terms precisely because each one needs its own halakhic life."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🪞 Parallel Cases of the Same Move",
+      "subtitle": "The Yerushalmi shows this is a general principle, not just nezikin.",
+      "boxes": [
+        {
+          "title": "🐂 שור / 🕳️ בור",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "Each could be derived from the other",
+            "Bor pays full damage, shor (tam) pays half",
+            "Each has unique laws → both must be written"
+          ]
+        },
+        {
+          "title": "🛏️ משכב / 🪑 מושב",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Mishkav of a zav: 4 tefachim makes it tamei",
+            "Moshav of a zav: 1 tefach makes it tamei",
+            "Each could be learned from the other, yet both written"
+          ]
+        },
+        {
+          "title": "🕯️ נירות / שילוח טמאין",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "Two distinct parshiyot in Bamidbar",
+            "Both share: <span class='hebrew'>מִיַּד וּלְדוֹרוֹת</span>",
+            "Each section adds halakhot the other lacks"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "The shared pattern:",
+        "text": "When two parallel pesukim could each be derived from the other, the Torah keeps both because each carries מילין סגין — its own unique laws. This is exactly the third middah of R' Yishmael: a כלל that is taught from one parsha."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📐 Mishkav vs. Moshav — A Closer Look",
+      "subtitle": "The Yerushalmi's tightest illustration of the rule.",
+      "headers": ["Surface", "Minimum Size for Tum'ah", "Distinct Halakhah"],
+      "rows": [
+        ["<span class='hebrew'>מוֹשָׁב</span> (seat)", "<span class='hebrew'>טֶפַח אֶחָד</span>", "Smaller surface area still becomes tamei"],
+        ["<span class='hebrew'>מִשְׁכָּב</span> (bed)", "<span class='hebrew'>אַרְבָּעָה טְפָחִים</span>", "Bigger surface needed because of intended use"],
+        ["Common feature", "Both are bnei meshamesh adam", "Carry tum'at zav — but each via its own pasuk"]
+      ],
+      "callout": {
+        "label": "Why both pesukim:",
+        "text": "Knowing only mishkav, you might think nothing smaller than 4 tefachim becomes tamei. Knowing only moshav, you might think any tefach-sized item suffices. The Torah needs both to fix the shiur exactly."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🤕 R' Yose's Ruling on Sequential Damage",
+      "subtitle": "A halakhic landing point at the end of the daf.",
+      "steps": [
+        { "content": "1️⃣ A person <strong>injures</strong> his fellow first." },
+        { "content": "2️⃣ Later, that same person <strong>becomes injured</strong> himself." },
+        { "content": "3️⃣ Question: does the later injury reduce or cancel his liability?" },
+        { "content": "4️⃣ Source: <span class='hebrew'>וּמַכֶּה בְהֵמָה יְשַׁלְּמֶנָּה</span> — read as <span class='hebrew'>יְשַׁלֵּם פְּחָתָהּ</span>." },
+        { "content": "5️⃣ Ruling: he <strong>still pays</strong> for the original injury, even after he himself was hurt.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "Liability is fixed at the moment of damage. A later change to the מזיק's own status does not unwind what he already owes."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Each av needs its own pasuk because each carries unique halakhot a kal va-chomer cannot generate. The Yerushalmi proves this with three parallel cases.",
+    "flowSteps": [
+      { "content": "<strong>R' Bun bar Chiyya's challenge</strong><br><span class='hebrew'>אִם לֹא נֶאֱמַר שׁוֹר הָיִיתִי לָמֵד שׁוֹר מִן הַבּוֹר</span>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Kal va-chomer runs in both directions → no clean derivation", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🐂🕳️ <strong>שור / בור</strong><br>each has unique halakhot", "style": "border-color:#4a90d9" },
+          { "content": "🛏️🪑 <strong>משכב / מושב</strong><br>different shiurim", "style": "border-color:#9b59b6" },
+          { "content": "🕯️ <strong>נירות / שילוח</strong><br>shared: מיד ולדורות", "style": "border-color:#e74c3c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>When two parallel pesukim each carry independent halakhot, the Torah writes both. Liability is then fixed at the moment of damage — as R' Yose teaches at the close of the daf.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "What is R' Bun bar Chiyya's opening kal va-chomer about?",
+      "o": [
+        "Why שור and בור can each be derived from the other",
+        "Whether שן and רגל share a category",
+        "Whether אדם is included in the four avot",
+        "Why fire damage is not in the Mishnah"
+      ],
+      "c": 0,
+      "e": "He says: if 'shor' had not been written, I'd learn shor from bor — and vice versa. The kal va-chomer can run in both directions."
+    },
+    {
+      "q": "What is the Yerushalmi's answer to why the Torah writes both שור and בור?",
+      "o": [
+        "Because they are different animals",
+        "<span class='hebrew'>דְּאִית לֵיהּ מִילִּין סַגִּין</span> — each carries unique halakhot a derivation can't generate",
+        "Because the kal va-chomer is invalid",
+        "Because of a gezerah shavah"
+      ],
+      "c": 1,
+      "e": "Even when a kal va-chomer works, the Torah states each parsha independently because each one has unique halakhot that need their own source."
+    },
+    {
+      "q": "Which parallel case does the Yerushalmi bring to illustrate the same hermeneutic move?",
+      "o": [
+        "Tum'at met vs. tum'at sheretz",
+        "Mishkav and moshav of a zav",
+        "Hekdesh and ma'aser sheni",
+        "Tzitzit and tefillin"
+      ],
+      "c": 1,
+      "e": "The Yerushalmi explicitly compares שור/בור to משכב/מושב — each could be derived from the other, yet both are written."
+    },
+    {
+      "q": "What is the difference in shiur between mishkav and moshav?",
+      "o": [
+        "Both require 4 tefachim",
+        "Mishkav 1 tefach, moshav 4 tefachim",
+        "Mishkav 4 tefachim, moshav 1 tefach",
+        "There is no shiur for either"
+      ],
+      "c": 2,
+      "e": "The Yerushalmi states: moshav becomes tamei in 1 tefach, mishkav requires 4 tefachim. Each pasuk is needed to fix its own shiur."
+    },
+    {
+      "q": "What does R' Yose teach at the end of the daf?",
+      "o": [
+        "If you damage someone and are later damaged yourself, you still pay",
+        "A pit owner is exempt if he warned passersby",
+        "Fire damage is always full damage",
+        "Half damage applies only to keren"
+      ],
+      "c": 0,
+      "e": "<span class='hebrew'>אָדָם שֶׁחָבַל בַּחֲבֵירוֹ תְּחִילָּה אַף עַל פִּי שֶׁחָזַר וְנַעֲשָׂה נִזָּק חַיָיב</span>. Liability is fixed at the moment of damage."
+    }
+  ]
+}
