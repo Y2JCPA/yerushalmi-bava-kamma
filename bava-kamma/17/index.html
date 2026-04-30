@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 17 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🐂</div>
+  <h1>Yerushalmi Bava Kamma 17</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא יז׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    ⚖️ The split list: liable for his ox, exempt for himself — and vice versa<br>
+    👨‍👩‍👦 Striking parents: bull liable, person exempt (capital crime)<br>
+    🔥 Setting fire on Shabbat: <span class='hebrew'>נִידּוֹן בְּנַפְשׁוֹ</span> exempts from money<br>
+    💸 Ben Pedaya: <span class='hebrew'>כָּל הַמְקַלְקְלִין פְּטוּרִין</span> — destroyers are exempt except מבעיר and one who wounds<br>
+    🐂 Serial gorer: the last victim is paid first (<span class='hebrew'>הָאַחֲרוֹן אַחֲרוֹן נִשְׂכָּר</span>)<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Asymmetry Between Person and Ox</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">יֵשׁ חַיָיב עַל מַעֲשֵׂה שׁוֹרוֹ וּפָטוּר עַל מַעֲשֵׂה עַצְמוֹ. פָּטוּר עַל מַעֲשֵׂה שׁוֹרוֹ וּחַיָיב עַל מַעֲשֵׂה עַצְמוֹ</div><div class="callout"><strong>The sugya:</strong> The Mishnah teases out cases where a person and his ox produce opposite liabilities — sometimes the ox triggers payment while the owner himself is exempt, and sometimes the reverse. The unifying principle behind the exemption pattern is <span class='hebrew'>קַם לֵיהּ בְּדְרַבָּה מִינֵּיהּ</span> — when the act carries a capital penalty, monetary liability falls away. Ben Pedaya then frames the broader principle: spoilers (<span class='hebrew'>מְקַלְקְלִין</span>) on Shabbat are exempt except the מבעיר and the one who wounds. The chapter then turns to the serial gorer.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>⚖️ Owner Liable / Owner Exempt — The Mishnah's Inversions</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Five paired scenarios revealing the asymmetry.</div>
+  <table><tr><th>Action</th><th>Ox does it</th><th>Person does it</th></tr><tr><td>Shames (<span class='hebrew'>בִּיֵּישׁ</span>)</td><td>Exempt — no בושת for animal damage</td><td>Liable — full בושת</td></tr><tr><td>Blinds slave's eye / knocks tooth</td><td>Exempt — no manumission via ox</td><td>Liable — slave goes free (Ex. 21:26-27)</td></tr><tr><td>Wounds father/mother</td><td>Liable — money damages</td><td>Exempt — capital offense subsumes the money</td></tr><tr><td>Burns stack on Shabbat</td><td>Liable — money damages</td><td>Exempt — <span class='hebrew'>נִידּוֹן בְּנַפְשׁוֹ</span>, capital</td></tr><tr><td>Underlying logic</td><td>Pure tort framework</td><td><span class='hebrew'>קַם לֵיהּ בְּדְרַבָּה מִינֵּיהּ</span> blocks the money</td></tr></table><div class="callout" style="margin-top:20px"><strong>The pattern:</strong> An animal cannot be tried capitally as a moral agent in these cases. So pure damages still apply. A human, however, when the same act carries death or other supreme penalty, escapes the lesser monetary obligation.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>🔥 Why Person Is Exempt Where Ox Is Liable</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Three different exemption mechanisms working in parallel.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">👨‍👩‍👦 Striking Parent</h3><ul><li><span class='hebrew'>וּמַכֵּה אָבִיו וְאִמּוֹ מוֹת יוּמָת</span></li><li>Capital crime if blood is drawn</li><li>Money obligation absorbed by death penalty</li><li>Bull, not subject to that law, just pays</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">🔥 Burning on Shabbat</h3><ul><li>Hav'arah is one of 39 melakhot</li><li>Capital (with witnesses & warning)</li><li><span class='hebrew'>פָּטוּר מִפְּנֵי שֶׁנִּידּוֹן בְּנַפְשׁוֹ</span></li><li>Bull has no Shabbat liability → still pays</li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">👁️ Slave's Eye / Tooth</h3><ul><li>Person liable: slave goes free</li><li>But this is the Torah's special remedy</li><li>Bull cannot trigger manumission</li><li>So bull is exempt, owner-by-self is liable</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>Sharp insight:</strong> The Mishnah's mirror-cases are not arbitrary curiosities — they map the precise gap between human moral agency (capital, manumission) and the bull as mere mazik.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>💬 Ben Pedaya — Spoilers Are Exempt</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Generalizing the Shabbat exemption.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#4a90d9">Ben P</div><div class="speech"><span class='hebrew'>כָּל הַמְקַלְקְלִין פְּטוּרִין חוּץ מִן הַמַּבְעִיר וְהָעוֹשֶׂה חַבּוּרָה</span> — destructive Shabbat acts don't generate Shabbat liability, except kindling fire and wounding.</div></div><div class="debate-line right"><div class="speaker" style="background:#9b59b6">RY</div><div class="speech">R' Yochanan refines: the מבעיר is liable only <span class='hebrew'>עַד שֶׁיְּהֵא צָרִיךְ לָאֶפֶר</span> — when he needs the ash. The wounder is liable only when he needs the blood.</div></div><div class="debate-line"><div class="speaker" style="background:#c9a84c">Q</div><div class="speech">Difficulty: but the Mishnah said the bull who burned the stack is liable! Did it need the ash?</div></div><div class="debate-line right"><div class="speaker" style="background:#e74c3c">A</div><div class="speech"><span class='hebrew'>שׁוֹרוֹ צָרִיךְ אֶת הָאֶפֶר</span> — yes, his bull needs the ash. The Mishnah's case fits the requirement, so the owner pays for tort even though the burning occurred on Shabbat.</div></div></div><div class="callout" style="margin-top:20px"><strong>The chain:</strong> Shabbat capital liability requires a constructive act — <span class='hebrew'>מְלֶאכֶת מַחְשֶׁבֶת</span>. Pure destruction is exempt unless it serves a productive end (ash, blood).</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>🐂 The Serial Gorer — R' Meir's Rule</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">How a bull's value gets distributed across multiple victims.</div>
+  <div class="flowchart"><div class="flow-box question"><strong>One bull gores 4 or 5 bulls in sequence</strong></div><div class="flow-arrow">↓</div><div class="flow-box action"><span class='hebrew'>יְשַׁלֵּם לָאַחֲרוֹן שֶׁבָּהֶן</span> — pay the last victim first.</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Leftover after last</div><div class="flow-box result-partial">Reverts to penultimate</div></div><div class="flow-col"><div class="flow-label">Still leftover</div><div class="flow-box result-partial">Reverts to the one before that</div></div><div class="flow-col"><div class="flow-label">R' Meir's rule</div><div class="flow-box result-good"><span class='hebrew'>הָאַחֲרוֹן אַחֲרוֹן נִשְׂכָּר</span><br>last victim wins</div></div></div><div class="flow-arrow">↓</div><div class="flow-box action"><strong>R' Shimon disputes:</strong> with two equal bulls and worthless carcass, each owner takes a מנה — value-based split, not seniority.</div></div><div class="callout" style="margin-top:20px"><strong>Logic of seniority:</strong> By the time the bull gored the second victim, the first victim already had a lien on the bull's value. R' Meir reverses the intuition: each new attack creates a fresh lien, and the most recent claim collects from a now-encumbered asset.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🧠 Putting the Daf Together</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Why the Mishnah's mirror-list opens onto Ben Pedaya and the serial gorer.</div>
+  <div class="process-bar"><div class="process-step">1️⃣ Mishnah lists asymmetric liability cases: ox vs. person.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ Underlying engine: capital/special penalties exempt the human from money.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ Shabbat case prompts Ben Pedaya's broader principle on מקלקלין.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ R' Yochanan refines: מבעיר and חובל only count if there's a constructive purpose.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ The chapter pivots to multi-victim damages → R' Meir's <span class='hebrew'>הָאַחֲרוֹן אַחֲרוֹן נִשְׂכָּר</span>.</div></div><div class="callout" style="margin-top:20px"><strong>Bottom line:</strong> The daf maps the seams in liability — between agent and animal, between destruction and creation, between earlier and later claimants on the same damaged asset.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 17 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Damage occurs</strong><br>by ox or by person</div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Is the actor a person, and does the act carry a greater penalty?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🐂 <strong>Ox damaged</strong><br>simple tort always applies</div></div><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">💀 <strong>Person, capital act</strong><br>exempt from money</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">🛠️ <strong>מקלקל without need</strong><br>exempt</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🐂🐂 <strong>Serial gorer</strong><br><span class='hebrew'>הָאַחֲרוֹן אַחֲרוֹן נִשְׂכָּר</span></div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Tort liability is structural — it tracks the agent, the act, and the priority of claims on the damaging asset.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 17a-17b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 17a-17b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../16/">← Daf 16</a><a href="../18/">Daf 18 →</a></div>
+</body>
+</html>

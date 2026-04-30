@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 20 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">👨‍⚖️</div>
+  <h1>Yerushalmi Bava Kamma 20</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא כ׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🐂 שור של חרש שוטה וקטן — bulls of those without legal capacity<br>
+    👨‍⚖️ אפיטרופוס: when testimony is taken before a guardian<br>
+    💸 Borrowed ox that turns out to be מועד — half/half liability<br>
+    🏚️ Are guardians liable from יתומים' property or their own?<br>
+    🐃 שור שנגח את האדם — kofer for mu'ad, no kofer for tam<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Capacity, Custodians, and the Bull That Killed</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">שׁוֹר שֶׁל חֵרֵשׁ שׁוֹטֶה וְקָטָן שֶׁנָּגחוּ מַעֲמִידִין לָהֶן אֶפִּיטְרוֹפּוֹס וּמְעִידִין בָּהֶן בִּפְנֵי אֶפִּיטְרוֹפּוֹס</div><div class="callout"><strong>The sugya:</strong> The daf works through the Mishnah of an ox owned by a חרש, שוטה, or קטן — people without halakhic agency. A guardian (אפיטרופוס) is appointed so testimony can establish notoriety. The Yerushalmi presses: what if the ox was warned in front of the guardian and then returned to the owner? What about a borrowed ox that turns out to be mu'ad? It then asks the deeper question of whether guardians ever take on personal liability, and closes with the Mishnah of an ox that gored and killed a person — kofer for mu'ad, none for tam, but execution either way.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>👨‍⚖️ Testimony Before the Guardian</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Two directions of the question, one tannaitic answer.</div>
+  <div class="flowchart"><div class="flow-box question"><strong>Mishnah:</strong> Bull of חרש/שוטה/קטן gored<br>Appoint guardian; take testimony before him</div><div class="flow-arrow">↓</div><div class="flow-box action">Yerushalmi pushes the case: what if the testimony was taken before the guardian and the bull then returned to the owner?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Borrowed as תם, was מועד</div><div class="flow-box result-partial">Owner pays חצי, borrower pays חצי</div></div><div class="flow-col"><div class="flow-label">R' Eleazar reads R' Yose</div><div class="flow-box result-good"><span class='hebrew'>הֲרֵי הוּא בְּחֶזְקָתוֹ</span> — stays in its prior state</div></div><div class="flow-col"><div class="flow-label">If borrower knew it was a goring ox</div><div class="flow-box result-bad">Borrower bears full liability</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good"><strong>Killed at borrower's, returned to owner</strong>:<br>before judgment → exempt; after judgment → liable<br>R' Yaakov: even after judgment but before stoning → exempt</div></div><div class="callout" style="margin-top:20px"><strong>The pivot:</strong> The whole sugya hinges on whether the legal status (תם/מועד, condemned/uncondemned) follows the ox like a chazakah, or shifts each time custody changes hands.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>💬 Do We Appoint Guardians To Their Detriment?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Yochanan vs. R' Yose b. Chaninah on guardian liability.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#4a90d9">RY</div><div class="speech">R' Yochanan: <span class='hebrew'>בַּתְּחִילָּה אֵין מְמַנִּין אֶפִּיטְרוֹפִּין עַל מְנָת לַחוֹב לָהֶן אֶלָּא לְזַכּוֹת לָהֶן</span> — guardians are appointed only to benefit, but if their actions hurt, they hurt.</div></div><div class="debate-line right"><div class="speaker" style="background:#e74c3c">RYC</div><div class="speech">R' Yose b. Chaninah: never — neither initially nor afterward. Guardians can neither help nor harm the orphans' rights.</div></div><div class="debate-line"><div class="speaker" style="background:#9b59b6">Q</div><div class="speech">But our Mishnah appoints a guardian — that very appointment harms (it sets up testimony that will impose liability)?</div></div><div class="debate-line right"><div class="speaker" style="background:#c9a84c">A</div><div class="speech">Answer: <span class='hebrew'>שַׁנְיָיא הִיא בְּשׁוֹר שֶׁלֹּא יֵצֵא וְיַזִּיק</span> — an ox is different; left alone it will keep damaging, so the appointment is unavoidable.</div></div></div><div class="callout" style="margin-top:20px"><strong>Bottom line:</strong> Guardian appointment is normally restricted to benefit. The dangerous-ox case is a public-safety exception that overrides the rule.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>🏚️ Whose Pocket Pays?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">If the orphans' bull damages, who absorbs the loss?</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">👤 R' Yochanan</h3><ul><li>Pay from the <strong>orphans'</strong> property</li><li>Reasoning: if the guardian had to pay, <span class='hebrew'>לֹא נַעֲשֶׂה אָדָם מֵעוֹלָם אֶפִּיטְרוֹפּוֹס</span></li><li>Aligns with the Rabbis: court-appointed guardian swears (court already vetted him)</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">👥 R' Yose b. Chaninah</h3><ul><li>Pay from the <strong>guardian's</strong> property</li><li>Aligns with Abba Shaul</li><li>Logic: a person will sacrifice much to be called נאמן (trustworthy)</li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">🪙 The תוספת</h3><ul><li>Abba bar Rav Huna: one who hits another's animal that then damages — liable</li><li>Strengthens the chain: indirect causation still attaches</li><li>Reinforces the case for guardian-side liability</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>Practical concern:</strong> R' Yochanan worries about the supply of guardians — if liability is too steep, no one will serve. R' Yose b. Chaninah worries about deterrence and incentives — guardians must guard.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>🐃 Mishnah 4:5 — Killing a Person</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">What does the owner of the goring ox owe when a person dies?</div>
+  <table><tr><th>Case</th><th>Kofer (ransom)</th><th>Ox itself</th></tr><tr><td>שור מועד גores a person → dies</td><td><span class='hebrew'>מְשַׁלֵּם אֶת הַכּוֹפֶר</span></td><td>Stoned</td></tr><tr><td>שור תם gores a person → dies</td><td>Exempt from kofer</td><td>Stoned</td></tr><tr><td>Same applies to a בן or בת</td><td>Same as above</td><td>Same as above</td></tr><tr><td>Gored an עבד or שפחה</td><td><strong>30 sela'im</strong> regardless of value</td><td>Stoned</td></tr></table><div class="callout" style="margin-top:20px"><strong>Two layers:</strong> Kofer is a monetary atonement triggered by mu'ad status. The ox's execution, by contrast, follows from the act of killing itself — <span class='hebrew'>זֶה וָזֶה חַיָּיבִין מִיתָה</span>.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🔁 The Borrowed-Ox Liability Split</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">An elegant case-by-case ruling embedded in the sugya.</div>
+  <div class="process-bar"><div class="process-step">1️⃣ A borrows an ox from B believing it is <strong>תם</strong>.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ The ox damages — turns out it was already <strong>מועד</strong>.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ Default ruling: <span class='hebrew'>הַבְּעָלִין מְשַׁלְּמִין חֲצִי נֶזֶק וְהַשּׁוֹאֵל חֲצִי נֶזֶק</span>.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ R' Eleazar: this can only be R' Yose's view, since R' Yose says <span class='hebrew'>הֲרֵי הוּא בְּחֶזְקָתוֹ</span>.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ Refinement: if the borrower knew the ox was a גocer, full liability falls on him.</div></div><div class="callout" style="margin-top:20px"><strong>The elegance:</strong> The sugya splits liability cleanly: half from the original mu'ad status (owner), half from the act of borrowing it (borrower). Knowledge of the truth shifts everything onto the knowing party.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 20 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Mishnah</strong><br><span class='hebrew'>שור של חרש שוטה וקטן שנגחו</span></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Appoint guardian; take testimony before him<br>Even if normally guardians can't act לחוב — שור is different</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">👨‍⚖️ <strong>Testimony</strong><br>before owner or guardian</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">🤝 <strong>Borrowed ox</strong><br>half/half liability</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🏚️ <strong>Whose pocket</strong><br>orphans or guardian</div></div><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">🐃 <strong>Killed a person</strong><br>kofer for mu'ad only</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Halakhic capacity, custody, and knowledge each carve up liability differently. The Yerushalmi maps every combination cleanly.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 20a-20b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 20a-20b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../19/">← Daf 19</a><a href="../21/">Daf 21 →</a></div>
+</body>
+</html>

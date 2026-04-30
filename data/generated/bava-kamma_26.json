@@ -1,0 +1,195 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 26,
+  "emoji": "🐑",
+  "topics": [
+    "📜 'שור או חמור' — vessels excluded from pit liability",
+    "🌬️ R' Yochanan & Reish Lakish: דרך נפילה פטרה תורה",
+    "📖 Mishnah 5:8 — 'ox' is just shorthand for any beheima",
+    "🐓 Kilayim of birds — even similar species count",
+    "🚪 Mishnah 6:1 — locking the corral and stolen flocks"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Where 'Ox' Stops and Animal Begins",
+    "label": "The sugya:",
+    "text": "The end of perek 5 turns the spotlight on a single Torah word: 'shor.' Why does the verse say 'ox or donkey' if the rules apply to all animals? The Yerushalmi answers with a brilliant pivot: <span class='hebrew'>שֶׁדִּיבֵּר הַכָּתוּב בַּהוֹוֶה</span> — Scripture spoke in the typical case. Then the daf surveys eight halakhot where 'shor' really means 'any beheima,' weighing in on kilayim of similar birds. Perek 6 then opens with the corral — when does proper locking exempt the owner from his flock's damage?",
+    "hebrewSource": "אִם כֵן לָמָּה נֶאֱמַר שׁוֹר אוֹ חֲמוֹר. אֶלָּא שֶׁדִּיבֵּר הַכָּתוּב בַּהוֹוֶה"
+  },
+  "slides": [
+    {
+      "type": "debate",
+      "title": "💬 Vessels in the Pit — Three Voices",
+      "subtitle": "Why are vessels exempt even when the animal is liable?",
+      "lines": [
+        { "speaker": "Logic", "side": "left", "speakerColor": "#9b59b6", "text": "If a damage-pit (less than 10 tefachim) is liable for vessels, surely a death-pit (10+) should be — kal va-chomer!" },
+        { "speaker": "Pasuk", "side": "right", "speakerColor": "#c9a84c", "text": "<span class='hebrew'>וְנָפַל שָׁמָּה שׁוֹר אוֹ חֲמוֹר</span> — only ox or donkey, <strong>not 'an ox with its equipment.'</strong> The Torah blocks the kal va-chomer." },
+        { "speaker": "Shmuel", "side": "left", "speakerColor": "#4a90d9", "text": "Vessels are only exempt when the animal got disoriented mid-air. If they hit the floor — חַיָיב." },
+        { "speaker": "R' Y / RL", "side": "right", "speakerColor": "#e74c3c", "text": "Even if they hit the floor, פָּטוּר. <span class='hebrew'>דֶּרֶךְ נְפִילָה פָטְרָה תוֹרָה</span> — the Torah exempted the entire act of falling, regardless of where the damage happens." }
+      ],
+      "callout": {
+        "label": "Yerushalmi style:",
+        "text": "A clean halakhic principle (vessels are exempt) is shown to rest on two layers — the pasuk's wording and the conceptual frame of <span class='hebrew'>דֶּרֶךְ נְפִילָה</span>."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🐂 Why Specifically 'Shor o Chamor'?",
+      "subtitle": "The Mishnah lists eight halakhot where 'shor' covers every animal.",
+      "boxes": [
+        {
+          "title": "📜 Pit / כפל / השב אבדה",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "<span class='hebrew'>שור או חמור</span> — broad coverage",
+            "<span class='hebrew'>מִשּׁוֹר עַד חֲמוֹר</span> — keifel applies",
+            "<span class='hebrew'>הָשֵׁב תְּשִׁיבֵם</span> — return any lost animal"
+          ]
+        },
+        {
+          "title": "💪 פריקה / חסימה",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "<span class='hebrew'>עֲזוֹב תַּעֲזוֹב</span> — unload any beheima",
+            "<span class='hebrew'>לֹא תַחְסוֹם שׁוֹר בְּדִישׁוֹ</span> — applies to all"
+          ]
+        },
+        {
+          "title": "🚫 כלאיים / שבת / סיני",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<span class='hebrew'>בְּהֶמְתְּךָ לֹא תַרְבִּיעַ</span>",
+            "<span class='hebrew'>לְמַעַן יָנוּחַ שׁוֹרְךָ וַחֲמוֹרֶךָ</span>",
+            "Animals separated for Mattan Torah"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "The hermeneutic move:",
+        "text": "<span class='hebrew'>שֶׁדִּיבֵּר הַכָּתוּב בַּהוֹוֶה</span> — when Torah names the most common case, the rule extends to all parallel members of the category. 'Ox' is shorthand, not exclusion."
+      }
+    },
+    {
+      "type": "table",
+      "title": "🐓 Kilayim — Similar Species That Don't Count",
+      "subtitle": "How far does 'wild animals and birds the same' reach?",
+      "headers": ["Pair", "Source", "Status"],
+      "rows": [
+        ["<span class='hebrew'>אֲוַוז יָם / אֲוַוז יִישׁוּב</span>", "Shmuel", "Kilayim"],
+        ["<span class='hebrew'>שׁוֹר עִם שׁוֹר בָּר</span>", "R' Yose's reading", "Kilayim"],
+        ["<span class='hebrew'>חֲמוֹר עִם חֲמוֹר בָּר</span>", "R' Yose's reading", "Kilayim"],
+        ["<span class='hebrew'>תַּרְנְגוֹל עִם פַּיְסְיוֹנִי</span>", "R' Yochanan, House of Levi", "Kilayim"],
+        ["<span class='hebrew'>תַּרְנְגוֹל עִם טַוֶּוסֶת</span>", "R' Yochanan, House of Levi", "Kilayim"]
+      ],
+      "callout": {
+        "label": "R' Yochanan's principle:",
+        "text": "<span class='hebrew'>אַף עַל פִּי שֶׁדּוֹמִין זֶה לָזֶה כִּלְאַיִם זֶה בָּזֶה</span> — visual similarity doesn't override species distinction. Rooster + pheasant = kilayim despite resemblance."
+      }
+    },
+    {
+      "type": "callout",
+      "title": "📖 The Mishnah 6:1 — Locked Corrals",
+      "subtitle": "When does shemira shift the loss?",
+      "hebrewSource": "הַכּוֹנֵס צֹאן לַדִּיר וְנָעַל בְּפָנֶיהָ כָּרָאוּי וְיָצְתָה וְהִזִּיקָה חַיָיב",
+      "label": "Three cases:",
+      "text": "<strong>1.</strong> Locked properly, animal escaped on its own — <span class='hebrew'>חַיָיב</span>. <strong>2.</strong> Wall broken at night, or robbers broke in and animal escaped — <span class='hebrew'>פָּטוּר</span>. <strong>3.</strong> Robbers actively let them out — the <strong>robbers</strong> bear liability.",
+      "extraHtml": "<div class='callout' style='margin-top:20px'><strong>The threshold:</strong> Even 'as he should' locking isn't enough if the animal still gets out and damages — because the Torah's standard of shemira for keren is higher. Each אב has its own bar of shmira.</div>"
+    },
+    {
+      "type": "process",
+      "title": "🔄 The Three-Way Argument on the Corral",
+      "subtitle": "Is the Mishnah following one Tanna or all?",
+      "steps": [
+        { "content": "1️⃣ R' La in the name of R' Yannai: this Mishnah reflects a <span class='hebrew'>מַחֲלוֹקֶת</span> — only one Tanna's view." },
+        { "content": "2️⃣ R' Eleazar: <span class='hebrew'>דִּבְרֵי הַכֹּל</span> — everyone holds this." },
+        { "content": "3️⃣ R' La's reasoning: shemira for the body is only written for keren; for foot/tooth, the standard differs." },
+        { "content": "4️⃣ Reish Lakish: <span class='hebrew'>בְּמַחֲלוֹקֶת</span> — agreed it's contested." },
+        { "content": "5️⃣ Some say: it follows R' Eliezer ben Yaakov, who holds <span class='hebrew'>בֵּין כָּךְ וּבֵין כָּךְ פָּטוּר</span> — exempt regardless.", "highlight": true }
+      ],
+      "callout": {
+        "label": "What's at stake:",
+        "text": "Whether normal locking is enough — or whether keren's higher standard requires more — depends on whose Mishnah you're reading. The Yerushalmi keeps the question alive rather than collapse it."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "'Shor o chamor' is a representative case, not an exclusive list — except for vessels, where the pasuk explicitly excludes them. The rules of Torah animals extend to wild beasts and birds, with kilayim sensitive even to visual look-alikes.",
+    "flowSteps": [
+      { "content": "<strong>End of perek 5 — what does 'shor o chamor' really mean?</strong>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "<span class='hebrew'>שֶׁדִּיבֵּר הַכָּתוּב בַּהוֹוֶה</span> — Torah names the typical case", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🪣 <strong>Vessels</strong><br>excluded by pasuk", "style": "border-color:#9b59b6" },
+          { "content": "🐑 <strong>All beheima</strong><br>8 halakhot", "style": "border-color:#4a90d9" },
+          { "content": "🐓 <strong>Wild + birds</strong><br>even visual look-alikes", "style": "border-color:#e74c3c" },
+          { "content": "🚪 <strong>Corral 6:1</strong><br>shmira shifts liability", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Halakhic categories generalize from the typical, but the Torah's word choice still draws hard lines where it matters.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Why are vessels exempt when an animal falls into a pit and crushes them?",
+      "o": [
+        "Because vessels are not valuable enough",
+        "Because the pasuk says 'shor or chamor,' not 'shor with its vessels'",
+        "Because vessels are mukdash",
+        "Because of a takanat chachamim"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>וְנָפַל שָׁמָּה שׁוֹר אוֹ חֲמוֹר</span> — 'shor' and not 'shor with its vessels.' The Torah blocks the otherwise compelling kal va-chomer."
+    },
+    {
+      "q": "What is R' Yochanan and Reish Lakish's principle for the falling animal's vessels?",
+      "o": [
+        "<span class='hebrew'>אֵין שָׁמִין לְגַנָּב</span>",
+        "<span class='hebrew'>דֶּרֶךְ נְפִילָה פָטְרָה תוֹרָה</span>",
+        "<span class='hebrew'>אָדָם מוּעָד לְעוֹלָם</span>",
+        "<span class='hebrew'>דַּיּוֹ לַבָּא מִן הַדִּין</span>"
+      ],
+      "c": 1,
+      "e": "Both held that the Torah exempted the entire process of falling — even if the vessels hit the ground rather than just the air."
+    },
+    {
+      "q": "Why does the Mishnah list 8 halakhot where 'shor' applies to any animal?",
+      "o": [
+        "To show the Torah is repetitive",
+        "Because <span class='hebrew'>שֶׁדִּיבֵּר הַכָּתוּב בַּהוֹוֶה</span> — Torah speaks in the typical case",
+        "Because each halakha was originally only for cattle",
+        "It's a chinuch list"
+      ],
+      "c": 1,
+      "e": "When the Torah names the most common animal, the rule generalizes to all members of the category."
+    },
+    {
+      "q": "According to R' Yochanan, are a rooster and a peacock-hen kilayim?",
+      "o": [
+        "No — they look similar enough",
+        "Yes — visual similarity doesn't override species distinction",
+        "Only on Rosh Chodesh",
+        "Only mid'rabanan"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>אַף עַל פִּי שֶׁדּוֹמִין זֶה לָזֶה כִּלְאַיִם זֶה בָּזֶה</span> — they are kilayim despite the resemblance."
+    },
+    {
+      "q": "When robbers actively let an owner's flock out and the flock damages, who is liable?",
+      "o": [
+        "The owner",
+        "The robbers",
+        "Both equally",
+        "Neither"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>הוֹצִיאוּהָ לִיסְטִין הַלִּסְטִין חַיָיבִין</span> — the active extractors take on the liability."
+    }
+  ]
+}

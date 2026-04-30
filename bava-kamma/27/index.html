@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 27 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🐑</div>
+  <h1>Yerushalmi Bava Kamma 27</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא כז׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🧱 Three-walled corral and the open side<br>
+    ⛅ R' Yehoshua's four cases — exempt בדין but not בידי שמים<br>
+    🔓 Robbers who release vs. robbers who take<br>
+    👨‍🌾 Handing the flock to a shepherd — does liability transfer?<br>
+    🌱 'מה שנהנית' vs. 'מה שהזיקה' — the fall vs. the entrance<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — When Liability Transfers (and When It Doesn't)</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">נָפְלָה לַגִּינָּה וְהִזִּיקָה מְשַׁלֶּמֶת מַה שֶׁנֶּהֱנֵית. יָרְדָה כְדַרְכָּהּ וְהִזִּיקָה מְשַׁלֶּמֶת מַה שֶׁהִזִּיקָה</div><div class="callout"><strong>The sugya:</strong> The daf finishes the corral Mishnah by asking what counts as 'walled,' brings R' Yehoshua's striking list of four cases that are exempt in court but not in heaven, and then turns to Mishnah 6:2 — the rich case-tree of an animal grazing in someone else's field. The big distinction: did it fall in (paying only what it benefited), or did it enter normally (paying the actual damage)? R' Yochanan + Reish Lakish raise the bar: until the animal exits to the public domain and re-enters another field, the owner stays exempt.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>🧱 Three-Walled Corrals and Fallen Walls</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When does inadequate fencing equal liability?</div>
+  <div class="process-bar"><div class="process-step">1️⃣ Mishnah was about a fully-walled corral (4 sides).</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ Question: what if 3 sides are walled and one side is breached?</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ Beraita answer: a wall fell from earthquakes or thunder. <strong>If he rebuilt it properly</strong> → פָּטוּר. <strong>If not</strong> → חַיָיב.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ The proof works because rebuilding restores normal shemira; failure to rebuild is the same as choosing to leave the breach.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ Caveat: <strong>only an issue</strong> when the fallen wall comes down on its own — not when the other three walls were brittle and collapsed too.</div></div><div class="callout" style="margin-top:20px"><strong>Practical principle:</strong> Shemira liability is dynamic. Force majeure starts the clock; a reasonable rebuild stops it. Negligence after the event re-engages liability.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>⚖️ R' Yehoshua's Four Cases — Exempt but Owed</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px"><span class='hebrew'>אֵין חַיָיבִין מִן הַדִּין וְאֵין הַשָּׁמַיִם מוֹחֲלִין</span></div>
+  <table><tr><th>Person</th><th>Action</th><th>Why exempt בדין</th></tr><tr><td><span class='hebrew'>הַיּוֹדֵעַ עֵדוּת</span></td><td>Knows testimony, refuses to testify</td><td>Negative omission, not an act of damage</td></tr><tr><td><span class='hebrew'>הַשּׂוֹכֵר עֵידֵי שֶׁקֶר</span></td><td>Hires false witnesses and collects</td><td>The 'damage' was done by the witnesses' false testimony</td></tr><tr><td><span class='hebrew'>הַכּוֹבֵשׁ קָמָה לִפְנֵי הָאוֹר</span></td><td>Bends standing grain toward a fire</td><td>Indirect — gerama — not legally cognizable</td></tr><tr><td><span class='hebrew'>הַפּוֹרֵץ גָּדֵר לִפְנֵי בְהֵמָה</span></td><td>Breaches a fence so an animal can escape and damage</td><td>Indirect — opened the path, didn't cause directly</td></tr></table><div class="callout" style="margin-top:20px"><strong>The split:</strong> Beit Din uses standards of direct causation. Heaven measures intent. R' Yehoshua makes both visible — the law releases you, but the moral debt stays.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>🔓 Robbers Who Released the Flock</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Why they took it changes who pays.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#c9a84c">M</div><div class="speech"><span class='hebrew'>הוֹצִיאוּהָ לִיסְטִין הַלִּיסְטִין חַיָיבִין</span> — robbers who let it out are liable.</div></div><div class="debate-line right"><div class="speaker" style="background:#4a90d9">Rav H</div><div class="speech">Only if they let it out <span class='hebrew'>לְגוֹזְלָהּ</span> — to steal it. Then they took ownership/responsibility.</div></div><div class="debate-line right"><div class="speaker" style="background:#4a90d9">Rav H</div><div class="speech">But if they let it out <span class='hebrew'>לְאַבְּדָהּ</span> — just to lose it — the robbers are פְּטוּרִין.</div></div></div><div class="callout" style="margin-top:20px"><strong>Why intent matters:</strong> Theft creates a kinyan-like relationship: the robbers become the animal's effective owners and inherit liability. Pure malicious release leaves no such tie — and the original owner's shemira lapsed first.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>🌱 Falling vs. Entering — Two Tort Standards</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The Mishnah 6:2 distinction.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">🪂 נָפְלָה לְגִנָּה</h3><ul><li>Fell in by accident</li><li>Pays only <span class='hebrew'>מַה שֶׁנֶּהֱנֵית</span></li><li>Rav Huna: works only if it landed on grass; if it stood and grazed → full damage</li></ul></div><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">🚶 יָרְדָה כְדַרְכָּהּ</h3><ul><li>Walked in normally</li><li>Pays <span class='hebrew'>מַה שֶׁהִזִּיקָה</span> — actual damage</li><li>Estimate by beit-se'ah method</li></ul></div><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">🌽 R' Shimon's Refinement</h3><ul><li>Ate ripe produce → pays in produce</li><li><span class='hebrew'>אִם סְאָה סְאָה אִם סָאתַיִם סָאתַיִם</span></li><li>1-for-1 by quantity</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>Why the gap:</strong> An animal falling in didn't 'choose' to damage; the owner didn't release it. So liability is reduced to the value the animal received — restitution, not full tort. Walking in normally re-engages full liability.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🌾 R' Yochanan / Reish Lakish — How Far Does Exemption Go?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When 'in due course' includes leaving and re-entering.</div>
+  <div class="flowchart"><div class="flow-box question"><strong>Animal grazes through a field</strong></div><div class="flow-arrow">↓</div><div class="flow-box action">R' Yose ben Chanina: only <strong>that</strong> field is exempt. A second field → liable.</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">R' Yochanan / RL</div><div class="flow-box result-good">Even grazing the entire field is exempt — until it leaves to <span class='hebrew'>רשות הרבים</span> and enters a new field</div></div><div class="flow-col"><div class="flow-label">Edge case</div><div class="flow-box result-partial">Fell into one garden, walked into another? Disagreement</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good">Both Mishnah clauses are needed — one teaches מה שנהנית (fall), the other מה שהזיקה (entrance)</div></div><div class="callout" style="margin-top:20px"><strong>The geography of liability:</strong> An animal isn't fully a maazik until its trespass crosses into the public domain. Internal grazing remains under the falling-in regime.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 27 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>End of perek 6:1 + opening of 6:2</strong></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">How completely must shemira be — and where does the animal's path land it?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">🧱 <strong>3-walled corral</strong><br>rebuild or pay</div></div><div class="flow-col"><div class="flow-box" style="border-color:#c9a84c">⛅ <strong>R' Yehoshua's 4</strong><br>בידי שמים</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🪂 <strong>נפלה</strong><br>מה שנהנית</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🚶 <strong>ירדה כדרכה</strong><br>מה שהזיקה</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Tort liability tracks intent, path, and shemira. Even where beit din releases, heaven still tabs the books.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 27a-27b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 27a-27b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../26/">← Daf 26</a><a href="../28/">Daf 28 →</a></div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 24,
+  "emoji": "🏠",
+  "topics": [
+    "🏺 The potter who left pots in someone else's courtyard without permission",
+    "🌾 Pots, produce, and bulls — the rule of the joint courtyard",
+    "🐂 With permission vs without permission — who absorbs the loss",
+    "🤝 Rebbi: only liable if he explicitly accepted to watch",
+    "🤰 Bull intending to gore — but a pregnant woman miscarries"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — The Courtyard, the Pots, and the Pregnant Woman",
+    "label": "The sugya:",
+    "text": "Daf 24 walks through three Mishnayot of Chapter 5 that share a single structural test: was it brought in with permission? The answer flips liability between the courtyard-owner and the item-owner. The daf closes by pivoting to the unintentional miscarriage — and to the question of whether a fetus can be freed by 'tooth and eye'.",
+    "hebrewSource": "הִכְנִיס פֵּירוֹתָיו לַחֲצַר בַּעַל הַבַּיִת שֶׁלֹּא בִּרְשׁוּת... וְאִם הוּזְּקָה בָהֶן בַּעַל הַפֵּירוֹת חַיָיב."
+  },
+  "slides": [
+    {
+      "type": "table",
+      "title": "📊 The Three Items in the Courtyard",
+      "subtitle": "Same logic, three different items.",
+      "headers": ["Item", "Without permission — animal damaged it", "Without permission — animal hurt by it", "With permission"],
+      "rows": [
+        ["🏺 Pots (קדרות)", "Owner of bayit — פטור", "Owner of pots — חייב", "Owner of bayit — חייב"],
+        ["🌾 Produce (פירות)", "Owner of bayit — פטור", "Owner of produce — חייב", "Owner of bayit — חייב"],
+        ["🐂 Bull (שור)", "Owner of bayit — פטור (gored), חייב (his bull gored)", "Owner of bull — חייב for damages caused", "Owner of bayit — חייב"]
+      ],
+      "callout": {
+        "label": "Yerushalmi conclusion:",
+        "text": "When neither party owns the courtyard, even קרן and שן damages don't apply: <span class='hebrew'>הקרן פטורה בחצר שאינה לשניהם</span>."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🤝 Rebbi vs the Sages — What 'With Permission' Means",
+      "subtitle": "R' Yirmiyah maps where everyone agrees and where they fight.",
+      "boxes": [
+        {
+          "title": "🏠 House",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "Everyone agrees",
+            "'הכנס' implies 'and I will watch it'",
+            "Owner of bayit fully liable"
+          ]
+        },
+        {
+          "title": "🌾 Field",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "Everyone agrees",
+            "'הכנס' implies 'and you watch it'",
+            "Owner of items watches himself"
+          ]
+        },
+        {
+          "title": "🏡 Courtyard",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Where they fight!",
+            "Rebbi: courtyard is like a field",
+            "Sages: courtyard is like a house"
+          ]
+        },
+        {
+          "title": "🔒 Special case",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "R' Yose b' R' Bun: courtyard with a lock",
+            "Treat as field for sheaves",
+            "Lock implies guarding is on the owner"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Halakhah:",
+        "text": "Rav Yehuda in Shmuel's name and Rav Ze'ira: הלכה כרבי. But Rebbi himself adds: 'in all of these — only if he explicitly accepted to watch.'"
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🐂 The Bull Gored a Bull or Bit a Person",
+      "subtitle": "Five scenarios when his bull is in the host's courtyard without permission.",
+      "nodes": [
+        { "content": "הכניס שורו לחצר בעל הבית שלא ברשות", "class": "question" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Owner's bull gores it", "content": "פטור", "class": "result-bad" },
+            { "label": "Owner's dog bites it", "content": "פטור", "class": "result-bad" },
+            { "label": "Bull gores owner's bull", "content": "חייב", "class": "result-good" },
+            { "label": "Falls into pit, fouls water", "content": "חייב", "class": "result-good" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Father or son was inside? — משלם את הכופר", "class": "result-partial" },
+        { "type": "arrow" },
+        { "content": "With permission: bayit owner liable. Rebbi: only if he explicitly accepted to watch.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Sages dispute:",
+        "text": "R' Meir: even from a third bull, full damages. Sages: only שן and רגל are full; קרן/נגיפה/etc. are tam-half or muad-full from עלייה."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 The Pregnant Woman Caught in the Crossfire",
+      "subtitle": "A bull or a man intends to hit someone — and a pregnant woman miscarries.",
+      "lines": [
+        { "speaker": "M", "side": "left", "speakerColor": "#c9a84c", "text": "Mishnah: a bull aiming at another bull, hit a woman, fetus lost — <span class='hebrew'>פטור מדמי וולדות</span>." },
+        { "speaker": "M2", "side": "right", "speakerColor": "#4a90d9", "text": "But: a man aiming at a friend, hit a pregnant woman — <span class='hebrew'>משלם דמי וולדות</span> to the husband." },
+        { "speaker": "AB", "side": "left", "speakerColor": "#9b59b6", "text": "Abba bar Rav Hana: the bull case is taught only as setup for the human case — bulls never pay fetus damages either way." },
+        { "speaker": "ABY", "side": "right", "speakerColor": "#e74c3c", "text": "Abba Yose ben Hanan: 'הרה' teaches he must hit the place of pregnancy. If he hit hand or foot — פטור." },
+        { "speaker": "RU", "side": "left", "speakerColor": "#4caf50", "text": "R' Uqba: what if it's incest — is the perpetrator a 'בעל'? The verse says 'בעל' — only one who could be called husband." }
+      ],
+      "callout": {
+        "label": "Drasha:",
+        "text": "From <span class='hebrew'>כי ינצו אנשים</span> — humans not bulls. The Yerushalmi reads each word of Exodus 21:22 to filter who pays whom."
+      }
+    },
+    {
+      "type": "process",
+      "title": "👁️ Fetuses and 'Tooth and Eye'",
+      "subtitle": "R' Yasa's rule about freeing a Canaanite slave's fetus.",
+      "steps": [
+        { "content": "1️⃣ Canaanite slave goes free if owner knocks out his tooth or eye." },
+        { "content": "2️⃣ R' Yasa in R' Yochanan's name: <span class='hebrew'>עוברין אין יוצאין בשן ועין</span>." },
+        { "content": "3️⃣ Question: ניחא בשן — but how does an unborn fetus have an 'eye' to lose?" },
+        { "content": "4️⃣ R' Yose b' R' Bun: the baraita means — fetuses don't go free by their <em>mother's</em> tooth and eye." },
+        { "content": "5️⃣ Therefore: damage to the mother does not propagate freedom to the fetus.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "Daf 24 closes one principle and opens another: ownership and intention determine liability — but separate persons (mother / fetus) follow separate emancipation rules."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Permission to enter a courtyard transfers the duty of watching from one party to the other; without permission, the intruder bears the loss and any damages he causes.",
+    "flowSteps": [
+      { "content": "<strong>Item placed in another's courtyard</strong>", "class": "question" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🚫 <strong>Without permission</strong><br>intruder absorbs loss", "style": "border-color:#e74c3c" },
+          { "content": "✅ <strong>With permission</strong><br>host liable (Rebbi: if accepted)", "style": "border-color:#4caf50" },
+          { "content": "🐂 <strong>His own animal</strong><br>still pays for damage caused", "style": "border-color:#4a90d9" },
+          { "content": "🤰 <strong>Pregnant woman</strong><br>only humans pay vlados", "style": "border-color:#9b59b6" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "The Yerushalmi tracks the inversion: same scenario, opposite liability based on permission.", "class": "action" },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>The verbal grant 'come in' is a transfer of guarding duty — and intent determines who pays for fetuses.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "If pots are placed without permission and an animal of the bayit owner breaks them, who is liable?",
+      "o": ["The bayit owner", "Nobody — the bayit owner is פטור", "The pot owner pays the bayit owner", "Both share equally"],
+      "c": 1,
+      "e": "Without permission, the bayit owner is exempt; if the animal was hurt by the pots, the pot owner is liable."
+    },
+    {
+      "q": "Where does R' Yirmiyah place the dispute between Rebbi and the Sages?",
+      "o": ["In the bayit", "In the field", "In the courtyard", "In the public domain"],
+      "c": 2,
+      "e": "Everyone agrees about house and field; the dispute is about a courtyard — Rebbi: like a field; Sages: like a house."
+    },
+    {
+      "q": "Why does the Mishnah teach the bull-aiming-at-bull case?",
+      "o": ["To make the bull liable for fetuses", "To require intent for liability", "Only as a setup to teach the contrasting human case (Abba bar Rav Hana)", "To exempt bulls from kofer"],
+      "c": 2,
+      "e": "Abba bar Rav Hana: bulls never pay fetus damages; the case is taught to set up the human case where intent transfers."
+    },
+    {
+      "q": "What does Abba Yose ben Hanan derive from the word 'הרה'?",
+      "o": ["Only married women count", "He must hit the place of pregnancy or he is פטור", "Fetuses are persons", "The husband must be present"],
+      "c": 1,
+      "e": "If he struck her hand or foot rather than the area of pregnancy, he is exempt from fetus payment."
+    },
+    {
+      "q": "What does R' Yasa say about freeing fetuses by tooth and eye?",
+      "o": ["A fetus is freed when its mother is freed", "Fetuses do not go free by their mother's tooth and eye", "Only male fetuses are freed", "Fetuses always go free"],
+      "c": 1,
+      "e": "<span class='hebrew'>עוברין אין יוצאין בשן ועין של אמן</span> — damage to the mother doesn't propagate freedom to her fetus."
+    }
+  ]
+}

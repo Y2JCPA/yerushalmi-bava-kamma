@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 21 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">⚖️</div>
+  <h1>Yerushalmi Bava Kamma 21</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא כא׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🐂 שׁוֹר שֶׁנָּגַח אֶת הָאָדָם — the goring bull and what its owner pays<br>
+    💬 R' Eliezer vs. R' Akiva: what does <span class='hebrew'>וּבַעַל הַשּׁוֹר נָקִי</span> exempt?<br>
+    🪦 R' Akiva's challenge: is the owner not 'destined for the stoning place'?<br>
+    📖 R' Eliezer's narrowing: only when the bull intended to kill an animal<br>
+    🔁 Gezerah shavah: <span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span> — does it learn from <span class='hebrew'>סָקוֹל יִסָּקֵל</span> or from itself?<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — What 'The Owner Is Free' Really Means</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">וּבַעַל הַשּׁוֹר נָקִי. נָקִי מֵחֲצִי כוֹפֶר. דִּבְרֵי רִבִּי אֱלִיעֶזֶר. אָמַר לוֹ רִבִּי עֲקִיבָה. רִבִּי. וַהֲלֹא מוּקְדָּם הוּא לְבֵית הַסְקִילָה חֲמוּרָה</div><div class="callout"><strong>The sugya:</strong> Exodus 21:28 says that when an ox gores a person to death, the ox is stoned and 'the owner of the bull is free' (וּבַעַל הַשּׁוֹר נָקִי). R' Eliezer reads this as freeing him from half the kofer (weregilt). R' Akiva pushes back: the owner is already destined for the stoning place — how can the verse be talking about him? The Yerushalmi tracks both opinions through five distinct moves: a frontal challenge, a narrowing, an internal critique, alternative readings of the exemption, and a closing gezerah shavah about which version of 'the bull shall be stoned' anchors the law.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>💬 R' Eliezer vs. R' Akiva — Round One</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">What does the Torah free the owner from?</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#4a90d9">RE</div><div class="speech"><span class='hebrew'>וּבַעַל הַשּׁוֹר נָקִי</span> — free from half the kofer. When the bull is a tam that kills a person, the owner is exempt from paying half-weregilt.</div></div><div class="debate-line right"><div class="speaker" style="background:#e74c3c">RA</div><div class="speech"><span class='hebrew'>רִבִּי, וַהֲלֹא מוּקְדָּם הוּא לְבֵית הַסְקִילָה חֲמוּרָה?</span> — Rabbi, isn't he already destined for the severity of the stoning place? How can the verse even discuss money?</div></div><div class="debate-line"><div class="speaker" style="background:#4a90d9">RE</div><div class="speech"><span class='hebrew'>לֹא אָמַרְתִּי אֶלָּא בְּנִתְכַּוֵון לַהֲרוֹג אֶת הַבְּהֵמָה וְהָרַג אֶת הָאָדָם</span> — I only spoke about a case where the bull intended to kill an animal but ended up killing a person. Then there is no death penalty for the owner, and the kofer-exemption is meaningful.</div></div></div><div class="callout" style="margin-top:20px"><strong>Key move:</strong> R' Akiva is not denying the exemption. He is pointing out that for a typical murderous-bull case, the owner faces capital liability anyway — so the verse can't be his concern. R' Eliezer answers by carving out the unintended-killing case where the owner avoids the stoning court.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>🔎 The Yerushalmi's Internal Critique</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Should R' Akiva's question apply just as much to himself?</div>
+  <div class="flowchart"><div class="flow-box question"><strong>R' Akiva attacks R' Eliezer:</strong><br>The owner is already going to בית הסקילה.</div><div class="flow-arrow">↓</div><div class="flow-box action"><span class='hebrew'>עַד דּוּ מַקְשֵׁי לָהּ עַל דְּרִבִּי לִעֶזֶר יַקְשֶׁינָּהּ עַל דִּידֵיהּ</span><br>Before he objects to R' Eliezer, shouldn't he object to himself?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">R' Miasha</div><div class="flow-box result-partial"><span class='hebrew'>תִּיפְתָּר בְּשֶׁעָבַר וּשְׁחָטוֹ</span><br>Read it about a case where he transgressed and slaughtered the bull — so no stoning court for the owner here either.</div></div><div class="flow-col"><div class="flow-label">Alternative reading</div><div class="flow-box result-partial">R' Akiva himself uses the same narrowing as R' Eliezer: the case is when the bull intended to kill an animal, or a Gentile, or a stillbirth.</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good">Either way, R' Akiva's exemption — like R' Eliezer's — only operates outside the standard capital case.</div></div><div class="callout" style="margin-top:20px"><strong>Yerushalmi style:</strong> The Yerushalmi will not let an Amora score points cheaply. If R' Akiva's question would also undermine his own reading, the Yerushalmi forces him to live with the same answer.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>🆚 Two Readings of <span class='hebrew'>וּבַעַל הַשּׁוֹר נָקִי</span></h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Each Tanna assigns the exemption to a different liability.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">🐂 R' Eliezer</h3><ul><li><span class='hebrew'>נָקִי מֵחֲצִי כוֹפֶר</span> — free from half the weregilt</li><li>Operative case: tam that intended an animal but killed a person</li><li>Verse <span class='hebrew'>אִם כּוֹפֶר יוּשַׁת עָלָיו</span> speaks of the mu'ad — full kofer there</li><li>So 'נקי' here must address the tam — exempt from half</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">📜 R' Akiva</h3><ul><li><span class='hebrew'>נָקִי מִדְּמֵי עֶבֶד</span> — free from paying for a slave</li><li>Worried about the stoning court collision</li><li>Reads the exemption against the slave-payment rule of Ex. 21:32</li><li>Forces the case into the same narrow scenarios R' Eliezer used</li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">🤝 Common ground</h3><ul><li>Both agree the verse cannot mean a standard murderous-bull case</li><li>Both narrow it to where the owner is not capitally liable</li><li>They differ only on which monetary payment the verse waives</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>Why the dispute matters:</strong> It's not a vague hermeneutic preference. R' Eliezer needs <span class='hebrew'>נָקִי</span> for half-kofer because the verse <span class='hebrew'>אִם כּוֹפֶר יוּשַׁת</span> already covers the mu'ad's full kofer. R' Akiva reroutes the exemption to the slave-payment because in his system the half-kofer is handled differently.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>📊 Where Does Each Side Get Its Other Exemption?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Each Tanna must source the exemption the other reads into נקי.</div>
+  <table><tr><th>Question</th><th>R' Eliezer</th><th>R' Akiva</th></tr><tr><td>Free from half-kofer?</td><td>Yes — directly from <span class='hebrew'>וּבַעַל הַשּׁוֹר נָקִי</span></td><td>Yes — derived via gezerah shavah of <span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span> from <span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span></td></tr><tr><td>Free from paying for a slave?</td><td>Yes — derived from <span class='hebrew'>אִם כּוֹפֶר יוּשַׁת עָלָיו</span> (mu'ad context)</td><td>Yes — directly from <span class='hebrew'>וּבַעַל הַשּׁוֹר נָקִי</span></td></tr><tr><td>Why each pasuk works</td><td>The kofer-imposition verse speaks of mu'ad, leaving נקי for the tam's half-kofer</td><td>The two phrasings of 'the bull shall be stoned' link tam to mu'ad's law</td></tr><tr><td>Who uses gezerah shavah</td><td>Not for this point</td><td><span class='hebrew'>נֶאֱמַר כָּאן הַשּׁוֹר יִסָּקֵל וְנֶאֱמַר לְהַלָּן הַשּׁוֹר יִסָּקֵל</span></td></tr></table><div class="callout" style="margin-top:20px"><strong>Important:</strong> Both Tannaim arrive at all the same exemptions. Their dispute is purely about which words of Torah carry which job.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🧠 The Closing Gezerah Shavah</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Which 'the bull shall be stoned' is the source — and which is the recipient?</div>
+  <div class="process-bar"><div class="process-step">1️⃣ The Torah twice uses similar phrases: <span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span> (in our parsha, on tam) and <span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span> (later, on mu'ad).</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ R' Akiva: just as 'the bull shall be stoned' there speaks of the mu'ad, so 'the bull shall be stoned' here also gets read in the mu'ad's framework — yielding the half-kofer exemption for the tam.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ Objection: but elsewhere the Torah writes <span class='hebrew'>סָקוֹל יִסָּקֵל הַשּׁוֹר</span> — wouldn't that be the better link? Doubled language is usually weightier.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ Resolution: <span class='hebrew'>מוּטָּב יִלָּמֵד הַשּׁוֹר יִסָּקֵל מִשּׁוֹר יִסָּקֵל</span> — better that 'the bull shall be stoned' learn from a phrase that matches it exactly.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ Principle: a gezerah shavah prefers identical phrasing over a near-identical doubled phrasing.</div></div><div class="callout" style="margin-top:20px"><strong>Bottom line:</strong> The daf, which on the surface is a short three-line dispute, actually contains: a frontal Tannaitic clash, a self-objection move (<span class='hebrew'>יַקְשֶׁינָּהּ עַל דִּידֵיהּ</span>), two parallel exemption-mappings, and a meta-rule about how to choose between competing gezerot shavot.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 21 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Verse:</strong><br><span class='hebrew'>וּבַעַל הַשּׁוֹר נָקִי</span><br>(Ex. 21:28)</div><div class="flow-arrow">↓</div><div class="flow-box action" style="">What is the owner free from?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🔵 <strong>R' Eliezer</strong><br>Free from half-kofer (tam case)</div></div><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">🔴 <strong>R' Akiva</strong><br>Free from paying for a slave</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">🟣 <strong>Both</strong><br>Only outside the capital case (intended animal, etc.)</div></div><div class="flow-col"><div class="flow-box" style="border-color:#c9a84c">🟡 <strong>Gezerah shavah</strong><br><span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span> ↔ <span class='hebrew'>הַשּׁוֹר יִסָּקֵל</span></div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Two Tannaim, two assignments of <span class='hebrew'>נָקִי</span>, but the same monetary outcomes — because each side imports the other's exemption through a different pasuk.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 21a-21b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 21a-21b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../20/">← Daf 20</a><a href="../22/">Daf 22 →</a></div>
+</body>
+</html>

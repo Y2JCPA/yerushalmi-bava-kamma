@@ -1,0 +1,211 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 32,
+  "emoji": "👥",
+  "topics": [
+    "🧑‍⚖️ R' Ze'ira: a zomem witness disqualifies himself, not by court ruling",
+    "📅 R' Yose: one testimony with one warning — partial nullification = total nullification",
+    "🗓️ The Nisan timeline: ten days of testimony retroactively void",
+    "🔁 Witnesses for theft and slaughter arriving separately — and being 'reactivated'",
+    "📜 New Mishnah: עד אחד or עצמו for slaughter ⇒ only כפל, not ד׳ וה׳"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — When and How Testimony Falls Apart",
+    "label": "The sugya:",
+    "text": "The Halakhah probes when perjured witnesses are disqualified — at the moment of being exposed, or only by court ruling? R' Ze'ira holds it is automatic. R' Yose distinguishes between one testimony with one warning (where partial = total nullification) and two separate testimonies. Two scenarios show 'sequential' witnesses: a previously rejected pair can be retroactively accepted on the strength of the second pair. The new Mishnah (7:4) closes the page: one witness or self-confession on the slaughter side ⇒ כפל only.",
+    "hebrewSource": "אָמַר רִבִּי זְעִירָא. הָדָא אָמְרָה. עָד זוֹמֵם אֵין נִפְסָל בְּבֵית דִּין אֶלָּא מֵעַצְמוֹ נִפְסָל"
+  },
+  "slides": [
+    {
+      "type": "debate",
+      "title": "💬 When is a Zomem Disqualified?",
+      "subtitle": "R' Ze'ira reads the Mishnah's rule about partial perjury.",
+      "lines": [
+        { "speaker": "RZ", "side": "left", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>עָד זוֹמֵם אֵין נִפְסָל בְּבֵית דִּין אֶלָּא מֵעַצְמוֹ נִפְסָל</span> — a perjured witness disqualifies himself; the court does not need to act." },
+        { "speaker": "Q", "side": "right", "speakerColor": "#9b59b6", "text": "Then how does the Mishnah's case (one of the second pair zomem ⇒ second testimony falls) work? If self-disqualification is automatic, no testimony was ever valid." },
+        { "speaker": "A", "side": "left", "speakerColor": "#c9a84c", "text": "Read it as a case of <strong>warning</strong> (<span class='hebrew'>הַתְרָיָיה</span>) — and bring R' Yose's brayta: one testimony + one warning = partial nullification triggers full nullification." }
+      ],
+      "callout": {
+        "label": "Why this matters:",
+        "text": "If perjury is self-executing, the moment a witness becomes disqualified is the moment of his act — not the court's verdict. This shapes how earlier testimonies he gave are treated."
+      }
+    },
+    {
+      "type": "process",
+      "title": "📅 The Nisan Timeline",
+      "subtitle": "R' Yose's principle in action: any testimony given between act and exposure is void.",
+      "steps": [
+        { "content": "1️⃣ <strong>1 Nisan</strong>: defendant allegedly steals an ox." },
+        { "content": "2️⃣ <strong>10 Nisan</strong>: witnesses come to court and testify he stole on 1 Nisan, and slaughtered/sold on 10 Nisan." },
+        { "content": "3️⃣ <strong>10–15 Nisan</strong>: those same witnesses testify in other cases." },
+        { "content": "4️⃣ <strong>15 Nisan</strong>: they are <strong>הוזמו</strong> — proven to be perjurers." },
+        { "content": "5️⃣ Result: <span class='hebrew'>כָּל עֵדוּת שֶׁהֵעִידוּ מֵעֲשָׂרָה בְנִיסָן עַד חֲמִשָּׁה עָשָׂר בְּנִיסָן לְמַפְרֵיעָהּ הֲרֵי אֵילּוּ פְסוּלוֹת</span> — every testimony in that 5-day window is <strong>retroactively</strong> disqualified.", "highlight": true }
+      ],
+      "callout": {
+        "label": "The teaching:",
+        "text": "Once a witness is exposed, the court treats him as having been disqualified from the moment of his perjury — not the moment of his exposure. R' Abba bar Mamal narrows this to cases where they testified together in one group."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🔁 Sequential Witnesses Reactivated",
+      "subtitle": "Two scenarios where a previously rejected testimony is accepted because of a second pair.",
+      "boxes": [
+        {
+          "title": "📥 Scenario A",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "Theft witnesses arrive — court does not accept",
+            "Slaughter witnesses arrive later",
+            "Court tells them: we'll accept the theft testimony <strong>על ידיכם</strong>",
+            "If slaughter witnesses are zomemim → they pay על יד עידי גניבה"
+          ]
+        },
+        {
+          "title": "📤 Scenario B (R' Chizkiyah)",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Slaughter witnesses arrive first — not accepted",
+            "Theft witnesses arrive later",
+            "Court tells them: slaughter testimony is now accepted <strong>על ידיכם</strong>",
+            "If theft witnesses are zomemim → they pay על יד עידי טביחה"
+          ]
+        },
+        {
+          "title": "🔗 Common Move",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "A pair's testimony can sit dormant",
+            "The next pair 'activates' it",
+            "Liability flows backward through that activation"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Why both versions matter:",
+        "text": "The sugya isn't sure which pair has the activating role. Either ordering shows the same logical structure: testimony only counts once joined to a corroborating pair."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📜 Mishnah 7:4 — Lone Witness on Slaughter",
+      "subtitle": "When the second leg of the case rests on weaker evidence, ד׳ וה׳ falls away.",
+      "headers": ["Theft proven by", "Slaughter/sale proven by", "Penalty"],
+      "rows": [
+        ["Two witnesses", "Two witnesses", "<strong>ד׳ וה׳</strong>"],
+        ["Two witnesses", "<strong>One</strong> witness", "<strong>כפל only</strong>"],
+        ["Two witnesses", "Defendant's <strong>own confession</strong>", "<strong>כפל only</strong>"],
+        ["Two witnesses (Shabbat / ע״ז / father died / הקדיש)", "Two witnesses but the act has another issue", "<strong>כפל only</strong>"]
+      ],
+      "callout": {
+        "label": "The structural rule:",
+        "text": "The penalty climbs in proportion to the strength of the proof. Without two valid witnesses to the slaughter/sale, you keep the theft penalty (כפל) but lose the multiplier."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🐄 R' Shimon's Position on Hekdesh",
+      "subtitle": "When the stolen animal is consecrated, does it still trigger ד׳ וה׳?",
+      "nodes": [
+        { "content": "<strong>Tanna kamma:</strong><br>גנב והקדיש ואחר כך טבח<br>⇒ כפל only", "class": "question" },
+        { "type": "arrow" },
+        { "content": "R' Shimon refines:", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "קדשים שחייב באחריותן", "content": "He still bears the responsibility<br>⇒ <strong>ד׳ וה׳</strong>", "class": "result-good" },
+            { "label": "קדשים שאינו חייב באחריותן", "content": "Not 'his' anymore<br>⇒ <strong>פטור</strong>", "class": "result-bad" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "R' Shimon links the penalty to the thief's continuing ownership-stake in the animal.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "The Yerushalmi's question:",
+        "text": "Who taught the rule that 'one penalty before court excludes another'? R' Shimon — because his version of the rule for hekdesh tracks ownership-responsibility, the same logic that limits ד׳ וה׳ here."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "A perjured witness disqualifies himself the moment of his perjury, retroactively voiding any testimony in the gap. And the strength of testimony controls the size of the penalty: two witnesses for both legs ⇒ ד׳ וה׳; weaker proof ⇒ כפל only.",
+    "flowSteps": [
+      { "content": "<strong>Halakhah on Mishnah 7:3</strong><br>when does a zomem fall?", "class": "question" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🧑‍⚖️ <strong>R' Ze'ira</strong><br>self-disqualification", "style": "border-color:#4a90d9" },
+          { "content": "📅 <strong>R' Yose</strong><br>retroactive nullification", "style": "border-color:#c9a84c" },
+          { "content": "🔁 <strong>Sequential pairs</strong><br>activated על ידיכם", "style": "border-color:#9b59b6" },
+          { "content": "📜 <strong>Mishnah 7:4</strong><br>weaker proof = כפל only", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "Testimony is treated as a structural object: it depends on the witnesses' standing at every moment, and each piece of proof carries exactly the weight needed to support its penalty.", "class": "action" },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Penalty matches proof; perjury collapses backward in time; and R' Shimon ties הקדש liability to who really owns the animal.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "What does R' Ze'ira learn from the Mishnah about a zomem witness?",
+      "o": [
+        "He is disqualified only by the court",
+        "<span class='hebrew'>אֵין נִפְסָל בְּבֵית דִּין אֶלָּא מֵעַצְמוֹ נִפְסָל</span> — he disqualifies himself",
+        "He must bring a sacrifice",
+        "He pays double restitution"
+      ],
+      "c": 1,
+      "e": "R' Ze'ira reads the Mishnah's logic as automatic self-disqualification, not court action."
+    },
+    {
+      "q": "In R' Yose's Nisan timeline example, what testimony is retroactively disqualified?",
+      "o": [
+        "Only the testimony given on 15 Nisan",
+        "All testimony given between 10 Nisan and 15 Nisan",
+        "Only testimony about the original theft",
+        "Nothing — they were valid until exposure"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>כָּל עֵדוּת שֶׁהֵעִידוּ מֵעֲשָׂרָה בְנִיסָן עַד חֲמִשָּׁה עָשָׂר בְּנִיסָן לְמַפְרֵיעָהּ הֲרֵי אֵילּוּ פְסוּלוֹת</span>."
+    },
+    {
+      "q": "When does R' Yose's principle of 'partial = total nullification' apply?",
+      "o": [
+        "Only with multiple unrelated cases",
+        "<span class='hebrew'>בְּעֵדוּת אַחַת וּבְהַתְרָיָיה אַחַת</span> — one testimony with one warning",
+        "Only on capital cases",
+        "Only when defendants confess"
+      ],
+      "c": 1,
+      "e": "Two separate testimonies with two separate warnings can each stand or fall on its own; one testimony with one warning falls entirely if part is disqualified."
+    },
+    {
+      "q": "In Mishnah 7:4, if theft is proven by two witnesses but slaughter only by one witness, what is the penalty?",
+      "o": [
+        "ד׳ וה׳ in full",
+        "ד׳ וה׳ but reduced",
+        "כפל only",
+        "Nothing — the case fails"
+      ],
+      "c": 2,
+      "e": "<span class='hebrew'>מְשַׁלֵּם תַּשְׁלוּמֵי כֶפֶל וְאֵינוֹ מְשַׁלֵּם תַּשְׁלוּמֵי אַרְבָּעָה וַחֲמִשָּׁה</span>. Theft stands; the multiplier requires two witnesses for slaughter as well."
+    },
+    {
+      "q": "What is R' Shimon's distinction regarding stolen קדשים?",
+      "o": [
+        "Hekdesh always exempts from ד׳ וה׳",
+        "<span class='hebrew'>קֳדָשִׁים שֶׁחַיָיב בְּאַחֲרָיוּתָן</span> — pays ד׳ וה׳; <span class='hebrew'>שֶׁאֵינוֹ חַיָיב</span> — exempt",
+        "Hekdesh always pays ד׳ וה׳",
+        "Hekdesh requires only confession"
+      ],
+      "c": 1,
+      "e": "R' Shimon ties the penalty to ongoing ownership-responsibility (אחריות). If the thief still bears it, the animal is functionally still 'his stolen property' for ד׳ וה׳."
+    }
+  ]
+}

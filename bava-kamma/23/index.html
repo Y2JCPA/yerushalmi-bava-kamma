@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 23 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🛡️</div>
+  <h1>Yerushalmi Bava Kamma 23</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא כג׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🛡️ Handing the bull to a שומר — who steps into the owner's place<br>
+    🔒 Tying it down 'כראוי' — does a tame and notorious bull share guarding standards?<br>
+    🐂 R' Eliezer: the only שמירה for a notorious is the knife<br>
+    🐄 The pregnant cow puzzle — who pays for the calf when timing is unknown<br>
+    🎲 Following majority in monetary cases — the camel-in-heat baraita<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Watchmen, Levels of Guarding, and the Cow's Calf</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">מְסָרוֹ לְשׁוֹמֵר חִנָּם וְלַשּׁוֹאֵל וְלַנּוֹשֵׂא שָׂכָר וְהַשּׂוֹכֵר נִכְנְסוּ תַחַת הַבְּעָלִים.</div><div class="callout"><strong>The sugya:</strong> Daf 23 closes Chapter 4 with the topic of handing the bull to a guardian and the level of שמירה required, then opens Chapter 5 with the famous mystery of the gored cow and her calf — a sugya that probes whether monetary law follows majority probability.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>🛡️ Levels of Guarding</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Eleazar maps the dispute between R' Meir and R' Yehudah onto the שומרים grid.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">🆓 R' Meir</h3><ul><li><span class='hebrew'>שמירת נזקין כשמירת שומר חינם</span></li><li>Unpaid trustee level guarding suffices</li><li>Looser standard — easier to be patur</li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">💰 R' Yehudah</h3><ul><li><span class='hebrew'>שמירת נזקין כשומר שכר</span></li><li>Paid trustee level guarding required</li><li>Stricter — harder to escape liability</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">🔪 R' Eliezer</h3><ul><li>A muad has only one שמירה</li><li><span class='hebrew'>אין לו שמירה אלא סכין</span></li><li>Slaughter is the only adequate guard</li></ul></div><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">⚖️ Practical test</h3><ul><li>Even iron walls aren't enough alone</li><li><span class='hebrew'>אין משערין אלא בגופו</span></li><li>Personal capacity to watch is decisive</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>Key move:</strong> The Yerushalmi reads the Mishnah's dispute about a tied-down ox as a fight over which שומר category sets the bar for damage-prevention.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>📊 R' Meir vs R' Yehudah — Bull Damaged or Bull Killed</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Once the bull is handed over, four scenarios shake out differently.</div>
+  <table><tr><th>Scenario</th><th>R' Meir (שומר חינם)</th><th>R' Yehudah (שומר שכר)</th></tr><tr><td>Unpaid: bull broke out and damaged</td><td>פטור</td><td>חייב (mu'ad)</td></tr><tr><td>Unpaid: bull broke out and was killed/torn</td><td>פטור</td><td>פטור</td></tr><tr><td>Paid: bull broke out and damaged</td><td>חייב</td><td>חייב</td></tr><tr><td>Paid: bull broke out and was killed/torn</td><td>פטור</td><td>חייב</td></tr></table><div class="callout" style="margin-top:20px"><strong>Note:</strong> R' Eleazar's astonishment: 'But it was guarded — and the Torah still made him liable!' Resolution: every שמירה in the Torah is measured against the watchman himself, not the wall.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>🐄 The Cow With Her Calf</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">A bull gored a cow; her fetus is found beside her.</div>
+  <div class="flowchart"><div class="flow-box question">משנה: שור שנגח את הפרה ונמצא עוברה בצידה</div><div class="flow-arrow">↓</div><div class="flow-box action">Was the calf already born — or did the goring cause the miscarriage?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">If known</div><div class="flow-box result-good">Pay full half-damage</div></div><div class="flow-col"><div class="flow-label">If doubtful</div><div class="flow-box result-partial">Half נזק for cow + רביע for calf</div></div><div class="flow-col"><div class="flow-label">Yerushalmi probe</div><div class="flow-box result-bad">Why not follow רוב — most cows don't miscarry?</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good">Conclusion: monetary law generally <em>doesn't</em> follow majority — but R' Yose cites R' Acha's camel-in-heat case as a counter-example.</div></div><div class="callout" style="margin-top:20px"><strong>Yerushalmi tension:</strong> <span class='hebrew'>זאת אומרת שלא הילכו במידת הדין בממון אחר הרוב</span> — but R' Acha's camel baraita shows they sometimes did.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>💬 R' Yannai vs R' Yose — How Does the Half + Quarter Work?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Two structural readings of the Mishnah's split payment.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#4a90d9">RY</div><div class="speech">R' Yannai: <span class='hebrew'>משלם חצי נזק מן הפרה ובעל הוולדות עולה לבעל הפרה רביע</span> — owner pays half from the cow value, and the calf-owner kicks back a quarter to the cow-owner.</div></div><div class="debate-line right"><div class="speaker" style="background:#9b59b6">RY2</div><div class="speech">R' Yose: each pays half — half for the cow, half for the calf, treated as separate damage events.</div></div><div class="debate-line"><div class="speaker" style="background:#c9a84c">Q</div><div class="speech">What's the practical difference? <span class='hebrew'>מתו הוולדות</span> — if the calves died after the goring.</div></div><div class="debate-line right"><div class="speaker" style="background:#e74c3c">A</div><div class="speech">On R' Yannai's reading the cow-owner can say 'I didn't want them — take them as they are.' On the other reading, each pays his own share regardless.</div></div></div><div class="callout" style="margin-top:20px"><strong>Levi's traditions:</strong> Reish Lakish concludes: <span class='hebrew'>כל אילין שמועתא דלוי אינון</span> — all these readings come from Levi's school.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🐪 The Camel-in-Heat — Following the Rov</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Yose's counter-example to the cow-and-calf principle.</div>
+  <div class="process-bar"><div class="process-step">1️⃣ A camel in heat (<span class='hebrew'>גמל האוחר</span>) wandered among other camels.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ One of them is found dead.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ Ruling: the camel-in-heat is liable — <span class='hebrew'>בידוע שזה הרגו</span>.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ Reasoning: the overwhelming probability is that the agitated camel did it.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ Therefore: <strong>monetary law sometimes does follow רוב</strong> — the cow case is the exception, not the rule.</div></div><div class="callout" style="margin-top:20px"><strong>Bottom line:</strong> R' Avun bar Cahana asks: if it were certain, would each pay half? R' Immi answers: yes — the Mishnah deals with a muad, and the half is a sale-of-foot logic.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 23 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Watchmen and split-ownership</strong><br>Who pays when the cow loses her calf?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🛡️ <strong>R' Meir</strong><br>שומר חינם standard</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">💰 <strong>R' Yehudah</strong><br>שומר שכר standard</div></div><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">🔪 <strong>R' Eliezer</strong><br>only the knife</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🐄 <strong>R' Yannai vs R' Yose</strong><br>half+quarter split</div></div></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Doubt about timing produces split payment — but probability arguments are fragile in monetary law.</div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Liability is shaped both by who was watching and by who owned the damaged property.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 23a-23b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 23a-23b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../22/">← Daf 22</a><a href="../24/">Daf 24 →</a></div>
+</body>
+</html>

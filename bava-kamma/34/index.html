@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 34 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🤕</div>
+  <h1>Yerushalmi Bava Kamma 34</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא לד׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🚫 Trade in forbidden items: Torah-prohibited vs. rabbinically-prohibited<br>
+    🐕 R' Yose b. R' Chanina on the spiritual cost of raising a vicious dog<br>
+    🕊️ Pigeon-trap distances: 30 ריס vs. 50 אמה — feeding vs. flying ranges<br>
+    ✋ The Mishnah's five categories: נזק, צער, ריפוי, שבת, בושת<br>
+    👁️ Why עין תחת עין must mean money — and the limit case of the blind/amputee<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Five Categories of Bodily Damage</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">הַחוֹבֵל בַּחֲבֵירוֹ חַיָיב עָלָיו מִשּׁוּם חֲמִשָּׁה דְבָרִים בְּנֶזֶק בְּצַעַר בְּרִיפּוּי בְּשֶׁבֶת וּבְבוֹשֶׁת</div><div class="callout"><strong>The sugya:</strong> The daf finishes the perek-7 cleanup (forbidden trade, the dangerous dog, pigeon-trap distances) and then opens perek 8 — the framework of bodily damage. The famous Mishnah lists five categories: נזק, צער, ריפוי, שבת, בושת. The Yerushalmi shows how they stack (5/4/3/2/1 depending on the injury), and confronts the eye-for-an-eye verses head-on, proving that the Torah requires monetary payment, not literal mutilation.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>🚫 Trade in Forbidden Items</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Two pesukim, two prohibitions — and a key distinction.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">📜 The doubling of pesukim</h3><ul><li><span class='hebrew'>טְמֵאִים הֵם לָכֶם</span></li><li><span class='hebrew'>וּטְמֵאֵים יִהְיוּ לָכֶם</span></li><li>Yerushalmi: one for אכילה, one for הנאה / סחורה</li></ul></div><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">✅ Rabbinically forbidden</h3><ul><li><span class='hebrew'>מוּתָּר לַעֲשׂוֹת בּוֹ סְחוֹרָה</span></li><li>Trade is permitted</li><li>Used for non-eating purposes</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">❌ Torah-forbidden</h3><ul><li><span class='hebrew'>אָסוּר לַעֲשׂוֹת בּוֹ סְחוֹרָה</span></li><li>But: the donkey and the camel?</li><li>Answer: <span class='hebrew'>לִמְלַאכְתּוֹ הוּא גָדֵל</span> — they are raised for work, not as merchandise</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>How the rule is salvaged:</strong> The donkey and camel seem to disprove the rule, but the Yerushalmi answers that they are raised for labor, not as goods to be traded — so the principle still stands.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>🕊️🐕 Settlement Animals — Dogs and Pigeons</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Two final perek-7 cases sharpen what 'protecting the public' means.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#c9a84c">M</div><div class="speech"><span class='hebrew'>לֹא יְגַדֵּל אָדָם אֶת הַכֶּלֶב אֶלָּא אִם כֵּן קָשׁוּר בְּשַׁלְשֶׁלֶת</span> — no dog without a chain.</div></div><div class="debate-line right"><div class="speaker" style="background:#e74c3c">RY</div><div class="speech">R' Yose b. R' Chanina: about anyone who raises a vicious dog the verse says <span class='hebrew'>לַמָּס מֵרֵעֵהוּ חָסֶד</span> — he withholds kindness from his neighbor.</div></div><div class="debate-line"><div class="speaker" style="background:#9b59b6">Q</div><div class="speech">Pigeons: here we say 30 ריס from a settlement, but elsewhere only 50 אמה. Which is it?</div></div><div class="debate-line right"><div class="speaker" style="background:#4a90d9">RY</div><div class="speech">R' Yose b. R' Bun: <span class='hebrew'>לִרְעוֹת מְרֵיעָה נֹ אַמָּה. לִפְרוֹחַ פּוֹרַחַת אֲפִילוּ אַרְבָּעַת מִילִין</span> — they feed within 50 amah but fly up to four mil. The two distances measure two different ranges.</div></div></div><div class="callout" style="margin-top:20px"><strong>Reading principle:</strong> Apparent contradictions in shiurim usually point to two different physical realities. Feeding range and flying range need different protection radii.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>📊 The Five Categories of Damage — and How They Stack</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">From the beraita: 5 / 4 / 3 / 2 / 1 — based on the type of blow.</div>
+  <table><tr><th>Type of Blow</th><th>Categories Owed</th><th>Specific Heads</th></tr><tr><td>Hit on the hand and severed it</td><td>5</td><td><span class='hebrew'>נֶזֶק, צַעַר, רִיפּוּי, שֶׁבֶת, בּוֹשֶׁת</span></td></tr><tr><td>Hit on the hand and it swelled</td><td>4</td><td>צער, ריפוי, שבת, בושת (no permanent נזק)</td></tr><tr><td>Hit on the head, swelled (visible)</td><td>3</td><td>צער, ריפוי, שבת</td></tr><tr><td>Place not visible</td><td>2</td><td>צער, ריפוי</td></tr><tr><td>With a tome (folder/papers) in his hand</td><td>1</td><td><span class='hebrew'>בּוֹשֶׁת</span> only</td></tr></table><div class="callout" style="margin-top:20px"><strong>What the gradation shows:</strong> Each category has its own trigger. נזק requires a permanent loss of capacity (assessed as if he were sold as a slave). בושת can be triggered even without any physical contact at all — a humiliating gesture is enough.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>👁️ Why עין תחת עין Must Mean Money</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The Yerushalmi's tight derivation from the doubling of שוגג and מזיד.</div>
+  <div class="flowchart"><div class="flow-box question">Two verses: <span class='hebrew'>עַיִן תַּחַת עַיִן</span> + <span class='hebrew'>לֹא תָחוֹס עֵינֶךָ</span></div><div class="flow-arrow">↓</div><div class="flow-box action">One refers to <strong>שוגג</strong>, one refers to <strong>מזיד</strong> — both must be stated</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Only שוגג stated?</div><div class="flow-box result-bad">Then I'd say מזיד actually has his hand cut off</div></div><div class="flow-col"><div class="flow-label">Only מזיד stated?</div><div class="flow-box result-bad">Then I'd say שוגג pays nothing</div></div><div class="flow-col"><div class="flow-label">Both stated</div><div class="flow-box result-good">Both pay <span class='hebrew'>מָמוֹן</span></div></div></div><div class="flow-arrow">↓</div><div class="flow-box action">Limit case: a blind man who blinded another, an amputee who severed an arm — <span class='hebrew'>הֵיאַךְ זֶה מִתְקַיֵים וַעֲשִׂיתֶם לוֹ כַּאֲשֶׁר זָמַם</span>?</div><div class="flow-arrow">↓</div><div class="flow-box result-good"><span class='hebrew'>מַגִּיד שֶׁאֵינוֹ מְשַׁלֵּם אֶלָּא מָמוֹן</span> — therefore the Torah's measure must be money.</div></div><div class="callout" style="margin-top:20px"><strong>The clincher:</strong> If the Torah's penalty were literal mutilation, it would fail in cases where the perpetrator has nothing to lose (a blind man, an amputee). The Torah's principle of measure-for-measure only works if the payment is monetary.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>💸 How to Assess צער and ריפוי</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Three voices on appraising pain — and an aside on a Roman.</div>
+  <div class="process-bar"><div class="process-step">1️⃣ <strong>R' Ze'ira</strong>: ask the victim — how much would you pay to avoid this pain? That's the figure.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ <strong>Mar Ukva</strong>: the Mishnah's wording is <span class='hebrew'>כַּמָּה אָדָם רוֹצֶה לִיטּוֹל</span> — how much would he take to accept this pain? The roles are flipped, but the number is similar.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ <strong>Ben Azai</strong>: include <span class='hebrew'>נִכְאֵי מָזוֹן</span> — convalescent food. Before, lentils sufficed; now only eggs and chicken. The mazik pays the upgrade.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ <strong>R' Yose b. Yaakov's vignette</strong>: a Roman soldier wouldn't go to battle until he had eaten back the days he'd missed. Pain restitution mirrors the body's own recovery economy.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ <strong>ריפוי</strong> from the next Mishnah: includes complications (<span class='hebrew'>צמחים</span>) and re-injuries (<span class='hebrew'>חָיְיתָה וְנִסְתְּרָה</span>) caused by the original blow.</div></div><div class="callout" style="margin-top:20px"><strong>Bottom line:</strong> The Yerushalmi treats damages as a recovery package, not a flat fee. Pain assessment, food upgrades, and ongoing medical care all flow from the original act of injury.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 34 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Mishnah opens perek 8:</strong><br><span class='hebrew'>חֲמִשָּׁה דְבָרִים: נֶזֶק, צַעַר, רִיפּוּי, שֶׁבֶת, בּוֹשֶׁת</span></div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">✋ <strong>5/4/3/2/1</strong><br>Categories owed depend on the type of blow</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">👁️ <strong>עין תחת עין</strong><br>Must mean מָמוֹן (the blind/amputee proof)</div></div><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">💸 <strong>Assessing צער</strong><br>Pay-to-avoid OR receive-to-accept</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🩺 <strong>ריפוי</strong><br>Includes complications and relapses</div></div></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Earlier on the daf: forbidden trade, vicious dogs, pigeon-trap distances — communal-protection halakhot.</div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Bodily damage compensation is a layered, monetary package — calibrated to the injury's enduring effects on body, livelihood, and dignity.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 34a-34b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 34a-34b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../33/">← Daf 33</a></div>
+</body>
+</html>

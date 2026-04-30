@@ -1,0 +1,206 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 25,
+  "emoji": "🕳️",
+  "topics": [
+    "🕳️ Pit Mishnah: 10 tefachim is the death threshold",
+    "📜 Two pesukim — כי יפתח and כי יכרה — for two kinds of bor",
+    "🤲 Acquired pit: bought, inherited, or gifted — still your bor",
+    "🤝 Pit of two partners — when does each one become liable?",
+    "🪨 'A truck full of stones' — the standard of proper covering"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Defining the Pit",
+    "label": "The sugya:",
+    "text": "Mishnah 5:6 and 5:7 unfold the rules of the bor — first defining when a hole counts as a death-hazard (10 tefachim), then asking who pays in a partnership pit. The Yerushalmi anchors both pesukim of Shemot 21 (יפתח and יכרה) into a system, then asks the natural follow-up: if you didn't dig but acquired the pit, are you still on the hook? Plus the practical question — how thick a cover counts as 'proper'?",
+    "hebrewSource": "מַה הַבּוֹר שֶׁהוּא כְדֵי לְהָמִית עַד עֲשָׂרָה טְפָחִים. אַף כָּל דָּבָר שֶׁיֵּשׁ בּוֹ כְדֵי לְהָמִית עַד עֲשָׂרָה טְפָחִים"
+  },
+  "slides": [
+    {
+      "type": "comparison",
+      "title": "🪜 The 10-Tefach Death Threshold",
+      "subtitle": "How the Mishnah extends 'pit' to all hazardous excavations.",
+      "boxes": [
+        {
+          "title": "🕳️ בור / שיח / מערה",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Pit, ditch, cave",
+            "All count as bor",
+            "10 tefachim → death-level"
+          ]
+        },
+        {
+          "title": "📐 חריצין / נעיצין",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "Trenches and pole-bases",
+            "Same liability framework",
+            "Mishnah generalizes to any excavation"
+          ]
+        },
+        {
+          "title": "📏 Below 10 Tefachim",
+          "color": "#f39c12",
+          "titleColor": "#f39c12",
+          "items": [
+            "Animal falls in and dies → <span class='hebrew'>פָּטוּר</span>",
+            "Animal merely injured → <span class='hebrew'>חַיָיב</span>",
+            "Two regimes: death vs. damage"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Why 10:",
+        "text": "The Mishnah uses bor as the paradigm because it's the case the Torah names. The number 10 is then projected outward: anything that <span class='hebrew'>יֵשׁ בּוֹ כְדֵי לְהָמִית</span> at that depth carries the same liability."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 Two Pesukim — Two Kinds of Pit",
+      "subtitle": "How the Yerushalmi splits death-liability and damage-liability.",
+      "lines": [
+        { "speaker": "Y", "side": "left", "speakerColor": "#c9a84c", "text": "<span class='hebrew'>כְּתִיב כִּי יִפְתַּח אִישׁ בּוֹר וְכִי יִכְרֶה אִישׁ בּוֹר</span> — two pesukim, one for the pit-of-damages and one for the pit-of-death." },
+        { "speaker": "R' Yitz", "side": "right", "speakerColor": "#4a90d9", "text": "Both are derived from a single source. But they diverge in halakhah: <span class='hebrew'>פָּטוּר עַל הַכֵּלִים</span> in the death-pit and <span class='hebrew'>חַיָיב עַל הַכֵּלִים</span> in the damage-pit." },
+        { "speaker": "Y", "side": "left", "speakerColor": "#c9a84c", "text": "And by the second pasuk's word <span class='hebrew'>אוֹ כִי יִכְרֶה</span> — we add anyone who acquired the pit (bought, inherited, given as a gift), not only the one who dug it." }
+      ],
+      "callout": {
+        "label": "Key move:",
+        "text": "Liability for a bor doesn't depend on the act of digging. The Torah's two verbs (פתיחה and כריה) anchor two regimes; the word <span class='hebrew'>אוֹ</span> reaches even the passive owner of a pit."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🤝 The Partnership Pit",
+      "subtitle": "When two people share a pit, who pays?",
+      "nodes": [
+        { "content": "<strong>How can a pit have two partners?</strong>", "class": "question" },
+        { "type": "arrow" },
+        { "content": "R' Yannai: <span class='hebrew'>שֶׁנָּתְנוּ שְׁנֵיהֶן אֶבֶן הָאַחֲרוֹנָה</span> — they together placed the final stone that opened it to 10 tefachim", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Neither covered", "content": "First passes, doesn't cover. Second passes, doesn't cover. → <strong>Second liable</strong>", "class": "result-bad" },
+            { "label": "First covered, second uncovered", "content": "→ <strong>Second liable</strong>", "class": "result-bad" },
+            { "label": "First covered, second found uncovered, didn't recover", "content": "→ <strong>Second liable</strong>", "class": "result-bad" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Liability transfers when the pit is left open by the most recent person who could have acted", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Cedar logic:",
+        "text": "R' Yochanan: we give the second partner enough time to <span class='hebrew'>לִכְרוֹת אֲרָזִים מִן הַלְּבָנוֹן</span> — to cut cedars from Lebanon. The window is reasonable, but proximity to Lebanon makes it stricter or more lenient."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📊 Liability Matrix for the Pit",
+      "subtitle": "The Mishnah's edge cases.",
+      "headers": ["Case", "Animal", "Vessels"],
+      "rows": [
+        ["Animal falls in, properly covered", "<span class='cross'>✗ פטור</span>", "<span class='cross'>✗ פטור</span>"],
+        ["Animal falls in, improperly covered", "<span class='check'>✓ חייב</span>", "<span class='cross'>✗ פטור</span>"],
+        ["Animal falls forward from sound of digging", "<span class='check'>✓ חייב</span>", "—"],
+        ["Animal falls backward from sound of digging", "<span class='cross'>✗ פטור</span>", "—"],
+        ["Cheresh / shoteh / katan ox falls in", "<span class='check'>✓ חייב</span>", "—"],
+        ["Son, daughter, slave, slave-girl falls in", "<span class='cross'>✗ פטור</span>", "—"]
+      ],
+      "callout": {
+        "label": "Asymmetry:",
+        "text": "The pit is liable for animals but never for vessels — and never for capable humans. The Yerushalmi reads this from the verse's words: <span class='hebrew'>שׁוֹר אוֹ חֲמוֹר</span>, not 'a person.'"
+      }
+    },
+    {
+      "type": "process",
+      "title": "🪨 What Counts as 'Properly Covered'?",
+      "subtitle": "The Yerushalmi gives a real-world test.",
+      "steps": [
+        { "content": "1️⃣ Mishnah: <span class='hebrew'>כִּיסָּהוּ כָּרָאוּי</span> — covered properly. But what does that mean?" },
+        { "content": "2️⃣ Yerushalmi: <span class='hebrew'>יָיבֹא כַּיי דְּתַנִּינָן תַּמָּן</span> — same as we said elsewhere." },
+        { "content": "3️⃣ Standard: <span class='hebrew'>כְּדֵי שֶׁתְּהֵא עֲגָלָה מֲהַלֶּכֶת טְעוּנָה אֲבָנִים</span>" },
+        { "content": "4️⃣ Meaning: a wagon loaded with stones can drive across without breaking through.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Practical takeaway:",
+        "text": "The cover isn't just visual — it has to bear weight equivalent to the heaviest realistic load on a public road. That's the bar between liability and exemption when an animal still falls in."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "A pit becomes a halakhic hazard at 10 tefachim, and the Torah's two verbs (יפתח and יכרה) frame two liability regimes. Acquiring is like digging; failing to recover an uncovered pit transfers liability to the last responsible person.",
+    "flowSteps": [
+      { "content": "<strong>Mishnah 5:6 — defining the pit</strong>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "10 tefachim → death-level. Below 10 → damage only.", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🕳️ <strong>יפתח / יכרה</strong><br>two pesukim, two regimes", "style": "border-color:#9b59b6" },
+          { "content": "🤲 <strong>אוֹ</strong><br>acquired = your pit", "style": "border-color:#4a90d9" },
+          { "content": "🤝 <strong>שני שותפין</strong><br>last responsible pays", "style": "border-color:#f39c12" },
+          { "content": "🪨 <strong>'wagon of stones'</strong><br>weight-bearing standard", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Pit liability tracks risk, not labor. Whoever owns the open hazard at the moment of damage owns the loss.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "At what depth does the Mishnah say a pit becomes a death-hazard?",
+      "o": ["5 tefachim", "10 tefachim", "15 tefachim", "Any depth"],
+      "c": 1,
+      "e": "<span class='hebrew'>מַה הַבּוֹר שֶׁהוּא כְדֵי לְהָמִית עַד עֲשָׂרָה טְפָחִים</span> — 10 tefachim is the threshold the Mishnah extends to all excavations."
+    },
+    {
+      "q": "Why does the Torah have two pesukim — כי יפתח and כי יכרה?",
+      "o": [
+        "They are repeated for emphasis",
+        "One for the pit of damages, one for the pit of death",
+        "One for owners, one for diggers",
+        "One for animals, one for humans"
+      ],
+      "c": 1,
+      "e": "The Yerushalmi splits them: <span class='hebrew'>אֶחָד בּוֹר לִנְזָקִין וְאֶחָד בּוֹר לְמִיתָה</span>."
+    },
+    {
+      "q": "From where do we learn that someone who bought, inherited, or received a pit is also liable?",
+      "o": [
+        "From the word <span class='hebrew'>אוֹ</span> in 'or if a man dig a pit'",
+        "From a kal va-chomer",
+        "From a gezerah shavah",
+        "It's only rabbinic"
+      ],
+      "c": 0,
+      "e": "<span class='hebrew'>שֶׁנֶּאֱמַר אוֹ כִי יִכְרֶה אִישׁ בּוֹר</span> — the conjunctive 'or' extends liability to non-diggers."
+    },
+    {
+      "q": "How does R' Yannai explain a 'pit of two partners'?",
+      "o": [
+        "Each dug five tefachim",
+        "They both put in the last stone, together opening it to 10 tefachim",
+        "They share legal title only",
+        "They take turns covering it"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>תִּיפְתָּר שֶׁנָּתְנוּ שְׁנֵיהֶן אֶבֶן הָאַחֲרוֹנָה</span> — joint act on the threshold stone makes both partners."
+    },
+    {
+      "q": "What is the Yerushalmi's standard for a 'properly covered' pit?",
+      "o": [
+        "Any wooden plank",
+        "Strong enough that a wagon loaded with stones can drive over it",
+        "Visible from a distance of 10 amos",
+        "Locked with a key"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>כְּדֵי שֶׁתְּהֵא עֲגָלָה מֲהַלֶּכֶת טְעוּנָה אֲבָנִים</span> — the cover must bear a fully loaded wagon."
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 22,
+  "emoji": "⚖️",
+  "topics": [
+    "🐂 ובעל השור נקי — what the owner is exempt from",
+    "👶 Slave damages and miscarriage payments",
+    "🪨 Bull rubbing on a wall — intent vs accident in capital cases",
+    "🏛️ Bulls without owners: women, orphans, hekdesh, ger",
+    "💀 Dedicating a bull condemned to stoning"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Killer Oxen, Slaves, and Owner-less Bulls",
+    "label": "The sugya:",
+    "text": "Daf 22 sweeps through three Mishnayot at the seam between Chapter 4 and Chapter 5. It works out what the owner is 'free' from when his bull kills, when intent matters, who counts as an 'owner' for liability, and what happens to a bull condemned to stoning whose verdict is reversed.",
+    "hebrewSource": "וּבַעַל הַשּׁוֹר נָקִי. נָקִי מִדְּמֵי עֶבֶד. נָקִי מִדְּמֵי וְולָדוֹת."
+  },
+  "slides": [
+    {
+      "type": "comparison",
+      "title": "🧱 What 'ובעל השור נקי' Excludes",
+      "subtitle": "The Yerushalmi maps competing readings of the exemption clause.",
+      "boxes": [
+        {
+          "title": "👤 נקי מדמי עבד",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "Owner is exempt from paying for a slave",
+            "Even though a slave normally has 30 sela liability",
+            "Verse derives from 'כי ינצו אנשים' — people, not bulls"
+          ]
+        },
+        {
+          "title": "👶 נקי מדמי ולדות",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Owner is exempt from paying for fetuses",
+            "Bulls that act unintentionally are exempt",
+            "Even if intentional — still no fetus payment"
+          ]
+        },
+        {
+          "title": "📜 Slave damages source",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "או בן יגח או בת יגח",
+            "ואם עבד — derives slave damages",
+            "Two opinions on extent of payment"
+          ]
+        },
+        {
+          "title": "💭 The dispute",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "R' Chiyya bar Va: addition can't exceed core",
+            "Other view: pays the entire damage",
+            "R' Yasa heard a teaching from R' Shmuel bar Yitzhak but forgot"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Key move:",
+        "text": "The same three words 'ובעל השור נקי' generate two distinct exemptions depending on which baraita you follow."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🪨 Bull Rubbing on a Wall",
+      "subtitle": "When the death looks accidental, when does liability still attach?",
+      "nodes": [
+        { "content": "משנה: שור שהיה מתחכך בכותל ונפל על האדם", "class": "question" },
+        { "type": "arrow" },
+        { "content": "ואיש כי יכה כל נפש אדם — to include lethal blow", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Intended bull, hit man", "content": "פטור — no liability", "class": "result-bad" },
+            { "label": "Hit a Gentile, killed Jew", "content": "פטור", "class": "result-bad" },
+            { "label": "Hit stillbirth, killed viable", "content": "פטור", "class": "result-bad" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Reish Lakish: R' Hoshaia explained — Mishnah is about כופר after death.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Yerushalmi twist:",
+        "text": "Resh Lakish reframes the Mishnah: it isn't about court execution at all — it's about the kofer payment owed once the victim has died."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 Bulls Without Owners — Who Pays?",
+      "subtitle": "The Mishnah lists six 'ownerless' bulls. R' Yehudah carves out three.",
+      "lines": [
+        { "speaker": "M", "side": "left", "speakerColor": "#c9a84c", "text": "Mishnah: <span class='hebrew'>שור האשה, שור היתומים, שור אפיטרופוס, שור המדבר, שור ההקדש, שור הגר שמת</span> — all subject to death penalty." },
+        { "speaker": "RY", "side": "right", "speakerColor": "#4a90d9", "text": "R' Yehudah: the wild bull, the hekdesh bull, and the heir-less ger's bull are <em>exempt</em> — <span class='hebrew'>מפני שאין להם בעלים</span>." },
+        { "speaker": "RH", "side": "left", "speakerColor": "#9b59b6", "text": "R' Hoshaia: for damages R' Meir holds liable, R' Yehudah exempt; but everyone agrees on כופר — liable." },
+        { "speaker": "RY2", "side": "right", "speakerColor": "#e74c3c", "text": "Some say (R' Yochanan in the name of R' Yannai): just as they argue about damages, they argue about kofer too." }
+      ],
+      "callout": {
+        "label": "Practical ruling:",
+        "text": "R' Zeira tells R' Yirmiyah: follow R' Hoshaia — disputed in damages, agreed in kofer."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📊 The Sale and the Reversed Verdict",
+      "subtitle": "Two adjacent cases on a goring ox: bad sale and reversed sentencing.",
+      "headers": ["Case", "Rav", "Shmuel / R' Yochanan vs Reish Lakish"],
+      "rows": [
+        ["Sold a bull, turns out to be a gorer", "<span class='hebrew'>מקח טעות</span> — sale is voided", "Shmuel: seller can say 'I sold it for slaughter'"],
+        ["Bull goes out to be stoned, witnesses are zomemim", "—", "R' Yochanan: first to grab acquires it"],
+        ["Same scenario", "—", "Reish Lakish: <span class='hebrew'>ייאוש טעות</span> — false despair, doesn't transfer ownership"],
+        ["Slave going to execution, witnesses zomemim", "—", "R' Yochanan: he acquires himself; R' Lakish: false despair"]
+      ],
+      "callout": {
+        "label": "Important:",
+        "text": "R' Yochanan and Reish Lakish disagree about whether despair based on a false premise still effects ownership transfer."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🧠 Dedicating a Stoned Bull",
+      "subtitle": "When does hekdesh take effect on a bull condemned to die?",
+      "steps": [
+        { "content": "1️⃣ Bull rubs on a wall and kills — sentence not yet pronounced." },
+        { "content": "2️⃣ <strong>Before</strong> sentencing: dedication is valid; if slaughtered, meat is permitted." },
+        { "content": "3️⃣ <strong>After</strong> sentencing: dedication invalid; if slaughtered, meat is forbidden." },
+        { "content": "4️⃣ Sentence creates a status of <span class='hebrew'>איסור הנאה</span> that blocks normal acquisition." },
+        { "content": "5️⃣ If verdict is reversed: R' Yochanan vs Reish Lakish on whether ownership reverts.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "The legal effect of a death-sentence is so strong that even hekdesh cannot override it once the verdict is final."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Daf 22 maps the boundaries of liability for killer oxen: who counts as an owner, what the exemption verse excludes, and how a death-sentence reshapes ownership.",
+    "flowSteps": [
+      { "content": "<strong>Killer ox cases</strong><br><span class='hebrew'>ובעל השור נקי</span>", "class": "question" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "👤 <strong>נקי מדמי עבד</strong><br>no slave payment", "style": "border-color:#4a90d9" },
+          { "content": "👶 <strong>נקי מדמי ולדות</strong><br>no fetus payment", "style": "border-color:#9b59b6" },
+          { "content": "🏛️ <strong>אין בעלים</strong><br>R' Yehudah carve-out", "style": "border-color:#4caf50" },
+          { "content": "💀 <strong>יוצא ליסקל</strong><br>hekdesh blocked", "style": "border-color:#e74c3c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "Each derashah shapes a different facet of bull-owner liability.", "class": "action" },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Owner liability is bounded by both verse and ownership status — and the death-sentence locks ownership in place.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "What does 'ובעל השור נקי' exclude according to one tannaitic reading?",
+      "o": ["Payment for damages", "Payment for a slave", "Payment for kofer", "Payment for a wild animal"],
+      "c": 1,
+      "e": "One reading derives 'נקי מדמי עבד' — exempt from paying for a slave even though slave damages normally apply."
+    },
+    {
+      "q": "What does Reish Lakish say R' Hoshaia explained about 'shor mit'chakhech bakotel'?",
+      "o": ["It's about a tame bull only", "It teaches kofer after death", "It only applies in a public domain", "The owner pays nezek"],
+      "c": 1,
+      "e": "Reish Lakish: R' Hoshaia, the father of the Mishnah, taught that this Mishnah is about the kofer payment after death."
+    },
+    {
+      "q": "According to R' Yehudah, why are the hekdesh and ger's bulls exempt from death?",
+      "o": ["Because the verse only mentions tame bulls", "Because they have no owners — אין להם בעלים", "Because they are not in a settled area", "Because the witnesses are invalid"],
+      "c": 1,
+      "e": "R' Yehudah derives from 'והועד בבעליו' that an animal needs an owner to be subject to the death penalty."
+    },
+    {
+      "q": "What does Rav say about a sold bull that turns out to be a gorer?",
+      "o": ["Sale is valid as is", "It is מקח טעות — a mistaken sale", "Buyer pays half", "Seller becomes liable for damages"],
+      "c": 1,
+      "e": "Rav: it's a mistaken sale; Shmuel: the seller can claim he sold it for slaughter."
+    },
+    {
+      "q": "What is the key dispute between R' Yochanan and Reish Lakish about a bull going to be stoned with zomemim witnesses?",
+      "o": ["Whether the bull can be slaughtered", "Whether 'first to grab acquires' or it's יאוש טעות", "Whether the owner pays kofer", "Whether the witnesses pay"],
+      "c": 1,
+      "e": "R' Yochanan: first to grab acquires; Reish Lakish: it's despair based on a mistake and doesn't transfer ownership."
+    }
+  ]
+}

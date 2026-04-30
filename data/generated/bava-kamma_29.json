@@ -1,0 +1,214 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 29,
+  "emoji": "🔥",
+  "topics": [
+    "📜 קוצים, גדיש, קמה, שדה — Torah's four words for fire targets",
+    "🌬️ Wall, road, river — when does the fire's spread break liability?",
+    "📏 16 / 50 / bet kor — how far must a fire spread to count as 'sent'?",
+    "🥬 Mishnah 6:7 — implements in a stack: R' Yehudah vs. Chachamim",
+    "🐐 The kafut goat and the nearby slave — capital crime or restitution?"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — How Far Does Fire Travel?",
+    "label": "The sugya:",
+    "text": "The daf walks through the Torah's strange list of fire-damage objects (kotzim, gadish, kamah, sadeh) and shows how each word stops you from over-restricting the others. Then comes the geography: a wall four amos high, a road, or a river — does the fire-setter still pay if his fire crossed those? R' Abba and R' Yochanan split on whether the Mishnah is about a 'burning' fire or a 'wind-whipped' fire. Then Mishnah 6:6's distance debate (16, 50, or 'bet kor center'), capped by the famous Mishnah of the goat tied to the stack and the slave standing nearby — where capital crime exempts payment.",
+    "hebrewSource": "תַּלְמוּד לוֹמַר אוֹ הַשָּׂדֶה ... רוֹאִין אוֹתָהּ כְּאִילּוּ הִיא בְּאֶמְצַע בֵּית כּוֹר"
+  },
+  "slides": [
+    {
+      "type": "table",
+      "title": "📜 Why Four Words for Fire Targets?",
+      "subtitle": "Each Torah term blocks a different over-restriction.",
+      "headers": ["Word", "What it adds", "Without it I'd say..."],
+      "rows": [
+        ["<span class='hebrew'>קוֹצִים</span>", "Flammable items", "—"],
+        ["<span class='hebrew'>גָּדִישׁ</span>", "Harvested material", "Only in-ground items"],
+        ["<span class='hebrew'>קָמָה</span>", "Standing growing crops", "Only harvested items"],
+        ["<span class='hebrew'>אוֹ הַשָּׂדֶה</span>", "Land itself — even non-flammable damage", "Only flammable; not the field, furrow, or stones"]
+      ],
+      "callout": {
+        "label": "Why all four:",
+        "text": "Without 'sadeh,' you'd exempt damage to bare furrow or stone. Without 'kamah,' you'd exempt growing crops. The Yerushalmi shows each word covers a gap — and asks how Chachamim, who limit liability to wheat/barley stacks, square that with the word 'sadeh.'"
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 The Wall, the Road, the River",
+      "subtitle": "When does a fire's leap break the chain?",
+      "lines": [
+        { "speaker": "M", "side": "left", "speakerColor": "#c9a84c", "text": "<span class='hebrew'>עָבְרָה גָדֵר שֶׁהוּא גָבוֹהַּ אַרְבַּע אַמּוֹת אוֹ דֶרֶךְ הָרַבִּים אוֹ נָהָר פָּטוּר</span> — crossed a 4-amos wall, road, or river → exempt." },
+        { "speaker": "R' Abba", "side": "right", "speakerColor": "#4a90d9", "text": "The Mishnah is about <span class='hebrew'>קוֹדַחַת</span> — a burning fire. But a wind-whipped fire (<span class='hebrew'>מְקַטֶּפֶת</span>) — everyone agrees you're liable, because the wind extends your causation." },
+        { "speaker": "R' Y", "side": "left", "speakerColor": "#9b59b6", "text": "Inverse: the Mishnah is about <span class='hebrew'>מְקַטֶּפֶת</span>. A burning fire (<span class='hebrew'>קוֹדַחַת</span>) — exempt, because steady fire stays put." }
+      ],
+      "callout": {
+        "label": "Behind the dispute:",
+        "text": "Whether the human's fire-act extends through wind. R' Abba treats wind as your tool; R' Yochanan treats it as a break. Either way the wall/road/river is the geographical limit case."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "📏 The Distance Debate — Mishnah 6:6",
+      "subtitle": "How far does fire have to travel to count?",
+      "boxes": [
+        {
+          "title": "🌐 R' Eleazar b. Azaryah",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Imagine the fire <strong>at the center of a bet kor</strong>",
+            "Liability based on whether it could reasonably reach there",
+            "Largest scope"
+          ]
+        },
+        {
+          "title": "🛣️ R' Eliezer",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "<strong>16 amos</strong>, like a public road",
+            "<span class='hebrew'>בִּשְׁעַת הָרוּחַ</span>: 30 amos",
+            "Tied to standard road width"
+          ]
+        },
+        {
+          "title": "📐 R' Akiva",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<strong>50 amos</strong>",
+            "With wind: 100 amos",
+            "Stricter on the fire-setter"
+          ]
+        },
+        {
+          "title": "⚖️ R' Shimon",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "<span class='hebrew'>הַכֹּל לְפִי הַדְּלֵיקָה</span>",
+            "Case-by-case based on the fire's reality",
+            "No fixed number"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "From the case file:",
+        "text": "<span class='hebrew'>מַעֲשֶׂה בָּעֲרָב שֶׁקָּפַץ הָאוֹר יוֹתֵר מִשְּׁלֹשׁ מֵאוֹת אַמָּה</span> — in Arabia a fire jumped over 300 amos. The numbers in the Mishnah cap normal liability; extreme fires need R' Shimon's flexible rule. <span class='hebrew'>נָהָר אוֹ שְׁלוּלִית רְחָבִין שְׁמוֹנֶה אַמּוֹת</span> ends liability."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🥬 Hidden Items in the Stack",
+      "subtitle": "The R' Yehudah / Chachamim debate runs in opposite directions.",
+      "nodes": [
+        { "content": "<strong>Burned a stack with hidden כלים</strong>", "class": "question" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "R' Yehudah", "content": "<span class='hebrew'>יְשַׁלֵּם כָּל מַה שֶׁבְּתוֹכוֹ</span> — pays for everything inside", "class": "result-good" },
+            { "label": "Chachamim", "content": "<span class='hebrew'>אֵינוֹ מְשַׁלֵּם אֶלָּא גָדִישׁ חִטִּים אוֹ שְׂעוֹרִים</span> — only the wheat/barley stack", "class": "result-bad" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "<strong>BUT</strong> — Chachamim agree with R' Yehudah on threshing-floor implements (כלי גורן) since they're normally hidden there", "class": "action" },
+        { "type": "arrow" },
+        { "content": "And both sides agree: <strong>burning a building → pays for everything inside</strong> — since storage is normal in homes", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "R' Hoshaya's harmonization:",
+        "text": "When there are no witnesses to what was hidden, the dispute remains. But with witnesses, all agree the victim collects per the proven contents — even by oath in cases of disputed sack contents."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🐐 The Kafut Goat and the Nearby Slave",
+      "subtitle": "Where capital liability swallows monetary liability.",
+      "steps": [
+        { "content": "1️⃣ <strong>Goat tied to the stack, slave nearby</strong>: both burn → fire-setter <span class='hebrew'>חַיָיב</span>." },
+        { "content": "2️⃣ <strong>Slave tied to the stack, goat nearby</strong>: both burn → fire-setter <span class='hebrew'>פָּטוּר</span>." },
+        { "content": "3️⃣ Why the difference? In case 2, killing the slave is a capital crime." },
+        { "content": "4️⃣ Principle: <span class='hebrew'>קַם לֵיהּ בְּדְרַבָּה מִינֵּיהּ</span> — when one act triggers both capital and monetary liability, the capital absorbs the monetary." },
+        { "content": "5️⃣ Result: the fire-setter walks free of even the goat's value, because his single act is on the death track.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Sharp consequence:",
+        "text": "The slave's life situation determines the goat's price tag. Halakhah doesn't subdivide one act of arson into separate liabilities — the heaviest consequence absorbs the rest."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Fire liability is built from layered Torah words (kotzim → sadeh) and bounded by physical breaks (wall, road, river). Within those, the fire-setter pays for what is normally there — including hidden items in homes — until capital liability for a tied human absorbs the entire act.",
+    "flowSteps": [
+      { "content": "<strong>Mishnah 6:5–6:7 fire chain</strong>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Words → distances → contents → human stakes", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "📜 <strong>Four pesukim words</strong><br>cover all targets", "style": "border-color:#9b59b6" },
+          { "content": "🌊 <strong>Wall/road/river</strong><br>break liability", "style": "border-color:#4a90d9" },
+          { "content": "📏 <strong>16/50/bet kor</strong><br>distance limits", "style": "border-color:#e74c3c" },
+          { "content": "🐐 <strong>Goat vs. slave</strong><br>קם ליה בדרבה", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Tort liability for fire tracks the realistic reach of a person's act — and capital concerns swallow monetary ones when both apply.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Why does the Torah list קוצים, גדיש, קמה, AND שדה?",
+      "o": [
+        "Out of literary parallelism",
+        "Each word blocks an over-narrow reading the others would allow",
+        "The four match the four avot",
+        "Each refers to a different season"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>אוֹ הַשָּׂדֶה</span> in particular catches damage to the field's bare ground (furrow, stone) that flammable-only categories would miss."
+    },
+    {
+      "q": "According to R' Abba, when does the Mishnah's wall/road/river exempt the fire-setter?",
+      "o": [
+        "Only for a burning fire (קוֹדַחַת); a wind-whipped fire (מְקַטֶּפֶת) — חייב",
+        "Always",
+        "Only on Shabbat",
+        "Only in private property"
+      ],
+      "c": 0,
+      "e": "R' Abba treats wind-driven fire as the setter's extended causation, so the wall doesn't break liability."
+    },
+    {
+      "q": "What is R' Akiva's threshold for fire spread?",
+      "o": ["16 amos / 30 with wind", "30 amos / 50 with wind", "50 amos / 100 with wind", "Bet kor center"],
+      "c": 2,
+      "e": "<span class='hebrew'>חֲמִשִּׁים אַמָּה ... בִּשְׁעַת הָרוּחַ מֵאָה אַמָּה</span>."
+    },
+    {
+      "q": "On hidden items in a burned stack, what do Chachamim hold?",
+      "o": [
+        "Pays everything inside",
+        "Pays only for wheat or barley sheaves — not hidden כלים",
+        "Pays only the value of the stack itself",
+        "Pays nothing"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>אֵינוֹ מְשַׁלֵּם אֶלָּא גָדִישׁ חִטִּים אוֹ גָדִישׁ שְׂעוֹרִים</span>. R' Yehudah disagrees and includes hidden items."
+    },
+    {
+      "q": "Why is the fire-setter exempt when the slave was tied to the stack and the goat was nearby?",
+      "o": [
+        "The slave's life is more valuable",
+        "<span class='hebrew'>קַם לֵיהּ בְּדְרַבָּה מִינֵּיהּ</span> — capital liability absorbs monetary liability",
+        "There were no witnesses",
+        "Slaves don't count for keren"
+      ],
+      "c": 1,
+      "e": "When the same act incurs both death penalty (for the slave) and monetary damage (for the goat), the heavier liability absorbs the lighter."
+    }
+  ]
+}
