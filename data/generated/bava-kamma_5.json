@@ -1,0 +1,221 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 5,
+  "emoji": "🕳️",
+  "topics": [
+    "🕳️ Layered pit liability — first digger, last digger, plasterer",
+    "📏 Shiurim of a pit: 10 tefachim for death, anything for damage",
+    "🐔 R' Elazar haKappar: <span class='hebrew'>כִּמְלוֹאוֹ שֶׁלַּנּוֹפֵל</span>",
+    "🏛️ <span class='hebrew'>שְׁמִירַת נְזָקִין כִּשְׁמִירַת קִנְיָין</span>",
+    "🐑 What sancta count under מעילה — R' Yose haGlili, Ben Azzai, R' Shimon"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Pits, Layers, and Sancta",
+    "label": "The sugya:",
+    "text": "The two segments of daf 5 carry an enormous amount of weight. The first explores the Mishnah's clause <span class='hebrew'>הִכְשַׁרְתִּי בְּמִקְצָת נִזְקוֹ</span>: when multiple people contribute to a single pit, who pays for what kind of damage? Rebbi and R' Yitzchak split the layers of liability between death and damage, and the Yerushalmi pushes outward to ask about plastering, dune-pits, and the minimum shiur. The second segment moves to property law — which sancta fall under מעילה for the purposes of our Mishnah's reference to נכסים? — and brings the layered debate of R' Yose haGlili, Ben Azzai, and R' Shimon.",
+    "hebrewSource": "כַּמָּה שִׁיעוּרָן לְהָמִית. עֲשָׂרָה טְפָחִים. וּלְהַזִּיק. כָּל שֶׁהוּא"
+  },
+  "slides": [
+    {
+      "type": "flowchart",
+      "title": "🕳️ Layered Pit — Who Pays?",
+      "subtitle": "First digs ten, second deepens by one tefach.",
+      "nodes": [
+        { "content": "<span class='hebrew'>חָפַר בּוֹר עֲשָׂרָה טְפָחִים וּבָא אַחֵר וְעָמַק בּוֹ טֶפַח</span>", "class": "question" },
+        { "type": "arrow" },
+        { "content": "Beraita's plain rule: <strong>הָאַחֲרוֹן חַיָיב</strong> — the latter pays for everything", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Rebbi", "content": "Latter for <strong>death</strong><br>Former for <strong>damage</strong>", "class": "result-partial" },
+            { "label": "R' Yitzchak", "content": "Latter for <strong>death</strong><br><strong>Both</strong> for damage", "class": "result-good" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "The pit is a stack of liabilities — different layers track different harms.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Key move:",
+        "text": "<span class='hebrew'>הִכְשַׁרְתִּי בְּמִקְצָת נִזְקוֹ</span> is not just a rhetorical clause. It is the legal mechanism for slicing one physical pit into multiple liability units."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 The Plasterer Case",
+      "subtitle": "Can someone become liable just by finishing another's pit?",
+      "lines": [
+        { "speaker": "B", "side": "left", "speakerColor": "#9b59b6", "text": "<span class='hebrew'>חָפַר בּוֹ עֲשָׂרָה טְפָחִים וּבָא אַחֵר וְסִיָידוֹ וְכִיָירוֹ שְׁנֵיהֶן חַיָיבִין</span> — both are liable." },
+        { "speaker": "Q", "side": "right", "speakerColor": "#e74c3c", "text": "Just by whitewashing and lining? That doesn't deepen the pit at all!" },
+        { "speaker": "A", "side": "left", "speakerColor": "#4a90d9", "text": "When the digger told him: <span class='hebrew'>סוֹד אֶת הַבּוֹר הַזֶּה וּקְנֵה אוֹתוֹ</span> — finish it and own it. The plasterer becomes the owner." },
+        { "speaker": "RI", "side": "right", "speakerColor": "#c9a84c", "text": "R' Immi b'shem R' Elazar: <span class='hebrew'>שְׁמִירַת נְזָקִין כִּשְׁמִירַת קִנְיָין</span> — the same act that triggers ownership triggers liability." },
+        { "speaker": "RS", "side": "left", "speakerColor": "#4caf50", "text": "R' Simon: better — read it as digging in the dunes, where any new pit is a fresh hazard, so each new digger owns his stretch." }
+      ],
+      "callout": {
+        "label": "Yerushalmi style:",
+        "text": "Two paths to make sense of the beraita: one through קנין principles, one through factual reframing. The Yerushalmi keeps both in tension."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📏 Shiurim of a Pit",
+      "subtitle": "How deep does it have to be?",
+      "headers": ["Damage type", "Shiur", "Source"],
+      "rows": [
+        ["<span class='hebrew'>לְהָמִית</span>", "<span class='hebrew'>עֲשָׂרָה טְפָחִים</span>", "Standard tannaitic shiur for death"],
+        ["<span class='hebrew'>לְהַזִּיק</span>", "<span class='hebrew'>כָּל שֶׁהוּא</span>", "Any depth is enough to obligate for damage"],
+        ["Symmachos", "Depth 3, length and width 4", "Geometric minimum"],
+        ["R' Elazar haKappar", "<span class='hebrew'>כִּמְלוֹאוֹ שֶׁלַּנּוֹפֵל</span>", "Whatever fits the falling animal — chicken or camel"]
+      ],
+      "callout": {
+        "label": "Practical reading:",
+        "text": "The Yerushalmi gives three competing shiurim and lets them stand. R' Elazar haKappar's standard is brilliantly relative — the pit is sized to its victim."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🏛️ Sancta and מעילה — The Mishnah's Property Clause",
+      "subtitle": "What is included in the Mishnah's <span class='hebrew'>נְכָסִים שֶׁאֵין בָּהֶן מְעִילָה</span>?",
+      "steps": [
+        { "content": "1️⃣ Beraita: <span class='hebrew'>הַנְּכָסִין הַלָּלוּ נִיקְנִין עִם נְכָסִין שֶׁיֵּשׁ בָּהֶן מְעִילָה</span>." },
+        { "content": "2️⃣ Rav Yehudah b'shem Shmuel: this follows R' Yose haGlili." },
+        { "content": "3️⃣ R' Yose haGlili — <span class='hebrew'>וּמָעֲלָה מַעַל בַּיי</span> includes <strong>קדשים קלים</strong>." },
+        { "content": "4️⃣ Ben Azzai narrows: <strong>שלמים</strong> only. Abba Yose ben Dosai: only <strong>בכור</strong>." },
+        { "content": "5️⃣ R' Shimon and Rav Huna split sancta by <strong>אחריות</strong> — if the owner bears risk, it's <span class='hebrew'>בָּעֲמִיתוֹ וְכִחֵשׁ</span>; if not, <span class='hebrew'>בַּיי וְכִחֵשׁ</span>.", "highlight": true }
+      ],
+      "callout": {
+        "label": "The pivot:",
+        "text": "What looks like a property-law footnote is really about classifying whose property the sacred animal is. אחריות — owner's risk — becomes the line that determines which clause of the מעילה verse applies."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🐑 The Three Tannaitic Positions on Sancta",
+      "subtitle": "Each Tanna draws the line differently.",
+      "boxes": [
+        {
+          "title": "🌾 R' Yose haGlili",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "Drash: <span class='hebrew'>וּמָעֲלָה מַעַל בַּיי</span>",
+            "Includes <span class='hebrew'>קֳדָשִׁים קַלִּין</span>",
+            "Broadest scope of מעילה"
+          ]
+        },
+        {
+          "title": "🐑 Ben Azzai",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Includes only <span class='hebrew'>שְׁלָמִים</span>",
+            "Per Abba Yose ben Dosai: only <span class='hebrew'>בְּכוֹר</span>",
+            "<span class='hebrew'>שלמים</span> implies מעשר too; <span class='hebrew'>מעשר</span> excludes <span class='hebrew'>בכור</span>"
+          ]
+        },
+        {
+          "title": "⚖️ R' Shimon",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "Cuts by <strong>אחריות</strong>",
+            "With אחריות → <span class='hebrew'>בָּעֲמִיתוֹ וְכִחֵשׁ</span>",
+            "Without אחריות → <span class='hebrew'>בַּיי וְכִחֵשׁ</span>"
+          ]
+        },
+        {
+          "title": "🔄 Rav Huna",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "Even valid + invalid sancta",
+            "אחריות determines which verse applies",
+            "Sharpens R' Shimon's principle"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Why this matters here:",
+        "text": "Bava Kamma 1:2 says the rule applies to <span class='hebrew'>נכסים</span>. The Yerushalmi must define what counts as your property — and sancta sit on the boundary between mine and Hashem's."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "The Mishnah's clauses about <span class='hebrew'>הִכְשַׁרְתִּי בְּמִקְצָת</span> and נכסים unfold into a layered theory of pits and a careful sorting of which sancta still count as personal property.",
+    "flowSteps": [
+      { "content": "<strong>Mishnah 1:2 phrases</strong><br><span class='hebrew'>הִכְשַׁרְתִּי בְּמִקְצָת</span> + <span class='hebrew'>נכסים</span>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Pit case: 10 tefachim + 1 tefach<br>Beraita splits the liability", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🕳️ <strong>Death</strong><br>last digger", "style": "border-color:#e74c3c" },
+          { "content": "📉 <strong>Damage</strong><br>both diggers (R' Yitzchak)", "style": "border-color:#9b59b6" },
+          { "content": "🪣 <strong>Plasterer</strong><br>liable via קנין", "style": "border-color:#4a90d9" },
+          { "content": "🐑 <strong>Sancta</strong><br>sorted by אחריות", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br><span class='hebrew'>שְׁמִירַת נְזָקִין כִּשְׁמִירַת קִנְיָין</span> — the same acts that vest ownership vest liability. And the same property-test that defines מעילה defines whose נכסים the Mishnah is talking about.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "If A digs a pit 10 tefachim and B deepens it by one, who is liable for damage according to R' Yitzchak?",
+      "o": [
+        "Only the last digger (B)",
+        "Only the first digger (A)",
+        "Both A and B — <span class='hebrew'>אַחַר שְׁנֵיהֶן לִנְזָקִין</span>",
+        "Neither, since each one is partial"
+      ],
+      "c": 2,
+      "e": "R' Yitzchak reads the beraita: latter for death, but <span class='hebrew'>אַחַר שְׁנֵיהֶן לִנְזָקִין</span> — both for damage."
+    },
+    {
+      "q": "How can a plasterer become liable for someone else's pit?",
+      "o": [
+        "By making it deeper",
+        "When the digger said <span class='hebrew'>סוֹד אֶת הַבּוֹר הַזֶּה וּקְנֵה אוֹתוֹ</span> — plastering effects acquisition",
+        "Automatically, since he touched the pit",
+        "He never can — only digging counts"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>שְׁמִירַת נְזָקִין כִּשְׁמִירַת קִנְיָין</span>: when plastering is the agreed קנין act, it makes him owner — and therefore liable."
+    },
+    {
+      "q": "What is the shiur of a pit <span class='hebrew'>לְהָמִית</span> versus <span class='hebrew'>לְהַזִּיק</span>?",
+      "o": [
+        "Both 10 tefachim",
+        "Death: 10 tefachim; damage: <span class='hebrew'>כָּל שֶׁהוּא</span>",
+        "Death: <span class='hebrew'>כָּל שֶׁהוּא</span>; damage: 10 tefachim",
+        "Both <span class='hebrew'>כָּל שֶׁהוּא</span>"
+      ],
+      "c": 1,
+      "e": "The Yerushalmi states clearly: <span class='hebrew'>לְהָמִית עֲשָׂרָה טְפָחִים, וּלְהַזִּיק כָּל שֶׁהוּא</span>."
+    },
+    {
+      "q": "What is R' Elazar haKappar's measure for a pit?",
+      "o": [
+        "Three deep, four wide",
+        "Ten tefachim minimum",
+        "<span class='hebrew'>כִּמְלוֹאוֹ שֶׁלַּנּוֹפֵל</span> — fitted to the falling animal, chicken or camel",
+        "Any size"
+      ],
+      "c": 2,
+      "e": "R' Elazar haKappar's relative shiur: the pit is sized to whatever animal falls in."
+    },
+    {
+      "q": "What is R' Shimon's principle for which sancta count under 'against his neighbor and he lied'?",
+      "o": [
+        "Only קדשי קדשים",
+        "Only valid sancta",
+        "Sancta for which the owner bears <span class='hebrew'>אחריות</span>",
+        "All sancta equally"
+      ],
+      "c": 2,
+      "e": "R' Shimon: when the owner is responsible for replacement (אחריות), the sancta are read as <span class='hebrew'>בָּעֲמִיתוֹ וְכִחֵשׁ</span>; otherwise <span class='hebrew'>בַּיי וְכִחֵשׁ</span>."
+    }
+  ]
+}

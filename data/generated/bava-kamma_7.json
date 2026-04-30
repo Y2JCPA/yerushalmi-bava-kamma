@@ -1,0 +1,220 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 7,
+  "emoji": "🐾",
+  "topics": [
+    "🦶 כֵּיצַד הָרֶגֶל מוּעֶדֶת — the foot's normal damage",
+    "🪨 צרורות — pebbles ricocheting at half-damage",
+    "🧱 שור שמתחכך בכותל — rubbing case, kofer, and tam",
+    "🛣️ Two-road case: animal chooses the pebble path",
+    "💩 R' Elazar: producing dung and the מקלוט rule"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Foot, Pebbles, and Edge Cases of הֶעָדָאָה",
+    "label": "The sugya:",
+    "text": "Chapter 2 opens by asking: how is the foot mu'ad? The Mishnah lists three sub-cases — kicking, ricocheting pebbles, and the secondary breakage when a vessel falls on another. The Yerushalmi probes each: R' Immi reframes the pebble case to the moment a person was holding the vessel, R' Abba bar Mamal introduces the two-road scenario, and R' Elazar lays down a sweeping rule — anything <span class='hebrew'>חוּץ לְגוּפָהּ</span> doesn't distinguish between domains for the half-damage rule. The daf then takes up <span class='hebrew'>הֶעָדָאָה</span> for things-outside-the-body, the wall-rubbing ox, and the dung case.",
+    "hebrewSource": "כָּל דָּבָר שֶׁהוּא חוּץ לְגוּפָהּ לֹא חִלְּקוּ בוֹ חֲכָמִים בֵּין בִּרְשׁוּת הַיָּחִיד בֵּין בִּרְשׁוּת הָרַבִּים לַחֲצִי כּוֹפֶר"
+  },
+  "slides": [
+    {
+      "type": "process",
+      "title": "🦶 Mishnah 2:1 — The Foot's Three Profiles",
+      "subtitle": "How is <span class='hebrew'>רגל</span> mu'ad?",
+      "steps": [
+        { "content": "1️⃣ Default: <span class='hebrew'>הַבְּהֵמָה מוּעֶדֶת לְהַלֵּךְ כְּדַרְכָּהּ וּלְשַׁבֵּר</span> — full damage for normal walking-breakage." },
+        { "content": "2️⃣ Kicking or pebbles ricocheting: <strong>half damage</strong>." },
+        { "content": "3️⃣ Steps on a vessel and breaks it; pieces fall on a second vessel and break that." },
+        { "content": "4️⃣ For the <strong>first</strong> vessel: full damage. For the <strong>second</strong>: half damage." },
+        { "content": "5️⃣ The Mishnah is mapping different layers: direct foot-damage vs. derivative trajectories.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Key distinction:",
+        "text": "Direct contact = full. Anything launched (pebbles, fragments) = half. The animal's body is the dividing line."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 The Pebble Case — Where Does Liability Apply?",
+      "subtitle": "Three voices reframe the half-damage rule.",
+      "lines": [
+        { "speaker": "Q", "side": "left", "speakerColor": "#9b59b6", "text": "<span class='hebrew'>וְאֵין דַּרְכָּהּ לְהַתִּיז צְרוֹרוֹת?</span> — pebbles are normal walking-byproducts. Why pay anything?" },
+        { "speaker": "RI", "side": "right", "speakerColor": "#4a90d9", "text": "R' Immi: this is a case where a person was <em>holding</em> the vessel. If it was lying in רשות הרבים — animal walking properly, vessel sitting properly — exempt." },
+        { "speaker": "RB", "side": "left", "speakerColor": "#4caf50", "text": "R' Abba bar Mamal: imagine two roads — one with grasses and pebbles, one without. If the animal chose the pebble road, even in רשות הרבים, the owner is <strong>exempt</strong>." },
+        { "speaker": "RE", "side": "right", "speakerColor": "#e74c3c", "text": "R' Elazar lays down the principle: <span class='hebrew'>כָּל דָּבָר שֶׁהוּא חוּץ לְגוּפָהּ לֹא חִלְּקוּ בוֹ חֲכָמִים בֵּין רשות היחיד לרשות הרבים לחצי כופר</span>." }
+      ],
+      "callout": {
+        "label": "Yerushalmi style:",
+        "text": "Each amora reads the half-damage rule against a different fact pattern. R' Elazar then collapses the variations under one principle: outside-the-body damage doesn't distinguish domains."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🪨 Direct vs. Outside-the-Body Damage",
+      "subtitle": "The conceptual axis of the chapter.",
+      "boxes": [
+        {
+          "title": "🦶 Direct foot",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "<span class='hebrew'>הילוכה</span> — normal walking",
+            "Steps on a vessel directly",
+            "Full damage in רשות הניזק"
+          ]
+        },
+        {
+          "title": "🪨 צרורות (pebbles)",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Pebbles fly from under the foot",
+            "Half damage — <span class='hebrew'>חצי נזק</span>",
+            "<span class='hebrew'>חוץ לגופה</span> — outside the body"
+          ]
+        },
+        {
+          "title": "🍶 Falling fragments",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "Vessel A breaks → pieces hit vessel B",
+            "Vessel A: full damage",
+            "Vessel B: half damage"
+          ]
+        },
+        {
+          "title": "🛣️ Two-road case",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "Animal picks the pebble road",
+            "Even in רשות הרבים — exempt",
+            "R' Abba bar Mamal's reframe"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "The axis:",
+        "text": "Once the harm comes from something outside the animal's body, the half-damage rule kicks in and the domain distinction collapses."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🧱 Wall-Rubbing Ox — Can Tam Have כופר?",
+      "subtitle": "R' Ze'ira and R' Illa argue about הֶעָדָאָה for outside-the-body.",
+      "nodes": [
+        { "content": "<strong>Q:</strong> Does הֶעָדָאָה apply to <span class='hebrew'>דבר שהוא חוץ לגופה</span>?", "class": "question" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "R' Ze'ira", "content": "<span class='hebrew'>מְקַבֶּלֶת</span> — yes, it can be made mu'ad", "class": "result-good" },
+            { "label": "R' Illa", "content": "<span class='hebrew'>אֵינָהּ מְקַבֶּלֶת</span> — no", "class": "result-bad" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Beraita: <span class='hebrew'>שׁוֹר שֶׁמִּתְחַכֵּךְ בַּכּוֹתֶל וְנָפַל עַל הָאָדָם וַהֲרָגוֹ — חַיָיב בַּכּוֹפֶר וּפָטוּר מִמִּיתָה</span>", "class": "action" },
+        { "type": "arrow" },
+        { "content": "Reading: there is כופר for tam? Resolution — the ox was already mu'ad to topple walls; in this case no human was at the wall when it fell.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Why this matters:",
+        "text": "The wall-rubbing case becomes the test case: if הֶעָדָאָה works on something <span class='hebrew'>חוץ לגופה</span>, the beraita slots in cleanly. If not, the Yerushalmi has to read it as a standing mu'ad."
+      }
+    },
+    {
+      "type": "process",
+      "title": "💩 R' Elazar's Dung Case",
+      "subtitle": "When does an animal's byproduct yield full damage?",
+      "steps": [
+        { "content": "1️⃣ <span class='hebrew'>הִטִּילָה גְלָלִים</span> — the animal produced dung and damaged a vessel." },
+        { "content": "2️⃣ R' Elazar: <strong>full damage</strong>." },
+        { "content": "3️⃣ Counter: should we require an owner to keep a <span class='hebrew'>מקלוט</span> (receptacle) handy?" },
+        { "content": "4️⃣ Distinction: <span class='hebrew'>בְּשֶׁאֵין דַּרְכָּהּ לְכֵן</span> — when this isn't habitual, no receptacle needed." },
+        { "content": "5️⃣ <span class='hebrew'>אֲבָל בְּשֶׁדַּרְכָּהּ לָכֵן צָרִיךְ שֶׁיְּהֵא הַמִּקְלוֹט בְּיָדוֹ</span> — habitual behavior requires precautions.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "Habit reshapes liability. Once the animal regularly produces dung in damaging ways, the owner's failure to bring a receptacle becomes the gateway to full damage."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Foot damage runs on a body/outside-the-body axis: direct contact pays full, anything launched pays half — and that axis dissolves the usual domain distinctions.",
+    "flowSteps": [
+      { "content": "<strong>Mishnah 2:1: how is foot mu'ad?</strong><br><span class='hebrew'>לְשַׁבֵּר בְּדֶרֶךְ הִילּוּכָהּ</span>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Direct walking → full<br>Pebbles / falling fragments → half", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🪨 <strong>R' Immi</strong><br>vessel was held in hand", "style": "border-color:#4a90d9" },
+          { "content": "🛣️ <strong>R' Abba bar Mamal</strong><br>two-road choice", "style": "border-color:#4caf50" },
+          { "content": "📐 <strong>R' Elazar</strong><br>חוץ לגופה — domains merged", "style": "border-color:#9b59b6" },
+          { "content": "🧱 <strong>R' Ze'ira / R' Illa</strong><br>can outside-body become mu'ad?", "style": "border-color:#e74c3c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>The foot is mu'ad to break in its path — but anything outside its body sits in a different liability regime. Habit (R' Elazar's dung case) and הֶעָדָאָה (R' Ze'ira) extend the rules to edge cases.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "What does the Mishnah pay for pebbles ricocheting from under the foot?",
+      "o": [
+        "Full damage",
+        "Half damage",
+        "Exempt",
+        "Half damage from the body only"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>הָיוּ צְרוֹרוֹת מְנַתְּזִין... מְשַׁלֵּם חֲצִי נֶזֶק</span> — pebbles trigger half damage."
+    },
+    {
+      "q": "If an animal steps on a vessel and the broken pieces fall on a second vessel, what is the rule?",
+      "o": [
+        "Full damage on both",
+        "Half damage on both",
+        "Full damage on the first, half on the second",
+        "Exempt from both"
+      ],
+      "c": 2,
+      "e": "<span class='hebrew'>עַל הָרִאשׁוֹן מְשַׁלֵּם נֶזֶק שָׁלֵם וְעַל הָאַחֲרוֹן מְשַׁלֵּם חֲצִי נֶזֶק</span> — direct contact is full, derivative is half."
+    },
+    {
+      "q": "How does R' Abba bar Mamal explain pebble liability?",
+      "o": [
+        "Always exempt in רשות הרבים",
+        "Two roads — one with pebbles, one without; if the animal chose the pebble road, even in רשות הרבים the owner is exempt",
+        "Always full damage",
+        "Liability depends on the vessel's owner"
+      ],
+      "c": 1,
+      "e": "R' Abba bar Mamal's two-road case: <span class='hebrew'>הִנִּיחָה אֶת שֶׁאֵין בָּהּ עֲשָׂבִים וּצְרוֹרוֹת וְהִילְּכָה בְזוֹ שֶׁיֵּשׁ בָּהּ</span> — exempt even in public domain."
+    },
+    {
+      "q": "What is R' Elazar's general principle about outside-the-body damage?",
+      "o": [
+        "It is always exempt",
+        "Half-damage applies regardless of domain — <span class='hebrew'>לֹא חִלְּקוּ בוֹ חֲכָמִים בֵּין רשות היחיד לרשות הרבים</span>",
+        "Only public-domain damage triggers liability",
+        "Only private-domain damage triggers liability"
+      ],
+      "c": 1,
+      "e": "Anything <span class='hebrew'>חוּץ לְגוּפָהּ</span> bypasses the domain distinction for the half-damage rule."
+    },
+    {
+      "q": "Why does R' Elazar say producing dung yields full damage when not habitual, but habitual cases require a מקלוט?",
+      "o": [
+        "Because dung damage is always outside the body",
+        "Because if the animal regularly does this, the owner must take precautions (carry a receptacle); otherwise it's an unforeseen full-damage case",
+        "Because dung is treated like keren",
+        "Because dung is exempt in רשות הרבים"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>בְּשֶׁאֵין דַּרְכָּהּ לְכֵן</span> — no receptacle needed; <span class='hebrew'>אֲבָל בְּשֶׁדַּרְכָּהּ לָכֵן צָרִיךְ שֶׁיְּהֵא הַמִּקְלוֹט בְּיָדוֹ</span>. Habit creates the duty of precaution."
+    }
+  ]
+}

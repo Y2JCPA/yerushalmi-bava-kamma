@@ -1,0 +1,226 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 6,
+  "emoji": "🏛️",
+  "topics": [
+    "🏛️ Whose courtyard? Liability by domain access",
+    "📜 R' Shimon b. Elazar's four-rule beraita on רשות",
+    "👩 Women included in נזק despite the masculine pasuk",
+    "💰 Court appraisal: only מקרקעין, only with עדים, only with בני חורין",
+    "🐂 Mishnah 1:4 — five tam, five mu'ad; R' Tarfon's full damage in רשות הניזק"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Whose Domain, Whose Damage",
+    "label": "The sugya:",
+    "text": "Daf 6 walks the Mishnah's domain clauses with surgical care. R' Yirmiyah and R' Yose each show why <span class='hebrew'>נוֹהֲגִין הֵן בִּרְשׁוּת הַנִּיזָּק וְהַמַּזִּיק</span> is not redundant — for one it includes the שומרים; for the other it excludes a courtyard belonging to neither. R' Yose b. Elazar's four-rule beraita then becomes the master grid for analyzing damages by domain access. The daf moves into Mishnah 1:3 (court procedure, women, joint liability) and opens Mishnah 1:4–1:5 — the count of five tam and five mu'ad, R' Tarfon's view of full damage in רשות הניזק, and which wild animals are notorious by default.",
+    "hebrewSource": "אַרְבָּעָה כְּלָלוֹת הָיָה רִבִּי שִׁמְעוֹן בֶּן אֶלְעָזָר אוֹמֵר מִשּׁוּם רִבִּי מֵאִיר בִּנְזָקִין"
+  },
+  "slides": [
+    {
+      "type": "debate",
+      "title": "💬 Why <span class='hebrew'>נוֹהֲגִין בִּרְשׁוּת הַנִּיזָּק וְהַמַּזִּיק</span>?",
+      "subtitle": "R' Yirmiyah and R' Yose split the redundancy.",
+      "lines": [
+        { "speaker": "RY", "side": "left", "speakerColor": "#4a90d9", "text": "R' Yirmiyah: if the Mishnah only excluded the מזיק's private domain, I'd say liability applies even to a courtyard belonging to neither. So the extra clause comes to <em>include</em> the four שומרים." },
+        { "speaker": "RYo", "side": "right", "speakerColor": "#9b59b6", "text": "R' Yose: that exclusion was already obvious. The extra clause comes to <em>exclude</em> a courtyard belonging to neither." },
+        { "speaker": "T1", "side": "left", "speakerColor": "#4caf50", "text": "Some Tannaim: shared courtyard is liable; courtyard of neither is exempt — <span class='hebrew'>מֵיטַב שָׂדֵהוּ</span>." },
+        { "speaker": "T2", "side": "right", "speakerColor": "#e74c3c", "text": "Some Tannaim: even a courtyard of neither is liable — <span class='hebrew'>וּבִעֵר בִּשְׂדֵה אַחֵר. מִכָּל מָקוֹם</span>." }
+      ],
+      "callout": {
+        "label": "Yerushalmi style:",
+        "text": "Two amoraim disagree about what the <em>same</em> Mishnah clause is doing. Each reading then aligns with a different tannaitic camp."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📊 R' Shimon b. Elazar's Four Rules",
+      "subtitle": "<span class='hebrew'>אַרְבָּעָה כְּלָלוֹת בִּנְזָקִין</span> — the master grid for liability by domain.",
+      "headers": ["Domain access", "שן / רגל", "קרן (tam)", "קרן (mu'ad)"],
+      "rows": [
+        ["Both — courtyard / inn", "Exempt", "Half damage", "Full damage <span class='hebrew'>מן העלייה</span>"],
+        ["Only נִזָּק (his property)", "Full", "Full", "Full"],
+        ["Only מַזִּיק", "Exempt", "Exempt", "Exempt"],
+        ["Neither — public / valley", "Exempt", "Half damage", "Full damage <span class='hebrew'>מן העלייה</span>"]
+      ],
+      "callout": {
+        "label": "Why this grid matters:",
+        "text": "R' Yasa b'shem R' Yochanan derives that <strong>חצר השותפין חייבת</strong> precisely from this beraita — line 1 already obligates damages even though both have access."
+      }
+    },
+    {
+      "type": "process",
+      "title": "💰 Mishnah 1:3 — Court Procedure",
+      "subtitle": "Each phrase narrows the appraisal procedure.",
+      "steps": [
+        { "content": "1️⃣ <span class='hebrew'>שָׁוֶה כֶסֶף</span> — only mortgageable property (קרקע) is appraised. (Movables only if נִזָּק seized them.)" },
+        { "content": "2️⃣ <span class='hebrew'>בִּפְנֵי בֵית דִּין</span> — only in court." },
+        { "content": "3️⃣ <span class='hebrew'>עַל פִּי עֵדִים</span> — only with witnesses." },
+        { "content": "4️⃣ <span class='hebrew'>בְּנֵי חוֹרִין וּבְנֵי בְרִית</span> — excludes Gentiles, slaves, and those disqualified for testimony." },
+        { "content": "5️⃣ <span class='hebrew'>וְהַנָּשִׁים בִּכְלָל הַנֶּזֶק</span> — women are in the system; R' Yishmael: <span class='hebrew'>וְאֵלֶּה הַמִּשְׁפָּטִים אֲשֶׁר תָּשִׂים לִפְנֵיהֶם</span> (the verse must explicitly include them).", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "<span class='hebrew'>וְהַנִּיזָּק וְהַמַּזִּיק בְּתַשְׁלוּמִין</span> — when both pay, each pays half. <span class='hebrew'>זֶה מַפְסִיד חֲצִי נֶזֶק וְזֶה מַפְסִיד חֲצִי נֶזֶק</span>."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🐂 Mishnah 1:4 — Five Tam, Five Mu'ad",
+      "subtitle": "The Mishnah charts the default temperaments.",
+      "boxes": [
+        {
+          "title": "🟢 Five Tam Acts",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "<span class='hebrew'>נְגִיחָה</span> — goring",
+            "<span class='hebrew'>נְגִיפָה</span> — hitting",
+            "<span class='hebrew'>נְשִׁיכָה</span> — biting",
+            "<span class='hebrew'>רְבִיצָה</span> — lying down",
+            "<span class='hebrew'>בְּעִיטָה</span> — kicking"
+          ]
+        },
+        {
+          "title": "🔴 Five Mu'ad",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<span class='hebrew'>שֵׁן</span> — eating what's appropriate",
+            "Mu'ad bull (after warnings)",
+            "Bull damaging in רשות הניזק",
+            "<span class='hebrew'>אדם</span> — the human",
+            "(per R' Tarfon — see below)"
+          ]
+        },
+        {
+          "title": "⚖️ R' Tarfon",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Bull goring in <span class='hebrew'>רשות הניזק</span>",
+            "Pays <strong>full</strong> damage",
+            "Sages: half damage",
+            "R' Yochanan: our Mishnah is R' Tarfon's"
+          ]
+        },
+        {
+          "title": "🦁 Mishnah 1:5",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "Wolf, lion, bear, tiger, panther, snake — mu'ad",
+            "R' Eliezer: trained ones aren't mu'ad — except snake",
+            "R' Meir adds <span class='hebrew'>צבוע</span> (hyena)",
+            "R' Yose b'R' Avin: only male hyena, dangerous as a lion"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "The thread:",
+        "text": "Tam vs. mu'ad isn't a static label — it tracks behavior. The Mishnah's five-and-five frame is then immediately complicated by R' Tarfon, R' Eliezer, and R' Meir."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🔎 Whose Courtyard? Decision Map",
+      "subtitle": "Putting R' Shimon b. Elazar's grid to work.",
+      "nodes": [
+        { "content": "<strong>Where did the damage happen?</strong>", "class": "question" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "מַזִּיק's only", "content": "Exempt from everything", "class": "result-bad" },
+            { "label": "Shared", "content": "שן/רגל exempt; קרן at half/full", "class": "result-partial" },
+            { "label": "נִזָּק's only", "content": "Full damage on everything", "class": "result-good" },
+            { "label": "Neither's", "content": "Like public space — שן/רגל exempt; קרן at half/full", "class": "result-partial" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "R' Yasa: from line 1 alone we learn <span class='hebrew'>חֲצַר הַשּׁוּתָפִין חַיֶיבֶת</span>.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Practical reading:",
+        "text": "Domain access is the master variable. Each row of the beraita is a different liability profile, and the Mishnah's clauses are designed to land precisely in this grid."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Domain access defines liability, and each clause of the Mishnah is hand-fitted to the four-cell grid of R' Shimon b. Elazar's beraita.",
+    "flowSteps": [
+      { "content": "<strong>Mishnah's clauses on domain</strong><br><span class='hebrew'>חוץ מרשות המיוחדת למזיק</span>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Why is <span class='hebrew'>נוהגין ברשות הניזק והמזיק</span> needed?<br>R' Yirmiyah → שומרים; R' Yose → exclude neither's", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🏛️ <strong>Both</strong><br>שן/רגל ✗, קרן ✓", "style": "border-color:#9b59b6" },
+          { "content": "🏠 <strong>Only נזק's</strong><br>full damage", "style": "border-color:#4caf50" },
+          { "content": "🚫 <strong>Only מזיק's</strong><br>exempt", "style": "border-color:#e74c3c" },
+          { "content": "🌾 <strong>Neither's</strong><br>like reshut harabim", "style": "border-color:#4a90d9" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Mishnah 1:3–1:5 follow:</strong><br>Court appraisal procedure → women included in tort liability → five tam and five mu'ad → wild animals' default mu'ad status. The daf weaves procedure, status, and substance into one map.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "Why does R' Yirmiyah think the Mishnah needs <span class='hebrew'>נוֹהֲגִין הֵן בִּרְשׁוּת הַנִּיזָּק וְהַמַּזִּיק</span>?",
+      "o": [
+        "To exclude a courtyard belonging to neither",
+        "To include the four שומרים (unpaid trustee, borrower, paid trustee, renter)",
+        "To require both parties to be present",
+        "To exclude Gentiles"
+      ],
+      "c": 1,
+      "e": "R' Yirmiyah reads the extra clause as bringing in the שומרים — שומר חינם, שואל, נושא שכר, שוכר."
+    },
+    {
+      "q": "What does R' Yose think the extra clause is doing?",
+      "o": [
+        "Including women",
+        "Excluding a courtyard belonging to neither party",
+        "Including watchmen",
+        "Excluding Gentiles"
+      ],
+      "c": 1,
+      "e": "R' Yose: the מזיק's private exclusion was obvious, so the clause must be excluding <span class='hebrew'>חצר שאינה לשניהם</span>."
+    },
+    {
+      "q": "According to R' Shimon b. Elazar's grid, what is the law for שן/רגל damage in a shared courtyard?",
+      "o": [
+        "Full damage",
+        "Half damage",
+        "Exempt",
+        "Pays from his body only"
+      ],
+      "c": 2,
+      "e": "<span class='hebrew'>עַל הַשֵּׁן וְעַל הָרֶגֶל פָּטוּר</span> when both have access — only קרן is liable, half-tam or full-mu'ad."
+    },
+    {
+      "q": "What does R' Yishmael's drash <span class='hebrew'>וְאֵלֶּה הַמִּשְׁפָּטִים אֲשֶׁר תָּשִׂים לִפְנֵיהֶם</span> establish?",
+      "o": [
+        "That courts must convene with three judges",
+        "That women are included in נזק liability — both as victims and perpetrators",
+        "That only Jews can testify",
+        "That property must be appraised in court"
+      ],
+      "c": 1,
+      "e": "Since the verse only addresses men, R' Yishmael needs <span class='hebrew'>לִפְנֵיהֶם</span> to include women in the tort framework."
+    },
+    {
+      "q": "Whose view does R' Yochanan say underlies our Mishnah's count of five mu'ad — including <span class='hebrew'>שור המזיק ברשות הניזק</span>?",
+      "o": [
+        "R' Akiva",
+        "R' Tarfon, who says full damage in רשות הניזק",
+        "R' Eliezer",
+        "R' Meir"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>אָמַר רִבִּי יוֹחָנָן. דְּרִבִּי טַרְפוֹן הִיא</span> — R' Tarfon obligates full damage in the נִזָּק's domain; the Sages say half."
+    }
+  ]
+}

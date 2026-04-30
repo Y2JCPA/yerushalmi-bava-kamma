@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 5 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🕳️</div>
+  <h1>Yerushalmi Bava Kamma 5</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא ה׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🕳️ Layered pit liability — first digger, last digger, plasterer<br>
+    📏 Shiurim of a pit: 10 tefachim for death, anything for damage<br>
+    🐔 R' Elazar haKappar: <span class='hebrew'>כִּמְלוֹאוֹ שֶׁלַּנּוֹפֵל</span><br>
+    🏛️ <span class='hebrew'>שְׁמִירַת נְזָקִין כִּשְׁמִירַת קִנְיָין</span><br>
+    🐑 What sancta count under מעילה — R' Yose haGlili, Ben Azzai, R' Shimon<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Pits, Layers, and Sancta</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">כַּמָּה שִׁיעוּרָן לְהָמִית. עֲשָׂרָה טְפָחִים. וּלְהַזִּיק. כָּל שֶׁהוּא</div><div class="callout"><strong>The sugya:</strong> The two segments of daf 5 carry an enormous amount of weight. The first explores the Mishnah's clause <span class='hebrew'>הִכְשַׁרְתִּי בְּמִקְצָת נִזְקוֹ</span>: when multiple people contribute to a single pit, who pays for what kind of damage? Rebbi and R' Yitzchak split the layers of liability between death and damage, and the Yerushalmi pushes outward to ask about plastering, dune-pits, and the minimum shiur. The second segment moves to property law — which sancta fall under מעילה for the purposes of our Mishnah's reference to נכסים? — and brings the layered debate of R' Yose haGlili, Ben Azzai, and R' Shimon.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>🕳️ Layered Pit — Who Pays?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">First digs ten, second deepens by one tefach.</div>
+  <div class="flowchart"><div class="flow-box question"><span class='hebrew'>חָפַר בּוֹר עֲשָׂרָה טְפָחִים וּבָא אַחֵר וְעָמַק בּוֹ טֶפַח</span></div><div class="flow-arrow">↓</div><div class="flow-box action">Beraita's plain rule: <strong>הָאַחֲרוֹן חַיָיב</strong> — the latter pays for everything</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Rebbi</div><div class="flow-box result-partial">Latter for <strong>death</strong><br>Former for <strong>damage</strong></div></div><div class="flow-col"><div class="flow-label">R' Yitzchak</div><div class="flow-box result-good">Latter for <strong>death</strong><br><strong>Both</strong> for damage</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good">The pit is a stack of liabilities — different layers track different harms.</div></div><div class="callout" style="margin-top:20px"><strong>Key move:</strong> <span class='hebrew'>הִכְשַׁרְתִּי בְּמִקְצָת נִזְקוֹ</span> is not just a rhetorical clause. It is the legal mechanism for slicing one physical pit into multiple liability units.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>💬 The Plasterer Case</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Can someone become liable just by finishing another's pit?</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#9b59b6">B</div><div class="speech"><span class='hebrew'>חָפַר בּוֹ עֲשָׂרָה טְפָחִים וּבָא אַחֵר וְסִיָידוֹ וְכִיָירוֹ שְׁנֵיהֶן חַיָיבִין</span> — both are liable.</div></div><div class="debate-line right"><div class="speaker" style="background:#e74c3c">Q</div><div class="speech">Just by whitewashing and lining? That doesn't deepen the pit at all!</div></div><div class="debate-line"><div class="speaker" style="background:#4a90d9">A</div><div class="speech">When the digger told him: <span class='hebrew'>סוֹד אֶת הַבּוֹר הַזֶּה וּקְנֵה אוֹתוֹ</span> — finish it and own it. The plasterer becomes the owner.</div></div><div class="debate-line right"><div class="speaker" style="background:#c9a84c">RI</div><div class="speech">R' Immi b'shem R' Elazar: <span class='hebrew'>שְׁמִירַת נְזָקִין כִּשְׁמִירַת קִנְיָין</span> — the same act that triggers ownership triggers liability.</div></div><div class="debate-line"><div class="speaker" style="background:#4caf50">RS</div><div class="speech">R' Simon: better — read it as digging in the dunes, where any new pit is a fresh hazard, so each new digger owns his stretch.</div></div></div><div class="callout" style="margin-top:20px"><strong>Yerushalmi style:</strong> Two paths to make sense of the beraita: one through קנין principles, one through factual reframing. The Yerushalmi keeps both in tension.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>📏 Shiurim of a Pit</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">How deep does it have to be?</div>
+  <table><tr><th>Damage type</th><th>Shiur</th><th>Source</th></tr><tr><td><span class='hebrew'>לְהָמִית</span></td><td><span class='hebrew'>עֲשָׂרָה טְפָחִים</span></td><td>Standard tannaitic shiur for death</td></tr><tr><td><span class='hebrew'>לְהַזִּיק</span></td><td><span class='hebrew'>כָּל שֶׁהוּא</span></td><td>Any depth is enough to obligate for damage</td></tr><tr><td>Symmachos</td><td>Depth 3, length and width 4</td><td>Geometric minimum</td></tr><tr><td>R' Elazar haKappar</td><td><span class='hebrew'>כִּמְלוֹאוֹ שֶׁלַּנּוֹפֵל</span></td><td>Whatever fits the falling animal — chicken or camel</td></tr></table><div class="callout" style="margin-top:20px"><strong>Practical reading:</strong> The Yerushalmi gives three competing shiurim and lets them stand. R' Elazar haKappar's standard is brilliantly relative — the pit is sized to its victim.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>🏛️ Sancta and מעילה — The Mishnah's Property Clause</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">What is included in the Mishnah's <span class='hebrew'>נְכָסִים שֶׁאֵין בָּהֶן מְעִילָה</span>?</div>
+  <div class="process-bar"><div class="process-step">1️⃣ Beraita: <span class='hebrew'>הַנְּכָסִין הַלָּלוּ נִיקְנִין עִם נְכָסִין שֶׁיֵּשׁ בָּהֶן מְעִילָה</span>.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ Rav Yehudah b'shem Shmuel: this follows R' Yose haGlili.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ R' Yose haGlili — <span class='hebrew'>וּמָעֲלָה מַעַל בַּיי</span> includes <strong>קדשים קלים</strong>.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ Ben Azzai narrows: <strong>שלמים</strong> only. Abba Yose ben Dosai: only <strong>בכור</strong>.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ R' Shimon and Rav Huna split sancta by <strong>אחריות</strong> — if the owner bears risk, it's <span class='hebrew'>בָּעֲמִיתוֹ וְכִחֵשׁ</span>; if not, <span class='hebrew'>בַּיי וְכִחֵשׁ</span>.</div></div><div class="callout" style="margin-top:20px"><strong>The pivot:</strong> What looks like a property-law footnote is really about classifying whose property the sacred animal is. אחריות — owner's risk — becomes the line that determines which clause of the מעילה verse applies.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🐑 The Three Tannaitic Positions on Sancta</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Each Tanna draws the line differently.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">🌾 R' Yose haGlili</h3><ul><li>Drash: <span class='hebrew'>וּמָעֲלָה מַעַל בַּיי</span></li><li>Includes <span class='hebrew'>קֳדָשִׁים קַלִּין</span></li><li>Broadest scope of מעילה</li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">🐑 Ben Azzai</h3><ul><li>Includes only <span class='hebrew'>שְׁלָמִים</span></li><li>Per Abba Yose ben Dosai: only <span class='hebrew'>בְּכוֹר</span></li><li><span class='hebrew'>שלמים</span> implies מעשר too; <span class='hebrew'>מעשר</span> excludes <span class='hebrew'>בכור</span></li></ul></div><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">⚖️ R' Shimon</h3><ul><li>Cuts by <strong>אחריות</strong></li><li>With אחריות → <span class='hebrew'>בָּעֲמִיתוֹ וְכִחֵשׁ</span></li><li>Without אחריות → <span class='hebrew'>בַּיי וְכִחֵשׁ</span></li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">🔄 Rav Huna</h3><ul><li>Even valid + invalid sancta</li><li>אחריות determines which verse applies</li><li>Sharpens R' Shimon's principle</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>Why this matters here:</strong> Bava Kamma 1:2 says the rule applies to <span class='hebrew'>נכסים</span>. The Yerushalmi must define what counts as your property — and sancta sit on the boundary between mine and Hashem's.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 5 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Mishnah 1:2 phrases</strong><br><span class='hebrew'>הִכְשַׁרְתִּי בְּמִקְצָת</span> + <span class='hebrew'>נכסים</span></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Pit case: 10 tefachim + 1 tefach<br>Beraita splits the liability</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">🕳️ <strong>Death</strong><br>last digger</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">📉 <strong>Damage</strong><br>both diggers (R' Yitzchak)</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🪣 <strong>Plasterer</strong><br>liable via קנין</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🐑 <strong>Sancta</strong><br>sorted by אחריות</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br><span class='hebrew'>שְׁמִירַת נְזָקִין כִּשְׁמִירַת קִנְיָין</span> — the same acts that vest ownership vest liability. And the same property-test that defines מעילה defines whose נכסים the Mishnah is talking about.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 5a-5b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 5a-5b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../4/">← Daf 4</a><a href="../6/">Daf 6 →</a></div>
+</body>
+</html>

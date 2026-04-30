@@ -1,0 +1,212 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 12,
+  "emoji": "🏺",
+  "topics": [
+    "🏺 Putting a jar in רשות הרבים — when it counts as creating a בור",
+    "🐂 The bull-mounting case as a structural model for liability",
+    "🚿 R' Yose: the ammat hamayim, chrysargyros, and the Roman billet — act before the danger arrives",
+    "⚖️ Apportionment when a שור pushes another into a בור (R' Natan, R' Chanania)",
+    "💨 Stones moved by wind or kicked into a private domain — borderline בור cases"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — When a Jug Becomes a Pit",
+    "label": "The sugya:",
+    "text": "The Mishnah's case of המניח את הכד ברשות הרבים opens a chain of questions about when a stationary object becomes a בור for which its owner is liable. Rav, Shmuel and R' Lazar map out the conditions: filling the public domain, sitting at a corner, or being moved at all. The Yerushalmi then anchors this with the bull-mounting baraita — pushing vs. allowing — and uses R' Yose's striking parallels (irrigation flood, Roman tax collector, billeted soldiers) to formulate a principle of timely intervention. The daf closes with the apportionment dispute when an attacking ox knocks another into a pit.",
+    "hebrewSource": "הַמַּנִּיחַ אֶת הַכַּד בִּרְשׁוּת הָרַבִּים... אִם יִטְלֶינָּהּ מִיכָּאן וְיִתְנֶינָּהּ כָּאן הֲרֵי זֶה בוֹר"
+  },
+  "slides": [
+    {
+      "type": "comparison",
+      "title": "🏺 Three Views on the Jug in Public Domain",
+      "subtitle": "When does putting down a vessel make its owner liable as a בור?",
+      "boxes": [
+        {
+          "title": "🟦 רב",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "Liable only <span class='hebrew'>בִּמְמַלָּא אֶת כָּל רְשׁוּת הָרַבִּים</span>",
+            "If the jug fills the entire public road",
+            "Otherwise: it is normal to put things there"
+          ]
+        },
+        {
+          "title": "🟪 שמואל",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Liable if it fills the road <strong>or</strong>",
+            "<span class='hebrew'>נְתוּנָה עַל קֶרֶן זָוִית</span> — placed at a corner",
+            "Adds the corner case as a hazard"
+          ]
+        },
+        {
+          "title": "🟩 רבי לעזר",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "Even if it does not fill the road",
+            "Even if not at a corner",
+            "<span class='hebrew'>אֵין דֶּרֶךְ אָדָם לְהָנִיחָן בִּרְשׁוּת הָרַבִּים</span>"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Trajectory:",
+        "text": "From narrow (Rav) to broad (R' Lazar). The wider you read, the more often a stationary object counts as a בור."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🪜 The Trap of Picking It Up",
+      "subtitle": "If your jug is in the road and you move it, have you just dug a pit?",
+      "nodes": [
+        { "content": "<span class='hebrew'>הָיְתָה מְמַלָּא כָּל רְשׁוּת הָרַבִּים</span><br>Your jug fills the road", "class": "question" },
+        { "type": "arrow" },
+        { "content": "<span class='hebrew'>אִם יִטְלֶינָּהּ מִיכָּן וְיִתְנֶינָּהּ כָּאן נַעֲשֶׂה בוֹר</span><br>Moving it from here to there creates a בור", "class": "result-bad" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Option A", "content": "<span class='hebrew'>יִטּוֹל הַמַּקֵּל וִישַׁבְּרֶנָּהּ</span><br>Take a stick and break it", "class": "result-partial" },
+            { "label": "Option B", "content": "<span class='hebrew'>יַעֲבוֹר עָלֶיהָ וְאִם נִשְׁבְּרָה נִשְׁבְּרָה</span><br>Step over it; if it breaks, it breaks", "class": "result-partial" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Better to destroy your own property than to relocate the hazard onto a new spot.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Key intuition:",
+        "text": "An object you abandon in the public domain is not just sitting there — it is a hazard you are still responsible for. Moving it does not solve the problem; it just shifts the בור."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 The Bull-Mounting Proof",
+      "subtitle": "The Yerushalmi imports an animal-damage baraita to settle the jug case.",
+      "lines": [
+        { "speaker": "Y", "side": "left", "speakerColor": "#c9a84c", "text": "<span class='hebrew'>נִישְׁמְעִינָהּ מִן הָדָא</span> — let us learn from this baraita." },
+        { "speaker": "B", "side": "right", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>שׁוֹר שֶׁעָלָה עַל חֲבֵירוֹ</span> — a bull mounted another. If the lower owner pulled his out, or it slipped away, and the attacker fell and died → <strong>פטור</strong>." },
+        { "speaker": "B", "side": "right", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>אִם דְּחָייוֹ וְנָפַל וָמֵת — חַיָיב</span>. If he <em>pushed</em> the attacker, he must pay." },
+        { "speaker": "Q", "side": "left", "speakerColor": "#9b59b6", "text": "Couldn't the attacker's owner say, 'If you had not interfered, I would have paid your damages anyway'?" },
+        { "speaker": "A", "side": "right", "speakerColor": "#4a90d9", "text": "He could answer back: 'If I had not interfered, you would have paid me only חצי נזק (the bull was תם)!' And if it was מועד — 'I'm not going to chase you through the courts.'" }
+      ],
+      "callout": {
+        "label": "Why this matters for the jug:",
+        "text": "Both cases share the same logic — once your property is damaging or being damaged, you have a right to protect yourself, but only by passive removal. Active pushing creates new liability."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🚿 R' Yose's Three Parallels — Timing Is Everything",
+      "subtitle": "When the threat has not yet arrived, you may divert it. Once it arrives, you may not.",
+      "steps": [
+        { "content": "1️⃣ <strong>Irrigation flood</strong>: <span class='hebrew'>רָאָה אַמַּת הַמַּיִם שׁוֹטֶפֶת וּבָאָה לְתוֹךְ שָׂדֵהוּ</span> — before the water reaches your field, you may divert it elsewhere. Once it has reached, you may not." },
+        { "content": "2️⃣ <strong>Chrysargyros</strong> (Roman tax): before the collector arrives, you may say 'X is in my profession, Y is in my profession' — directing the bill to others. Once he arrives, forbidden." },
+        { "content": "3️⃣ <strong>Roman billet</strong>: before the soldiers arrive in town, you may bribe the quartermaster to send them elsewhere. Once they arrive, forbidden." },
+        { "content": "🪞 The unifying rule: damage that is still <em>approaching</em> may be redirected. Damage that has <em>landed</em> on someone may not be transferred to another." },
+        { "content": "🎯 R' Yose reads this principle straight back into the jug case: once your jug is broken, you cannot relocate the hazard onto a new neighbor.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Yerushalmi style:",
+        "text": "Three vivid real-world scenarios — irrigation, taxation, military quartering — woven into a halakhic principle. The Yerushalmi loves to anchor abstractions in lived experience."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📊 Ox Pushes Ox Into a Pit — How to Split the Bill",
+      "subtitle": "When two damagers act together, the Tannaim disagree on apportionment.",
+      "headers": ["Position", "Case: מועד", "Case: תם"],
+      "rows": [
+        ["Anonymous baraita", "<span class='hebrew'>בַּעַל הַשּׁוֹר חַיָיב</span>; pit owner exempt", "Same: ox owner pays full"],
+        ["<span class='hebrew'>רבי נתן</span>", "Each pays <span class='hebrew'>מֶחֱצָה</span> — half each", "Ox owner: <span class='hebrew'>שני חלקים</span>; pit owner: <span class='hebrew'>רביע</span>"],
+        ["<span class='hebrew'>רבי חנינה</span> (correcting)", "—", "Ox owner: <span class='hebrew'>שלשה חלקים</span>; pit owner: <span class='hebrew'>רביע</span>"],
+        ["Underlying logic", "Mu'ad pays full → so split full damage", "Tam pays half → ox owner only chayav for his half-share, but pit still creates extra exposure"]
+      ],
+      "callout": {
+        "label": "The arithmetic puzzle:",
+        "text": "R' Chanania reads the baraita's numbers as fractions of <em>full damage</em>: ox owner pays 3/4 (since tam pays 1/2 of his portion of two-thirds), pit owner pays 1/4. The point is that even when the immediate cause is the bull, the pit's existence still creates real liability."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "A stationary object in the public domain can become a בור the moment it interferes with passage — and once damage is in motion, you may protect your own but you may not push the hazard onto someone else.",
+    "flowSteps": [
+      { "content": "<strong>Mishnah</strong><br><span class='hebrew'>הַמַּנִּיחַ אֶת הַכַּד בִּרְשׁוּת הָרַבִּים</span>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "When does the jug become a בור?", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🟦 <strong>רב</strong><br>fills the whole road", "style": "border-color:#4a90d9" },
+          { "content": "🟪 <strong>שמואל</strong><br>fills road OR at a corner", "style": "border-color:#9b59b6" },
+          { "content": "🟩 <strong>ר' לעזר</strong><br>always — אין דרכו", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🐂 Bull-mounting proof: passive removal OK; active push = liability", "class": "action" },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>R' Yose's principle:</strong> <span class='hebrew'>עַד שֶׁלֹּא נִכְנְסוּ הַמַּיִם</span> — divert before the damage lands; once it lands, the hazard is yours.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "According to Rav, when is one liable for putting a jug in רשות הרבים?",
+      "o": [
+        "Always — it is never normal to leave things there",
+        "Only when it fills the entire public domain (<span class='hebrew'>בִּמְמַלָּא אֶת כָּל רְשׁוּת הָרַבִּים</span>)",
+        "Only at a corner (<span class='hebrew'>קֶרֶן זָוִית</span>)",
+        "Only if someone trips at night"
+      ],
+      "c": 1,
+      "e": "Rav: liable only if the jug fills the entire road. Shmuel adds the corner case; R' Lazar broadens further."
+    },
+    {
+      "q": "What does Shmuel add to Rav's position?",
+      "o": [
+        "He requires nightfall as well",
+        "He extends liability to the case where the jug is at a corner — <span class='hebrew'>נְתוּנָה עַל קֶרֶן זָוִית</span>",
+        "He limits liability to weekdays",
+        "He exempts the owner if it was a clay jug"
+      ],
+      "c": 1,
+      "e": "Shmuel: <span class='hebrew'>אוֹ בִּמְמַלָּא אֶת כָּל רְשׁוּת הָרַבִּים אוֹ עַד שֶׁתְּהֵא נְתוּנָה עַל קֶרֶן זָוִית</span>."
+    },
+    {
+      "q": "Why doesn't the daf simply say: pick up the jug and put it down somewhere else?",
+      "o": [
+        "Because moving it counts as transferring on Shabbat",
+        "Because <span class='hebrew'>אִם יִטְלֶינָּהּ מִיכָּן וְיִתְנֶינָּהּ כָּאן נַעֲשֶׂה בוֹר</span> — relocating just creates a new pit",
+        "Because clay vessels cannot be moved once placed",
+        "Because only the rabbis are permitted to move public hazards"
+      ],
+      "c": 1,
+      "e": "Picking it up and replacing it elsewhere just creates a fresh בור. The daf suggests breaking it (with a stick or by stepping) instead."
+    },
+    {
+      "q": "What is R' Yose's principle drawn from the irrigation, chrysargyros, and Roman-billet cases?",
+      "o": [
+        "One may always pay a bribe to avoid Roman taxes",
+        "Once damage has reached you, you may not divert it onto someone else; before it reaches you, you may",
+        "Water damage and tax damage are halakhically identical",
+        "Roman soldiers are exempt from civil liability"
+      ],
+      "c": 1,
+      "e": "Before the flood/collector/soldiers arrive, you may redirect them. Once they have landed on you, you may not push the harm to a neighbor."
+    },
+    {
+      "q": "According to R' Natan in the case of an ox pushing another ox into a pit (when the attacker is מועד), how is liability split?",
+      "o": [
+        "The ox owner pays everything",
+        "The pit owner pays everything",
+        "Each pays half (<span class='hebrew'>זה נותן מחצה וזה נותן מחצה</span>)",
+        "The ox owner pays a quarter and the pit owner three quarters"
+      ],
+      "c": 2,
+      "e": "R' Natan: <span class='hebrew'>בְּמוּעָד זֶה נוֹתֵן מֶחֱצָה וְזֶה נוֹתֵן מֶחֱצָה</span> — half and half. The fractions shift in the תם case."
+    }
+  ]
+}

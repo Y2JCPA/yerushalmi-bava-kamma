@@ -1,0 +1,189 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 14,
+  "emoji": "🌿",
+  "topics": [
+    "🌵 Thorny fences and the מפריח reading",
+    "🧱 A fallen wall — R' Meir's liability for damage by inaction",
+    "📅 30-day deadline to remove a tree or unstable wall",
+    "🪵 Straw, olive-press waste, and dung in רשות הרבים",
+    "🤲 How movables are acquired: הפיכה, גרירה, הגבהה"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Hazards Left in the Public Domain",
+    "label": "The sugya:",
+    "text": "The end of perek 3 takes up new pit-like hazards: thorns sticking out of a fence, a fallen wall, and dung or straw left in the road. R' Yochanan reads the thorn case as one where the thorns 'protrude outward' (מפריח). R' Meir holds you can be liable for damage by inaction, but only after the 30-day deadline. The Mishnah then introduces a fascinating side door: anyone who beats you to the leftover straw or dung can acquire it — which sends the Yerushalmi into a parallel discussion about how movables are actually transferred (turning, dragging, lifting).",
+    "hebrewSource": "כָּל הַמַּזִּיק שֶׁלֹּא עַל יְדֵי מַעֲשֶׂה חַיָיב ... וְכָל הַקּוֹדֵם בָּהֶן זָכָה"
+  },
+  "slides": [
+    {
+      "type": "debate",
+      "title": "🌵 Reading 'He Fenced With Thorns'",
+      "subtitle": "R' Yochanan vs. R' Yose b. R' Yehudah on what makes the case work for everyone.",
+      "lines": [
+        { "speaker": "R' Y", "side": "left", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>תִּיפְתָּר דִּבְרֵי הַכֹּל בְּמַפְרִיחַ</span> — read the case as one where the thorns protrude outward, into the public domain. Then everyone agrees there is liability." },
+        { "speaker": "R' Bun", "side": "right", "speakerColor": "#9b59b6", "text": "Why not just read it like R' Yose b. R' Yehudah, who says <span class='hebrew'>שְׁלֹשָׁה שֶׁהֵן סְמוּכִין לִרְשׁוּת כִּרְשׁוּת</span> — three tefachim adjacent to a domain count as the domain itself?" },
+        { "speaker": "R' Z", "side": "left", "speakerColor": "#c9a84c", "text": "Aren't you satisfied with R' Yochanan's universal reading? His move makes the Mishnah work for every Tanna, not just one." }
+      ],
+      "callout": {
+        "label": "Why this matters:",
+        "text": "The Yerushalmi prefers the reading that doesn't depend on a single Tanna's view. <span class='hebrew'>מפריח</span> turns the case into a clear public-domain hazard rather than a borderline three-tefach question."
+      }
+    },
+    {
+      "type": "callout",
+      "title": "🧱 A Fallen Wall — Damage Without an Act",
+      "subtitle": "R' Meir's principle, sharpened by Reish Lakish.",
+      "hebrewSource": "כָּל הַמַּזִּיק שֶׁלֹּא עַל יְדֵי מַעֲשֶׂה חַיָיב",
+      "label": "Reish Lakish's claim:",
+      "text": "The case of a wall that collapsed into the public domain is specifically R' Meir's view. R' Meir holds: anyone whose property causes damage — even when the owner did nothing — is liable. This is the same principle that grounds the entire pit framework: a hazard you created by neglect is still a hazard you own.",
+      "extraHtml": "<div class='callout' style='margin-top:20px'><strong>The contrast:</strong> Other Tannaim require an affirmative act of damage. R' Meir alone extends liability to the owner who simply failed to remove a known risk.</div>"
+    },
+    {
+      "type": "process",
+      "title": "📅 The 30-Day Deadline",
+      "subtitle": "When does negligence start to count?",
+      "steps": [
+        { "content": "1️⃣ A tree leans dangerously, or a wall begins to crack." },
+        { "content": "2️⃣ Beit Din gives the owner <strong>time</strong> to cut down or take it down." },
+        { "content": "3️⃣ <strong>Within the deadline</strong>, the structure falls and damages someone — owner is <span class='hebrew'>פָּטוּר</span>." },
+        { "content": "4️⃣ <strong>After the deadline</strong>, the same fall now triggers full liability — <span class='hebrew'>חַיָיב</span>." },
+        { "content": "5️⃣ R' Hoshaya: the deadline is <strong>30 days</strong>. <span class='hebrew'>תַּנֵּי רִבִּי הוֹשַׁעְיָה. ל׳ יוֹם</span>.", "highlight": true }
+      ],
+      "callout": {
+        "label": "The legal logic:",
+        "text": "Inaction only becomes liability once the owner had reasonable time to act. The 30-day window is not a grace period — it's the line where negligence becomes legally cognizable."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🪵 Straw, Olive-Press, and Dung in the Road",
+      "subtitle": "The Mishnah introduces a counter-intuitive rule.",
+      "boxes": [
+        {
+          "title": "🌾 Straw / גפת",
+          "color": "#f39c12",
+          "titleColor": "#f39c12",
+          "items": [
+            "Owner takes them out לזבלים — to compost",
+            "Causes damage to a passerby → owner liable",
+            "Anyone can grab them: <span class='hebrew'>וְכָל הַקּוֹדֵם בָּהֶן זָכָה</span>"
+          ]
+        },
+        {
+          "title": "💩 Dung / גלל",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Owner turns it over in the road",
+            "Damage to passerby → owner liable",
+            "Same acquisition rule applies"
+          ]
+        },
+        {
+          "title": "⚖️ The Paradox",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "Owner stays liable for damage",
+            "But loses ownership to whoever grabs it first",
+            "Hazard ≠ Possession"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "The two regimes:",
+        "text": "Tort liability and property ownership run on different tracks. The owner's liability follows the act of placing a hazard; ownership of the object itself is forfeited the moment another person takes it."
+      }
+    },
+    {
+      "type": "table",
+      "title": "🤲 How Are Movables Acquired?",
+      "subtitle": "Hizkiyah opens a side door — turning over to acquire.",
+      "headers": ["Method", "What It Is", "When It Works"],
+      "rows": [
+        ["<span class='hebrew'>הֲפִיכָה</span>", "Turning the object over", "Hizkiyah: only if done with intent to acquire"],
+        ["<span class='hebrew'>גְּרִירָה</span>", "Dragging the object", "R' Bun bar Chiyya: works for pillars and stiff hides"],
+        ["<span class='hebrew'>הַגְבָּהָה</span>", "Lifting the object", "Required for soft hides — dragging won't do it"],
+        ["<span class='hebrew'>שְׁבָחָן / גּוּפָן</span>", "What is acquired", "Beit Yannai: only the appreciation; Shmuel: the object itself"]
+      ],
+      "callout": {
+        "label": "The deeper move:",
+        "text": "The Yerushalmi turns a Mishnah about hazards into a window onto kinyan theory. The physical actions that mark ownership transfer depend on the nature of the object — and that interpretive lens then helps us understand what 'first to grab it acquires it' really means."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Negligent hazards in the public domain create liability even without an affirmative act — bounded by R' Hoshaya's 30-day deadline. And the very act of placing them triggers a parallel question about how movables are acquired.",
+    "flowSteps": [
+      { "content": "<strong>End of perek 3</strong><br>Hazards in רשות הרבים", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Liability without an action — R' Meir's <span class='hebrew'>שֶׁלֹּא עַל יְדֵי מַעֲשֶׂה</span>", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🌵 <strong>Thorns</strong><br><span class='hebrew'>מפריח</span> — protruding out", "style": "border-color:#4a90d9" },
+          { "content": "🧱 <strong>Wall</strong><br>30-day deadline rule", "style": "border-color:#9b59b6" },
+          { "content": "🪵 <strong>Straw/dung</strong><br>liable + losable", "style": "border-color:#f39c12" },
+          { "content": "🤲 <strong>Acquisition</strong><br>הפיכה / גרירה / הגבהה", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Liability tracks the act of creating risk; ownership tracks the act of grabbing the object. Both are bounded by halakhic time and physical mode.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "How does R' Yochanan resolve the case of a fence with thorns?",
+      "o": [
+        "By limiting it to R' Yose b. R' Yehudah's view",
+        "By reading <span class='hebrew'>מפריח</span> — the thorns protrude outward into the public domain",
+        "By exempting the owner entirely",
+        "By requiring witnesses"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>תִּיפְתָּר דִּבְרֵי הַכֹּל בְּמַפְרִיחַ</span> — R' Yochanan reads the case so that everyone agrees, by saying the thorns protrude outward."
+    },
+    {
+      "q": "Whose general principle does the case of a fallen wall illustrate?",
+      "o": [
+        "R' Yehudah",
+        "R' Meir — <span class='hebrew'>כָּל הַמַּזִּיק שֶׁלֹּא עַל יְדֵי מַעֲשֶׂה חַיָיב</span>",
+        "R' Tarphon",
+        "R' Akiva"
+      ],
+      "c": 1,
+      "e": "Reish Lakish identifies the Mishnah with R' Meir, who holds that you are liable even for damage caused without an affirmative act."
+    },
+    {
+      "q": "How long is R' Hoshaya's deadline for removing a leaning tree or cracked wall?",
+      "o": ["7 days", "14 days", "30 days", "90 days"],
+      "c": 2,
+      "e": "<span class='hebrew'>תַּנֵּי רִבִּי הוֹשַׁעְיָה. ל׳ יוֹם</span> — 30 days. Within that window, no liability; after it, full liability."
+    },
+    {
+      "q": "What is the surprising pairing in the Mishnah of straw and dung in the road?",
+      "o": [
+        "The owner avoids liability by warning passersby",
+        "The owner is liable for damage but anyone who grabs the material first acquires it",
+        "Only Beit Din can transfer ownership",
+        "The Mishnah forbids leaving them out at all"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>חַיָיב בְּנִזְקוֹ. וְכָל הַקּוֹדֵם בָּהֶן זָכָה</span> — liability and ownership run on independent tracks."
+    },
+    {
+      "q": "According to R' Bun bar Chiyya, when can dragging (גרירה) acquire an object?",
+      "o": [
+        "For all movables",
+        "For pillars and stiff hides — but soft hides require lifting",
+        "Only for live animals",
+        "Only on Shabbat"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>נִרְאִין דְּבָרִים בָּעֲמוּדִין וּבְעוֹרוֹת קָשִׁין. אֲבָל בְּעוֹרוֹת רַכִּין לֹא קָנָה עַד שֶׁיַּגְבִּיהַּ</span> — dragging works for hard items, lifting is needed for soft ones."
+    }
+  ]
+}

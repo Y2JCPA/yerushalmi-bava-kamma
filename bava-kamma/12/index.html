@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 12 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🏺</div>
+  <h1>Yerushalmi Bava Kamma 12</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא יב׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🏺 Putting a jar in רשות הרבים — when it counts as creating a בור<br>
+    🐂 The bull-mounting case as a structural model for liability<br>
+    🚿 R' Yose: the ammat hamayim, chrysargyros, and the Roman billet — act before the danger arrives<br>
+    ⚖️ Apportionment when a שור pushes another into a בור (R' Natan, R' Chanania)<br>
+    💨 Stones moved by wind or kicked into a private domain — borderline בור cases<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — When a Jug Becomes a Pit</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">הַמַּנִּיחַ אֶת הַכַּד בִּרְשׁוּת הָרַבִּים... אִם יִטְלֶינָּהּ מִיכָּאן וְיִתְנֶינָּהּ כָּאן הֲרֵי זֶה בוֹר</div><div class="callout"><strong>The sugya:</strong> The Mishnah's case of המניח את הכד ברשות הרבים opens a chain of questions about when a stationary object becomes a בור for which its owner is liable. Rav, Shmuel and R' Lazar map out the conditions: filling the public domain, sitting at a corner, or being moved at all. The Yerushalmi then anchors this with the bull-mounting baraita — pushing vs. allowing — and uses R' Yose's striking parallels (irrigation flood, Roman tax collector, billeted soldiers) to formulate a principle of timely intervention. The daf closes with the apportionment dispute when an attacking ox knocks another into a pit.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>🏺 Three Views on the Jug in Public Domain</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When does putting down a vessel make its owner liable as a בור?</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">🟦 רב</h3><ul><li>Liable only <span class='hebrew'>בִּמְמַלָּא אֶת כָּל רְשׁוּת הָרַבִּים</span></li><li>If the jug fills the entire public road</li><li>Otherwise: it is normal to put things there</li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">🟪 שמואל</h3><ul><li>Liable if it fills the road <strong>or</strong></li><li><span class='hebrew'>נְתוּנָה עַל קֶרֶן זָוִית</span> — placed at a corner</li><li>Adds the corner case as a hazard</li></ul></div><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">🟩 רבי לעזר</h3><ul><li>Even if it does not fill the road</li><li>Even if not at a corner</li><li><span class='hebrew'>אֵין דֶּרֶךְ אָדָם לְהָנִיחָן בִּרְשׁוּת הָרַבִּים</span></li></ul></div></div><div class="callout" style="margin-top:20px"><strong>Trajectory:</strong> From narrow (Rav) to broad (R' Lazar). The wider you read, the more often a stationary object counts as a בור.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>🪜 The Trap of Picking It Up</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">If your jug is in the road and you move it, have you just dug a pit?</div>
+  <div class="flowchart"><div class="flow-box question"><span class='hebrew'>הָיְתָה מְמַלָּא כָּל רְשׁוּת הָרַבִּים</span><br>Your jug fills the road</div><div class="flow-arrow">↓</div><div class="flow-box result-bad"><span class='hebrew'>אִם יִטְלֶינָּהּ מִיכָּן וְיִתְנֶינָּהּ כָּאן נַעֲשֶׂה בוֹר</span><br>Moving it from here to there creates a בור</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Option A</div><div class="flow-box result-partial"><span class='hebrew'>יִטּוֹל הַמַּקֵּל וִישַׁבְּרֶנָּהּ</span><br>Take a stick and break it</div></div><div class="flow-col"><div class="flow-label">Option B</div><div class="flow-box result-partial"><span class='hebrew'>יַעֲבוֹר עָלֶיהָ וְאִם נִשְׁבְּרָה נִשְׁבְּרָה</span><br>Step over it; if it breaks, it breaks</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good">Better to destroy your own property than to relocate the hazard onto a new spot.</div></div><div class="callout" style="margin-top:20px"><strong>Key intuition:</strong> An object you abandon in the public domain is not just sitting there — it is a hazard you are still responsible for. Moving it does not solve the problem; it just shifts the בור.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>💬 The Bull-Mounting Proof</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The Yerushalmi imports an animal-damage baraita to settle the jug case.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#c9a84c">Y</div><div class="speech"><span class='hebrew'>נִישְׁמְעִינָהּ מִן הָדָא</span> — let us learn from this baraita.</div></div><div class="debate-line right"><div class="speaker" style="background:#4a90d9">B</div><div class="speech"><span class='hebrew'>שׁוֹר שֶׁעָלָה עַל חֲבֵירוֹ</span> — a bull mounted another. If the lower owner pulled his out, or it slipped away, and the attacker fell and died → <strong>פטור</strong>.</div></div><div class="debate-line right"><div class="speaker" style="background:#4a90d9">B</div><div class="speech"><span class='hebrew'>אִם דְּחָייוֹ וְנָפַל וָמֵת — חַיָיב</span>. If he <em>pushed</em> the attacker, he must pay.</div></div><div class="debate-line"><div class="speaker" style="background:#9b59b6">Q</div><div class="speech">Couldn't the attacker's owner say, 'If you had not interfered, I would have paid your damages anyway'?</div></div><div class="debate-line right"><div class="speaker" style="background:#4a90d9">A</div><div class="speech">He could answer back: 'If I had not interfered, you would have paid me only חצי נזק (the bull was תם)!' And if it was מועד — 'I'm not going to chase you through the courts.'</div></div></div><div class="callout" style="margin-top:20px"><strong>Why this matters for the jug:</strong> Both cases share the same logic — once your property is damaging or being damaged, you have a right to protect yourself, but only by passive removal. Active pushing creates new liability.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>🚿 R' Yose's Three Parallels — Timing Is Everything</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When the threat has not yet arrived, you may divert it. Once it arrives, you may not.</div>
+  <div class="process-bar"><div class="process-step">1️⃣ <strong>Irrigation flood</strong>: <span class='hebrew'>רָאָה אַמַּת הַמַּיִם שׁוֹטֶפֶת וּבָאָה לְתוֹךְ שָׂדֵהוּ</span> — before the water reaches your field, you may divert it elsewhere. Once it has reached, you may not.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ <strong>Chrysargyros</strong> (Roman tax): before the collector arrives, you may say 'X is in my profession, Y is in my profession' — directing the bill to others. Once he arrives, forbidden.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ <strong>Roman billet</strong>: before the soldiers arrive in town, you may bribe the quartermaster to send them elsewhere. Once they arrive, forbidden.</div><div class="process-arrow">↓</div><div class="process-step">🪞 The unifying rule: damage that is still <em>approaching</em> may be redirected. Damage that has <em>landed</em> on someone may not be transferred to another.</div><div class="process-arrow">↓</div><div class="process-step highlight">🎯 R' Yose reads this principle straight back into the jug case: once your jug is broken, you cannot relocate the hazard onto a new neighbor.</div></div><div class="callout" style="margin-top:20px"><strong>Yerushalmi style:</strong> Three vivid real-world scenarios — irrigation, taxation, military quartering — woven into a halakhic principle. The Yerushalmi loves to anchor abstractions in lived experience.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>📊 Ox Pushes Ox Into a Pit — How to Split the Bill</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When two damagers act together, the Tannaim disagree on apportionment.</div>
+  <table><tr><th>Position</th><th>Case: מועד</th><th>Case: תם</th></tr><tr><td>Anonymous baraita</td><td><span class='hebrew'>בַּעַל הַשּׁוֹר חַיָיב</span>; pit owner exempt</td><td>Same: ox owner pays full</td></tr><tr><td><span class='hebrew'>רבי נתן</span></td><td>Each pays <span class='hebrew'>מֶחֱצָה</span> — half each</td><td>Ox owner: <span class='hebrew'>שני חלקים</span>; pit owner: <span class='hebrew'>רביע</span></td></tr><tr><td><span class='hebrew'>רבי חנינה</span> (correcting)</td><td>—</td><td>Ox owner: <span class='hebrew'>שלשה חלקים</span>; pit owner: <span class='hebrew'>רביע</span></td></tr><tr><td>Underlying logic</td><td>Mu'ad pays full → so split full damage</td><td>Tam pays half → ox owner only chayav for his half-share, but pit still creates extra exposure</td></tr></table><div class="callout" style="margin-top:20px"><strong>The arithmetic puzzle:</strong> R' Chanania reads the baraita's numbers as fractions of <em>full damage</em>: ox owner pays 3/4 (since tam pays 1/2 of his portion of two-thirds), pit owner pays 1/4. The point is that even when the immediate cause is the bull, the pit's existence still creates real liability.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 12 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Mishnah</strong><br><span class='hebrew'>הַמַּנִּיחַ אֶת הַכַּד בִּרְשׁוּת הָרַבִּים</span></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">When does the jug become a בור?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🟦 <strong>רב</strong><br>fills the whole road</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">🟪 <strong>שמואל</strong><br>fills road OR at a corner</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🟩 <strong>ר' לעזר</strong><br>always — אין דרכו</div></div></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">🐂 Bull-mounting proof: passive removal OK; active push = liability</div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>R' Yose's principle:</strong> <span class='hebrew'>עַד שֶׁלֹּא נִכְנְסוּ הַמַּיִם</span> — divert before the damage lands; once it lands, the hazard is yours.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 12a-12b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 12a-12b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../11/">← Daf 11</a><a href="../13/">Daf 13 →</a></div>
+</body>
+</html>

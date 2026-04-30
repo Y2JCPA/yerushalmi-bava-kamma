@@ -1,0 +1,217 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 4,
+  "emoji": "💰",
+  "topics": [
+    "💸 R' Chanina vs. Bar Pedayah: how to assess damage payment",
+    "🏷️ אֵין שָׁמִין — no appraisal for thief, robber, or borrower",
+    "📜 Rav Yehudah b'shem Shmuel: only nezakin get appraisal",
+    "🛡️ Mishnah 1:2 — שמירה generates liability: כָּל שֶׁחַבְתִּי בִשְׁמִירָתוֹ",
+    "🔥 Why R' Chiyya leaves fire off the שמירה list"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Assessing Payment and the Duty to Guard",
+    "label": "The sugya:",
+    "text": "The daf opens with two complementary derashot — R' Chanina anchors damage-assessment in מַכֶּה בְהֵמָה יְשַׁלְּמֶנָּה, and Bar Pedayah anchors limits in אִם טָרֹף יִטָּרֵף. R' Nasa shows each is needed: neither alone would generate the right rule. The sugya then tackles אֵין שָׁמִין — that ganav, gazlan, and (for Shmuel's expanded view) sho'el do not get the appraisal-discount that nezakin do. The daf closes by opening Mishnah 1:2: liability flows from שמירה, and R' Chiyya's beraita maps that onto שור and בור — but pointedly omits אש.",
+    "hebrewSource": "כָּל שֶׁחַבְתִּי בִשְׁמִירָתוֹ הִכְשַׁרְתִּי אֶת נִזְקוֹ"
+  },
+  "slides": [
+    {
+      "type": "debate",
+      "title": "💬 R' Chanina vs. Bar Pedayah",
+      "subtitle": "Two derashot that together fix how damage is paid.",
+      "lines": [
+        { "speaker": "RḤ", "side": "left", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>מַכֶּה בְהֵמָה יְשַׁלְּמֶנָּה</span> — read as <span class='hebrew'>יְשַׁלֵּם פְּחָתָהּ</span>. The mazik pays the diminution in value." },
+        { "speaker": "BP", "side": "right", "speakerColor": "#9b59b6", "text": "<span class='hebrew'>אִם טָרֹף יִטָּרֵף יְבִיאֵהוּ עֵד</span> — bring the carcass and you don't pay for that case. There are situations of full exemption." },
+        { "speaker": "RN", "side": "left", "speakerColor": "#c9a84c", "text": "Both quotes are needed: each one alone would generate the wrong rule for the other case." }
+      ],
+      "callout": {
+        "label": "Yerushalmi style:",
+        "text": "Two seemingly independent statements turn out to be one halakhic system. The Yerushalmi loves showing that each pasuk does work the others can't."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🔎 R' Nasa's Tzricha",
+      "subtitle": "Why each statement carries its own load.",
+      "nodes": [
+        { "content": "<strong>Two derashot on damage payment</strong>", "class": "question" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Only R' Chanina?", "content": "I'd say: for הֶכְשֵׁר נְזָקִין pay nothing; for נִזְקֵי גוּפָה pay only פְּחָתָהּ", "class": "result-bad" },
+            { "label": "Only Bar Pedayah?", "content": "I'd say: for הֶכְשֵׁר נְזָקִין pay פְּחָתָהּ; for נִזְקֵי גוּפָה pay אֶת הַכֹּל", "class": "result-bad" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Both together: <span class='hebrew'>צוֹרֶךְ שֶׁיֵּאָמֵר דְּרִבִּי חֲנִינָה וְצוֹרֶךְ שֶׁיֵּאָמֵר דְּבַר פְּדָיָיה</span>", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "R' Nasa shows the two derashot interlock — neither generates the full rule alone. Classic Yerushalmi tzricha logic."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🏷️ אֵין שָׁמִין — Who Gets the Appraisal Discount?",
+      "subtitle": "Rav Yehudah b'shem Shmuel cuts the list down sharply.",
+      "boxes": [
+        {
+          "title": "🐂 Nezakin",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "Yes — שמין",
+            "Pay the diminution, not the original value",
+            "The carcass goes to the נִזָּק"
+          ]
+        },
+        {
+          "title": "🥷 Ganav / Gazlan",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "No appraisal",
+            "Source: <span class='hebrew'>חַיִים שְׁנַיִם יְשַׁלֵּם</span> — alive, not dead",
+            "Robber: <span class='hebrew'>וְהֵשִׁיב אֶת הַגְּזֵילָה כַּאֲשֶׁר גָּזַל</span>"
+          ]
+        },
+        {
+          "title": "🤝 Sho'el",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Shmuel's expanded view: also no appraisal",
+            "<span class='hebrew'>וַאֲנִי אוֹמֵר. אַף לַשּׁוֹאֵל אֵין שָׁמִין</span>",
+            "<span class='hebrew'>וְאַבָּא מוֹדֶה לִי</span>"
+          ]
+        },
+        {
+          "title": "🛡️ Shomrin",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "<span class='hebrew'>וְהַשּׁוֹמְרִין כִּנְזָקִין הֵן</span>",
+            "Watchmen are appraised like damage cases",
+            "Rav Chisda: <span class='hebrew'>נַעֲשֶׂה עִיקָּר טְפֵילָה</span>"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Key move:",
+        "text": "The Yerushalmi sorts liability profiles by their Torah source — and discovers that the appraisal discount is calibrated to the verb the Torah uses for that liability."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📐 Sources for the אֵין שָׁמִין Rule",
+      "subtitle": "Each exclusion has its own pasuk.",
+      "headers": ["Case", "Pasuk", "Reading"],
+      "rows": [
+        ["<span class='hebrew'>גְּנֵיבָה</span>", "<span class='hebrew'>חַיִים שְׁנַיִם יְשַׁלֵּם</span>", "Alive, not dead — full live value, no carcass discount"],
+        ["<span class='hebrew'>גְּזֵילָה</span>", "<span class='hebrew'>וְהֵשִׁיב אֶת הַגְּזֵילָה כַּאֲשֶׁר גָּזַל</span>", "Return it as it was when robbed — original state"],
+        ["<span class='hebrew'>נְזָקִין</span>", "<span class='hebrew'>מַכֶּה בְהֵמָה יְשַׁלְּמֶנָּה</span>", "Pay <span class='hebrew'>פְּחָתָהּ</span> — diminution only"],
+        ["<span class='hebrew'>שׁוֹמְרִין</span>", "—", "<span class='hebrew'>כִּנְזָקִין הֵן</span> — appraised like damage"]
+      ],
+      "callout": {
+        "label": "Rav Chisda's gloss:",
+        "text": "<span class='hebrew'>נַעֲשֶׂה עִיקָּר טְפֵילָה</span> — the Yerushalmi worries about flipping the main category into the secondary one. Each Torah source must keep its own profile."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🛡️ Mishnah 1:2 — Liability via שמירה",
+      "subtitle": "The new Mishnah reframes the avot as guard-duties.",
+      "steps": [
+        { "content": "1️⃣ Mishnah: <span class='hebrew'>כָּל שֶׁחַבְתִּי בִשְׁמִירָתוֹ הִכְשַׁרְתִּי אֶת נִזְקוֹ</span>." },
+        { "content": "2️⃣ Even partial enabling — <span class='hebrew'>הִכְשַׁרְתִּי בְּמִקְצָת נִזְקוֹ</span> — locks in full liability." },
+        { "content": "3️⃣ R' Chiyya's beraita: this rule covers <strong>שור ובור</strong>." },
+        { "content": "4️⃣ <span class='hebrew'>וְהָאֵשׁ לֹא תָנָה</span> — fire is conspicuously absent." },
+        { "content": "5️⃣ R' Yose explains: fire is <span class='hebrew'>לְהֶכְשֵׁר נְזָקָיו</span> — it triggers the five בעל חובל categories (נזק, צער, ריפוי, שבת, בושת).", "highlight": true }
+      ],
+      "callout": {
+        "label": "Why it matters:",
+        "text": "The Mishnah shifts the framework from object-categories to guarding-duty. Whatever you must guard — when it damages — you pay. Fire is excluded from the שמירה list because its liability flows through a different door."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Damage payment is fixed by interlocking pesukim, while liability itself flows from the duty to guard — except for fire, which has its own pathway.",
+    "flowSteps": [
+      { "content": "<strong>How is damage paid?</strong><br><span class='hebrew'>מַכֶּה בְהֵמָה יְשַׁלְּמֶנָּה</span>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "R' Chanina + Bar Pedayah → <span class='hebrew'>פְּחָתָהּ</span>", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🐂 <strong>נזקין</strong><br>שמין — diminution", "style": "border-color:#4caf50" },
+          { "content": "🥷 <strong>ganav/gazlan</strong><br>no appraisal", "style": "border-color:#e74c3c" },
+          { "content": "🤝 <strong>sho'el</strong><br>Shmuel: no appraisal", "style": "border-color:#9b59b6" },
+          { "content": "🛡️ <strong>shomrin</strong><br>like nezakin", "style": "border-color:#4a90d9" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Mishnah 1:2:</strong><br>Liability is a function of <span class='hebrew'>שמירה</span>. שור and בור fit cleanly; fire enters through <span class='hebrew'>הֶכְשֵׁר נְזָקָיו</span>.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "How does R' Chanina derive the rule that the mazik pays the diminution?",
+      "o": [
+        "<span class='hebrew'>אִם טָרֹף יִטָּרֵף</span>",
+        "<span class='hebrew'>מַכֶּה בְהֵמָה יְשַׁלְּמֶנָּה</span> — read as <span class='hebrew'>יְשַׁלֵּם פְּחָתָהּ</span>",
+        "<span class='hebrew'>חַיִים שְׁנַיִם יְשַׁלֵּם</span>",
+        "<span class='hebrew'>וְהֵשִׁיב אֶת הַגְּזֵילָה</span>"
+      ],
+      "c": 1,
+      "e": "R' Chanina rereads <span class='hebrew'>יְשַׁלְּמֶנָּה</span> as <span class='hebrew'>יְשַׁלֵּם פְּחָתָהּ</span> — the mazik pays only the diminution in value."
+    },
+    {
+      "q": "What does R' Nasa argue about R' Chanina and Bar Pedayah?",
+      "o": [
+        "Only one is needed",
+        "They contradict each other",
+        "Each is needed — neither alone generates the right rule",
+        "Bar Pedayah is rejected"
+      ],
+      "c": 2,
+      "e": "R' Nasa runs a tzricha: each derasha covers a case the other does not, so both are required."
+    },
+    {
+      "q": "What is Shmuel's expanded view about appraisal?",
+      "o": [
+        "Even thieves get appraisal",
+        "Even sho'el gets no appraisal — <span class='hebrew'>אַף לַשּׁוֹאֵל אֵין שָׁמִין</span>",
+        "Only nezakin get appraisal of the carcass",
+        "Watchmen never pay"
+      ],
+      "c": 1,
+      "e": "Rav Yehudah quotes Shmuel: ganav, gazlan, and even the borrower do not get the appraisal discount — only nezakin (and watchmen) do."
+    },
+    {
+      "q": "What is the source for not appraising for a robber (gazlan)?",
+      "o": [
+        "<span class='hebrew'>חַיִים שְׁנַיִם יְשַׁלֵּם</span>",
+        "<span class='hebrew'>מַכֶּה בְהֵמָה יְשַׁלְּמֶנָּה</span>",
+        "<span class='hebrew'>וְהֵשִׁיב אֶת הַגְּזֵילָה כַּאֲשֶׁר גָּזַל</span>",
+        "<span class='hebrew'>אִם טָרֹף יִטָּרֵף</span>"
+      ],
+      "c": 2,
+      "e": "R' Avin learns it from <span class='hebrew'>וְהֵשִׁיב אֶת הַגְּזֵילָה כַּאֲשֶׁר גָּזַל</span> — return it in its original state."
+    },
+    {
+      "q": "Why does R' Chiyya's beraita on <span class='hebrew'>כָּל שֶׁחַבְתִּי בִשְׁמִירָתוֹ</span> mention שור and בור but not אש?",
+      "o": [
+        "Fire is not a real av",
+        "Fire is excluded entirely from נזקין",
+        "Fire's liability runs through <span class='hebrew'>הֶכְשֵׁר נְזָקָיו</span> — the five חובל categories — not through plain שמירה",
+        "R' Chiyya disagrees with the Mishnah"
+      ],
+      "c": 2,
+      "e": "R' Yose explains: fire enters liability via <span class='hebrew'>נֶזֶק צַעַר רִיפּוּי שֶׁבֶת וּבוֹשֶׁת</span> — a different framework than ordinary שמירה."
+    }
+  ]
+}

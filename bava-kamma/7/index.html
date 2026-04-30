@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 7 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🐾</div>
+  <h1>Yerushalmi Bava Kamma 7</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא ז׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🦶 כֵּיצַד הָרֶגֶל מוּעֶדֶת — the foot's normal damage<br>
+    🪨 צרורות — pebbles ricocheting at half-damage<br>
+    🧱 שור שמתחכך בכותל — rubbing case, kofer, and tam<br>
+    🛣️ Two-road case: animal chooses the pebble path<br>
+    💩 R' Elazar: producing dung and the מקלוט rule<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Foot, Pebbles, and Edge Cases of הֶעָדָאָה</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">כָּל דָּבָר שֶׁהוּא חוּץ לְגוּפָהּ לֹא חִלְּקוּ בוֹ חֲכָמִים בֵּין בִּרְשׁוּת הַיָּחִיד בֵּין בִּרְשׁוּת הָרַבִּים לַחֲצִי כּוֹפֶר</div><div class="callout"><strong>The sugya:</strong> Chapter 2 opens by asking: how is the foot mu'ad? The Mishnah lists three sub-cases — kicking, ricocheting pebbles, and the secondary breakage when a vessel falls on another. The Yerushalmi probes each: R' Immi reframes the pebble case to the moment a person was holding the vessel, R' Abba bar Mamal introduces the two-road scenario, and R' Elazar lays down a sweeping rule — anything <span class='hebrew'>חוּץ לְגוּפָהּ</span> doesn't distinguish between domains for the half-damage rule. The daf then takes up <span class='hebrew'>הֶעָדָאָה</span> for things-outside-the-body, the wall-rubbing ox, and the dung case.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>🦶 Mishnah 2:1 — The Foot's Three Profiles</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">How is <span class='hebrew'>רגל</span> mu'ad?</div>
+  <div class="process-bar"><div class="process-step">1️⃣ Default: <span class='hebrew'>הַבְּהֵמָה מוּעֶדֶת לְהַלֵּךְ כְּדַרְכָּהּ וּלְשַׁבֵּר</span> — full damage for normal walking-breakage.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ Kicking or pebbles ricocheting: <strong>half damage</strong>.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ Steps on a vessel and breaks it; pieces fall on a second vessel and break that.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ For the <strong>first</strong> vessel: full damage. For the <strong>second</strong>: half damage.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ The Mishnah is mapping different layers: direct foot-damage vs. derivative trajectories.</div></div><div class="callout" style="margin-top:20px"><strong>Key distinction:</strong> Direct contact = full. Anything launched (pebbles, fragments) = half. The animal's body is the dividing line.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>💬 The Pebble Case — Where Does Liability Apply?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Three voices reframe the half-damage rule.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#9b59b6">Q</div><div class="speech"><span class='hebrew'>וְאֵין דַּרְכָּהּ לְהַתִּיז צְרוֹרוֹת?</span> — pebbles are normal walking-byproducts. Why pay anything?</div></div><div class="debate-line right"><div class="speaker" style="background:#4a90d9">RI</div><div class="speech">R' Immi: this is a case where a person was <em>holding</em> the vessel. If it was lying in רשות הרבים — animal walking properly, vessel sitting properly — exempt.</div></div><div class="debate-line"><div class="speaker" style="background:#4caf50">RB</div><div class="speech">R' Abba bar Mamal: imagine two roads — one with grasses and pebbles, one without. If the animal chose the pebble road, even in רשות הרבים, the owner is <strong>exempt</strong>.</div></div><div class="debate-line right"><div class="speaker" style="background:#e74c3c">RE</div><div class="speech">R' Elazar lays down the principle: <span class='hebrew'>כָּל דָּבָר שֶׁהוּא חוּץ לְגוּפָהּ לֹא חִלְּקוּ בוֹ חֲכָמִים בֵּין רשות היחיד לרשות הרבים לחצי כופר</span>.</div></div></div><div class="callout" style="margin-top:20px"><strong>Yerushalmi style:</strong> Each amora reads the half-damage rule against a different fact pattern. R' Elazar then collapses the variations under one principle: outside-the-body damage doesn't distinguish domains.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>🪨 Direct vs. Outside-the-Body Damage</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The conceptual axis of the chapter.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">🦶 Direct foot</h3><ul><li><span class='hebrew'>הילוכה</span> — normal walking</li><li>Steps on a vessel directly</li><li>Full damage in רשות הניזק</li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">🪨 צרורות (pebbles)</h3><ul><li>Pebbles fly from under the foot</li><li>Half damage — <span class='hebrew'>חצי נזק</span></li><li><span class='hebrew'>חוץ לגופה</span> — outside the body</li></ul></div><div class="compare-box" style="border-top-color:#4a90d9"><h3 style="color:#4a90d9">🍶 Falling fragments</h3><ul><li>Vessel A breaks → pieces hit vessel B</li><li>Vessel A: full damage</li><li>Vessel B: half damage</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">🛣️ Two-road case</h3><ul><li>Animal picks the pebble road</li><li>Even in רשות הרבים — exempt</li><li>R' Abba bar Mamal's reframe</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>The axis:</strong> Once the harm comes from something outside the animal's body, the half-damage rule kicks in and the domain distinction collapses.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>🧱 Wall-Rubbing Ox — Can Tam Have כופר?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Ze'ira and R' Illa argue about הֶעָדָאָה for outside-the-body.</div>
+  <div class="flowchart"><div class="flow-box question"><strong>Q:</strong> Does הֶעָדָאָה apply to <span class='hebrew'>דבר שהוא חוץ לגופה</span>?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">R' Ze'ira</div><div class="flow-box result-good"><span class='hebrew'>מְקַבֶּלֶת</span> — yes, it can be made mu'ad</div></div><div class="flow-col"><div class="flow-label">R' Illa</div><div class="flow-box result-bad"><span class='hebrew'>אֵינָהּ מְקַבֶּלֶת</span> — no</div></div></div><div class="flow-arrow">↓</div><div class="flow-box action">Beraita: <span class='hebrew'>שׁוֹר שֶׁמִּתְחַכֵּךְ בַּכּוֹתֶל וְנָפַל עַל הָאָדָם וַהֲרָגוֹ — חַיָיב בַּכּוֹפֶר וּפָטוּר מִמִּיתָה</span></div><div class="flow-arrow">↓</div><div class="flow-box result-good">Reading: there is כופר for tam? Resolution — the ox was already mu'ad to topple walls; in this case no human was at the wall when it fell.</div></div><div class="callout" style="margin-top:20px"><strong>Why this matters:</strong> The wall-rubbing case becomes the test case: if הֶעָדָאָה works on something <span class='hebrew'>חוץ לגופה</span>, the beraita slots in cleanly. If not, the Yerushalmi has to read it as a standing mu'ad.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>💩 R' Elazar's Dung Case</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When does an animal's byproduct yield full damage?</div>
+  <div class="process-bar"><div class="process-step">1️⃣ <span class='hebrew'>הִטִּילָה גְלָלִים</span> — the animal produced dung and damaged a vessel.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ R' Elazar: <strong>full damage</strong>.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ Counter: should we require an owner to keep a <span class='hebrew'>מקלוט</span> (receptacle) handy?</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ Distinction: <span class='hebrew'>בְּשֶׁאֵין דַּרְכָּהּ לְכֵן</span> — when this isn't habitual, no receptacle needed.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ <span class='hebrew'>אֲבָל בְּשֶׁדַּרְכָּהּ לָכֵן צָרִיךְ שֶׁיְּהֵא הַמִּקְלוֹט בְּיָדוֹ</span> — habitual behavior requires precautions.</div></div><div class="callout" style="margin-top:20px"><strong>Bottom line:</strong> Habit reshapes liability. Once the animal regularly produces dung in damaging ways, the owner's failure to bring a receptacle becomes the gateway to full damage.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 7 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Mishnah 2:1: how is foot mu'ad?</strong><br><span class='hebrew'>לְשַׁבֵּר בְּדֶרֶךְ הִילּוּכָהּ</span></div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Direct walking → full<br>Pebbles / falling fragments → half</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🪨 <strong>R' Immi</strong><br>vessel was held in hand</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🛣️ <strong>R' Abba bar Mamal</strong><br>two-road choice</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">📐 <strong>R' Elazar</strong><br>חוץ לגופה — domains merged</div></div><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">🧱 <strong>R' Ze'ira / R' Illa</strong><br>can outside-body become mu'ad?</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>The foot is mu'ad to break in its path — but anything outside its body sits in a different liability regime. Habit (R' Elazar's dung case) and הֶעָדָאָה (R' Ze'ira) extend the rules to edge cases.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 7a-7b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 7a-7b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../6/">← Daf 6</a><a href="../8/">Daf 8 →</a></div>
+</body>
+</html>

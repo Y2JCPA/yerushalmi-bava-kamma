@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 14 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🌿</div>
+  <h1>Yerushalmi Bava Kamma 14</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא יד׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🌵 Thorny fences and the מפריח reading<br>
+    🧱 A fallen wall — R' Meir's liability for damage by inaction<br>
+    📅 30-day deadline to remove a tree or unstable wall<br>
+    🪵 Straw, olive-press waste, and dung in רשות הרבים<br>
+    🤲 How movables are acquired: הפיכה, גרירה, הגבהה<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Hazards Left in the Public Domain</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">כָּל הַמַּזִּיק שֶׁלֹּא עַל יְדֵי מַעֲשֶׂה חַיָיב ... וְכָל הַקּוֹדֵם בָּהֶן זָכָה</div><div class="callout"><strong>The sugya:</strong> The end of perek 3 takes up new pit-like hazards: thorns sticking out of a fence, a fallen wall, and dung or straw left in the road. R' Yochanan reads the thorn case as one where the thorns 'protrude outward' (מפריח). R' Meir holds you can be liable for damage by inaction, but only after the 30-day deadline. The Mishnah then introduces a fascinating side door: anyone who beats you to the leftover straw or dung can acquire it — which sends the Yerushalmi into a parallel discussion about how movables are actually transferred (turning, dragging, lifting).</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>🌵 Reading 'He Fenced With Thorns'</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Yochanan vs. R' Yose b. R' Yehudah on what makes the case work for everyone.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#4a90d9">R' Y</div><div class="speech"><span class='hebrew'>תִּיפְתָּר דִּבְרֵי הַכֹּל בְּמַפְרִיחַ</span> — read the case as one where the thorns protrude outward, into the public domain. Then everyone agrees there is liability.</div></div><div class="debate-line right"><div class="speaker" style="background:#9b59b6">R' Bun</div><div class="speech">Why not just read it like R' Yose b. R' Yehudah, who says <span class='hebrew'>שְׁלֹשָׁה שֶׁהֵן סְמוּכִין לִרְשׁוּת כִּרְשׁוּת</span> — three tefachim adjacent to a domain count as the domain itself?</div></div><div class="debate-line"><div class="speaker" style="background:#c9a84c">R' Z</div><div class="speech">Aren't you satisfied with R' Yochanan's universal reading? His move makes the Mishnah work for every Tanna, not just one.</div></div></div><div class="callout" style="margin-top:20px"><strong>Why this matters:</strong> The Yerushalmi prefers the reading that doesn't depend on a single Tanna's view. <span class='hebrew'>מפריח</span> turns the case into a clear public-domain hazard rather than a borderline three-tefach question.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>🧱 A Fallen Wall — Damage Without an Act</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">R' Meir's principle, sharpened by Reish Lakish.</div>
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">כָּל הַמַּזִּיק שֶׁלֹּא עַל יְדֵי מַעֲשֶׂה חַיָיב</div><div class="callout"><strong>Reish Lakish's claim:</strong> The case of a wall that collapsed into the public domain is specifically R' Meir's view. R' Meir holds: anyone whose property causes damage — even when the owner did nothing — is liable. This is the same principle that grounds the entire pit framework: a hazard you created by neglect is still a hazard you own.</div><div class='callout' style='margin-top:20px'><strong>The contrast:</strong> Other Tannaim require an affirmative act of damage. R' Meir alone extends liability to the owner who simply failed to remove a known risk.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>📅 The 30-Day Deadline</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When does negligence start to count?</div>
+  <div class="process-bar"><div class="process-step">1️⃣ A tree leans dangerously, or a wall begins to crack.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ Beit Din gives the owner <strong>time</strong> to cut down or take it down.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ <strong>Within the deadline</strong>, the structure falls and damages someone — owner is <span class='hebrew'>פָּטוּר</span>.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ <strong>After the deadline</strong>, the same fall now triggers full liability — <span class='hebrew'>חַיָיב</span>.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ R' Hoshaya: the deadline is <strong>30 days</strong>. <span class='hebrew'>תַּנֵּי רִבִּי הוֹשַׁעְיָה. ל׳ יוֹם</span>.</div></div><div class="callout" style="margin-top:20px"><strong>The legal logic:</strong> Inaction only becomes liability once the owner had reasonable time to act. The 30-day window is not a grace period — it's the line where negligence becomes legally cognizable.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>🪵 Straw, Olive-Press, and Dung in the Road</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The Mishnah introduces a counter-intuitive rule.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#f39c12"><h3 style="color:#f39c12">🌾 Straw / גפת</h3><ul><li>Owner takes them out לזבלים — to compost</li><li>Causes damage to a passerby → owner liable</li><li>Anyone can grab them: <span class='hebrew'>וְכָל הַקּוֹדֵם בָּהֶן זָכָה</span></li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">💩 Dung / גלל</h3><ul><li>Owner turns it over in the road</li><li>Damage to passerby → owner liable</li><li>Same acquisition rule applies</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">⚖️ The Paradox</h3><ul><li>Owner stays liable for damage</li><li>But loses ownership to whoever grabs it first</li><li>Hazard ≠ Possession</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>The two regimes:</strong> Tort liability and property ownership run on different tracks. The owner's liability follows the act of placing a hazard; ownership of the object itself is forfeited the moment another person takes it.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🤲 How Are Movables Acquired?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Hizkiyah opens a side door — turning over to acquire.</div>
+  <table><tr><th>Method</th><th>What It Is</th><th>When It Works</th></tr><tr><td><span class='hebrew'>הֲפִיכָה</span></td><td>Turning the object over</td><td>Hizkiyah: only if done with intent to acquire</td></tr><tr><td><span class='hebrew'>גְּרִירָה</span></td><td>Dragging the object</td><td>R' Bun bar Chiyya: works for pillars and stiff hides</td></tr><tr><td><span class='hebrew'>הַגְבָּהָה</span></td><td>Lifting the object</td><td>Required for soft hides — dragging won't do it</td></tr><tr><td><span class='hebrew'>שְׁבָחָן / גּוּפָן</span></td><td>What is acquired</td><td>Beit Yannai: only the appreciation; Shmuel: the object itself</td></tr></table><div class="callout" style="margin-top:20px"><strong>The deeper move:</strong> The Yerushalmi turns a Mishnah about hazards into a window onto kinyan theory. The physical actions that mark ownership transfer depend on the nature of the object — and that interpretive lens then helps us understand what 'first to grab it acquires it' really means.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 14 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>End of perek 3</strong><br>Hazards in רשות הרבים</div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Liability without an action — R' Meir's <span class='hebrew'>שֶׁלֹּא עַל יְדֵי מַעֲשֶׂה</span></div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🌵 <strong>Thorns</strong><br><span class='hebrew'>מפריח</span> — protruding out</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">🧱 <strong>Wall</strong><br>30-day deadline rule</div></div><div class="flow-col"><div class="flow-box" style="border-color:#f39c12">🪵 <strong>Straw/dung</strong><br>liable + losable</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🤲 <strong>Acquisition</strong><br>הפיכה / גרירה / הגבהה</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Liability tracks the act of creating risk; ownership tracks the act of grabbing the object. Both are bounded by halakhic time and physical mode.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 14a-14b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 14a-14b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../13/">← Daf 13</a></div>
+</body>
+</html>

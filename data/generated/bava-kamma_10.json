@@ -1,0 +1,202 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 10,
+  "emoji": "🍞",
+  "topics": [
+    "🦒 Rav: bending the neck (<span class='hebrew'>עָקְמָה צַוָּארָהּ</span>) → pays full damage",
+    "🌾 Rav: ate barley → pays for straw (cheaper benefit)",
+    "🐐 The donkey + lambs case — explaining the Mishnah's two rules",
+    "🐕 New Mishnah: dog or kid that <em>jumped</em> from a roof = muad",
+    "🔥 The famous case of dog with hot pitta + sheaf-stack"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Stretching the Neck and the Burning Sheaves",
+    "label": "The sugya:",
+    "text": "Daf 10 has only three segments but they are dense. Rav rules that an animal that bent its neck to eat — even from the doorway of a store — pays for full damage, not just for benefit. The Yerushalmi resolves the apparent contradiction with our Mishnah by re-reading the Mishnah's case as a donkey carrying lambs that stretched their necks while passing. Then Rav teaches the principle of <span class='hebrew'>אָכְלָה שְׂעוֹרִים מְשַׁלֵּם תֶּבֶן</span> — payment is calibrated to benefit, not to what the animal ate. The daf closes with the new Mishnah of jumping dogs/goats and the dog-with-hot-pitta case, which the next daf will unpack.",
+    "hebrewSource": "רַב אָמַר. עָקְמָה צַוָּארָהּ וְאָכְלָה מְשַׁלֵּם מַה שֶּׁהִזִּיקָה"
+  },
+  "slides": [
+    {
+      "type": "flowchart",
+      "title": "🦒 Rav: The Bent Neck Pays Full",
+      "subtitle": "Rav reads the Mishnah aggressively — and creates a problem.",
+      "nodes": [
+        { "content": "Rav: <span class='hebrew'>עָקְמָה צַוָּארָהּ וְאָכְלָה — מְשַׁלֵּם מַה שֶּׁהִזִּיקָה</span><br>If the animal bent its neck and ate, the owner pays for damage (not just benefit)", "class": "action" },
+        { "type": "arrow" },
+        { "content": "Objection: but our Mishnah says <span class='hebrew'>מִפֶּתַח הֶחָנוּת מְשַׁלֵּם מַה שֶּׁנֶּהֱנֵית</span><br>From the doorway it pays only what it benefited!", "class": "question" },
+        { "type": "arrow" },
+        { "content": "R' Yose b. R' Bun: <span class='hebrew'>תִּיפְתָּר בְּשֶׁהָיָה חֲמוֹר טָעוּן גְּדָיִים</span><br>Re-read the Mishnah: a donkey carrying lambs, and as it walks past, the lambs stretch their necks", "class": "result-good" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Doorway", "content": "<span class='hebrew'>מַה שֶּׁנֶּהֱנֵית</span><br>only benefit", "class": "result-partial" },
+            { "label": "Inside store", "content": "<span class='hebrew'>מַה שֶּׁהִזִּיקָה</span><br>full damage", "class": "result-bad" }
+          ]
+        }
+      ],
+      "callout": {
+        "label": "The reconciliation:",
+        "text": "When it is the animal itself that bends its neck deliberately, Rav treats this as an unusual move and assigns full damage. The Mishnah's softer rule applies only to a passive scenario — a donkey carrying its load, lambs grazing as they pass."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🌾 Rav's Principle: Pay by the Benefit, Not the Item",
+      "subtitle": "<span class='hebrew'>אָכְלָה שְׂעוֹרִים מְשַׁלֵּם תֶּבֶן</span>",
+      "steps": [
+        { "content": "1️⃣ The animal eats expensive barley (שְׂעוֹרִים)." },
+        { "content": "2️⃣ Rav: the owner pays for cheap straw (תֶּבֶן) — the benefit it would have gotten anyway." },
+        { "content": "3️⃣ R' Chiyya disagrees: if it ate wheat (חִיטִּין), which is bad for it, the owner is exempt entirely." },
+        { "content": "4️⃣ But if the animal <em>changed</em> from its normal feed (שִׁינָּת וְאָכְלָה), liability returns to full damage." },
+        { "content": "5️⃣ Final rule: payment tracks <em>real</em> benefit. When the animal eats abnormally, it crosses into full liability.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "The Yerushalmi separates 'normal eating in a public space' (pay benefit only) from 'unusual feeding' (pay full damage). Rav and R' Chiyya disagree on edge cases like wheat, but the structural distinction holds."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "📦 Three Container Cases at the End of the Halakhah",
+      "subtitle": "When the food is exposed to the public, what counts as 'inside'?",
+      "boxes": [
+        {
+          "title": "🎒 Basket on the back",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "<span class='hebrew'>קוּפָּתוֹ מוּפְשֶׁלֶת לַאֲחוֹרָיו</span>",
+            "Cow stretches and eats from it",
+            "<span class='hebrew'>נֶזֶק שָׁלֵם</span>"
+          ]
+        },
+        {
+          "title": "🚪 Container half in / half out",
+          "color": "#f39c12",
+          "titleColor": "#f39c12",
+          "items": [
+            "<span class='hebrew'>סוֹג שֶׁנָּתוּן בְּפֶתַח הֶחָנוּת</span>",
+            "Cow stretches and eats from it",
+            "<span class='hebrew'>נֶזֶק שָׁלֵם</span>"
+          ]
+        },
+        {
+          "title": "🛣️ Open public square",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "<span class='hebrew'>אָכְלָה מִתּוֹךְ הָרְחָבָה</span>",
+            "Animal grazes in the open",
+            "<span class='hebrew'>מַה שֶּׁנֶּהֱנֵית</span> — only benefit"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "The pattern:",
+        "text": "A container — even a half-out one — counts as a private domain to its contents. The animal that reaches into it pays full damage, not benefit. Only fully exposed food in the public square triggers the lenient benefit-rule."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 Did the Mishnah Say 'Jumped' or 'Fell'?",
+      "subtitle": "The next Mishnah (2:5) opens with a textual variant.",
+      "lines": [
+        { "speaker": "M", "side": "left", "speakerColor": "#c9a84c", "text": "<span class='hebrew'>הַכֶּלֶב וְהַגְּדִי שֶׁקָּפְצוּ מֵרֹאשׁ הַגַּג וְשִׁיבְּרוּ אֶת הַכֵּלִים מְשַׁלְּמִין נֶזֶק שָׁלֵם מִפְּנֵי שֶׁהֵן מוּעָדִין</span>" },
+        { "speaker": "T1", "side": "right", "speakerColor": "#9b59b6", "text": "<span class='hebrew'>שֶׁקָּפְצוּ</span> — they <em>jumped</em>." },
+        { "speaker": "T2", "side": "left", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>שֶׁנָּפְלוּ</span> — they <em>fell</em>." },
+        { "speaker": "R' Yo", "side": "right", "speakerColor": "#e74c3c", "text": "<span class='hebrew'>כֵּינִי מַתְנִיתָא. שֶׁקָּפְצוּ. נָפְלוּ לֹא בְדָא</span> — the correct text is 'jumped'. 'Fell' does not apply (i.e. there is no full liability for an accidental fall)." }
+      ],
+      "callout": {
+        "label": "Why this matters:",
+        "text": "Jumping is a deliberate act — the animal acted out its 'mu'ad' nature. Falling is accidental — closer to a passive bor case. R' Yochanan locks the Mishnah to the deliberate version, so full liability rests on intent, not just outcome."
+      }
+    },
+    {
+      "type": "callout",
+      "title": "🔥 Setup for Daf 11 — The Dog and the Hot Pitta",
+      "subtitle": "The Mishnah ends with a famous dual-liability case.",
+      "label": "The case:",
+      "text": "A dog grabs a hot pitta and runs to a stack of sheaves. While eating the pitta, it ignites the stack. For the pitta, <span class='hebrew'>נֶזֶק שָׁלֵם</span> (the dog ate it directly). For the stack, <span class='hebrew'>חֲצִי נֶזֶק</span> (the fire spread indirectly). Daf 11 will pick this up: Resh Lakish demands fire-ignition contact at every single sheaf; R' Yochanan rules <span class='hebrew'>נַעֲשֶׂה כְּזוֹרֵק אֶת הַחֵץ</span> — the dog is like one who shoots an arrow.",
+      "hebrewSource": "כֶּלֶב שֶׁנָּטַל אֶת הַחֲרָרָה וְהָלַךְ לוֹ לְגָדִישׁ... עַל הַחֲרָרָה מְשַׁלֵּם נֶזֶק שָׁלֵם וְעַל הַגָּדִישׁ מְשַׁלֵּם חֲצִי נֶזֶק"
+    }
+  ],
+  "summary": {
+    "principle": "Domain (public square / doorway / inside) and intent (passive grazing vs. deliberate stretching) decide whether an owner pays for benefit only or for full damage.",
+    "flowSteps": [
+      { "content": "<strong>Mishnah 2:4</strong>: open square = benefit; inside store = full damage", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Rav: bent its own neck → full damage. Why doesn't this contradict the Mishnah?", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🐐 <strong>Donkey + lambs</strong><br>passive scenario → benefit", "style": "border-color:#4caf50" },
+          { "content": "🦒 <strong>Bent its neck</strong><br>active → full damage", "style": "border-color:#e74c3c" },
+          { "content": "🌾 <strong>שעורים → תבן</strong><br>pay by real benefit", "style": "border-color:#f39c12" },
+          { "content": "🐕 <strong>קפצו / נפלו</strong><br>R' Yochanan: only 'jumped'", "style": "border-color:#9b59b6" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Whenever the animal acts deliberately or breaches a private domain — even a passing one — liability climbs to full damage. Passive grazing in the open pays benefit only.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "What does Rav rule about an animal that bent its neck and ate (<span class='hebrew'>עָקְמָה צַוָּארָהּ וְאָכְלָה</span>)?",
+      "o": [
+        "It pays only what it benefited",
+        "It is exempt entirely",
+        "It pays <span class='hebrew'>מַה שֶּׁהִזִּיקָה</span> — full damage",
+        "It depends on the time of day"
+      ],
+      "c": 2,
+      "e": "Rav: bending the neck is a deliberate, non-passive act, so the lenient benefit-rule does not apply."
+    },
+    {
+      "q": "How does R' Yose b. R' Bun reconcile Rav with the Mishnah's 'doorway = benefit'?",
+      "o": [
+        "He says Rav is wrong",
+        "He re-reads the Mishnah as a donkey carrying lambs that stretched their necks (<span class='hebrew'>חֲמוֹר טָעוּן גְּדָיִים</span>)",
+        "He distinguishes between Shabbat and weekday",
+        "He limits Rav to wheat only"
+      ],
+      "c": 1,
+      "e": "R' Yose: <span class='hebrew'>תִּיפְתָּר בְּשֶׁהָיָה חֲמוֹר טָעוּן גְּדָיִים וּבִשְׁעַת עֲבָרָתָן פָּשְׁטוּ צַוָּארֵיהֶן</span>."
+    },
+    {
+      "q": "If an animal ate barley (שעורים), how does Rav say the owner pays?",
+      "o": [
+        "Pay for barley",
+        "Pay for straw (תֶּבֶן)",
+        "Pay double",
+        "Exempt"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>אָכְלָה שְׂעוֹרִים מְשַׁלֵּם תֶּבֶן</span> — payment is keyed to the benefit, not the item eaten."
+    },
+    {
+      "q": "What is R' Yochanan's textual ruling on the new Mishnah (2:5)?",
+      "o": [
+        "Both 'jumped' and 'fell' apply",
+        "<span class='hebrew'>כֵּינִי מַתְנִיתָא. שֶׁקָּפְצוּ. נָפְלוּ לֹא בְדָא</span>",
+        "Only 'fell' is correct",
+        "He emends the Mishnah to 'walked'"
+      ],
+      "c": 1,
+      "e": "R' Yochanan: the correct text is 'jumped' — full liability requires deliberate movement. 'Fell' would not apply."
+    },
+    {
+      "q": "In the dog-and-hot-pitta case, how does the Mishnah split the payment?",
+      "o": [
+        "Full for both",
+        "Half for both",
+        "Full for the pitta, half for the stack",
+        "Half for the pitta, full for the stack"
+      ],
+      "c": 2,
+      "e": "<span class='hebrew'>עַל הַחֲרָרָה מְשַׁלֵּם נֶזֶק שָׁלֵם וְעַל הַגָּדִישׁ מְשַׁלֵּם חֲצִי נֶזֶק</span>. Direct eating = full; spreading fire = half."
+    }
+  ]
+}

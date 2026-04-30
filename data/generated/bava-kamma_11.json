@@ -1,0 +1,210 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 11,
+  "emoji": "🏹",
+  "topics": [
+    "🏹 R' Yochanan: dog with pitta is <span class='hebrew'>כְּזוֹרֵק אֶת הַחֵץ</span> — like a thrown arrow",
+    "🐂 Tam vs. Mu'ad: R' Yehuda vs. R' Meir on the threshold",
+    "🩸 Niddah parallel: same machloket about gaps in evidence",
+    "⚖️ Halakha: R' Meir for tam, R' Yehuda for testimony (הַעֲדָאָה)",
+    "👤 <span class='hebrew'>אָדָם מוּעָד לְעוֹלָם</span>; opening of perek 3 (<span class='hebrew'>הַמַּנִּיחַ אֶת הַכַּד</span>)"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — A Long, Layered Daf",
+    "label": "The sugya:",
+    "text": "Daf 11 is dense: nine segments stretching across three Mishnayot. The opening unpacks the dog-with-hot-pitta case — Resh Lakish wants ignition contact at every sheaf; R' Yochanan rules <span class='hebrew'>נַעֲשֶׂה כְּזוֹרֵק אֶת הַחֵץ</span>, and supporting beraitot test this against capital-vs-monetary liability. The middle of the daf moves to the tam/mu'ad Mishnah — R' Yehuda demands three days of goring, R' Meir three episodes — and the Yerushalmi explores what counts as continuity, paralleling a niddah dispute between Rav Ada bar Aḥawa and Rav Huna. Then comes the famous <span class='hebrew'>אָדָם מוּעָד לְעוֹלָם</span>, with R' Yitzchak's narrowing: only when both were already sleeping. Finally the daf opens perek 3 with <span class='hebrew'>הַמַּנִּיחַ אֶת הַכַּד</span>.",
+    "hebrewSource": "רִבִּי יוֹחָנָן אָמַר. נַעֲשֶׂה כְּזוֹרֵק אֶת הַחֵץ מִמָּקוֹם לְמָקוֹם"
+  },
+  "slides": [
+    {
+      "type": "debate",
+      "title": "💬 The Dog and the Burning Sheaves",
+      "subtitle": "Why is full damage paid for the pitta but only half for the stack?",
+      "lines": [
+        { "speaker": "RL", "side": "left", "speakerColor": "#9b59b6", "text": "<span class='hebrew'>בְּמַצִּית אֶת הָאוֹר עַל כָּל שִׁיבּוֹלֶת וְשִׁיבּוֹלֶת</span> — only if the dog rekindled the fire on every single ear of grain." },
+        { "speaker": "R' Yo", "side": "right", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>נַעֲשֶׂה כְּזוֹרֵק אֶת הַחֵץ מִמָּקוֹם לְמָקוֹם</span> — once the dog set the first ear ablaze, it is like an arrow shot from one place to another. The whole stack is treated as one act." },
+        { "speaker": "R' Yitz. b. Tev.", "side": "left", "speakerColor": "#c9a84c", "text": "A beraita supports Resh Lakish: a kid bound to it, slave nearby = liable; slave bound, kid nearby = exempt. If R' Yochanan's arrow theory were right, the first ear would carry capital liability — and the rest would still be monetary, contradicting the beraita." },
+        { "speaker": "R' Yose", "side": "right", "speakerColor": "#e74c3c", "text": "Same point from Shabbat: an ox lighting a stack on Shabbat = its owner pays; a person lighting it on Shabbat = exempt (because of capital liability). Without the arrow theory, monetary liability for later sheaves would still attach." }
+      ],
+      "callout": {
+        "label": "Yerushalmi style:",
+        "text": "The Yerushalmi probes the arrow-thrower theory by lining it up against capital-vs-monetary clashes. If the first ignition triggers a death penalty, all subsequent damage is absorbed into the original capital act."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📊 Tam vs. Mu'ad — R' Yehuda and R' Meir",
+      "subtitle": "What gets a bull declared mu'ad, and what brings him back to tam?",
+      "headers": ["Condition", "R' Yehuda", "R' Meir"],
+      "rows": [
+        ["Becoming mu'ad", "Three <em>days</em> of goring", "Three <em>incidents</em> of goring"],
+        ["Returning to tam", "Three days of <em>not</em> goring", "When children play with it (<span class='hebrew'>תִּינּוֹקוֹת מְמַשְׁמְשִׁין בּוֹ</span>)"],
+        ["Reading <span class='hebrew'>מִתְּמוֹל שִׁלְשׁוֹם</span>", "Plain — three days", "Spaced gorings: must be three consecutive days"],
+        ["Halakha", "For testimony (הַעֲדָאָה)", "For tam"]
+      ],
+      "callout": {
+        "label": "Halakhic ruling:",
+        "text": "Rav Yirmiyah in Rav's name: <span class='hebrew'>הֲלָכָה כְרִבִּי מֵאִיר בְּתַמָּה וּכְרִבִּי יוּדָה בְהַעֲדָאָה</span>. Practice splits the dispute — R' Meir governs the threshold for tam, R' Yehuda governs the standard of testimony."
+    }
+    },
+    {
+      "type": "flowchart",
+      "title": "🐂 The Gap-Day Question",
+      "subtitle": "If a bull gored, then skipped a day, then gored again — what is its status?",
+      "nodes": [
+        { "content": "Day 1: gored. Day 2: not let out. Day 3: let out and gored.<br>Mu'ad or not?", "class": "question" },
+        { "type": "arrow" },
+        { "content": "Yerushalmi: <span class='hebrew'>יָיבֹא כְתַפְלוּגְתָא דְּרַב אָדָא בַּר אַחֲוָוא וּדְרַב הוּנָא</span><br>Treat it as the niddah dispute", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Rav Ada bar Aḥawa (in Rav's name)", "content": "<span class='hebrew'>נִידָּה וַודַּאי</span><br>Definitely niddah → analogously, definitely mu'ad", "class": "result-bad" },
+            { "label": "Rav Huna (in Rav's name)", "content": "<span class='hebrew'>נִדָּה סָפֵק</span><br>Doubtful → analogously, doubtful mu'ad", "class": "result-partial" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "Rav Huna: I was there at the start, the middle, and the end — Rav reversed himself, ending on סָפֵק. Rav Ada only heard the first answer (וַודַּאי).", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Why the niddah parallel:",
+        "text": "Both cases ask: when there is a gap-day in the middle, do we treat the bookend evidence as a continuous record (וַודַּאי) or as broken (סָפֵק)? It is the same structural question, transferred from blood to goring."
+      }
+    },
+    {
+      "type": "process",
+      "title": "👤 <span class='hebrew'>אָדָם מוּעָד לְעוֹלָם</span> — The Mishnah's Sweep",
+      "subtitle": "And R' Yitzchak's surprising narrowing.",
+      "steps": [
+        { "content": "1️⃣ Mishnah: a person is always notorious — <em>shogeg</em> or <em>mezid</em>, awake or asleep." },
+        { "content": "2️⃣ If he blinded another or broke vessels, he pays full damages." },
+        { "content": "3️⃣ R' Yitzchak: <span class='hebrew'>מַתְנִיתָא בְּשֶׁהָיוּ שְׁנֵיהֶם יְשֵׁינִין</span> — the Mishnah is when both were already sleeping side by side." },
+        { "content": "4️⃣ But if one was sleeping first and the other came and lay down beside him, the <em>incoming</em> sleeper is the muad — he created the danger." },
+        { "content": "5️⃣ Net rule: 'always muad' is broad, but liability shifts to whoever changed the situation.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "Even <span class='hebrew'>אָדָם מוּעָד לְעוֹלָם</span> has a structural ceiling: when one person joins another already at rest, the joining party owns the risk."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🏺 Closing the Daf — The Jar in the Public Domain (3:1)",
+      "subtitle": "The daf opens perek 3 with a paradigmatic case.",
+      "boxes": [
+        {
+          "title": "🚶 The walker stumbles",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "<span class='hebrew'>נִתְקַל בָּהּ וּשְׁבָרָהּ — פָּטוּר</span>",
+            "He breaks the jar by tripping → exempt",
+            "He cannot be sued for damaging the obstacle"
+          ]
+        },
+        {
+          "title": "🤕 The walker is hurt",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<span class='hebrew'>וְאִם הוּזַּק בָּהּ בַּעַל הֶחָבִית חַיָיב בִּנְזָקָיו</span>",
+            "Jar-owner pays for the walker's injury",
+            "He created a hazard in the public domain"
+          ]
+        },
+        {
+          "title": "🪨 Compare: hot water bottle case",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "Earlier in the daf: a man set out a פֻּלַטֵירָה in the open",
+            "A donkey passed and broke it",
+            "R' Yitzchak b. Tevelai: <span class='hebrew'>לֹא חַיָיב לָךְ כְּלוּם</span> — and if the donkey was hurt, he pays!"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "The shared logic:",
+        "text": "Whoever places an object in the public domain bears the risk of what happens to it and what it does to others. The Mishnah of הַמַּנִּיחַ אֶת הַכַּד codifies what R' Yitzchak b. Tevelai already ruled in the practical case."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "From a dog with a pitta to a sleeping man and a forgotten jar — daf 11 maps how liability flows when actions ripple, when patterns form, and when bystanders bear the cost.",
+    "flowSteps": [
+      { "content": "<strong>The dog and the stack</strong>: split payment — full for pitta, half for stack", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Resh Lakish: every-sheaf ignition / R' Yochanan: <span class='hebrew'>כְּזוֹרֵק אֶת הַחֵץ</span>", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🐂 <strong>Tam → mu'ad</strong><br>R' Yehuda: 3 days · R' Meir: 3 episodes", "style": "border-color:#4a90d9" },
+          { "content": "🩸 <strong>Niddah parallel</strong><br>וודאי or ספק when day 2 is missing", "style": "border-color:#9b59b6" },
+          { "content": "👤 <strong>אדם מועד לעולם</strong><br>narrowed by R' Yitzchak", "style": "border-color:#e74c3c" },
+          { "content": "🏺 <strong>הַמַּנִּיחַ אֶת הַכַּד</strong><br>jar-owner bears the risk", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Liability is built around the moment of choice: who lit the first ear, who joined the sleeping one, who set the jar down. Halakha picks R' Meir's threshold for tam and R' Yehuda's standard for testimony.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "How does R' Yochanan explain the dog-with-pitta case?",
+      "o": [
+        "Only if it lit every single ear of grain",
+        "It is like a thrown arrow (<span class='hebrew'>כְּזוֹרֵק אֶת הַחֵץ מִמָּקוֹם לְמָקוֹם</span>)",
+        "Only if the dog is muad",
+        "The owner is exempt entirely"
+      ],
+      "c": 1,
+      "e": "R' Yochanan treats the original ignition as a single act that propagates, like an arrow. Resh Lakish demands per-sheaf rekindling."
+    },
+    {
+      "q": "What is the practical halakha that Rav Yirmiyah reports in Rav's name about tam/mu'ad?",
+      "o": [
+        "Always like R' Yehuda",
+        "Always like R' Meir",
+        "<span class='hebrew'>הֲלָכָה כְרִבִּי מֵאִיר בְּתַמָּה וּכְרִבִּי יוּדָה בְהַעֲדָאָה</span>",
+        "<span class='hebrew'>הֲלָכָה כְרִבִּי יוּדָה בְּתַמָּה וּכְרִבִּי מֵאִיר בְהַעֲדָאָה</span>"
+      ],
+      "c": 2,
+      "e": "Practice follows R' Meir for the threshold of tam (three episodes) and R' Yehuda for testimony / he'adah (three days)."
+    },
+    {
+      "q": "What halakhic dispute does the Yerushalmi use as a parallel to the gap-day goring case?",
+      "o": [
+        "Tum'at met vs. tum'at sheretz",
+        "A niddah whose mid-day check was missed (Rav Ada bar Aḥawa vs. Rav Huna)",
+        "Mu'ad vs. tam in shor-gores-shor",
+        "Mishkav vs. moshav"
+      ],
+      "c": 1,
+      "e": "Rav Ada bar Aḥawa says <span class='hebrew'>נִידָּה וַודַּאי</span>; Rav Huna says <span class='hebrew'>נִדָּה סָפֵק</span> — same gap-evidence question."
+    },
+    {
+      "q": "How does R' Yitzchak narrow the rule of <span class='hebrew'>אָדָם מוּעָד לְעוֹלָם</span>?",
+      "o": [
+        "Only when both people were already sleeping (<span class='hebrew'>שְׁנֵיהֶם יְשֵׁינִין</span>)",
+        "Only when fully awake",
+        "Only on Shabbat",
+        "Only with vessels, not bodily injury"
+      ],
+      "c": 0,
+      "e": "R' Yitzchak: if one came to sleep next to a sleeper, the joining party is the muad — he created the risk."
+    },
+    {
+      "q": "In the new Mishnah (הַמַּנִּיחַ אֶת הַכַּד), who pays whom?",
+      "o": [
+        "The walker pays for breaking the jar",
+        "The jar-owner pays for the walker's injury, and the walker is exempt for the jar",
+        "Both pay each other equally",
+        "Both are exempt"
+      ],
+      "c": 1,
+      "e": "<span class='hebrew'>נִתְקַל בָּהּ וּשְׁבָרָהּ — פָּטוּר. וְאִם הוּזַּק בָּהּ בַּעַל הֶחָבִית חַיָיב בִּנְזָקָיו</span>."
+    }
+  ]
+}

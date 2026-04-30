@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 11 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🏹</div>
+  <h1>Yerushalmi Bava Kamma 11</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא יא׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🏹 R' Yochanan: dog with pitta is <span class='hebrew'>כְּזוֹרֵק אֶת הַחֵץ</span> — like a thrown arrow<br>
+    🐂 Tam vs. Mu'ad: R' Yehuda vs. R' Meir on the threshold<br>
+    🩸 Niddah parallel: same machloket about gaps in evidence<br>
+    ⚖️ Halakha: R' Meir for tam, R' Yehuda for testimony (הַעֲדָאָה)<br>
+    👤 <span class='hebrew'>אָדָם מוּעָד לְעוֹלָם</span>; opening of perek 3 (<span class='hebrew'>הַמַּנִּיחַ אֶת הַכַּד</span>)<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — A Long, Layered Daf</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">רִבִּי יוֹחָנָן אָמַר. נַעֲשֶׂה כְּזוֹרֵק אֶת הַחֵץ מִמָּקוֹם לְמָקוֹם</div><div class="callout"><strong>The sugya:</strong> Daf 11 is dense: nine segments stretching across three Mishnayot. The opening unpacks the dog-with-hot-pitta case — Resh Lakish wants ignition contact at every sheaf; R' Yochanan rules <span class='hebrew'>נַעֲשֶׂה כְּזוֹרֵק אֶת הַחֵץ</span>, and supporting beraitot test this against capital-vs-monetary liability. The middle of the daf moves to the tam/mu'ad Mishnah — R' Yehuda demands three days of goring, R' Meir three episodes — and the Yerushalmi explores what counts as continuity, paralleling a niddah dispute between Rav Ada bar Aḥawa and Rav Huna. Then comes the famous <span class='hebrew'>אָדָם מוּעָד לְעוֹלָם</span>, with R' Yitzchak's narrowing: only when both were already sleeping. Finally the daf opens perek 3 with <span class='hebrew'>הַמַּנִּיחַ אֶת הַכַּד</span>.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>💬 The Dog and the Burning Sheaves</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Why is full damage paid for the pitta but only half for the stack?</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#9b59b6">RL</div><div class="speech"><span class='hebrew'>בְּמַצִּית אֶת הָאוֹר עַל כָּל שִׁיבּוֹלֶת וְשִׁיבּוֹלֶת</span> — only if the dog rekindled the fire on every single ear of grain.</div></div><div class="debate-line right"><div class="speaker" style="background:#4a90d9">R' Yo</div><div class="speech"><span class='hebrew'>נַעֲשֶׂה כְּזוֹרֵק אֶת הַחֵץ מִמָּקוֹם לְמָקוֹם</span> — once the dog set the first ear ablaze, it is like an arrow shot from one place to another. The whole stack is treated as one act.</div></div><div class="debate-line"><div class="speaker" style="background:#c9a84c">R' Yitz. b. Tev.</div><div class="speech">A beraita supports Resh Lakish: a kid bound to it, slave nearby = liable; slave bound, kid nearby = exempt. If R' Yochanan's arrow theory were right, the first ear would carry capital liability — and the rest would still be monetary, contradicting the beraita.</div></div><div class="debate-line right"><div class="speaker" style="background:#e74c3c">R' Yose</div><div class="speech">Same point from Shabbat: an ox lighting a stack on Shabbat = its owner pays; a person lighting it on Shabbat = exempt (because of capital liability). Without the arrow theory, monetary liability for later sheaves would still attach.</div></div></div><div class="callout" style="margin-top:20px"><strong>Yerushalmi style:</strong> The Yerushalmi probes the arrow-thrower theory by lining it up against capital-vs-monetary clashes. If the first ignition triggers a death penalty, all subsequent damage is absorbed into the original capital act.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>📊 Tam vs. Mu'ad — R' Yehuda and R' Meir</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">What gets a bull declared mu'ad, and what brings him back to tam?</div>
+  <table><tr><th>Condition</th><th>R' Yehuda</th><th>R' Meir</th></tr><tr><td>Becoming mu'ad</td><td>Three <em>days</em> of goring</td><td>Three <em>incidents</em> of goring</td></tr><tr><td>Returning to tam</td><td>Three days of <em>not</em> goring</td><td>When children play with it (<span class='hebrew'>תִּינּוֹקוֹת מְמַשְׁמְשִׁין בּוֹ</span>)</td></tr><tr><td>Reading <span class='hebrew'>מִתְּמוֹל שִׁלְשׁוֹם</span></td><td>Plain — three days</td><td>Spaced gorings: must be three consecutive days</td></tr><tr><td>Halakha</td><td>For testimony (הַעֲדָאָה)</td><td>For tam</td></tr></table><div class="callout" style="margin-top:20px"><strong>Halakhic ruling:</strong> Rav Yirmiyah in Rav's name: <span class='hebrew'>הֲלָכָה כְרִבִּי מֵאִיר בְּתַמָּה וּכְרִבִּי יוּדָה בְהַעֲדָאָה</span>. Practice splits the dispute — R' Meir governs the threshold for tam, R' Yehuda governs the standard of testimony.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>🐂 The Gap-Day Question</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">If a bull gored, then skipped a day, then gored again — what is its status?</div>
+  <div class="flowchart"><div class="flow-box question">Day 1: gored. Day 2: not let out. Day 3: let out and gored.<br>Mu'ad or not?</div><div class="flow-arrow">↓</div><div class="flow-box action">Yerushalmi: <span class='hebrew'>יָיבֹא כְתַפְלוּגְתָא דְּרַב אָדָא בַּר אַחֲוָוא וּדְרַב הוּנָא</span><br>Treat it as the niddah dispute</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Rav Ada bar Aḥawa (in Rav's name)</div><div class="flow-box result-bad"><span class='hebrew'>נִידָּה וַודַּאי</span><br>Definitely niddah → analogously, definitely mu'ad</div></div><div class="flow-col"><div class="flow-label">Rav Huna (in Rav's name)</div><div class="flow-box result-partial"><span class='hebrew'>נִדָּה סָפֵק</span><br>Doubtful → analogously, doubtful mu'ad</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good">Rav Huna: I was there at the start, the middle, and the end — Rav reversed himself, ending on סָפֵק. Rav Ada only heard the first answer (וַודַּאי).</div></div><div class="callout" style="margin-top:20px"><strong>Why the niddah parallel:</strong> Both cases ask: when there is a gap-day in the middle, do we treat the bookend evidence as a continuous record (וַודַּאי) or as broken (סָפֵק)? It is the same structural question, transferred from blood to goring.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>👤 <span class='hebrew'>אָדָם מוּעָד לְעוֹלָם</span> — The Mishnah's Sweep</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">And R' Yitzchak's surprising narrowing.</div>
+  <div class="process-bar"><div class="process-step">1️⃣ Mishnah: a person is always notorious — <em>shogeg</em> or <em>mezid</em>, awake or asleep.</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ If he blinded another or broke vessels, he pays full damages.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ R' Yitzchak: <span class='hebrew'>מַתְנִיתָא בְּשֶׁהָיוּ שְׁנֵיהֶם יְשֵׁינִין</span> — the Mishnah is when both were already sleeping side by side.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ But if one was sleeping first and the other came and lay down beside him, the <em>incoming</em> sleeper is the muad — he created the danger.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ Net rule: 'always muad' is broad, but liability shifts to whoever changed the situation.</div></div><div class="callout" style="margin-top:20px"><strong>Bottom line:</strong> Even <span class='hebrew'>אָדָם מוּעָד לְעוֹלָם</span> has a structural ceiling: when one person joins another already at rest, the joining party owns the risk.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🏺 Closing the Daf — The Jar in the Public Domain (3:1)</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The daf opens perek 3 with a paradigmatic case.</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">🚶 The walker stumbles</h3><ul><li><span class='hebrew'>נִתְקַל בָּהּ וּשְׁבָרָהּ — פָּטוּר</span></li><li>He breaks the jar by tripping → exempt</li><li>He cannot be sued for damaging the obstacle</li></ul></div><div class="compare-box" style="border-top-color:#e74c3c"><h3 style="color:#e74c3c">🤕 The walker is hurt</h3><ul><li><span class='hebrew'>וְאִם הוּזַּק בָּהּ בַּעַל הֶחָבִית חַיָיב בִּנְזָקָיו</span></li><li>Jar-owner pays for the walker's injury</li><li>He created a hazard in the public domain</li></ul></div><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">🪨 Compare: hot water bottle case</h3><ul><li>Earlier in the daf: a man set out a פֻּלַטֵירָה in the open</li><li>A donkey passed and broke it</li><li>R' Yitzchak b. Tevelai: <span class='hebrew'>לֹא חַיָיב לָךְ כְּלוּם</span> — and if the donkey was hurt, he pays!</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>The shared logic:</strong> Whoever places an object in the public domain bears the risk of what happens to it and what it does to others. The Mishnah of הַמַּנִּיחַ אֶת הַכַּד codifies what R' Yitzchak b. Tevelai already ruled in the practical case.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 11 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>The dog and the stack</strong>: split payment — full for pitta, half for stack</div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Resh Lakish: every-sheaf ignition / R' Yochanan: <span class='hebrew'>כְּזוֹרֵק אֶת הַחֵץ</span></div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4a90d9">🐂 <strong>Tam → mu'ad</strong><br>R' Yehuda: 3 days · R' Meir: 3 episodes</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">🩸 <strong>Niddah parallel</strong><br>וודאי or ספק when day 2 is missing</div></div><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">👤 <strong>אדם מועד לעולם</strong><br>narrowed by R' Yitzchak</div></div><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🏺 <strong>הַמַּנִּיחַ אֶת הַכַּד</strong><br>jar-owner bears the risk</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Liability is built around the moment of choice: who lit the first ear, who joined the sleeping one, who set the jar down. Halakha picks R' Meir's threshold for tam and R' Yehuda's standard for testimony.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 11a-11b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 11a-11b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../10/">← Daf 10</a><a href="../12/">Daf 12 →</a></div>
+</body>
+</html>

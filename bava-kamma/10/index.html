@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerushalmi Bava Kamma 10 — Yerushalmi Visual Guide</title>
+<style>* { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; background: #1a1a2e; color: #e0e0e0; }
+  .slide { min-height: 100vh; padding: 40px 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; border-bottom: 3px solid #c9a84c; position: relative; }
+  .slide-num { position: absolute; top: 20px; right: 30px; font-size: 14px; color: #c9a84c; opacity: 0.7; }
+  h1 { font-size: 2.8em; color: #c9a84c; text-align: center; margin-bottom: 10px; }
+  h2 { font-size: 2em; color: #c9a84c; text-align: center; margin-bottom: 30px; }
+  h3 { font-size: 1.4em; color: #daa520; margin-bottom: 15px; }
+  .subtitle { font-size: 1.2em; color: #aaa; text-align: center; margin-bottom: 40px; }
+  .hebrew { font-family: 'David', 'Times New Roman', serif; direction: rtl; font-size: 1.1em; color: #e8d5a3; }
+  .flowchart { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; }
+  .flow-box { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 280px; max-width: 520px; font-size: 1em; line-height: 1.5; }
+  .flow-box.action { background: #1a3a5c; border-color: #4a90d9; }
+  .flow-box.result-good { background: #1a4a2a; border-color: #4caf50; }
+  .flow-box.result-bad { background: #4a1a1a; border-color: #e74c3c; }
+  .flow-box.result-partial { background: #4a3a1a; border-color: #f39c12; }
+  .flow-box.question { background: #3a1a4a; border-color: #9b59b6; }
+  .flow-arrow { font-size: 28px; color: #c9a84c; line-height: 1; padding: 4px 0; }
+  .flow-branch { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; width: 100%; }
+  .flow-branch .flow-col { display: flex; flex-direction: column; align-items: center; gap: 0; flex: 1; min-width: 200px; }
+  .flow-label { font-size: 0.85em; color: #aaa; font-style: italic; padding: 2px 0; }
+  table { border-collapse: collapse; margin: 20px auto; max-width: 800px; width: 100%; }
+  th { background: #c9a84c; color: #1a1a2e; padding: 12px 16px; font-size: 0.95em; }
+  td { padding: 10px 16px; border-bottom: 1px solid #333; font-size: 0.95em; text-align: center; }
+  tr:nth-child(even) { background: #16213e; }
+  tr:nth-child(odd) { background: #1a1a2e; }
+  .check { color: #4caf50; font-size: 1.3em; }
+  .cross { color: #e74c3c; font-size: 1.3em; }
+  .partial { color: #f39c12; font-size: 1.3em; }
+  .compare-row { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; max-width: 900px; width: 100%; }
+  .compare-box { flex: 1; min-width: 260px; max-width: 400px; background: #16213e; border-radius: 12px; padding: 24px; border-top: 4px solid #c9a84c; }
+  .compare-box h3 { text-align: center; }
+  .compare-box ul { list-style: none; padding: 0; }
+  .compare-box li { padding: 6px 0; border-bottom: 1px solid #333; font-size: 0.95em; }
+  .compare-box li:last-child { border-bottom: none; }
+  .process-bar { display: flex; flex-direction: column; align-items: center; gap: 0; max-width: 700px; width: 100%; margin: 20px 0; }
+  .process-step { background: #16213e; border: 2px solid #c9a84c; border-radius: 12px; width: 100%; padding: 14px 18px; text-align: center; font-size: 0.95em; line-height: 1.5; }
+  .process-arrow { font-size: 24px; color: #c9a84c; padding: 4px 0; }
+  .process-step.highlight { border-color: #4caf50; background: #1a4a2a; }
+  .callout { background: #16213e; border-left: 5px solid #c9a84c; padding: 20px 24px; max-width: 700px; width: 100%; margin: 20px 0; border-radius: 0 8px 8px 0; font-size: 1.05em; line-height: 1.6; }
+  .callout strong { color: #c9a84c; }
+  .debate { max-width: 650px; width: 100%; }
+  .debate-line { display: flex; gap: 12px; margin-bottom: 12px; align-items: flex-start; }
+  .debate-line.right { flex-direction: row-reverse; text-align: right; }
+  .speaker { background: #c9a84c; color: #1a1a2e; border-radius: 20px; min-width: 48px; max-width: 80px; height: auto; min-height: 40px; padding: 8px 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 0.65em; flex-shrink: 0; text-align: center; line-height: 1.15; word-break: break-word; }
+  .speech { background: #16213e; border-radius: 12px; padding: 12px 16px; max-width: 500px; line-height: 1.5; font-size: 0.95em; }
+  .debate-line.right .speech { background: #1a3a5c; }
+  .emoji { font-size: 1.3em; }
+  .nav { position: fixed; bottom: 20px; right: 20px; display: flex; gap: 10px; z-index: 100; }
+  .nav a { background: #c9a84c; color: #1a1a2e; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+  .nav a:hover { background: #daa520; }</style>
+</head>
+<body>
+<div style="position:fixed;top:15px;left:20px;z-index:100"><a href="../" style="color:#c9a84c;text-decoration:none;font-size:.85em;opacity:.8">← Yerushalmi Bava Kamma Index</a></div>
+<div class="slide" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+  <div class="slide-num">1 / 9</div>
+  <div style="font-size:3em;margin-bottom:20px">🍞</div>
+  <h1>Yerushalmi Bava Kamma 10</h1>
+  <div class="subtitle">Yerushalmi Visual Guide</div>
+  <div class="hebrew" style="font-size:1.3em;margin:20px 0">ירושלמי בבא קמא י׳</div>
+  <div style="margin-top:30px;text-align:center;max-width:600px;line-height:1.8;color:#aaa">
+    <strong style="color:#c9a84c">Key Topics:</strong><br>
+    🦒 Rav: bending the neck (<span class='hebrew'>עָקְמָה צַוָּארָהּ</span>) → pays full damage<br>
+    🌾 Rav: ate barley → pays for straw (cheaper benefit)<br>
+    🐐 The donkey + lambs case — explaining the Mishnah's two rules<br>
+    🐕 New Mishnah: dog or kid that <em>jumped</em> from a roof = muad<br>
+    🔥 The famous case of dog with hot pitta + sheaf-stack<br>
+  </div>
+</div>
+<div class="slide">
+  <div class="slide-num">2 / 9</div>
+  <h2>📖 Overview — Stretching the Neck and the Burning Sheaves</h2>
+  
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">רַב אָמַר. עָקְמָה צַוָּארָהּ וְאָכְלָה מְשַׁלֵּם מַה שֶּׁהִזִּיקָה</div><div class="callout"><strong>The sugya:</strong> Daf 10 has only three segments but they are dense. Rav rules that an animal that bent its neck to eat — even from the doorway of a store — pays for full damage, not just for benefit. The Yerushalmi resolves the apparent contradiction with our Mishnah by re-reading the Mishnah's case as a donkey carrying lambs that stretched their necks while passing. Then Rav teaches the principle of <span class='hebrew'>אָכְלָה שְׂעוֹרִים מְשַׁלֵּם תֶּבֶן</span> — payment is calibrated to benefit, not to what the animal ate. The daf closes with the new Mishnah of jumping dogs/goats and the dog-with-hot-pitta case, which the next daf will unpack.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">3 / 9</div>
+  <h2>🦒 Rav: The Bent Neck Pays Full</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">Rav reads the Mishnah aggressively — and creates a problem.</div>
+  <div class="flowchart"><div class="flow-box action">Rav: <span class='hebrew'>עָקְמָה צַוָּארָהּ וְאָכְלָה — מְשַׁלֵּם מַה שֶּׁהִזִּיקָה</span><br>If the animal bent its neck and ate, the owner pays for damage (not just benefit)</div><div class="flow-arrow">↓</div><div class="flow-box question">Objection: but our Mishnah says <span class='hebrew'>מִפֶּתַח הֶחָנוּת מְשַׁלֵּם מַה שֶּׁנֶּהֱנֵית</span><br>From the doorway it pays only what it benefited!</div><div class="flow-arrow">↓</div><div class="flow-box result-good">R' Yose b. R' Bun: <span class='hebrew'>תִּיפְתָּר בְּשֶׁהָיָה חֲמוֹר טָעוּן גְּדָיִים</span><br>Re-read the Mishnah: a donkey carrying lambs, and as it walks past, the lambs stretch their necks</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-label">Doorway</div><div class="flow-box result-partial"><span class='hebrew'>מַה שֶּׁנֶּהֱנֵית</span><br>only benefit</div></div><div class="flow-col"><div class="flow-label">Inside store</div><div class="flow-box result-bad"><span class='hebrew'>מַה שֶּׁהִזִּיקָה</span><br>full damage</div></div></div></div><div class="callout" style="margin-top:20px"><strong>The reconciliation:</strong> When it is the animal itself that bends its neck deliberately, Rav treats this as an unusual move and assigns full damage. The Mishnah's softer rule applies only to a passive scenario — a donkey carrying its load, lambs grazing as they pass.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">4 / 9</div>
+  <h2>🌾 Rav's Principle: Pay by the Benefit, Not the Item</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px"><span class='hebrew'>אָכְלָה שְׂעוֹרִים מְשַׁלֵּם תֶּבֶן</span></div>
+  <div class="process-bar"><div class="process-step">1️⃣ The animal eats expensive barley (שְׂעוֹרִים).</div><div class="process-arrow">↓</div><div class="process-step">2️⃣ Rav: the owner pays for cheap straw (תֶּבֶן) — the benefit it would have gotten anyway.</div><div class="process-arrow">↓</div><div class="process-step">3️⃣ R' Chiyya disagrees: if it ate wheat (חִיטִּין), which is bad for it, the owner is exempt entirely.</div><div class="process-arrow">↓</div><div class="process-step">4️⃣ But if the animal <em>changed</em> from its normal feed (שִׁינָּת וְאָכְלָה), liability returns to full damage.</div><div class="process-arrow">↓</div><div class="process-step highlight">5️⃣ Final rule: payment tracks <em>real</em> benefit. When the animal eats abnormally, it crosses into full liability.</div></div><div class="callout" style="margin-top:20px"><strong>Bottom line:</strong> The Yerushalmi separates 'normal eating in a public space' (pay benefit only) from 'unusual feeding' (pay full damage). Rav and R' Chiyya disagree on edge cases like wheat, but the structural distinction holds.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">5 / 9</div>
+  <h2>📦 Three Container Cases at the End of the Halakhah</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">When the food is exposed to the public, what counts as 'inside'?</div>
+  <div class="compare-row"><div class="compare-box" style="border-top-color:#9b59b6"><h3 style="color:#9b59b6">🎒 Basket on the back</h3><ul><li><span class='hebrew'>קוּפָּתוֹ מוּפְשֶׁלֶת לַאֲחוֹרָיו</span></li><li>Cow stretches and eats from it</li><li><span class='hebrew'>נֶזֶק שָׁלֵם</span></li></ul></div><div class="compare-box" style="border-top-color:#f39c12"><h3 style="color:#f39c12">🚪 Container half in / half out</h3><ul><li><span class='hebrew'>סוֹג שֶׁנָּתוּן בְּפֶתַח הֶחָנוּת</span></li><li>Cow stretches and eats from it</li><li><span class='hebrew'>נֶזֶק שָׁלֵם</span></li></ul></div><div class="compare-box" style="border-top-color:#4caf50"><h3 style="color:#4caf50">🛣️ Open public square</h3><ul><li><span class='hebrew'>אָכְלָה מִתּוֹךְ הָרְחָבָה</span></li><li>Animal grazes in the open</li><li><span class='hebrew'>מַה שֶּׁנֶּהֱנֵית</span> — only benefit</li></ul></div></div><div class="callout" style="margin-top:20px"><strong>The pattern:</strong> A container — even a half-out one — counts as a private domain to its contents. The animal that reaches into it pays full damage, not benefit. Only fully exposed food in the public square triggers the lenient benefit-rule.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">6 / 9</div>
+  <h2>💬 Did the Mishnah Say 'Jumped' or 'Fell'?</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The next Mishnah (2:5) opens with a textual variant.</div>
+  <div class="debate"><div class="debate-line"><div class="speaker" style="background:#c9a84c">M</div><div class="speech"><span class='hebrew'>הַכֶּלֶב וְהַגְּדִי שֶׁקָּפְצוּ מֵרֹאשׁ הַגַּג וְשִׁיבְּרוּ אֶת הַכֵּלִים מְשַׁלְּמִין נֶזֶק שָׁלֵם מִפְּנֵי שֶׁהֵן מוּעָדִין</span></div></div><div class="debate-line right"><div class="speaker" style="background:#9b59b6">T1</div><div class="speech"><span class='hebrew'>שֶׁקָּפְצוּ</span> — they <em>jumped</em>.</div></div><div class="debate-line"><div class="speaker" style="background:#4a90d9">T2</div><div class="speech"><span class='hebrew'>שֶׁנָּפְלוּ</span> — they <em>fell</em>.</div></div><div class="debate-line right"><div class="speaker" style="background:#e74c3c">R' Yo</div><div class="speech"><span class='hebrew'>כֵּינִי מַתְנִיתָא. שֶׁקָּפְצוּ. נָפְלוּ לֹא בְדָא</span> — the correct text is 'jumped'. 'Fell' does not apply (i.e. there is no full liability for an accidental fall).</div></div></div><div class="callout" style="margin-top:20px"><strong>Why this matters:</strong> Jumping is a deliberate act — the animal acted out its 'mu'ad' nature. Falling is accidental — closer to a passive bor case. R' Yochanan locks the Mishnah to the deliberate version, so full liability rests on intent, not just outcome.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">7 / 9</div>
+  <h2>🔥 Setup for Daf 11 — The Dog and the Hot Pitta</h2>
+  <div style="text-align:center;color:#aaa;margin-bottom:20px">The Mishnah ends with a famous dual-liability case.</div>
+  <div class="hebrew" style="text-align:center;font-size:1.2em;margin-bottom:20px">כֶּלֶב שֶׁנָּטַל אֶת הַחֲרָרָה וְהָלַךְ לוֹ לְגָדִישׁ... עַל הַחֲרָרָה מְשַׁלֵּם נֶזֶק שָׁלֵם וְעַל הַגָּדִישׁ מְשַׁלֵּם חֲצִי נֶזֶק</div><div class="callout"><strong>The case:</strong> A dog grabs a hot pitta and runs to a stack of sheaves. While eating the pitta, it ignites the stack. For the pitta, <span class='hebrew'>נֶזֶק שָׁלֵם</span> (the dog ate it directly). For the stack, <span class='hebrew'>חֲצִי נֶזֶק</span> (the fire spread indirectly). Daf 11 will pick this up: Resh Lakish demands fire-ignition contact at every single sheaf; R' Yochanan rules <span class='hebrew'>נַעֲשֶׂה כְּזוֹרֵק אֶת הַחֵץ</span> — the dog is like one who shoots an arrow.</div>
+</div>
+<div class="slide">
+  <div class="slide-num">8 / 9</div>
+  <h2>📋 Yerushalmi Bava Kamma 10 — Summary Map</h2>
+  <div class="flowchart" style="max-width:800px"><div class="flow-box question" style=""><strong>Mishnah 2:4</strong>: open square = benefit; inside store = full damage</div><div class="flow-arrow">↓</div><div class="flow-box action" style="">Rav: bent its own neck → full damage. Why doesn't this contradict the Mishnah?</div><div class="flow-arrow">↓</div><div class="flow-branch"><div class="flow-col"><div class="flow-box" style="border-color:#4caf50">🐐 <strong>Donkey + lambs</strong><br>passive scenario → benefit</div></div><div class="flow-col"><div class="flow-box" style="border-color:#e74c3c">🦒 <strong>Bent its neck</strong><br>active → full damage</div></div><div class="flow-col"><div class="flow-box" style="border-color:#f39c12">🌾 <strong>שעורים → תבן</strong><br>pay by real benefit</div></div><div class="flow-col"><div class="flow-box" style="border-color:#9b59b6">🐕 <strong>קפצו / נפלו</strong><br>R' Yochanan: only 'jumped'</div></div></div><div class="flow-arrow">↓</div><div class="flow-box result-good" style="">🎓 <strong>Key Principle:</strong><br>Whenever the animal acts deliberately or breaches a private domain — even a passing one — liability climbs to full damage. Passive grazing in the open pays benefit only.</div></div>
+  <div style="margin-top:30px;text-align:center;color:#666;font-size:0.85em">
+    Yerushalmi Bava Kamma 10a-10b · Yerushalmi · Source: Sefaria / Guggenheimer edition
+  </div>
+</div>
+<div class="slide" style="background:linear-gradient(135deg,#16213e,#1a1a2e)">
+  <div class="slide-num">9 / 9</div>
+  <div style="font-size:3.5em;margin-bottom:20px">📝</div>
+  <h2>Ready to Test Yourself?</h2>
+  <div style="color:#aaa;font-size:1.1em;margin:20px 0 30px;text-align:center;max-width:500px;line-height:1.6">
+    5 multiple-choice questions on today's daf.<br>Self-graded with explanations for each answer.
+  </div>
+  <a href="quiz.html" style="display:inline-block;padding:18px 48px;background:#c9a84c;color:#1a1a2e;text-decoration:none;border-radius:12px;font-size:1.3em;font-weight:bold;font-family:'Georgia',serif">Take the Quiz →</a>
+  <div style="margin-top:40px;color:#555;font-size:0.85em">
+    Yerushalmi Bava Kamma 10a-10b · Yerushalmi
+  </div>
+</div>
+<div class="nav"><a href="../9/">← Daf 9</a><a href="../11/">Daf 11 →</a></div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 9,
+  "emoji": "🐔",
+  "topics": [
+    "🐔 Tied thread on a chicken's foot — Rav Huna: who tied it?",
+    "🌬️ Pecking, scraping, falling, flying — full vs. half damage",
+    "🍇 Symmachos vs. tanna kamma on cutting (קרטום) vs. breaking (שיבור)",
+    "🦷 שן: how does Resh Lakish vs. R' Yochanan read 'הוּשְּׁבָה'?",
+    "🦵 Walking kicks lying down: when is keren in רה\"ר exempt?"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Tooth, Foot, and Wings",
+    "label": "The sugya:",
+    "text": "Daf 9 plays out three connected debates. First, Rav Huna distinguishes between a thread that tied itself onto a chicken's foot and one the owner tied — the second is full damage. Then a long beraita maps every chicken motion (pecking, scraping, falling, flying, blowing) onto full or half. Then Mishnah 2:3 opens the שן sugya, and Resh Lakish vs. R' Yochanan disagree whether the Sages' answer to R' Tarphon (<span class='hebrew'>הוּשְׁבָה</span>) covers the whole Mishnah or only its first clause — a dispute that decides what happens when a walking animal kicks one lying down.",
+    "hebrewSource": "רֵישׁ לָקִישׁ אָמַר. עַל הָרִאשׁוֹנָה הוּשְּׁבָה. רִבִּי יוֹחָנָן אָמַר. עַל כּוּלָּהּ הוּשְּׁבָה"
+  },
+  "slides": [
+    {
+      "type": "debate",
+      "title": "💬 Rav Huna on the Tied Thread",
+      "subtitle": "The Mishnah said half damage for a chicken with a thread on its foot. Rav Huna asks: who tied it?",
+      "lines": [
+        { "speaker": "M", "side": "left", "speakerColor": "#c9a84c", "text": "<span class='hebrew'>הָיָה דְלִיל קָשׁוּר בְּרַגְלוֹ... מְשַׁלֵּם חֲצִי נֶזֶק</span>" },
+        { "speaker": "Rav Huna", "side": "right", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>בְּשֶׁנִּקְשַׁר מֵאֵילָיו</span> — only when the thread tied itself. <span class='hebrew'>אֲבָל אִם קְשָׁרוֹ הוּא — מְשַׁלֵּם נֶזֶק שָׁלֵם</span>." },
+        { "speaker": "Y", "side": "left", "speakerColor": "#9b59b6", "text": "If the owner tied it, he turned a chicken into a hazard. The half-damage rule for keren-style abnormal motion no longer applies — he pays in full." }
+      ],
+      "callout": {
+        "label": "Why this matters:",
+        "text": "Rav Huna is locating the half-damage rule precisely: it's for accidents of nature, not for hazards a person creates. Once the owner ties the string, the chicken becomes a moving bor in his name."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📊 The Beraita's Catalogue of Chicken Damage",
+      "subtitle": "A taxonomy of every chicken motion, with payments for each.",
+      "headers": ["Action", "Damage", "Payment"],
+      "rows": [
+        ["<span class='hebrew'>הִידְּסוּ אֶת הָעִיסָּה / שֶׁנִּיקְּרוּ</span>", "Scraped or pecked dough/fruit directly", "<span class='hebrew'>נֶזֶק שָׁלֵם</span>"],
+        ["<span class='hebrew'>הִידְּסוּ עָפָר עַל גַּבֵּי עִיסָּה</span>", "Kicked dust onto food (indirect)", "<span class='hebrew'>חֲצִי נֶזֶק</span>"],
+        ["<span class='hebrew'>מְחַטְּטִין בַּחֶבֶל</span> → bucket falls", "Pecked rope, pail snapped or broke", "<span class='hebrew'>נֶזֶק שָׁלֵם</span>"],
+        ["<span class='hebrew'>נָפַל עַל חֲבֵירוֹ</span>", "Upper damaged → full; lower → half", "Split: <span class='hebrew'>שָׁלֵם / חֲצִי</span>"],
+        ["Flying with body (<span class='hebrew'>בְגוּפוֹ</span>)", "Direct strike", "<span class='hebrew'>נֶזֶק שָׁלֵם</span>"],
+        ["<span class='hebrew'>בָּרוּחַ שֶׁבֵּין כְּנָפָיו</span>", "Wind from wing-flap", "<span class='hebrew'>חֲצִי נֶזֶק</span> (Symmachos: full)"]
+      ],
+      "callout": {
+        "label": "Pattern:",
+        "text": "Direct bodily contact = full. Indirect force (dust, wind) = half. Symmachos pushes back — for him, even wind is normal chicken behavior and pays in full."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🪣 The Falling Chicken — Why Not a בור?",
+      "subtitle": "R' Yose ben R' Bun fixes a tricky comparison.",
+      "nodes": [
+        { "content": "<span class='hebrew'>נָפַל עַל חֲבֵירוֹ</span><br>Upper chicken pays full, lower pays half", "class": "question" },
+        { "type": "arrow" },
+        { "content": "Objection: <span class='hebrew'>וְאֵינוֹ כְעוֹשֶׂה בוֹר בְּמָקוֹם אֶחָד וּמַזִּיק בְּמָקוֹם אַחֵר?</span><br>Isn't this like a pit dug here that damages there — which is exempt?", "class": "action" },
+        { "type": "arrow" },
+        { "content": "<strong>R' Yose b. R' Bun:</strong> <span class='hebrew'>מִכֵּיוָן שֶׁאֵין דַּרְכּוֹ לִיפּוֹל אֶלָּא בְאוֹתוֹ הַבּוֹר כְּמִי שֶׁהוּא בוֹרוֹ</span><br>Since it only naturally falls into <em>that</em> pit, the pit becomes 'his'", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "The move:",
+        "text": "R' Yose collapses the bor problem by re-attributing the pit. The lower chicken did not dig; the upper chicken's natural fall makes the destination effectively his own bor — so liability holds."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 Resh Lakish vs. R' Yochanan on the Mishnah of שן",
+      "subtitle": "How much of Mishnah 2:3 did the Sages 'send back' (הוּשְׁבָה)?",
+      "lines": [
+        { "speaker": "RL", "side": "left", "speakerColor": "#9b59b6", "text": "<span class='hebrew'>עַל הָרִאשׁוֹנָה הוּשְּׁבָה</span> — only the first clause was answered. → A walking animal that kicks one lying down: <strong>exempt</strong>." },
+        { "speaker": "R' Yo", "side": "right", "speakerColor": "#4a90d9", "text": "<span class='hebrew'>עַל כּוּלָּהּ הוּשְּׁבָה</span> — the whole Mishnah was answered. → Same case: <strong>liable</strong>." },
+        { "speaker": "R' Immi", "side": "left", "speakerColor": "#c9a84c", "text": "RL only exempts where a <em>walking</em> animal kicks a <em>lying</em> one. But lying-kicks-walking, or walking-kicks-walking — even RL holds liable." },
+        { "speaker": "R' Hoshaia", "side": "right", "speakerColor": "#e74c3c", "text": "<span class='hebrew'>כּוּלָּהּ פָּטוּר</span> — all such cases are exempt. <span class='hebrew'>אֵין קֶרֶן בִּרְשׁוּת הָרַבִּים?</span> — there's no keren liability in רה\"ר at all in this scenario!" }
+      ],
+      "callout": {
+        "label": "Yerushalmi style:",
+        "text": "A whole halakhic landscape is unfolded from one word, <span class='hebrew'>הוּשְׁבָה</span>. The reach of the Sages' reply decides who pays in every walking/lying combination."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🦷 שן vs. קרן: The Symmetry the Yerushalmi Builds",
+      "subtitle": "Rav and Ilfai use a parallel between leniency for tooth and stringency for horn.",
+      "steps": [
+        { "content": "1️⃣ <strong>שן (tooth):</strong> if the animal stood still and ate from a heap — <span class='hebrew'>חַיֶיבֶת</span> (Rav)." },
+        { "content": "2️⃣ <strong>Leniency for שן:</strong> a <em>walking</em> animal eating from a <em>standing</em> heap — exempt." },
+        { "content": "3️⃣ <strong>קרן (horn):</strong> mirror image — a walking animal that kicks a standing one is liable." },
+        { "content": "4️⃣ Ilfai pushes further: even walking-kicks-walking is liable — keren is treated stringently across the board." },
+        { "content": "5️⃣ Net rule: לעיכוב — שן is more forgiving by motion-state; קרן is harsher by motion-state.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "The Yerushalmi builds the שן/קרן contrast as a structural symmetry: where one is lenient, the other is stringent — and motion (walking, lying, standing) is the diagnostic feature for both."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "Direct vs. indirect, normal vs. unusual, walking vs. lying down — daf 9 catalogues every variable that decides full or half damage for tooth, foot, and the in-between motions of chickens.",
+    "flowSteps": [
+      { "content": "<strong>Mishnah</strong>: chickens are <span class='hebrew'>מוּעָדִין לְהַלֵּךְ כְּדַרְכָּן וּלְשַׁבֵּר</span>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Rav Huna: did the thread tie itself, or did the owner tie it?", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🪢 <strong>Self-tied</strong><br><span class='hebrew'>חֲצִי נֶזֶק</span>", "style": "border-color:#f39c12" },
+          { "content": "👤 <strong>Owner-tied</strong><br><span class='hebrew'>נֶזֶק שָׁלֵם</span>", "style": "border-color:#e74c3c" },
+          { "content": "🌬️ <strong>Wind from wings</strong><br>half (Symmachos: full)", "style": "border-color:#4a90d9" },
+          { "content": "🦷 <strong>שן vs. קרן</strong><br>RL: walking-kicks-lying exempt", "style": "border-color:#9b59b6" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Liability tracks intent, directness, and the motion-state of both animals. שן and קרן form a mirror: where one is lenient, the other is stringent.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "According to Rav Huna, when does the chicken-with-thread case pay full damages instead of half?",
+      "o": [
+        "When the chicken is muad",
+        "When the thread tied itself onto the foot",
+        "When the owner himself tied the thread",
+        "Never — it is always half"
+      ],
+      "c": 2,
+      "e": "Rav Huna: <span class='hebrew'>בְּשֶׁנִּקְשַׁר מֵאֵילָיו</span> half damage; <span class='hebrew'>אֲבָל אִם קְשָׁרוֹ הוּא מְשַׁלֵּם נֶזֶק שָׁלֵם</span>."
+    },
+    {
+      "q": "If a chicken's wing-wind (<span class='hebrew'>רוּחַ שֶׁבֵּין כְּנָפָיו</span>) breaks something, what does the tanna kamma say?",
+      "o": [
+        "Full damages",
+        "Half damages",
+        "Exempt",
+        "Only the value of benefit"
+      ],
+      "c": 1,
+      "e": "Tanna kamma: half damages because it is indirect. Symmachos disagrees and says full."
+    },
+    {
+      "q": "How does R' Yose b. R' Bun answer the objection about a chicken falling on another (the bor-here-damages-there problem)?",
+      "o": [
+        "He concedes and exempts the upper chicken",
+        "He says <span class='hebrew'>אֵין קֶרֶן בִּרְשׁוּת הָרַבִּים</span>",
+        "<span class='hebrew'>מִכֵּיוָן שֶׁאֵין דַּרְכּוֹ לִיפּוֹל אֶלָּא בְאוֹתוֹ הַבּוֹר כְּמִי שֶׁהוּא בוֹרוֹ</span>",
+        "He says it depends on whether it was muad"
+      ],
+      "c": 2,
+      "e": "Because the chicken only falls naturally into that one place, the destination is treated as if it were the chicken's own pit."
+    },
+    {
+      "q": "What is the dispute between Resh Lakish and R' Yochanan on Mishnah 2:3?",
+      "o": [
+        "Whether a chicken's wind is full or half damage",
+        "Whether the Sages' answer (<span class='hebrew'>הוּשְׁבָה</span>) covers only the first clause or all of it",
+        "Whether שן is exempt in רה\"ר",
+        "Whether dogs and goats are muad"
+      ],
+      "c": 1,
+      "e": "Resh Lakish: <span class='hebrew'>עַל הָרִאשׁוֹנָה הוּשְּׁבָה</span>. R' Yochanan: <span class='hebrew'>עַל כּוּלָּהּ הוּשְּׁבָה</span>. Their dispute determines whether walking-kicks-lying is exempt or liable."
+    },
+    {
+      "q": "According to R' Immi, what is Resh Lakish's actual exempt case?",
+      "o": [
+        "Lying animal kicking a walking one",
+        "Walking animal kicking a walking one",
+        "Walking animal kicking one that is lying down (<span class='hebrew'>בָּעֲטָה מְהַלֶּכֶת בָּרְבוּצָה</span>)",
+        "All three are exempt"
+      ],
+      "c": 2,
+      "e": "R' Immi narrows Resh Lakish: only walking-kicks-lying is exempt. The other combinations remain liable."
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 8,
+  "emoji": "🐎",
+  "topics": [
+    "🐎 The wagging tail (כִּישְׁכְּשָׁה בִּזְנָבָהּ) — full vs. half damage",
+    "🛢️ Stepping on a skin of oil: container פָּטוּר full, contents חֲצִי נֶזֶק",
+    "🪞 Two stacked tables — upper full, lower half damage",
+    "🏃 Stepping in רה\"ר that ricochets into רה\"י: stepping or breaking?",
+    "🐔 Mishnah opens: chickens are מוּעָדִין לְהַלֵּךְ כְּדַרְכָּן וּלְשַׁבֵּר"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — Where רגל Is Full and Where It Is Only Half",
+    "label": "The sugya:",
+    "text": "The daf opens mid-conversation between R' Hoshaia the Elder and R' Yudan Nesia. R' Abba bar Mamal walks in and asks about a mule that wags its tail and breaks something — is the owner liable in full, or only half? The daf then runs through a series of cases where one act of regel-style movement causes layered damage: a skin of oil, glass on a table, two stacked tables, and a ricochet from public into private property. The cases all probe one question: when normal walking damage breaks something the animal does not normally break, where does חֲצִי נֶזֶק begin?",
+    "hebrewSource": "וּמַה פְשִׁיטָא לוֹן. בְּנֶזֶק שָׁלֵם. וּמַה צְרִיכָה לוֹן. בַּחֲצִי נֶזֶק"
+  },
+  "slides": [
+    {
+      "type": "debate",
+      "title": "💬 The Mule That Wagged Its Tail",
+      "subtitle": "R' Abba bar Mamal walks into the beit midrash with a question.",
+      "lines": [
+        { "speaker": "R' Abba", "side": "left", "speakerColor": "#9b59b6", "text": "<span class='hebrew'>כִּישְׁכְּשָׁה בִּזְנָבָהּ. כְּגוֹן אִילֵּין פֵּירְדָתָא. מָהוּ?</span> If a mule wags its tail and breaks something — what is the law?" },
+        { "speaker": "Silence", "side": "right", "speakerColor": "#555", "text": "<span class='hebrew'>וְלָא אָמְרִין לֵיהּ כְּלוּם</span> — at first they said nothing." },
+        { "speaker": "R' Hoshaia", "side": "left", "speakerColor": "#4a90d9", "text": "If not, what would we say? <span class='hebrew'>צָרִיךְ שֶׁיְּהֵא תוֹפֵשׂ בִּזְנָבָהּ</span> — must the owner be holding its tail? Only when the tail-wagging is unusual. If it is normal — yes, the owner must literally hold the tail." },
+        { "speaker": "Y", "side": "right", "speakerColor": "#c9a84c", "text": "Bottom line: <span class='hebrew'>פְשִׁיטָא לוֹן בְּנֶזֶק שָׁלֵם</span> — full damages were obvious. <span class='hebrew'>צְרִיכָה לוֹן בַּחֲצִי נֶזֶק</span> — what they were unsure about was the half-damage case." }
+      ],
+      "callout": {
+        "label": "Key move:",
+        "text": "The Yerushalmi distinguishes between the animal's regular behavior (full damage, normal regel) and its unusual behavior (half damage, like keren). The mule's wagging tail forces a fresh ruling at the seam between the two."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📊 Layered Damage Cases (R' Yirmiyah's Series)",
+      "subtitle": "When one stomp breaks two things, each layer is judged on its own.",
+      "headers": ["Case", "Outer / Direct Object", "Inner / Indirect Object"],
+      "rows": [
+        ["Skin (נוֹד) full of oil", "<span class='hebrew'>נֶזֶק שָׁלֵם</span> for the נוֹד", "<span class='hebrew'>חֲצִי נֶזֶק</span> for the שֶׁמֶן"],
+        ["Table with glass on top", "<span class='hebrew'>נֶזֶק שָׁלֵם</span> for the טַבֶּלָּה", "<span class='hebrew'>חֲצִי נֶזֶק</span> for the זְכוּכִית"],
+        ["Two tables stacked", "<span class='hebrew'>נֶזֶק שָׁלֵם</span> for the upper", "<span class='hebrew'>חֲצִי נֶזֶק</span> for the lower"]
+      ],
+      "callout": {
+        "label": "Pattern:",
+        "text": "What the foot directly tramples is normal regel — full damage. What gets broken indirectly, by the trampled object collapsing, is treated like keren-style abnormal damage — only half."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🏃 The Ricochet Case — רה\"ר → רה\"י",
+      "subtitle": "R' Yirmiyah's hardest case: where does liability attach?",
+      "nodes": [
+        { "content": "<span class='hebrew'>טַבֶּלָּה מוּנַחַת בִּרְשׁוּת הָרַבִּים</span><br>Animal steps on it in the public domain", "class": "question" },
+        { "type": "arrow" },
+        { "content": "<span class='hebrew'>הִתִּיזָה וְהָלְכָה וְנִשְׁתַּבְּרָה בִרְשׁוּת הַיָּחִיד</span><br>The piece flies off and shatters in private property", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Follow the stepping", "content": "<span class='hebrew'>אַחַר דְּרִיסָתָהּ — פָּטוּר</span><br>Stepping was in רה\"ר → exempt", "class": "result-bad" },
+            { "label": "Follow the breaking", "content": "<span class='hebrew'>אַחַר שְׁבִירָתָהּ — חַיָיב</span><br>Breaking was in רה\"י → liable", "class": "result-good" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "The Yerushalmi leaves the question framed as a clean fork: do we trace liability to the act of pressure or to the moment of breakage?", "class": "result-partial" }
+      ],
+      "callout": {
+        "label": "Why this matters:",
+        "text": "Domain (רה\"ר vs. רה\"י) is decisive for רגל liability. The ricochet case forces us to identify exactly when the damage 'happened' — a question that returns later in the masechet."
+      }
+    },
+    {
+      "type": "comparison",
+      "title": "🐔 Entering Chapter 2:2 — The Mishnah of Chickens",
+      "subtitle": "The new Mishnah at the end of the daf sets up the next sugya.",
+      "boxes": [
+        {
+          "title": "🐔 Normal walking",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "<span class='hebrew'>הַתַּרְנוֹגַלִּין מוּעָדִין לְהַלֵּךְ כְּדַרְכָּן וּלְשַׁבֵּר</span>",
+            "Chickens are 'notorious' for breaking things just by walking",
+            "Implies <strong>full damage</strong> for ordinary stride breakage"
+          ]
+        },
+        {
+          "title": "🪢 Tied thread on foot",
+          "color": "#f39c12",
+          "titleColor": "#f39c12",
+          "items": [
+            "<span class='hebrew'>הָיָה דְלִיל קָשׁוּר בְּרַגְלוֹ</span>",
+            "A string trailing from the foot snags vessels",
+            "Pays <strong>half damage</strong>"
+          ]
+        },
+        {
+          "title": "🪶 Scraping / hopping",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "<span class='hebrew'>שֶׁהָיָה מְהַדֵּס וְשִׁיבֵּר</span>",
+            "Hopping/scraping motion that knocks vessels",
+            "Pays <strong>half damage</strong>"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Setup for daf 9:",
+        "text": "The Mishnah seeds the next debate: when is a tied thread the owner's fault (he tied it) versus an act-of-nature (it tied itself)? Daf 9 opens with Rav Huna's distinction."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🧠 The Underlying Principle",
+      "subtitle": "How the Yerushalmi reads the chain of cases on this daf.",
+      "steps": [
+        { "content": "1️⃣ Identify whether the damage is the animal's <strong>normal way</strong> (דַּרְכָּהּ) or unusual (אֵין דַּרְכָּהּ)." },
+        { "content": "2️⃣ Normal way → רגל or שן territory → <span class='hebrew'>נֶזֶק שָׁלֵם</span> in the victim's domain." },
+        { "content": "3️⃣ Unusual / indirect → keren-style damage → <span class='hebrew'>חֲצִי נֶזֶק</span>." },
+        { "content": "4️⃣ When one act produces both — like a stomp + a glass shatter — split the payment per layer." },
+        { "content": "5️⃣ Domain matters: even full-damage cases can collapse if the act started in רה\"ר.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "The daf's whole engine is the seam between regel and keren. Every case asks: which side of that line are we on, and where in space and time did the damage occur?"
+      }
+    }
+  ],
+  "summary": {
+    "principle": "When normal walking causes layered damage, peel the case apart: direct contact is full damage, indirect breakage is half. Domain and timing then decide whether liability attaches at all.",
+    "flowSteps": [
+      { "content": "<strong>Opening question</strong><br><span class='hebrew'>כִּישְׁכְּשָׁה בִּזְנָבָהּ — מָהוּ?</span>", "class": "question" },
+      { "type": "arrow" },
+      { "content": "Test: is this normal behavior (דַּרְכָּהּ) or not?", "class": "action" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🛢️ <strong>נוֹד שֶׁמֶן</strong><br>full for skin, half for oil", "style": "border-color:#4a90d9" },
+          { "content": "🪞 <strong>טבלה + זכוכית</strong><br>full for table, half for glass", "style": "border-color:#9b59b6" },
+          { "content": "🏃 <strong>ריצוף לרה\"י</strong><br>stepping or breaking?", "style": "border-color:#e74c3c" },
+          { "content": "🐔 <strong>תרנגולין</strong><br>walking vs. tied string", "style": "border-color:#4caf50" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Direct contact in normal manner = full damage. Indirect / unusual = half. The seam between רגל and קרן structures the entire daf.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "What case did R' Abba bar Mamal bring before R' Hoshaia and R' Yudan Nesia?",
+      "o": [
+        "An ox that gored another ox",
+        "A mule that wagged its tail and broke something (<span class='hebrew'>כִּישְׁכְּשָׁה בִּזְנָבָהּ</span>)",
+        "A chicken that pecked dough",
+        "A dog that jumped from a roof"
+      ],
+      "c": 1,
+      "e": "The Yerushalmi opens: <span class='hebrew'>כִּישְׁכְּשָׁה בִּזְנָבָהּ. כְּגוֹן אִילֵּין פֵּירְדָתָא. מָהוּ?</span>"
+    },
+    {
+      "q": "According to R' Hoshaia, when must the owner literally grab the animal's tail?",
+      "o": [
+        "Always",
+        "Never — only watch from a distance",
+        "Only when the tail-wagging is the animal's normal behavior (<span class='hebrew'>דַּרְכָּהּ לָכֵן</span>)",
+        "Only on Shabbat"
+      ],
+      "c": 2,
+      "e": "R' Hoshaia: if it is unusual behavior, no need to grab; but <span class='hebrew'>בְּשֶׁדַּרְכָּהּ לָכֵן צָרִיךְ שֶׁיְּהֵא תוֹפֵשׂ בִּזְנָבָהּ</span>."
+    },
+    {
+      "q": "If an animal stepped on a skin (נוד) full of oil, what does R' Yirmiyah rule?",
+      "o": [
+        "Full damages for both",
+        "Half for both",
+        "Full for the skin, half for the oil",
+        "Half for the skin, full for the oil"
+      ],
+      "c": 2,
+      "e": "<span class='hebrew'>עַל הַנּוֹד מְשַׁלֵּם נֶזֶק שָׁלֵם וְעַל הַשֶּׁמֶן מְשַׁלֵּם חֲצִי נֶזֶק</span> — direct contact pays full, indirect breakage pays half."
+    },
+    {
+      "q": "In the ricochet case (table in רה\"ר → glass shatters in רה\"י), what is the Yerushalmi's question?",
+      "o": [
+        "Whether to follow the stepping (<span class='hebrew'>דְּרִיסָתָהּ</span>) or the breaking (<span class='hebrew'>שְׁבִירָתָהּ</span>)",
+        "Whether tooth or foot is more lenient",
+        "Whether the owner was negligent",
+        "Whether the animal was tame or notorious"
+      ],
+      "c": 0,
+      "e": "<span class='hebrew'>אַחַר מִי אַתְּ מְהַלֵּךְ אַחַר דְּרִיסָתָהּ אוֹ אַחַר שְׁבִירָתָהּ?</span> If we follow stepping → exempt; if breaking → liable."
+    },
+    {
+      "q": "What is the new Mishnah at the end of daf 8 (2:2)?",
+      "o": [
+        "Four avot of damages",
+        "<span class='hebrew'>הַתַּרְנוֹגַלִּין מוּעָדִין לְהַלֵּךְ כְּדַרְכָּן וּלְשַׁבֵּר</span>",
+        "<span class='hebrew'>אָדָם מוּעָד לְעוֹלָם</span>",
+        "Tame vs. notorious bull"
+      ],
+      "c": 1,
+      "e": "The daf ends by introducing the chicken Mishnah, which sets up the next sugya about tied threads (דְלִיל קָשׁוּר) and scraping motion."
+    }
+  ]
+}
