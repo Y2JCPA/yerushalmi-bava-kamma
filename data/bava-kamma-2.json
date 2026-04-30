@@ -1,0 +1,75 @@
+{
+  "masechet": "Yerushalmi Bava Kamma",
+  "heMasechet": "תלמוד ירושלמי בבא קמא",
+  "daf": "ב",
+  "slug": "bava-kamma/2",
+  "sourceRefs": [
+    "Jerusalem Talmud Bava Kamma 1:1"
+  ],
+  "sourceNote": "Sefaria Yerushalmi is structured by chapter/halakhah/segment. This prototype anchors daf ב to the opening halakhah where the Venice Columns overlay marks 2a.",
+  "emoji": "🐂",
+  "title": "Four Avot of Damages",
+  "subtitle": "The Yerushalmi opens Nezikin by defining the core categories of liability.",
+  "slides": [
+    {
+      "type": "overview",
+      "title": "The whole sugya in one sentence",
+      "body": [
+        "The Mishnah lists four primary damage categories, then the Yerushalmi begins identifying each one from the pesukim.",
+        "The point is not just naming cases. It is building a framework for when a person becomes responsible for damage caused by his property or actions."
+      ]
+    },
+    {
+      "type": "comparison",
+      "title": "ארבעה אבות נזיקין",
+      "columns": [
+        { "label": "השור", "emoji": "🐂", "text": "The ox, understood here as keren: goring damage." },
+        { "label": "הבור", "emoji": "🕳️", "text": "The pit, damage caused by a hazard someone created." },
+        { "label": "המבעה", "emoji": "🐾", "text": "A category the Bavli debates. The Yerushalmi’s framing needs careful tracking." },
+        { "label": "ההבער", "emoji": "🔥", "text": "Fire, damage that spreads from a person’s force or property." }
+      ]
+    },
+    {
+      "type": "flow",
+      "title": "How the Mishnah reasons",
+      "steps": [
+        "Each av has a distinct feature.",
+        "No single category can teach all the others.",
+        "The common denominator: דרכן להזיק, their normal way is to cause damage.",
+        "Because שמירתן עליך, guarding them is your responsibility.",
+        "When they damage, the mazikin pays from מיטב הארץ."
+      ]
+    },
+    {
+      "type": "source",
+      "title": "Source anchor",
+      "hebrew": "אַרְבָּעָה אָבוֹת נְזִיקִין: הַשּׁוֹר וְהַבּוֹר וְהַמַּבְעֶה וְהַהֶבְעֵר... הַצַּד הַשָּׁוֶה שֶׁבָּהֶן שֶׁדַּרְכָּן לְהַזִּיק וּשְׁמִירָתָן עָלֶיךָ...",
+      "english": "There are four main categories of damages: the bull, the pit, the maveh, and the fire... Their common denominator is that their way is to cause damage and their guarding is upon you."
+    },
+    {
+      "type": "callout",
+      "title": "Yerushalmi-specific note",
+      "body": "The first technical issue for this project is pagination. The Yerushalmi API does not behave like Bavli daf/amud refs. The build pipeline should map Sefaria chapter/halakhah segments to the printed Yerushalmi page markers before generating all pages."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What are the four avot listed in the opening Mishnah?",
+      "o": ["שור, בור, מבעה, הבער", "שור, חמור, אש, מים", "קרן, שן, רגל, אדם", "בור, אש, גניבה, אבידה"],
+      "c": 0,
+      "e": "The Mishnah’s list is השור, הבור, המבעה, וההבער."
+    },
+    {
+      "q": "What is the shared principle tying the avot together?",
+      "o": ["They are all intentional acts", "They normally cause damage and must be guarded", "They only apply in private property", "They are all paid as fines"],
+      "c": 1,
+      "e": "The Mishnah says דרכן להזיק ושמירתן עליך."
+    },
+    {
+      "q": "What is the prototype’s main technical caution?",
+      "o": ["Yerushalmi has no Bava Kamma", "Sefaria blocks all Yerushalmi text", "Yerushalmi API refs are chapter/halakhah, not simple Bavli daf refs", "The quiz cannot be generated"],
+      "c": 2,
+      "e": "Refs such as 1:1 are reliable; daf/page mapping needs to use overlay markers."
+    }
+  ]
+}
