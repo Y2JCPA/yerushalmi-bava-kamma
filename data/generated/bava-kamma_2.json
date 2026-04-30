@@ -1,0 +1,193 @@
+{
+  "masechet": "bava-kamma",
+  "daf": 2,
+  "emoji": "🐂",
+  "topics": [
+    "🐂 Four avot of damages: שור, בור, מבעה, הבער",
+    "📖 Yerushalmi identifies שור as קרן from the pesukim",
+    "🌾 מבעה includes רגל and שן through field-damage verses",
+    "🧩 Why the Mishnah counts four while R' Chiyya counts thirteen"
+  ],
+  "overview": {
+    "type": "callout",
+    "title": "📖 Overview — The Opening Framework of Nezikin",
+    "label": "The sugya:",
+    "text": "The Mishnah opens with four primary categories of damage. The Yerushalmi immediately asks what each av means in the pesukim, then expands the conversation: if there are more liability categories in other beraitot, why does our Mishnah choose exactly four?",
+    "hebrewSource": "אַרְבָּעָה אָבוֹת נְזִיקִין: הַשּׁוֹר וְהַבּוֹר וְהַמַּבְעֶה וְהַהֶבְעֵר"
+  },
+  "slides": [
+    {
+      "type": "comparison",
+      "title": "🧱 The Four Avot",
+      "subtitle": "The Mishnah gives the master list before the Yerushalmi defines the details.",
+      "boxes": [
+        {
+          "title": "🐂 השור",
+          "color": "#4a90d9",
+          "titleColor": "#4a90d9",
+          "items": [
+            "Yerushalmi: זה הקרן",
+            "Source: כי יגוף שור איש את שור רעהו",
+            "Starts with tam, then asks for mu'ad"
+          ]
+        },
+        {
+          "title": "🕳️ הבור",
+          "color": "#9b59b6",
+          "titleColor": "#9b59b6",
+          "items": [
+            "A hazard created in public space",
+            "Source: כי יפתח איש בור",
+            "Owner of the pit pays"
+          ]
+        },
+        {
+          "title": "🌾 המבעה",
+          "color": "#4caf50",
+          "titleColor": "#4caf50",
+          "items": [
+            "Yerushalmi connects it to רגל and שן",
+            "רגל: ושלח את בעירה",
+            "שן: והיה לבער"
+          ]
+        },
+        {
+          "title": "🔥 ההבער",
+          "color": "#e74c3c",
+          "titleColor": "#e74c3c",
+          "items": [
+            "Fire damage",
+            "Contrasted with moving/living categories",
+            "Still included because דרכו להזיק"
+          ]
+        }
+      ],
+      "callout": {
+        "label": "Key move:",
+        "text": "The Mishnah is not just listing cases. It is building a liability taxonomy."
+      }
+    },
+    {
+      "type": "flowchart",
+      "title": "🔎 How the Yerushalmi Defines Each Av",
+      "subtitle": "The sugya anchors the categories in pesukim.",
+      "nodes": [
+        { "content": "משנה: ארבעה אבות נזיקין", "class": "question" },
+        { "type": "arrow" },
+        { "content": "השור זה הקרן", "class": "action" },
+        { "type": "arrow" },
+        {
+          "type": "branch",
+          "columns": [
+            { "label": "Tam", "content": "כי יגוף שור איש את שור רעהו", "class": "result-partial" },
+            { "label": "Mu'ad", "content": "או נודע כי שור נגח הוא", "class": "result-good" }
+          ]
+        },
+        { "type": "arrow" },
+        { "content": "The av is defined through the Torah's damage language.", "class": "result-good" }
+      ],
+      "callout": {
+        "label": "Yerushalmi style:",
+        "text": "Short, dense, and source-driven. The page moves quickly from Mishnah category to pasuk anchor."
+      }
+    },
+    {
+      "type": "debate",
+      "title": "💬 Four or Thirteen?",
+      "subtitle": "The Yerushalmi compares our Mishnah with R' Chiyya's larger list.",
+      "lines": [
+        { "speaker": "M", "side": "left", "speakerColor": "#c9a84c", "text": "Our Mishnah taught: <span class='hebrew'>אַרְבָּעָה אָבוֹת נְזִיקִין</span> — four primary categories." },
+        { "speaker": "RḤ", "side": "right", "speakerColor": "#4a90d9", "text": "But R' Chiyya taught thirteen: damages, pain, medical costs, loss of work, shame, and the watchmen categories." },
+        { "speaker": "Y", "side": "left", "speakerColor": "#9b59b6", "text": "Answer: our Mishnah is about property-damage frameworks, while R' Chiyya includes bodily injury and custodial liabilities too." }
+      ],
+      "callout": {
+        "label": "Practical reading:",
+        "text": "The number depends on what universe you are counting. The Mishnah narrows to core damage categories. R' Chiyya broadens to liability categories."
+      }
+    },
+    {
+      "type": "table",
+      "title": "📊 Avot and Toldot on the Daf",
+      "subtitle": "The sugya starts mapping derivatives under each primary category.",
+      "headers": ["Av", "Toldot / Examples", "Concept"],
+      "rows": [
+        ["<span class='hebrew'>קרן</span>", "נגיחה, נגיפה, נשיכה, רביצה, בעיטה, דחייה", "Unusual or aggressive animal damage"],
+        ["<span class='hebrew'>בור</span>", "Obstacles in public domain, like a coal causing a stumble", "Liability for a hazard one creates"],
+        ["<span class='hebrew'>רגל</span>", "Animal enters private property and damages by walking or load", "Normal movement damage"],
+        ["<span class='hebrew'>שן</span>", "Eating benefit: barley, oil, edible items", "Damage where the animal derives benefit"]
+      ],
+      "callout": {
+        "label": "Important:",
+        "text": "This follows the Yerushalmi text pulled from Sefaria, especially segments 4–7 of Jerusalem Talmud Bava Kamma 1:1."
+      }
+    },
+    {
+      "type": "process",
+      "title": "🧠 The Mishnah's Logic",
+      "subtitle": "Why not learn all damage categories from one example?",
+      "steps": [
+        { "content": "1️⃣ Each av has a feature the others do not fully share." },
+        { "content": "2️⃣ Living/moving damage is unlike a stationary pit." },
+        { "content": "3️⃣ A pit is unlike fire, which spreads differently." },
+        { "content": "4️⃣ The shared denominator is: <span class='hebrew'>דרכן להזיק ושמירתן עליך</span>." },
+        { "content": "5️⃣ Therefore: when they damage, the mazikin pays <span class='hebrew'>במיטב הארץ</span>.", "highlight": true }
+      ],
+      "callout": {
+        "label": "Bottom line:",
+        "text": "The daf teaches how Nezikin starts: define the category, find its Torah source, then test what it can and cannot teach."
+      }
+    }
+  ],
+  "summary": {
+    "principle": "The opening daf builds the basic map of liability: four avot, their sources, their derivatives, and the reason each category must be guarded.",
+    "flowSteps": [
+      { "content": "<strong>Opening Mishnah</strong><br><span class='hebrew'>ארבעה אבות נזיקין</span>", "class": "question" },
+      { "type": "arrow" },
+      {
+        "type": "branch",
+        "columns": [
+          { "content": "🐂 <strong>שור</strong><br>קרן, tam and mu'ad", "style": "border-color:#4a90d9" },
+          { "content": "🕳️ <strong>בור</strong><br>created hazard", "style": "border-color:#9b59b6" },
+          { "content": "🌾 <strong>מבעה</strong><br>רגל and שן", "style": "border-color:#4caf50" },
+          { "content": "🔥 <strong>הבער</strong><br>fire damage", "style": "border-color:#e74c3c" }
+        ]
+      },
+      { "type": "arrow" },
+      { "content": "Yerushalmi anchors each category in pesukim and then asks how broad the count should be.", "class": "action" },
+      { "type": "arrow" },
+      { "content": "🎓 <strong>Key Principle:</strong><br>Liability begins when the object or force normally causes damage and guarding it is your responsibility.", "class": "result-good" }
+    ]
+  },
+  "quiz": [
+    {
+      "q": "What are the four avot listed in the opening Mishnah?",
+      "o": ["שור, בור, מבעה, הבער", "קרן, שן, רגל, אדם", "גנב, גזלן, שואל, שומר", "נזק, צער, ריפוי, שבת"],
+      "c": 0,
+      "e": "The Mishnah opens with השור, הבור, המבעה, וההבער."
+    },
+    {
+      "q": "How does the Yerushalmi initially define 'השור'?",
+      "o": ["As tooth damage", "As keren, horn/goring damage", "As a pit", "As fire"],
+      "c": 1,
+      "e": "The Yerushalmi says: השור זה הקרן, and brings verses about a goring ox."
+    },
+    {
+      "q": "Why does R' Chiyya's list have thirteen instead of four?",
+      "o": ["He rejects the Mishnah", "He includes broader liability categories, including bodily injury and custodians", "He counts every animal separately", "He only discusses penalties"],
+      "c": 1,
+      "e": "The Yerushalmi distinguishes the Mishnah's narrower damage framework from R' Chiyya's broader count."
+    },
+    {
+      "q": "Which phrase expresses the shared denominator of the avot?",
+      "o": ["חיים שנים ישלם", "דרכן להזיק ושמירתן עליך", "אין שמין לגנב", "עד כדון בתם"],
+      "c": 1,
+      "e": "The Mishnah says their way is to damage and guarding them is your responsibility."
+    },
+    {
+      "q": "What is the main technical issue for a Yerushalmi version of the Bavli site?",
+      "o": ["Sefaria has no Yerushalmi text", "The Yerushalmi API is structured by chapter/halakhah/segment, so daf/page mapping must be handled separately", "Quiz pages cannot work on GitHub Pages", "Hebrew text cannot render in HTML"],
+      "c": 1,
+      "e": "Unlike the Bavli pipeline, Sefaria's Yerushalmi refs are not simple daf/amud pages. We need mapping from page markers or chapter/halakhah units."
+    }
+  ]
+}
